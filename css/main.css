@@ -1849,7 +1849,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #01d938;
+  background: #c49a22;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3099,4 +3099,10 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+* {
+  cursor: url("https://raw.githubusercontent.com/zyf722/gitpic/master/64.ico"), auto !important;
+}
+:active {
+  cursor: url("https://raw.githubusercontent.com/zyf722/gitpic/master/64.ico"), auto !important;
 }
