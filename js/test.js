@@ -1,17 +1,15 @@
 var tl = new Array(
-	"I WILL PROTECT YOU NOW.",
-	"BELIEVE ME.",
-	"I CAN DO EVERYTHING.",
+	"ERROR 404.",
+	"FILE NOT FOUND.",
 	"WHAT",
 	"ARE",
 	"YOUR",
 	"COMMANDS",
 	"?",
 	" ",
-	"CONNECTING ...",
-	" ",
-	"DETECT A ERROR.",
-	"TERMINATE SAMARITAN."
+	"CALCULATING",
+	"RESPOND",
+	"...",
 );
 var speed = 50;
 var index = 0;
