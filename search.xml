@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title><![CDATA[Hello World 入驻杂谈①]]></title>
     <url>%2F2018%2F08%2F18%2FHello-World%2F</url>
-    <content type="text"><![CDATA[test]]></content>
+    <content type="text"><![CDATA[Hello World 入驻杂谈①欢迎各位能光临我的Blog！终于做完了这个站的前期工作，那么第一篇文章就写这折腾的建站过程吧！ 前些天想搭个属于自己的Blog，于是在 Freenom 上申请了这个tk域名。 原先准备就用 Freenom 自带的 GoSite 功能创建一个Blog的，后来发现免费的 GoSite 居然仅仅支持一个界面，因此 Plan A 就此放弃。 【应用 GoSite 创建的网站原型】 在一下午的浏览后我发现了 Hexo 这个强大的工具，看了 Hexo 之后我想起了 Github Pages 可以建立自己的Blog，这样的话就不需要云服务器了，于是立马用 npm 下部署了 Hexo ，跟着官方文档来总算可以 Hexo server 在 localhost 看到自己的Blog了。 Plan B 有实现的可能。可惜非常简陋，百度之后发现 Hexo 可以安装主题来美化，于是在 Github 上clone了不错的一个主题 Next ，也就是现在正在使用的主题。 Next 的自定义功能非常多，翻了大半篇用户指南后搞清楚了一些自定义的插件与设置，于是就有了各位现在看到的 World.create(__MAX__)。 1234keep_on = truewhile keep_on: World.create(__BLOG__); time.sleep(604800)]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Hexo Next Freenom Dnspod</tag>
+      </tags>
   </entry>
 </search>
