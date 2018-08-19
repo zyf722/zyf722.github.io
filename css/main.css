@@ -1854,7 +1854,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0ade;
+  background: #930018;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3121,4 +3121,12 @@ ul.breadcrumb li+li:last-child {
   #footer a {
     color: #eee;
   }
+}
+@font-face {
+  font-family: MagdaCleanMono;
+  src: url("/fonts/MagdaCleanMono-Regular.otf");
+}
+@font-face {
+  font-family: OCR A Std;
+  src: url("/fonts/OCRAStd.otf");
 }
