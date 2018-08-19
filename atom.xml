@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>World.create(__MAX__)</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-08-17T11:17:31.483Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Max Alex</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/08/18/Hello-World/"/>
+    <id>http://yoursite.com/2018/08/18/Hello-World/</id>
+    <published>2018-08-17T19:16:39.000Z</published>
+    <updated>2018-08-17T11:17:31.483Z</updated>
+    
+    <content type="html"><![CDATA[<p>test</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;test&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
