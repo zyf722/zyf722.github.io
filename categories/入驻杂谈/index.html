@@ -251,7 +251,7 @@
     </div>
     
       
-        <p class="site-subtitle">//This statement implements an website that creates an empty world with no meaning or purpose.</p>
+        <h1 class="site-subtitle" itemprop="description">//This statement implements an website that creates an empty world with no meaning or purpose.</h1>
       
     
   </div>
@@ -404,8 +404,8 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>入驻杂谈<small>分类</small>
-        </h1>
+        <h2>入驻杂谈<small>分类</small>
+        </h2>
       </div>
 
       
@@ -414,7 +414,7 @@
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
 
-      <h2 class="post-title">
+      <h3 class="post-title">
         
             <a class="post-title-link" href="/2018/08/18/Hello-World/" itemprop="url">
               
@@ -422,11 +422,11 @@
               
             </a>
         
-      </h2>
+      </h3>
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-18T03:16:39+08:00"
+              datetime="2018-08-17T19:16:39Z"
               content="2018-08-17" >
           08-17
         </time>
@@ -545,32 +545,32 @@
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/zyf722" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/zyf722" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="mailto:maxalex20030722@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:maxalex20030722@gmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/MaxMixAlex" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://twitter.com/MaxMixAlex" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/profile.php?id=100005941170933" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  <a href="https://www.facebook.com/profile.php?id=100005941170933" target="_blank" title="Facebook" rel="external nofollow"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://steamcommunity.com/id/maxalex2003" target="_blank" title="Steam"><i class="fa fa-fw fa-steam"></i>Steam</a>
+                  <a href="https://steamcommunity.com/id/maxalex2003" target="_blank" title="Steam" rel="external nofollow"><i class="fa fa-fw fa-steam"></i>Steam</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://space.bilibili.com/1887412/#/" target="_blank" title="Bilibili"><i class="fa fa-fw fa-tv"></i>Bilibili</a>
+                  <a href="https://space.bilibili.com/1887412/#/" target="_blank" title="Bilibili" rel="external nofollow"><i class="fa fa-fw fa-tv"></i>Bilibili</a>
                   
                 </span>
               
@@ -604,6 +604,44 @@
 	    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=29027278&auto=1&height=66"></iframe>
 	  </div>
 	  
+	  <div id="show_time">  
+	  <script>  
+	    setInterval("fun(show_time)",1);
+	    function fun(timeID){ 
+	    var date = new Date();
+	    var y = date.getFullYear();
+	    var m = date.getMonth()+1;
+	    var d = date.getDate();
+	    var w = date.getDay();
+	    var h = date.getHours();
+	    var minute = date.getMinutes();
+	    var s = date.getSeconds();
+	    var sss = date.getMilliseconds() ;
+	    if(m<10){
+	      m = "0"+m;
+	    }
+	    if(d<10){
+	      d = "0"+d;
+	    }
+	    if(h<10){
+	      h = "0"+h;
+	    }
+	    if(minute<10){
+	      minute = "0"+minute;
+	    }
+	    if(s<10){
+	      s = "0"+s;
+	    }
+	    if(sss<10){
+	      sss = "00"+sss;
+	    }else if(sss<100){
+	      sss = "0"+sss;
+	    }
+	    document.getElementById(timeID.id).innerHTML =  y+"-"+m+"-"+d+"   "+h+":"+minute+":"+s+"."+sss;
+	    }
+	    </script>  
+	    </div> 
+	  
 	</div>
   </aside>
 
@@ -625,6 +663,8 @@
   
 </div>
 
+
+  
 
 
 
