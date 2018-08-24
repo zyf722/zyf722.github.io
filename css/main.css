@@ -1854,7 +1854,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #bfc9ad;
+  background: #e5eb6a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3129,4 +3129,11 @@ ul.breadcrumb li+li:last-child {
 @font-face {
   font-family: OCR A Std;
   src: url("/fonts/OCRAStd.otf");
+}
+.posts-expand .post-body img {
+  border: none;
+  padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 3px;
 }
