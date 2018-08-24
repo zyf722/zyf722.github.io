@@ -34,18 +34,18 @@ var speechModule = (function () {
 	}
 
 	var _commands = {
-		'locate the machine': _writeWrapper('Target can not be reached !'),
-		'where are you': _writeWrapper("I am everywhere , i am god"),
-		'who am I': _writeWrapper("Asset"),
-		'who are you': _writeWrapper('i am samaritan !'),
-		'find Finch': _writeWrapper('Locating Harold Finch ?'),
-		'yes': _writeWrapper('yes what ?'),
-		'no': _writeWrapper('ok then what is your suggestion ?'),
-		'what are you': _writeWrapper('i am samaritan !'),
-		'turn off': _writeWrapper('shutdown initiated'),
-		'restart': _writeWrapper('initiating reboot sequence'),
-		'who created you': _writeWrapper("it's irrelevant"),
-		'who won': _writeWrapper('team machine'),
+		'locate the machine': _writeWrapper('ERROR 404 File Not Found'),
+		'where are you': _writeWrapper("ERROR 404 File Not Found"),
+		'who am I': _writeWrapper("ERROR 404 File Not Found"),
+		'who are you': _writeWrapper('ERROR 404 File Not Found'),
+		'find Finch': _writeWrapper('ERROR 404 File Not Found'),
+		'yes': _writeWrapper('ERROR 404 File Not Found'),
+		'no': _writeWrapper('ERROR 404 File Not Found'),
+		'what are you': _writeWrapper('ERROR 404 File Not Found'),
+		'turn off': _writeWrapper('ERROR 404 File Not Found'),
+		'restart': _writeWrapper('ERROR 404 File Not Found'),
+		'who created you': _writeWrapper("ERROR 404 File Not Found"),
+		'who won': _writeWrapper('ERROR 404 File Not Found'),
 		'find (me) *name': _flickrSearch,
 		'search (for) *name': _flickrSearch,
 		'show (me) *name': _flickrSearch,
@@ -69,7 +69,7 @@ var speechModule = (function () {
 		} else {
 			setTimeout(function () {
 				samaritanModule.writeFromUrl();
-				samaritanModule.write('speech recognition not supported in this browser !');
+				samaritanModule.write('Maybe you should go back');
 			}, 10000);
 		}
 	};

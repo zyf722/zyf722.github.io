@@ -1,0 +1,164 @@
+ <html>
+ <head>
+  <meta charset='utf-8'>
+  <title>World.quotes();</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav32.ico?v=6.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav16.ico?v=6.4.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <style>div {font-family: 'Adobe Clean','田氏宋体旧字形'; font-size: 35px;}</style>
+  <style>
+  @font-face {
+    font-family: MagdaCleanMono;
+    src: url('/fonts/MagdaCleanMono-Regular.otf');
+	}
+
+	@font-face {
+    font-family: Adobe Clean;
+    src: url('/fonts/AdobeClean-Regular.ttf');
+	}
+
+	@font-face {
+    font-family: 田氏宋体旧字形;
+    src: url('/fonts/田氏宋体旧字形.ttf');
+	}
+	
+	body{margin:0; padding:0}
+	
+	#a {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+	
+	#b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+	
+	#c {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	}
+  </style>
+  <script type="text/javascript" src = "/js/jquery-1.11.0.min.js"></script>
+  <script>
+   var str = ' ';
+   var divTyping = document.getElementById('a');
+   var json_sen = [
+{"chs":"人类的生命因其短暂，才弥足珍贵","eng":"Human life is ephemera, which makes it precious.","author":"Root - Person of Interest"},
+{"chs":"再黑暗的心，也会跳动","eng":"Even the blackest heart still beats.","author":"Wallance Negel (S1E8 POI) - Person of Interest"},
+{"chs":"我来，我见，我征服","eng":"Veni Vedi Vici.","author":"Elias - Person of Interest"},
+{"chs":"我发现，能真正展现出自我的时刻，往往是生命的最后一刻","eng":"And what I found was the moment when you truly found out who they were was often their last one.","author":"The Machine - Person of Interest"},
+{"chs":"我原想收获一缕春风，你却给了我整个春天","eng":"","author":"汪国真 - 感谢"},
+{"chs":"我会与她白头到老，只是天各一方","eng":"I'll grow old with her. Just from afar.","author":"Finch - Person of Interest"}
+];
+   var originalArray=new Array;//原数组 
+	//给原数组originalArray赋值 
+   for (var i=0;i<json_sen.length;i++){ 
+      originalArray[i]=i; 
+   } 
+   originalArray.sort(function(){ return 0.5 - Math.random(); }); 
+   var arrend = originalArray[originalArray.length - 1];
+   
+   var j = originalArray[0];
+   var index = 0;
+   
+   function my_random(){
+    
+    index++;
+	if (index >= json_sen.length)
+	{
+	   while(originalArray[0] == arrend)
+	   {
+	   originalArray.sort(function(){ return 0.5 - Math.random(); }); 
+	   }
+	   index = 0;
+	}
+	j = originalArray[index];
+}
+	
+   function my_typing(argu1,argu2){
+    clickable = false;
+	str = argu1;
+	divTyping = document.getElementById(argu2);
+	divTyping.innerHTML = str;
+   }
+   
+   function my_print(){
+	$('#a').hide();
+	$('#b').hide();
+	$('#c').hide();
+    my_typing(json_sen[j].eng,'a');
+	my_typing(json_sen[j].chs,'b');
+	my_typing(json_sen[j].author,'c');
+	//$('#a').show();
+	//$('#b').show();
+	//$('#c').show();
+	$('#a').fadeIn(800);
+	$('#b').fadeIn(800);
+	$('#c').fadeIn(800);
+   }
+   
+   function change(){
+		my_random();
+		document.getElementById('a').innerHTML = "";
+		document.getElementById('b').innerHTML = "";
+		document.getElementById('c').innerHTML = "";
+		my_print();
+   }
+   </script>
+ </head>
+ <body onclick = "change()">
+ 
+ <div id='a' style="text-align: center; margin-left: auto; margin-right: auto; line-height:45px" onclick="change()"> </div>
+ <div id='b' style="text-align: center; margin-left: auto; margin-right: auto; line-height:65px" onclick="change()"> </div>
+ <div id='c' style="text-align: center; margin-left: auto; margin-right: auto; font-family: 'MagdaCleanMono','田氏宋体旧字形'; font-size: 20px; font-weight:normal; color:gray" onclick="change()"> </div>
+ 
+ 
+ <script type="text/javascript">
+   
+   function set_width(){
+		document.getElementById('a').style.width = document.body.offsetWidth * 0.65;
+		document.getElementById('b').style.width = document.body.offsetWidth * 0.7;
+		document.getElementById('c').style.width = document.body.offsetWidth * 0.7;
+		if (screen.availWidth < 640)
+		{
+			document.getElementById('a').style.fontSize = '20px';
+			document.getElementById('b').style.fontSize = '25px';
+			document.getElementById('c').style.fontSize = '10px';
+			document.getElementById('a').style.lineHeight = "25px";
+			document.getElementById('b').style.lineHeight = "35px";
+		}
+		else
+		{
+			document.getElementById('a').style.fontSize = '40px';
+			document.getElementById('b').style.fontSize = '40px';
+			document.getElementById('c').style.fontSize = '20px';
+		}
+	}
+	
+ </script>
+ <script>
+	window.onresize = function(){set_width()};
+ 
+    set_width();
+	my_print();
+    //my_typing('Human life is ephemera, which makes it precious.','a');
+	//my_typing('人类的生命因其短暂，才弥足珍贵。','b');
+	
+	//setTimeout("my_typing('人类的生命因其短暂，才弥足珍贵。','b')",totaltime);
+	//setTimeout("my_typing('Person of Interest','c')",totaltime + (str.length+3)*40);
+	//document.getElementById('a').innerHTML = "aaa"
+	//document.getElementById('b').innerHTML = "bbb"
+	//for(var i=0;i<randarr.length;i++){
+	//	document.writeln(randarr[i]);
+	//}
+ </script>
+ </body>
+ </html>
