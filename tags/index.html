@@ -694,11 +694,10 @@
 		height: 22px;
 		position: relative;
 		top: 54px;
-		left: 1px;
+		left: -1px;
 		background: none;
 		border: none;
 		cursor: pointer;
-		background: url(/images/wolfram/icon48.png) 0 0 no-repeat
 	}
 
 	span.keyBorder {
@@ -714,10 +713,12 @@
 	<script src="/js/wolfram/jquery-1.7.2.min.js"></script>
 	<script src="/js/wolfram/popup.js"></script>
 	
-	<form id="inputform" action="" method="post">
+	<br />
+	<form id="inputform" action="" method="post" target="ajaxFrame">
 		<input id="input" name="input" type="text" />
-		<input id="submitArea" type="submit" value="" />
+		<input id="submitArea" type="submit" value="" onsubmit="return false;" />
 	</form>
+	<iframe name="ajaxFrame" style="display: none;"></iframe>
 
 	  <div style="position:relative; bottom:-25px; width:100%;">
 	    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=490182455&auto=1&height=66"></iframe>

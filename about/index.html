@@ -461,7 +461,7 @@
 <li><strong>看番</strong>比较多的<strong>死宅</strong>，游戏玩的并不好的<strong>游戏宅</strong></li>
 <li><strong>将棋</strong>入门玩家</li>
 </ul>
-<p>联系我？<br>Email：<a href="mailto:&#x6d;&#97;&#120;&#97;&#108;&#101;&#x78;&#50;&#48;&#x30;&#x33;&#x30;&#55;&#x32;&#x32;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;" target="_blank" rel="noopener">&#x6d;&#97;&#120;&#97;&#108;&#101;&#x78;&#50;&#48;&#x30;&#x33;&#x30;&#55;&#x32;&#x32;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a></p>
+<p>联系我？<br>Email：<a href="mailto:&#109;&#97;&#x78;&#x61;&#108;&#x65;&#120;&#x32;&#48;&#48;&#x33;&#x30;&#55;&#x32;&#50;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;" target="_blank" rel="noopener">&#109;&#97;&#x78;&#x61;&#108;&#x65;&#120;&#x32;&#48;&#48;&#x33;&#x30;&#55;&#x32;&#50;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></p>
 <h1 id="About-This-Website-关于本站"><a href="#About-This-Website-关于本站" class="headerlink" title="About This Website 关于本站"></a>About This Website 关于本站</h1><p>本站由 <strong>Hexo</strong> 创建，使用 <strong>Github Pages</strong> 托管，域名来自 <strong>Freenom</strong>。<br>Hexo 主题使用 <strong>NexT Gemini</strong>。</p>
 
         
@@ -707,11 +707,10 @@
 		height: 22px;
 		position: relative;
 		top: 54px;
-		left: 1px;
+		left: -1px;
 		background: none;
 		border: none;
 		cursor: pointer;
-		background: url(/images/wolfram/icon48.png) 0 0 no-repeat
 	}
 
 	span.keyBorder {
@@ -727,10 +726,12 @@
 	<script src="/js/wolfram/jquery-1.7.2.min.js"></script>
 	<script src="/js/wolfram/popup.js"></script>
 	
-	<form id="inputform" action="" method="post">
+	<br />
+	<form id="inputform" action="" method="post" target="ajaxFrame">
 		<input id="input" name="input" type="text" />
-		<input id="submitArea" type="submit" value="" />
+		<input id="submitArea" type="submit" value="" onsubmit="return false;" />
 	</form>
+	<iframe name="ajaxFrame" style="display: none;"></iframe>
 
 	  <div style="position:relative; bottom:-25px; width:100%;">
 	    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=490182455&auto=1&height=66"></iframe>
