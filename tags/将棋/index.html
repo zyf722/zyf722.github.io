@@ -916,6 +916,31 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'yXv5LrQs2K80RrKTEQDTQDP8-gzGzoHsz',
+        appKey: 'AljgRqpi7m6QHWDpUFr9jB1u',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
 
 
   

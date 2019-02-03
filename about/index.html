@@ -168,12 +168,14 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://i.loli.net/2018/08/18/5b7818df2a588.png">
 <meta property="og:image" content="https://i.loli.net/2018/08/18/5b781aa1252ce.png">
-<meta property="og:updated_time" content="2018-08-30T13:40:00.249Z">
+<meta property="og:updated_time" content="2019-02-03T10:56:32.067Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About Me">
 <meta name="twitter:description" content="About Me 关于我  非常感谢你能翻到我的Blog！ 这里是Max Alex，性别男，来自WFLS的2021届高中狗，以下是关于我的一些Tag：  计算器 Fan（现役机型：CASIO fx-82ES / fx-991 CN X / fx-9750Gii / TI-Nspire CM-C CAS） 海王星（超次元游戏：海王星） 厨（Nep大法好！） POI（疑犯追踪） 厨 入门级 Coder">
 <meta name="twitter:image" content="https://i.loli.net/2018/08/18/5b7818df2a588.png">
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="World.create(__MAX__);" type="application/atom+xml" />
@@ -461,7 +463,7 @@
 <li><strong>看番</strong>比较多的<strong>死宅</strong>，游戏玩的并不好的<strong>游戏宅</strong></li>
 <li><strong>将棋</strong>入门玩家</li>
 </ul>
-<p>联系我？<br>Email：<a href="mailto:&#109;&#97;&#x78;&#x61;&#108;&#x65;&#120;&#x32;&#48;&#48;&#x33;&#x30;&#55;&#x32;&#50;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;" target="_blank" rel="noopener">&#109;&#97;&#x78;&#x61;&#108;&#x65;&#120;&#x32;&#48;&#48;&#x33;&#x30;&#55;&#x32;&#50;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p>联系我？<br>Email：<a href="mailto:&#109;&#97;&#x78;&#x61;&#108;&#x65;&#120;&#50;&#48;&#x30;&#x33;&#x30;&#55;&#x32;&#x32;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;" target="_blank" rel="noopener">&#109;&#97;&#x78;&#x61;&#108;&#x65;&#120;&#50;&#48;&#x30;&#x33;&#x30;&#55;&#x32;&#x32;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <h1 id="About-This-Website-关于本站"><a href="#About-This-Website-关于本站" class="headerlink" title="About This Website 关于本站"></a>About This Website 关于本站</h1><p>本站由 <strong>Hexo</strong> 创建，使用 <strong>Github Pages</strong> 托管，域名来自 <strong>Freenom</strong>。<br>Hexo 主题使用 <strong>NexT Gemini</strong>。</p>
 
         
@@ -482,10 +484,6 @@
 
           </div>
           
-
-  
-
-
 
         </div>
         
@@ -959,6 +957,31 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'yXv5LrQs2K80RrKTEQDTQDP8-gzGzoHsz',
+        appKey: 'AljgRqpi7m6QHWDpUFr9jB1u',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 

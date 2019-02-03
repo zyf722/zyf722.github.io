@@ -164,12 +164,10 @@
 <meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="World.create(__MAX__);">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-19T06:49:48.539Z">
+<meta property="og:updated_time" content="2019-02-03T10:56:41.827Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Categories">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="World.create(__MAX__);" type="application/atom+xml" />
@@ -484,10 +482,6 @@
 
           </div>
           
-
-  
-
-
 
         </div>
         
@@ -936,6 +930,31 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'yXv5LrQs2K80RrKTEQDTQDP8-gzGzoHsz',
+        appKey: 'AljgRqpi7m6QHWDpUFr9jB1u',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 

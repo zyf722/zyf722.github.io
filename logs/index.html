@@ -166,7 +166,7 @@
 <meta property="og:site_name" content="World.create(__MAX__);">
 <meta property="og:description" content="Logs 建站日志2019-02-02 侧边栏集成 Wolfram|Alpha  2019-01-13 更换背景音乐为 THERE IS A REASON - 鈴木このみ 侧边栏排版修改  2018-08-31 更改 Live2D 看板娘大小以适配低分辨率屏幕  2018-08-30 加入建站日志 加入 Live2D 看板娘 Neptune  2018-08-24 本站去除图片边框  2018-0">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-02T08:58:22.964Z">
+<meta property="og:updated_time" content="2019-02-03T10:56:48.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Logs">
 <meta name="twitter:description" content="Logs 建站日志2019-02-02 侧边栏集成 Wolfram|Alpha  2019-01-13 更换背景音乐为 THERE IS A REASON - 鈴木このみ 侧边栏排版修改  2018-08-31 更改 Live2D 看板娘大小以适配低分辨率屏幕  2018-08-30 加入建站日志 加入 Live2D 看板娘 Neptune  2018-08-24 本站去除图片边框  2018-0">
@@ -508,10 +508,6 @@
 
           </div>
           
-
-  
-
-
 
         </div>
         
@@ -985,6 +981,31 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'yXv5LrQs2K80RrKTEQDTQDP8-gzGzoHsz',
+        appKey: 'AljgRqpi7m6QHWDpUFr9jB1u',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
 
 
 
