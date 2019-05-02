@@ -1854,7 +1854,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2b6b57;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3156,10 +3156,10 @@ ul.breadcrumb li+li:last-child {
   }
 }
 * {
-  cursor: url("https://raw.githubusercontent.com/zyf722/gitpic/master/32.ico"), auto !important;
+  cursor: url("/images/32.ico"), auto !important;
 }
 :active {
-  cursor: url("https://raw.githubusercontent.com/zyf722/gitpic/master/32.ico"), auto !important;
+  cursor: url("/images/32.ico"), auto !important;
 }
 @media screen and (min-width: 1200px) {
   body {
