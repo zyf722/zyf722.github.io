@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Games 游戏推荐 AIDungeon 2</title>
+    <url>/posts/a41bb8a1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-游戏推荐-AIDungeon-2"><a href="#Games-游戏推荐-AIDungeon-2" class="headerlink" title="Games 游戏推荐 AIDungeon 2"></a>Games 游戏推荐 AIDungeon 2</h1><h2 id="真正意义上的极高自由度游戏！"><a href="#真正意义上的极高自由度游戏！" class="headerlink" title="真正意义上的极高自由度游戏！"></a>真正意义上的极高自由度游戏！</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，所有文字均为原创，部分图片引用自 <strong>Wikipedia</strong>，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/12/28/h3fEMNW25OL8DUS.png" alt="Logo"><br><center><small>AIDungeon 2 Logo</small></center><br></div>
+
+<a id="more"></a>
+<h3 id="第一章-文字冒险游戏"><a href="#第一章-文字冒险游戏" class="headerlink" title="第一章  文字冒险游戏"></a>第一章  文字冒险游戏</h3><p>谈起 <strong>文字冒险游戏</strong>，你一般会想到什么？</p>
+<p>是日式 AVG 互动视觉小说？还是 Telltale Games 旗下的那些章节互动游戏？</p>
+<p>实际上，在上世纪七八十年代， <strong>文字冒险游戏</strong> 可是实打实的 <strong>只有文字</strong> 的冒险游戏。由于计算机的机能限制，彼时的文字冒险游戏只能通过文字的输入输出来构建游戏的各种情节，这也让玩家的想象成为了 <strong>文字冒险游戏</strong> 中必不可少的一环。</p>
+<p><img src="https://i.loli.net/2019/12/28/y6pWmgBj8k5lHLC.png" alt="Zork"></p>
+<center><small>Zork - 史上最早的文字冒险游戏之一</small></center>
+
+<p>紧张刺激的情节、黑底白字或黑底绿字的屏幕、作为玩家输入指令的简单英文句子，这便是当时的 <strong>文字冒险游戏</strong> 所拥有的全部要素了。  </p>
+<p>后来，人们在这类游戏的基础上创造出了 <strong>MUD</strong> （<strong>Multi-User Dungeon</strong>，多用户地牢）。<strong>MUD</strong> 很好地传承了 <strong>文字冒险游戏</strong> 的精髓并将之发扬光大，加入了 <strong>多人游戏</strong>。时至今日，作为游戏界的活化石、网游的开山鼻祖的 <strong>MUD</strong>，依然繁荣着。<strong>1990 年</strong> 开服的 <strong>Batmud</strong> 如今仍在运营，庞大的玩家群体中不仅有许多玩了数十年的死忠玩家，更是每隔一段时间就有不断加入的新鲜血液。</p>
+<p><img src="https://i.loli.net/2019/12/28/Ob4isLWdR1UAIGJ.png" alt="Batmud"></p>
+<center><small>Batmud</small></center>
+
+<p>我们可以看到 <strong>文字冒险游戏</strong> 如今魅力丝毫不减，依然葆有当年的激情与活力。技术更迭日新月异，我想 <strong>文字冒险游戏</strong> 也许会在当下获得新生。</p>
+<h3 id="第二章-AI-Dungeon-2"><a href="#第二章-AI-Dungeon-2" class="headerlink" title="第二章  AI Dungeon 2"></a>第二章  AI Dungeon 2</h3><h4 id="第一节-简介"><a href="#第一节-简介" class="headerlink" title="第一节 简介"></a>第一节 简介</h4><p>近日，这款名为 <strong>AIDungeon 2</strong> 的游戏，让 <strong>文字冒险游戏</strong> 这个词再度回到了人们的视野中。</p>
+<p>据其官方文档描述，它是世界上第一款真正意义上 <strong>纯 AI</strong> 生成的文字冒险游戏。<strong>AIDungeon 2</strong> 使用了 <strong>GPT-2</strong> （训练参数多达 <strong>15亿</strong>）这款文本生成模型作为游戏的核心；而得益于 <strong>GPT-2</strong> 模型的强悍，<strong>AIDungeon 2</strong> 将拥有近乎无限的创造力。</p>
+<p>也就是说，通过这款 <strong>AIDungeon 2</strong> ，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 <em>Everything is in my hands</em> 。</p>
+<p>目前 <strong>AIDungeon 2</strong> 已作为一个开源项目在 <a href="https://github.com/AIDungeon/AIDungeon" target="_blank" rel="noopener">Github</a> 上发布，其开发团队同时也开通了 <a href="https://www.patreon.com/AIDungeon" target="_blank" rel="noopener">Patreon</a> 账号以获取捐助。</p>
+<p>本文接下来的内容将详细介绍如何游玩这款真正意义上的 <strong>全自由文字冒险游戏</strong>。</p>
+<h4 id="第二节-Google-Colaboratory-的配置"><a href="#第二节-Google-Colaboratory-的配置" class="headerlink" title="第二节 Google Colaboratory 的配置"></a>第二节 Google Colaboratory 的配置</h4><p>考虑到游玩 <strong>AIDungeon 2</strong> 的高负载（官方建议使用具有 <strong>12GB+显存</strong> 的 NVIDIA 显卡来进行硬件加速，否则每回合都会需要数分钟的时间来计算），因此我们另寻别路——云计算。</p>
+<p><img src="https://i.loli.net/2019/12/28/5B1nMzEdGr2XCAy.png" alt="Colaboratory"></p>
+<center><small>Google Colaboratory</small></center>
+
+<p><a href="https://colab.research.google.com/" target="_blank" rel="noopener"><strong>Google Colaboratory</strong></a> 是一个 <strong>完全免费</strong> 的 <strong>Jupyter 笔记本</strong> 环境，不需要进行任何设置就可以使用，并且完全在云端运行。每个 <strong>Colab</strong> 笔记本都可以免费配置 <strong>Google TPU</strong> 或 <strong>NVIDIA Tesla T4 GPU</strong> 来进行硬件加速，同时配备了最多可达 <strong>25GB RAM</strong> 和 <strong>68GB</strong> 磁盘存储免费供用户使用。</p>
+<p><img src="https://i.loli.net/2019/12/28/LPXWKlfsGg2zn1R.png" alt="Compute Engine"></p>
+<center><small>Colab 强大的计算资源</small></center>
+
+<p>Google 提供的这项强劲的云计算服务刚好可以满足我们游玩 <strong>AIDungeon 2</strong> 的需要，因此我们首先从配置 <strong>Colab</strong> 笔记本做起。</p>
+<p>使用 <strong>Google Colaboratory</strong> 首先需要有一个 Google 账户，并启用 <strong>Google Drive</strong>。在准备完毕后，打开上文中的链接即可连接到 <strong>Google Colaboratory</strong>。单击 <strong>新建 PYTHON 3 记事本</strong> 一项即可创建一个新的 <strong>Colab</strong> 笔记本。</p>
+<p><img src="https://i.loli.net/2019/12/28/uzLjEIrONGqsPmn.png" alt="New"></p>
+<center><small>创建新的 Colab 笔记本</small></center>
+
+<p>在创建了一个 <strong>Colab</strong> 笔记本后，我们需要启用笔记本的 GPU 硬件加速。为此，单击 <strong>修改</strong> - <strong>笔记本设置</strong>，将硬件加速器切换为 GPU 并保存。</p>
+<p><img src="https://i.loli.net/2019/12/28/Eqk8KPg6NFsTLuB.png" alt="GPU"></p>
+<center><small>切换至 GPU 硬件加速器</small></center>
+
+<p>按下 Ctrl+S 保存笔记本至 Google 账户所关联的 <strong>Google Drive</strong>，<strong>Colab</strong> 笔记本的配置至此完成。</p>
+<h4 id="第三节-AI-Dungeon-2-安装"><a href="#第三节-AI-Dungeon-2-安装" class="headerlink" title="第三节 AI Dungeon 2 安装"></a>第三节 AI Dungeon 2 安装</h4><p>打开 <strong>AI Dungeon 2</strong> 官方提供的<a href="https://colab.research.google.com/github/nickwalton/AIDungeon/blob/master/AIDungeon_2.ipynb" target="_blank" rel="noopener">运行说明</a>，将 Main Game 部分的三个代码块及 Utilities 的最后一个代码块拷贝至刚刚新建的 <strong>Colab</strong> 笔记本。</p>
+<p><img src="https://i.loli.net/2019/12/28/dZ53A2GxJ4pODia.png" alt="Code Blocks"></p>
+<center><small>AI Dungeon 2 配置代码块</small></center>
+
+<p>运行 <strong>Install</strong> 代码块，<strong>Colab</strong> 会自动连接到后端计算引擎并开始 <strong>AI Dungeon 2</strong> 的安装。在显示 <em>Installation Complete</em> 后，下一步运行 <strong>Download model from torrent</strong> 代码块，等待 <strong>GPT-2</strong> 的预训练模型下载完毕。</p>
+<p><img src="https://i.loli.net/2019/12/28/7RhSDQoKlWciM3J.png" alt="Installation Complete"></p>
+<center><small>本体及预训练模型下载完毕</small></center>
+
+<p>随后运行 <strong>OOM Fix</strong> 代码块，等待内存溢出错误提示。提示弹出后，选择提升可用 RAM。</p>
+<p><img src="https://i.loli.net/2019/12/29/WPIUqb8eFh7QC4D.png" alt="image.png"></p>
+<p>在一切配置完成后即可运行 <strong>Play</strong> 代码块开始运行游戏。</p>
+<p><img src="https://i.loli.net/2019/12/28/ZeHJAVc3RSznId9.png" alt="Play"></p>
+<center><small>游戏启动时的说明文字</small></center>
+
+<h3 id="第三章-游玩-AI-Dungeon-2"><a href="#第三章-游玩-AI-Dungeon-2" class="headerlink" title="第三章  游玩 AI Dungeon 2"></a>第三章  游玩 AI Dungeon 2</h3><p>选择新游戏后，我们可以选择是否使用一个随机故事作为开头，当然也可以自定义故事背景。<strong>AI Dungeon 2</strong> 一共提供了4种预设故事背景（幻想（魔法/中世纪）、悬疑、后启示录、僵尸），同时还支持玩家自己输入故事开头来生成故事。</p>
+<p>以下是我的一场游戏的摘录：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">You are Max, a soldier  trying to survive in a world filled with infected zombies</span><br><span class="line"> everywhere. You have a automatic rifle and a grenade. Your unit lost a lot of</span><br><span class="line"> men when the infection broke, but you&apos;ve managed to keep the small town you&apos;re</span><br><span class="line"> stationed near safe for now. You look over the town and think about your next</span><br><span class="line"> move.</span><br><span class="line"></span><br><span class="line">The town is full of people. There&apos;s even a school nearby</span><br><span class="line">&gt; get some food and water</span><br><span class="line"></span><br><span class="line">You quickly run out of the house and head towards the nearest building that has</span><br><span class="line"> power. You find a generator and plug it into the wall. It lights up and soon</span><br><span class="line"> you see a truck pulling up outside. A man gets out and walks over to you. He</span><br><span class="line"> looks like he&apos;s been through ****</span><br><span class="line">&gt; ask who he is</span><br><span class="line"></span><br><span class="line">&quot;Hey! I&apos;m John!&quot; The man says. &quot;I was sent here by my commanding officer to help</span><br><span class="line"> you&quot;.</span><br><span class="line">&gt; &quot;what you can do?&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;Well, I can give you some supplies and let you stay for free, but if you want</span><br><span class="line"> to live, you&apos;re going to need to join us&quot;.</span><br><span class="line"></span><br><span class="line">&gt; &quot;So what should I do?&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;Well, we don&apos;t really know yet. We&apos;ve got a lot of people coming in from all</span><br><span class="line"> over the country. Some of them will be armed, some won&apos;t. If you want to stay</span><br><span class="line"> alive, you&apos;ll probably have to join us&quot;.</span><br><span class="line"></span><br><span class="line">&gt; &quot;OK&quot;</span><br><span class="line"></span><br><span class="line"> and walk back inside the house. You hear more trucks pull up outside. You wait</span><br><span class="line"> until they&apos;re gone then go back out.</span><br><span class="line">Now there are about five other buildings around you. They look like they&apos;re all</span><br><span class="line"> abandoned now</span><br><span class="line">&gt; check buildings</span><br><span class="line"></span><br><span class="line">You head down one of the hallways and find a door at the end. You open it and</span><br><span class="line"> find a storage room with several shelves full of canned goods and bottled water.</span><br><span class="line"> There&apos;s also a fridge on the right side of the room. You grab everything you</span><br><span class="line"> can carry and head back out</span><br><span class="line">&gt; find John</span><br><span class="line"></span><br><span class="line">You enter the storage room and find John sitting at a table looking at his phone.</span><br><span class="line"> He doesn&apos;t seem surprised to see you.</span><br><span class="line">&gt; &quot;I want to join you&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Yeah? Well how much stuff do you have?&quot;</span><br><span class="line">&gt; &quot;A lot of canned goods and bottled water&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Oh yeah, those things are good too. How much money do you have?&quot;</span><br><span class="line">&gt; &quot;about 1000$&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Great, well I guess I&apos;ll meet you in a few hours&quot;.He turns off his</span><br><span class="line"> phone and leaves. You close the door and sit down at your desk to think about</span><br><span class="line"> what to do next.</span><br></pre></td></tr></table></figure></p>
+<p>文中 &gt; 号后的内容均为我给出的输入，生成的故事也基本上流利自然。</p>
+<h3 id="第四章-尾言"><a href="#第四章-尾言" class="headerlink" title="第四章  尾言"></a>第四章  尾言</h3><p>作为一款 <strong>文字冒险游戏</strong>，<strong>AI Dungeon 2</strong> 划时代意义地开启了 <strong>AI 游戏</strong> 的大门。——毫无疑问，我们已经步入了一个崭新的游戏时代。游戏的未来，也许就是在 <strong>AI</strong> 上。</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Games</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anime 追番列表</title>
+    <url>/posts/dabac19c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Anime-追番列表"><a href="#Anime-追番列表" class="headerlink" title="Anime 追番列表"></a>Anime 追番列表</h1><p>本追番列表第一部分从<strong>2018年7月</strong>开始记录，并在第二部分包含<strong>2018年7月以前</strong>的<strong>部分</strong>追番记录。其中<font color="#e53935"><strong>红色加粗</strong></font>部分为笔者强烈推荐的动画。</p>
+<a id="more"></a>
+<p>以下为<strong>2018年7月开始</strong>的追番记录。</p>
+<ul>
+<li style="list-style: none"><input type="checkbox"> Lovelive! Superstar!!</li>
+<li style="list-style: none"><input type="checkbox"> 白沙的水族馆</li>
+<li style="list-style: none"><input type="checkbox"> 我们的重制人生</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>赛马娘 Pretty Derby 第二季</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>赛马娘 Pretty Derby</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>86 -不存在的战区-</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>碧蓝之海</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>ISLAND</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>紫罗兰永恒花园 外传 - 永远与自动手记人偶</strong></font></li>
+<li style="list-style: none"><input type="checkbox"> <font color="#e53935"><strong>JOJO的奇幻冒险 不灭钻石</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> 邻家索菲</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>JOJO的奇幻冒险 星尘斗士（下）</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> 幼女战记 剧场版</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>幼女战记</strong></font></li>
+<li style="list-style: none"><input type="checkbox"> NEKOPARA TV版</li>
+<li style="list-style: none"><input type="checkbox"> 我，不是说了能力要平均值么！ </li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>可塑性记忆</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>末日时在做什么？有没有空？可以来拯救吗？</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> Fate/kaleid liner 魔法少女☆伊莉雅 Prisma☆Phantasm</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>JOJO的奇幻冒险 星尘斗士（上）</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>JOJO的奇幻冒险 战斗潮流</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>JOJO的奇幻冒险 幻影之血</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> 调教咖啡厅</li>
+<li style="list-style: none"><input type="checkbox" checked> 街角魔族</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>No Game No Life 游戏人生 剧场版 【四周目·国配】</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> 天使降临到我身边</li>
+<li style="list-style: none"><input type="checkbox" checked> 猫咪日常</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>No Game No Life 游戏人生 剧场版 【三周目】</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> 超次元游戏：海王星</li>
+<li style="list-style: none"><input type="checkbox" checked> 龙王的工作</li>
+<li style="list-style: none"><input type="checkbox" checked> 搞姬日常【三周目】</li>
+<li style="list-style: none"><input type="checkbox" checked> NEKOPARA OVA Extra</li>
+<li style="list-style: none"><input type="checkbox"> 工作细胞</li>
+<li style="list-style: none"><input type="checkbox" checked> 珈百璃的堕落</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>No Game No Life 游戏人生 剧场版 【二周目】</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>紫罗兰永恒花园</strong></font></li>
+</ul>
+<p>以下为<strong>2018年7月以前</strong>的<strong>部分</strong>追番记录。</p>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> No Game No Life 游戏人生</li>
+<li style="list-style: none"><input type="checkbox" checked> No Game No Life 游戏人生 剧场版</li>
+<li style="list-style: none"><input type="checkbox" checked> 干物妹！小埋 第二季</li>
+<li style="list-style: none"><input type="checkbox" checked> 干物妹！小埋 第一季</li>
+<li style="list-style: none"><input type="checkbox" checked> NEKOPARA OVA</li>
+<li style="list-style: none"><input type="checkbox" checked> 独占我的英雄</li>
+<li style="list-style: none"><input type="checkbox" checked> Fate Zero 第一季</li>
+<li style="list-style: none"><input type="checkbox" checked> Fate Zero 第二季</li>
+<li style="list-style: none"><input type="checkbox" checked> Fate Stay Night 第一季</li>
+<li style="list-style: none"><input type="checkbox"> Fate Stay Night 第二季 （中途停了orz）</li>
+<li style="list-style: none"><input type="checkbox"> Fate Apocrypha （同上）</li>
+<li style="list-style: none"><input type="checkbox" checked> Needless</li>
+<li style="list-style: none"><input type="checkbox" checked> 魔法少女伊莉雅 第一季</li>
+<li style="list-style: none"><input type="checkbox" checked> 魔法少女伊莉雅 第二季</li>
+<li style="list-style: none"><input type="checkbox" checked> 魔法少女伊莉雅 第三季</li>
+<li style="list-style: none"><input type="checkbox" checked> 魔法少女伊莉雅 第四季</li>
+<li style="list-style: none"><input type="checkbox" checked> <font color="#e53935"><strong>Fate/kaleid liner 魔法少女☆伊莉雅 雪下的誓言</strong></font></li>
+<li style="list-style: none"><input type="checkbox" checked> 搞姬日常【一周目】</li>
+<li style="list-style: none"><input type="checkbox" checked> 搞姬日常【二周目】</li>
+<li style="list-style: none"><input type="checkbox" checked> 学园孤岛</li>
+<li style="list-style: none"><input type="checkbox"> 新妹魔王的契约者 第一季（<del>奇怪的场景太多</del>）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Calc 晒机系列 2018 番外篇</title>
+    <url>/posts/6f2e6786.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-计算器类-晒机-2018"><a href="#Calc-计算器类-晒机-2018" class="headerlink" title="Calc 计算器类 晒机 - 2018"></a>Calc 计算器类 晒机 - 2018</h1><h2 id="【晒机-番外篇】【TI-Nspire-CX-CAS-对比-TI-Nspire-CM-C-CAS】"><a href="#【晒机-番外篇】【TI-Nspire-CX-CAS-对比-TI-Nspire-CM-C-CAS】" class="headerlink" title="【晒机 - 番外篇】【TI-Nspire CX CAS 对比 TI-Nspire CM-C CAS】"></a>【晒机 - 番外篇】【TI-Nspire CX CAS 对比 TI-Nspire CM-C CAS】</h2><p>本篇评测由 <strong>MaxAlex</strong> 编写，所有文字均为原创，所有图片均为真实拍摄，最初发表于 <strong>MaxAlex 的 QQ 空间</strong> 。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6bb57f.jpg" alt="0x01.jpg"><br>【图0x01】<br></div>
+
+<a id="more"></a>
+<h3 id="第一章-外观及硬件配置"><a href="#第一章-外观及硬件配置" class="headerlink" title="第一章  外观及硬件配置"></a>第一章  外观及硬件配置</h3><p>  从外观上看，<strong>TI-Nspire CX CAS</strong> 与 <strong>TI-Nspire CM-C CAS</strong> 还是有一定区别的。<strong>TI-Nspire CX CAS</strong> 机身比 <strong>TI-Nspire CM-C CAS</strong> 略大，底部 <strong>Texas Instruments</strong> 的印刷更为显眼。相比之下，个人认为 <strong>TI-Nspire CX CAS</strong> 的蓝黑配色比起 <strong>TI-Nspire CM-C CAS</strong> 的橙白配色还是略逊一筹。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6bd9bc.jpg" alt="0x02.jpg"><br>【图0x02】<br></div>
+
+<p>  虽然键盘布局相同，但细微之处仍有差别。如 <strong>TI-Nspire CX CAS</strong> 的键盘有明确有力的反馈感，而 <strong>TI-Nspire CM-C CAS</strong> 只有下方的字母键有这种感觉。另外，<strong>TI-Nspire CM-C CAS</strong> 的键盘还专门为中国地区做了本土化改动，部分键已采用中文印刷，但中文字体却没有 <strong>TI-Nspire CX CAS</strong> 的英文字体观感舒适。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6c0b81.jpg" alt="0x06.jpg"><br>【图0x03】<br></div>
+
+<p>  <strong>TI-Nspire CX CAS</strong> 比起 <strong>TI-Nspire CM-C CAS</strong> 有着许多优势，这也是 <strong>TI-Nspire CX CAS</strong> 在价格上要贵一倍多的原因。</p>
+<p>  外壳上，<strong>TI-Nspire CX CAS</strong> 拥有人性化设计的滑动式保护壳，而 <strong>TI-Nspire CM-C CAS</strong> 拥有的卡扣式保护壳却不那么容易打开。</p>
+<p>  性能与硬件方面而言，<strong>TI-Nspire CX CAS</strong> 拥有 <strong>1080mAh大容量锂电池</strong> ，而 <strong>TI-Nspire CM-C CAS</strong> 锂电池只有800mAh；<strong>TI-Nspire CX CAS</strong> 相比 <strong>TI-Nspire CM-C CAS</strong> 拥有 <strong>额外的32MB运行内存</strong>，即<strong>64MB</strong>；<strong>TI-Nspire CX CAS</strong> 也拥有特殊的 <strong>TI-Nspire网卡接口</strong> 以便现代化课堂使用，虽然个人认为在中国无法广泛使用；<strong>TI-Nspire CX CAS</strong> 还拥有 <strong>单独的25个GPIO引脚</strong> 可以使用，这极大地提升了其扩展性。</p>
+<p>  此外，在系统支持方面 <strong>TI-Nspire CX CAS</strong> 要优于 <strong>TI-Nspire CM-C CAS</strong> 许多，TI官网上会第一时间发布 <strong>TI-Nspire CX CAS</strong> 的最新操作系统，而 <strong>TI-Nspire CM-C CAS</strong> 已经被停止支持。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac751f65.jpg" alt="0x07.jpg"><br>【图0x04】<br></div>
+
+<p>  综上所述，若是考虑经济问题则可以购置一台 <strong>TI-Nspire CM-C CAS</strong> 以便日常计算使用，当然也可以进行研究等；若是有足够的经费的话，在下还是推荐购买 <strong>TI-Nspire CX CAS</strong> ，其功能强大性能卓越，用于研究及计算是相当不错的选择。</p>
+]]></content>
+      <categories>
+        <category>计算器类</category>
+      </categories>
+      <tags>
+        <tag>Calculator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Calc 程序简介 nBrainfuck</title>
+    <url>/posts/c6b5a7fb.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-程序简介-nBrainfuck"><a href="#Calc-程序简介-nBrainfuck" class="headerlink" title="Calc 程序简介 nBrainfuck"></a>Calc 程序简介 nBrainfuck</h1><h2 id="TI-Nspire-机上-Brainfuck-解释器！"><a href="#TI-Nspire-机上-Brainfuck-解释器！" class="headerlink" title="TI-Nspire 机上 Brainfuck 解释器！"></a>TI-Nspire 机上 Brainfuck 解释器！</h2><p>本文由 <strong>MaxAlex</strong> 编写，所有文字均为原创。</p>
+<div style="text-align:center;"><br><img src="https://i.loli.net/2020/06/20/FwHXJCbRxf1etjk.png" alt="Brainfuck"><br><small>图片来自 <a href="https://www.codingame.com/playgrounds/50426/getting-started-with-brainfuck/welcome" target="_blank" rel="noopener">Codingame</a></small><br></div>
+
+<a id="more"></a>
+<h3 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章  概述"></a>第一章  概述</h3><blockquote>
+<p><strong>Brainfuck</strong>，是一种由 Urban Müller 在1993年创造的极小化程序语言。该语言只包含八个简单的命令和一个指令指针。</p>
+<p>虽然它是图灵完备的，但它的目的并非是为了实际使用，而是为了给程序员们制造挑战与娱乐。只需要把要完成的命令分解成微小的步骤，你就能用这门语言来编写程序。</p>
+<p>这种语言基于一个简单的机器模型，除了指令，这个机器还包括：一个以字节为单位、被初始化为零的数组、一个指向该数组的指针（初始时指向数组的第一个字节）、以及用于输入输出的两个字节流。</p>
+<p>下面是这八种状态的描述，其中每个状态由一个字符标识：</p>
+<p>>    指针加一<br>&lt;    指针减一<br>+    指针指向的字节的值加一<br>-    指针指向的字节的值减一<br>.    输出指针指向的单元内容（ASCII码）<br>,    输入内容到指针指向的单元（ASCII码）<br>[    如果指针指向的单元值为零，向后跳转到对应的 ] 指令的次一指令处<br>]    如果指针指向的单元值不为零，向前跳转到对应的 [ 指令的次一指令处  </p>
+<div style="text-align:right;">—— <a href="https://zh.wikipedia.org/wiki/Brainfuck" target="_blank" rel="noopener">维基百科，自由的百科全书</a></div>
+</blockquote>
+<p>近日笔者了解到了一些奇奇怪怪的 <a href="https://en.wikipedia.org/wiki/Esoteric_programming_language" target="_blank" rel="noopener">Esolang</a>，其中的 Brainfuck 语言通过模拟单带图灵机来工作。考虑到这门语言简洁有趣，笔者便产生了将其移植到 TI-Nspire 计算器平台上的想法。</p>
+<h3 id="第二章-已有的轮子"><a href="#第二章-已有的轮子" class="headerlink" title="第二章  已有的轮子"></a>第二章  已有的轮子</h3><p>说干就干，笔者在 <a href="https://github.com/pablojorge/brainfuck" target="_blank" rel="noopener">Github</a> 上找到了一个 Brainfuck 的综合仓库，其中包含了一个用 Lua 语言写好的 Brianfuck 解释器。秉着“不重复造轮子”的思想（<del>说到底还是条懒狗</del>），笔者决定在这个现有的解释器的源码上进行修改，使其能够在 TI-Nspire 平台上正常运行。由于德州仪器官方向 TI-Nspire 用户直接提供了 TI-Lua，因此移植起来并不困难。</p>
+<p>下面先贴出原版解释器的源码：</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="comment">--  Copyright (c) 2016 Francois Perrad</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> f = <span class="built_in">arg</span>[<span class="number">1</span>] <span class="keyword">and</span> <span class="built_in">assert</span>(<span class="built_in">io</span>.<span class="built_in">open</span>(<span class="built_in">arg</span>[<span class="number">1</span>], <span class="string">'r'</span>)) <span class="keyword">or</span> <span class="built_in">io</span>.<span class="built_in">stdin</span></span><br><span class="line"><span class="keyword">local</span> src = <span class="built_in">string</span>.<span class="built_in">gsub</span>(f:<span class="built_in">read</span><span class="string">'*a'</span>, <span class="string">'[^&gt;&lt;+%-%.,%[%]]'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="keyword">local</span> <span class="built_in">len</span> = <span class="built_in">string</span>.<span class="built_in">len</span>(src)</span><br><span class="line">f:<span class="built_in">close</span>()</span><br><span class="line"><span class="built_in">io</span>.<span class="built_in">stdout</span>:setvbuf<span class="string">'no'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> stack = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> jump = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> code = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> pc = <span class="number">1</span>, <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = src:<span class="built_in">sub</span>(pc, pc)</span><br><span class="line">    code[pc] = opcode</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        stack[#stack+<span class="number">1</span>] = pc</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">local</span> target = stack[#stack]</span><br><span class="line">        stack[#stack] = <span class="literal">nil</span></span><br><span class="line">        jump[target] = pc</span><br><span class="line">        jump[pc] = target</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">src = <span class="literal">nil</span></span><br><span class="line">stack = <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> buffer = <span class="built_in">setmetatable</span>(&#123;&#125;, &#123;</span><br><span class="line">    <span class="built_in">__index</span> = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>    <span class="comment">-- default value</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> ptr = <span class="number">1</span></span><br><span class="line"><span class="keyword">local</span> pc = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> pc &lt;= <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = code[pc]</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'&gt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'&lt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'+'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'-'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">io</span>.<span class="built_in">stdout</span>:<span class="built_in">write</span>(<span class="built_in">string</span>.<span class="built_in">char</span>(buffer[ptr]))</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">','</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = <span class="built_in">string</span>.<span class="built_in">byte</span>(<span class="built_in">io</span>.<span class="built_in">stdin</span>:<span class="built_in">read</span>(<span class="number">1</span>) <span class="keyword">or</span> <span class="string">'\0'</span>)</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] == <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] ~= <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    pc = pc + <span class="number">1</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>我们不妨先来分析一下这段代码。TI-Lua 中并没有 Lua 的标准输入输出库（io），因此我们不对输入输出的有关行作过多说明。</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> f = <span class="built_in">arg</span>[<span class="number">1</span>] <span class="keyword">and</span> <span class="built_in">assert</span>(<span class="built_in">io</span>.<span class="built_in">open</span>(<span class="built_in">arg</span>[<span class="number">1</span>], <span class="string">'r'</span>)) <span class="keyword">or</span> <span class="built_in">io</span>.<span class="built_in">stdin</span></span><br><span class="line"><span class="keyword">local</span> src = <span class="built_in">string</span>.<span class="built_in">gsub</span>(f:<span class="built_in">read</span><span class="string">'*a'</span>, <span class="string">'[^&gt;&lt;+%-%.,%[%]]'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="keyword">local</span> <span class="built_in">len</span> = <span class="built_in">string</span>.<span class="built_in">len</span>(src)</span><br></pre></td></tr></table></figure>
+<p>我们先来看脚本的第一部分，这里一共声明了三个变量：<br>f 为代表 Brainfuck 源码的字符串；src 则是对 f 去除非 Brainfuck 操作符后的源码；len 代表源码长度。</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> stack = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> jump = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> code = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> pc = <span class="number">1</span>, <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = src:<span class="built_in">sub</span>(pc, pc)</span><br><span class="line">    code[pc] = opcode</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        stack[#stack+<span class="number">1</span>] = pc</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">local</span> target = stack[#stack]</span><br><span class="line">        stack[#stack] = <span class="literal">nil</span></span><br><span class="line">        jump[target] = pc</span><br><span class="line">        jump[pc] = target</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">src = <span class="literal">nil</span></span><br><span class="line">stack = <span class="literal">nil</span></span><br></pre></td></tr></table></figure>
+<p>在这一部分中，解释器将会对处理后的字符串 src 进行处理，分离出单个操作符并存储到 code 数组中。此外，解释器也记录了每个配套的 [ 和 ] 的跳转位置，便于接下来执行时进行跳转。stack 是为了处理嵌套的 [ 和 ] 而设置的变量。</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">local</span> buffer = <span class="built_in">setmetatable</span>(&#123;&#125;, &#123;</span><br><span class="line">    <span class="built_in">__index</span> = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>    <span class="comment">-- default value</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> ptr = <span class="number">1</span></span><br><span class="line"><span class="keyword">local</span> pc = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> pc &lt;= <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = code[pc]</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'&gt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'&lt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'+'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'-'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">io</span>.<span class="built_in">stdout</span>:<span class="built_in">write</span>(<span class="built_in">string</span>.<span class="built_in">char</span>(buffer[ptr]))</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">','</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = <span class="built_in">string</span>.<span class="built_in">byte</span>(<span class="built_in">io</span>.<span class="built_in">stdin</span>:<span class="built_in">read</span>(<span class="number">1</span>) <span class="keyword">or</span> <span class="string">'\0'</span>)</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] == <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] ~= <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    pc = pc + <span class="number">1</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>这一部分是解释器的最后一部分，也是最为核心的一部分。我们首先声明了一个名为 buffer 的表，并通过元表将其初始化为0（可以理解为把表全部填充为0），这便是图灵机中的那条无限长的纸带，而纸带上存储的就是数据；ptr 为纸带的读写头，它存储了当前读写头所处的位置；pc 则是存储 code 数组中当前所执行到的位置，便于在遇到 [ 和 ] 时进行跳转。在 while 循环中，我们逐个读取 code 数组中的各个操作符，并用 if..elseif 结构来处理它们。</p>
+<h3 id="第三章-正式实践"><a href="#第三章-正式实践" class="headerlink" title="第三章  正式实践"></a>第三章  正式实践</h3><p>上面的这段代码并不能直接复制后在 TI-Nspire 平台运行，因此我们要对其进行一定的修改。为保证最大的兼容性，笔者决定采用 TI-Lua API 1.0 来编写 nBrainfuck。</p>
+<p>我们先把原版解释器进行封装，放入 Brainfuck 函数中：</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">brainfuck</span><span class="params">(input)</span></span></span><br><span class="line">    <span class="keyword">local</span> src = <span class="built_in">string</span>.<span class="built_in">gsub</span>(<span class="built_in">input</span>, <span class="string">'[^&gt;&lt;+%-%.,%[%]]'</span>, <span class="string">''</span>)</span><br><span class="line">    <span class="keyword">local</span> <span class="built_in">len</span> = <span class="built_in">string</span>.<span class="built_in">len</span>(src)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span> == <span class="number">0</span> <span class="keyword">then</span> <span class="keyword">return</span> <span class="number">-1</span> <span class="keyword">end</span> <span class="comment">-- 没有可执行的 Brianfuck 代码</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">local</span> stack = &#123;&#125;</span><br><span class="line">    <span class="keyword">local</span> jump = &#123;&#125;</span><br><span class="line">    <span class="keyword">local</span> code = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> pc = <span class="number">1</span>, <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">        <span class="keyword">local</span> opcode = src:<span class="built_in">sub</span>(pc, pc)</span><br><span class="line">        code[pc] = opcode</span><br><span class="line">        <span class="keyword">if</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">            stack[#stack+<span class="number">1</span>] = pc</span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">local</span> target = stack[#stack]</span><br><span class="line">            stack[#stack] = <span class="literal">nil</span></span><br><span class="line">            jump[target] = pc</span><br><span class="line">            jump[pc] = target</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    src = <span class="literal">nil</span></span><br><span class="line">    stack = <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">local</span> buffer = <span class="built_in">setmetatable</span>(&#123;&#125;, &#123;</span><br><span class="line">        <span class="built_in">__index</span> = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">local</span> ptr = <span class="number">1</span></span><br><span class="line">    <span class="keyword">local</span> pc = <span class="number">1</span></span><br><span class="line">    <span class="keyword">local</span> bfOutput = <span class="string">""</span></span><br><span class="line">    <span class="keyword">while</span> pc &lt;= <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">        <span class="keyword">local</span> opcode = code[pc]</span><br><span class="line">        <span class="keyword">if</span> opcode == <span class="string">'&gt;'</span> <span class="keyword">then</span></span><br><span class="line">            ptr = ptr + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'&lt;'</span> <span class="keyword">then</span></span><br><span class="line">            ptr = ptr - <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'+'</span> <span class="keyword">then</span></span><br><span class="line">            buffer[ptr] = buffer[ptr] + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'-'</span> <span class="keyword">then</span></span><br><span class="line">            buffer[ptr] = buffer[ptr] - <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">local</span> buf = <span class="built_in">string</span>.<span class="built_in">char</span>(buffer[ptr])</span><br><span class="line">            bfOutput = bfOutput..buf</span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">','</span> <span class="keyword">then</span></span><br><span class="line">            buffer[ptr] = coroutine.<span class="built_in">yield</span>(<span class="number">1</span>,bfOutput)</span><br><span class="line">            bfOutput = <span class="string">""</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">if</span> buffer[ptr] == <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">                pc = jump[pc]</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">if</span> buffer[ptr] ~= <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">                pc = jump[pc]</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        pc = pc + <span class="number">1</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>,bfOutput</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>在这里，我们声明了一个名为 bfOutput 的变量用于存储 Brainfuck 程序的输出（因为 TI-Lua 仅允许在 on.paint(gc) 中进行绘制）。在遇到 . 标识符时将输出的字符连接至 bfOutput，最后在程序结束后将其返回即可。, 标识符（即输入）的处理相对复杂，我们将在下文中谈到。</p>
+<p>由于 TI-Lua 是一门事件驱动语言，所以我们还要引入处理事件的函数：</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.activate</span><span class="params">()</span></span></span><br><span class="line">    <span class="comment">-- 执行剪贴板中的 Brainfuck 代码</span></span><br><span class="line">    co = coroutine.<span class="built_in">create</span>(<span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">       <span class="keyword">return</span> brainfuck(clipboard.getText())</span><br><span class="line">    <span class="keyword">end</span>)</span><br><span class="line">    <span class="built_in">status</span>, res, <span class="built_in">output</span> = coroutine.<span class="built_in">resume</span>(co)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.deactivate</span><span class="params">()</span></span></span><br><span class="line">    <span class="comment">-- reset output</span></span><br><span class="line">    <span class="built_in">status</span>, res, <span class="built_in">output</span> = <span class="literal">nil</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.paint</span><span class="params">(gc)</span></span></span><br><span class="line">   <span class="keyword">if</span> res == <span class="number">-1</span> <span class="keyword">then</span> <span class="comment">-- 打印错误信息</span></span><br><span class="line">       gc:setColorRGB(<span class="number">183</span>,<span class="number">28</span>,<span class="number">28</span>)</span><br><span class="line">       gc:setFont(<span class="string">"serif"</span>,<span class="string">"i"</span>,<span class="string">"9"</span>)</span><br><span class="line">       gc:drawString(gc,<span class="string">"BF Error: This is not a valid Brainfuck program."</span>,<span class="number">10</span>,<span class="number">25</span>)</span><br><span class="line">   <span class="keyword">elseif</span> (res == <span class="number">0</span> <span class="keyword">or</span> res == <span class="number">1</span>) <span class="keyword">and</span> <span class="built_in">output</span> ~= <span class="literal">nil</span> <span class="keyword">then</span> <span class="comment">-- 打印输出</span></span><br><span class="line">       gc:setColorRGB(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">       gc:setFont(<span class="string">"sansserif"</span>,<span class="string">"r"</span>,<span class="string">"11"</span>)</span><br><span class="line">       gc:drawString(<span class="built_in">output</span>,<span class="number">10</span>,<span class="number">25</span>)</span><br><span class="line">   <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.charIn</span><span class="params">(char)</span></span></span><br><span class="line">    <span class="keyword">if</span> coroutine.<span class="built_in">status</span>(co)==<span class="string">"suspended"</span> <span class="keyword">then</span> <span class="comment">-- 处理输入</span></span><br><span class="line">        <span class="keyword">local</span> st, rs, op = coroutine.<span class="built_in">resume</span>(co,<span class="built_in">string</span>.<span class="built_in">byte</span>(<span class="built_in">char</span>))</span><br><span class="line">        <span class="built_in">status</span>, res, <span class="built_in">output</span> = st, rs, <span class="built_in">output</span>..op</span><br><span class="line">        platform.window:invalidate() <span class="comment">--重绘屏幕</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>其中，我们在 on.activate 函数中运行解释器，并将用户剪贴板中的内容传入刚刚封装的 Brainfuck 函数。不过，还是由于 TI-Lua 的事件驱动特性，我们转而使用了 Lua 中的协程来处理用户的输入。协程启动后，如果遇到 , 标识符则会挂起协程并返回已有的输出。接下来等待用户按下按键，调用 on.charIn 函数，并将用户的输入传入，重启协程。</p>
+<h3 id="第四章-完成"><a href="#第四章-完成" class="headerlink" title="第四章  完成"></a>第四章  完成</h3><p>上面简要写出了笔者构建 nBrainfuck 时的思路，具体的程序可前往<a href="https://www.cncalc.org/thread-24662-1-1.html" target="_blank" rel="noopener">这里</a>下载体验。</p>
+]]></content>
+      <categories>
+        <category>计算器类</category>
+      </categories>
+      <tags>
+        <tag>Calculator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tools 好物推荐 ChromeWithAHK</title>
+    <url>/posts/f880441b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Tools-好物推荐-ChromeWithAHK"><a href="#Tools-好物推荐-ChromeWithAHK" class="headerlink" title="Tools 好物推荐 ChromeWithAHK"></a>Tools 好物推荐 ChromeWithAHK</h1><h2 id="Chrome-81-双击关闭标签页终极解决方案"><a href="#Chrome-81-双击关闭标签页终极解决方案" class="headerlink" title="Chrome 81 双击关闭标签页终极解决方案"></a>Chrome 81 双击关闭标签页终极解决方案</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<div align="center"><br><img src="https://i.loli.net/2020/05/05/K9gCUyFwlGIihYr.png" alt=""><br><center><small>Google Chrome</small></center><br></div>
+
+<a id="more"></a>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>近日更新最新版本的 Google Chrome，之前一直在使用的 Chrome++ 第三方 DLL 扩展正式失效。由于一直习惯了双击关闭标签页 + 滚轮切换标签页，因此更新后无法使用极度不适，最后通过百度 + 自己修改解决。</p>
+<h3 id="AutoHotkey"><a href="#AutoHotkey" class="headerlink" title="AutoHotkey"></a>AutoHotkey</h3><p>前往 <a href="https://www.autohotkey.com/" target="_blank" rel="noopener">AutoHotkey</a> 的官方网站下载最新版本的 AutoHotkey 并安装。</p>
+<h3 id="AHK-脚本文件"><a href="#AHK-脚本文件" class="headerlink" title="AHK 脚本文件"></a>AHK 脚本文件</h3><p>原脚本来自<a href="https://www.zhihu.com/question/31257378/answer/222351470" target="_blank" rel="noopener">知乎</a>，现做了一些修改。</p>
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line">#NoEnv</span><br><span class="line">#SingleInstance force</span><br><span class="line"></span><br><span class="line"><span class="built_in">IniRead,</span> doubleclick, settings.ini, option, doubleclick,Check</span><br><span class="line"><span class="built_in">IniRead,</span> scrolltab, settings.ini, option, scrolltab,Check</span><br><span class="line"><span class="built_in">IniRead,</span> rightclick, settings.ini, option, rightclick,Check</span><br><span class="line"></span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="built_in">menu,</span> tray, NoStandard</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用双击关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用滚轮切换标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用右键关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %doubleclick%, 启用双击关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %scrolltab%, 启用滚轮切换标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %rightclick%, 启用右键关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add <span class="comment">;分割线</span></span><br><span class="line"><span class="built_in">menu,</span> tray, add, 退出</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol">退出:</span></span><br><span class="line"><span class="keyword">ExitApp</span></span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"><span class="symbol">启用双击关闭标签页:</span></span><br><span class="line">if doubleclick&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用双击关闭标签页</span><br><span class="line">doubleclick=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用双击关闭标签页</span><br><span class="line">doubleclick=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %doubleclick%, settings.ini, option, doubleclick</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">启用滚轮切换标签页:</span></span><br><span class="line">if scrolltab&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用滚轮切换标签页</span><br><span class="line">scrolltab=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用滚轮切换标签页</span><br><span class="line">scrolltab=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %scrolltab%, settings.ini, option, scrolltab</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">启用右键关闭标签页:</span></span><br><span class="line">if rightclick&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用右键关闭标签页</span><br><span class="line">rightclick=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用右键关闭标签页</span><br><span class="line">rightclick=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %rightclick%, settings.ini, option, rightclick</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">#IfWinActive <span class="keyword">ahk_class</span> Chrome_WidgetWin_1</span><br><span class="line"><span class="symbol"> ~$WheelDown::</span></span><br><span class="line"><span class="symbol"> ~$WheelUp::</span></span><br><span class="line">   if scrolltab=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    MouseGetPos,</span>, ypos</span><br><span class="line">    If (ypos&gt;<span class="number">40</span>) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line"><span class="built_in">    IfEqual,</span><span class="built_in">A_ThisHotkey</span>,~$WheelDown, Send ^&#123;PgDn&#125;</span><br><span class="line">    Else Send ^&#123;PgUp&#125;</span><br><span class="line">EmptyMem()</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol">  ~LButton::</span></span><br><span class="line">  if doubleclick=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    WinGetPos,</span>,, w, h, <span class="literal">A</span></span><br><span class="line"><span class="built_in">    MouseGetPos,</span>xpos, ypos</span><br><span class="line"><span class="built_in">    WinGet,</span>Mom,MinMax</span><br><span class="line">    If ((ypos&gt;<span class="number">45</span>)<span class="literal">And</span>(Mom&lt;<span class="number">1</span>))<span class="literal">Or</span>((ypos&gt;<span class="number">28</span>)<span class="literal">And</span>(Mom&gt;<span class="number">0</span>)) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line">    If (<span class="built_in">A_PriorHotkey</span>=<span class="string">"~LButton"</span>) <span class="literal">and</span> (<span class="built_in">A_TimeSincePriorHotkey</span>&lt;<span class="number">200</span>)</span><br><span class="line">    <span class="comment">; 此处和知乎版本不同 ↓</span></span><br><span class="line">    send ^w</span><br><span class="line">    <span class="comment">; 此处和知乎版本不同 ↑</span></span><br><span class="line">EmptyMem()</span><br><span class="line">      &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol"> ~RButton Up::</span></span><br><span class="line"><span class="symbol">  ~RButton::</span></span><br><span class="line">     if rightclick=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    MouseGetPos,</span>xpos, ypos</span><br><span class="line"><span class="built_in">    WinGet,</span>Mom,MinMax</span><br><span class="line">    If ((ypos&gt;<span class="number">45</span>)<span class="literal">And</span>(Mom&lt;<span class="number">1</span>))<span class="literal">Or</span>((ypos&gt;<span class="number">28</span>)<span class="literal">And</span>(Mom&gt;<span class="number">0</span>)) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line">    if  GetKeyState(<span class="string">"1"</span>)</span><br><span class="line">        <span class="keyword">Return</span></span><br><span class="line"><span class="built_in">    IfEqual,</span><span class="built_in">A_ThisHotkey</span>,~RButton, Send &#123;Click Middle&#125;</span><br><span class="line">                                 Else Send &#123;Click middle&#125;</span><br><span class="line">EmptyMem()</span><br><span class="line">                                  &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line">#IfWinActive</span><br><span class="line"></span><br><span class="line">EmptyMem(PID=<span class="string">"AHK Rocks"</span>)&#123;</span><br><span class="line">    pid:=(pid=<span class="string">"AHK Rocks"</span>) ? DllCall(<span class="string">"GetCurrentProcessId"</span>) : pid</span><br><span class="line">    h:=DllCall(<span class="string">"OpenProcess"</span>, <span class="string">"UInt"</span>, <span class="number">0</span>x001F0FFF, <span class="string">"Int"</span>, <span class="number">0</span>, <span class="string">"Int"</span>, pid)</span><br><span class="line">    DllCall(<span class="string">"SetProcessWorkingSetSize"</span>, <span class="string">"UInt"</span>, h, <span class="string">"Int"</span>, -<span class="number">1</span>, <span class="string">"Int"</span>, -<span class="number">1</span>)</span><br><span class="line">    DllCall(<span class="string">"CloseHandle"</span>, <span class="string">"Int"</span>, h)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>若需托盘不显示图标，则在第一行前新建一行插入 <code>#NoTrayIcon</code> 即可，实测支持最新 Chrome 81。</p>
+<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><p>已知双击 Chrome 标题栏空处切换最大化/窗口化时也有概率触发脚本导致标签页关闭，目前解决方法是降低此时双击的频率。</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Calc 晒机系列 2019</title>
+    <url>/posts/cb471f8c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-计算器类-晒机-2019"><a href="#Calc-计算器类-晒机-2019" class="headerlink" title="Calc 计算器类 晒机 - 2019"></a>Calc 计算器类 晒机 - 2019</h1><h2 id="【晒机-进阶篇】【TI-Nspire-CM-CX-进阶玩法】"><a href="#【晒机-进阶篇】【TI-Nspire-CM-CX-进阶玩法】" class="headerlink" title="【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】"></a>【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】</h2><p>本篇引导教程由 <strong>MaxAlex</strong> 编写，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<center><img src="https://i.loli.net/2019/08/10/n2uRSfgBydvVjJ9.jpg" alt=""><br><small><strong>TI-Nspire CM-C CAS</strong> 使用 <strong>Ndless</strong> 应用显示图片和原图对比</small><br></center>
+
+<a id="more"></a>
+<h3 id="第一章-推开家门"><a href="#第一章-推开家门" class="headerlink" title="第一章  推开家门"></a>第一章  推开家门</h3><p>购得 <strong>TI-Nspire CM/CX</strong> 不久后，相信你也像我一样，渐渐开始确信自己手上的这台计算器绝非说明书上说的那么简单。毕竟，光是 <strong>128MB</strong> 之大的内置存储就足以让人觉得可疑了。  </p>
+<p>因此，这段时间里，我一直在浏览几个国内与国外的计算器论坛，也就此找到了不少关于 <strong>TI-Nspire</strong> 系列的有趣之物，现在在此将其予以记载。</p>
+<p>以下是我在<strong>去年7月</strong>一直到<strong>今年8月</strong>所主要浏览的两个计算器论坛：</p>
+<center><br><img src="https://www.cncalc.org/assets/img/logo.png" alt=""><br><a href="https://www.cncalc.org/" target="_blank" rel="noopener"><strong>Cncalc</strong> 旧站</a><br><a href="https://next.cncalc.org/" target="_blank" rel="noopener"><strong>Cncalc</strong> 新站</a><br><br><br><img src="https://tiplanet.org/forum/styles/prosilver/theme/images/tiplanet_header_logo.png" width="100"><br><a href="https://tiplanet.org/forum/portal.php" target="_blank" rel="noopener"><strong>TI-Planet</strong> 论坛</a><br><br><br></center>
+
+<p>其中 <strong>Cncalc</strong> 是全国最大最专业的函数和图形计算器论坛，也是全球最大的中文计算器论坛（<del>我便是在这里入的计算器大坑</del>）。<br>当然，更为进阶的操作需要到全球最大的 <strong>TI</strong> 计算器论坛 <strong>TI-Planet</strong> 上去查找。虽然说 <strong>TI-Planet</strong> 是英文 / 法文论坛，但配合 <strong>Chrome</strong> 的网页翻译也还凑合着看。<br>其他的主要是去 <strong>Github</strong> 上看了看一些有关项目，其中大佬 <a href="https://github.com/gameblabla" target="_blank" rel="noopener"><strong>gameblabla</strong></a> 和 <a href="https://github.com/zephray" target="_blank" rel="noopener"><strong>zephray</strong></a> 对于 <strong>TI-Nspire</strong> 系列的贡献尤为大。</p>
+<p>简略的介绍就主要到这里。<br>现在，拿上你的 <strong>TI-Nspire CM</strong> 或 <strong>TI-Nspire CX</strong> 计算器，跟我一起前往新世界吧！</p>
+<h3 id="第二章-走进庭院"><a href="#第二章-走进庭院" class="headerlink" title="第二章  走进庭院"></a>第二章  走进庭院</h3><p>就像走出家门后来到庭院一样，本章将会介绍一些 <strong>TI-Nspire</strong> 计算器入门后的进阶操作。</p>
+<h4 id="第一节-扩展库"><a href="#第一节-扩展库" class="headerlink" title="第一节 扩展库"></a>第一节 扩展库</h4><p>刚将你的 <strong>TI-Nspire</strong> 买回来的时候，不知你是否留意过文件管理器里的那个名为 <strong>MyLib</strong> 的文件夹呢？<br>当你按下你的书本键的时候，你是否注意到最后一格里标志为三本书的那一栏了呢？</p>
+<p>实际上， <strong>TI-Nspire</strong> 内置的 <strong>MyLib</strong> 文件夹便是它的扩展程序与函数库目录。<br>只要在这个文件夹里放入带有 <strong>LibPub</strong> 类型函数或程序的文档，并按下 doc 键选择刷新库后，就可以在便签本或其他文档里像使用内置函数一样调用它们。</p>
+<h5 id="附录-扩展库-App-推荐"><a href="#附录-扩展库-App-推荐" class="headerlink" title="附录 扩展库 App 推荐"></a>附录 扩展库 App 推荐</h5><p><strong>numtheory 数论扩展库</strong><br><img src="https://i.loli.net/2019/08/06/U7iRBsA2rSxVHlM.png" alt="数论.png"><br>官方出品，必属精品。<strong>TI</strong> 官方提供的扩展库，一般会<strong>自带</strong>。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>列出某数的所有因数</li>
+<li><strong>分步</strong>求最大公因数</li>
+<li><strong>分步</strong>质因数分解</li>
+<li>列出某数的所有质因数</li>
+<li>求大于等于 / 小于等于 n 的首个质数</li>
+<li>列出 a 和 b 之间的所有质数</li>
+<li><strong>列出满足给定表达式的所有数</strong></li>
+<li>…</li>
+</ul>
+<p><strong>linalgcas 线性代数扩展库</strong><br><img src="https://i.loli.net/2019/08/06/7fnx2N5OevIZzED.png" alt="线性代数.png"><br>仍然是官方出品，必属精品。和 <strong>numtheory</strong> 一样会<strong>自带</strong>。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li><strong>分步</strong>行阶梯矩阵简化</li>
+<li><strong>分步</strong>求逆矩阵</li>
+<li>求矩阵零空间</li>
+<li>…</li>
+</ul>
+<p><strong>conics 圆锥曲线扩展库</strong><br><img src="https://i.loli.net/2019/08/06/FZiMkS78Ble4VfC.png" alt="圆锥曲线.png"><br>第三个 <strong>TI</strong> 出品的数学扩展库。也一样会<strong>自带</strong>。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>绘制圆锥曲线图像</li>
+<li>分析圆锥曲线方程</li>
+<li>…</li>
+</ul>
+<p><a href="https://www.cncalc.org/thread-6481-1-1.html" target="_blank" rel="noopener"><strong>Chemistry Lib 化学扩展库</strong></a><br><img src="https://i.loli.net/2019/08/06/4hNqvHJjb5l6sZT.png" alt="化学.png"><br>功能强大的第三方化学扩展库，将极大地便利日常解题。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>配平化学方程式 / 离子方程式</li>
+<li>计算物质相对分子质量</li>
+<li>显示元素英文名称及原子序数</li>
+<li>…</li>
+</ul>
+<p><a href="https://www.cncalc.org/thread-6481-1-1.html" target="_blank" rel="noopener"><strong>SINE 3 Plus 解三角形扩展库</strong></a><br><img src="https://i.loli.net/2019/08/06/NRSQl3F4UdysPIp.png" alt="解三角形.png"><br>国人开发的解三角形的扩展库。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>解三角形</li>
+<li>绘制三角形外接圆 / 内切圆</li>
+<li>…</li>
+</ul>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=2224" target="_blank" rel="noopener"><strong>SD 求导扩展库</strong></a><br><img src="https://i.loli.net/2019/08/06/raFeR98qybLmPYp.png" alt="求导.png"><br>强大的微分分步求解工具，所提供的功能为：</p>
+<ul>
+<li><strong>分步</strong>求导</li>
+</ul>
+<h4 id="第二节-TI-BASIC-与-Lua"><a href="#第二节-TI-BASIC-与-Lua" class="headerlink" title="第二节 TI-BASIC 与 Lua"></a>第二节 TI-BASIC 与 Lua</h4><p><strong>TI</strong> 官方给用户提供了 <strong>TI-BASIC</strong> 和 <strong>Lua</strong> 两种编程语言，根据它们可以编写出许许多多有趣的应用。<br>有关 <strong>TI-BASIC</strong> 和 <strong>Lua</strong> 编程的教程请自行在 <strong>Cncalc</strong> 上查找，本文鉴于篇幅原因不予详细叙述。</p>
+<p>以下将介绍的应用的安装与使用仅需要将其拷贝至计算器，再在文件管理中打开即可。部分 <strong>Lua</strong> 应用可能需要更高版本的操作系统（请参照 <a href="#os">第三章第一节</a>）。</p>
+<h5 id="附录-TI-BASIC-App-推荐"><a href="#附录-TI-BASIC-App-推荐" class="headerlink" title="附录 TI-BASIC App 推荐"></a>附录 TI-BASIC App 推荐</h5><p><a href="https://www.cncalc.org/thread-22599-1-1.html" target="_blank" rel="noopener"><strong>Keypad Master 键盘熟悉工具</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201808/05/151444k6y6zef5fhc566et.png.thumb.jpg" alt=""><br>自写 <strong>TI-Nspire CX/CM</strong> 的键盘熟悉工具，内附教程与输入练习。我刚买回来的时候着实不习惯 <strong>TI-Nspire</strong> 的 <strong>ABCDEF</strong> 键盘，于是做了个程序来练练手。希望可以帮到各位。</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=24105l" target="_blank" rel="noopener"><strong>Rest of Your Life 孤城余生 生存游戏</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201901/19/151955j3zzb3ysq66qhhmb.png" alt=""><br>同为自写程序，这次是一个生存类文字游戏。特性目前已经非常丰富，最近一次加入了 DLC 功能。其他的介绍可以参照我在 <strong>Cncalc</strong> 上的帖子。</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12597" target="_blank" rel="noopener"><strong>Nspire 三国杀</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201512/27/205008uye1tyakte3toymo.png.thumb.jpg" alt=""><br>超多武将，功能丰富齐全，功勋/成绩系统，支持多人对战，<strong>TI-BASIC</strong> 程序中的佳作！</p>
+<p><em>此外可见 <a href="https://www.cncalc.org/forum.php?mod=forumdisplay&amp;fid=51&amp;filter=typeid&amp;typeid=55" target="_blank" rel="noopener">图形编程计算器资源下载区 TI-Nspire系列 - Cncalc</a> 及 <a href="https://tiplanet.org/forum/archives_cat.php?cat=Nspire&amp;lang=en" target="_blank" rel="noopener">Downloads TI-Nspire - TI-Planet</a> 。</em></p>
+<h5 id="附录-Lua-App-推荐"><a href="#附录-Lua-App-推荐" class="headerlink" title="附录 Lua App 推荐"></a>附录 Lua App 推荐</h5><p><a href="https://www.ticalc.org/archives/files/fileinfo/444/44465.html" target="_blank" rel="noopener"><strong>元素周期表</strong></a><br><img src="https://www.ticalc.org/archives/files/ss/828/82821.gif" alt=""><br>外国友人开发的元素周期表，有详细信息显示。</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12417&amp;highlight=elements" target="_blank" rel="noopener"><strong>Elements 元素周期表</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201610/14/125253nkdzxgmjvvxjxeem.jpg.thumb.jpg" alt=""><br>国人制作的元素周期表，有电子层动画和电子层排布。（<strong>Lua API 1.0</strong> 支持）</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=22547&amp;extra=page%3D1%26filter%3Dtypeid%26typeid%3D55" target="_blank" rel="noopener"><strong>植物大战僵尸</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201806/01/162256wux1v6xyvtg6xzgz.jpg.thumb.jpg" alt=""><br>国人良心！Lua 开发的优秀游戏，基本上还原了原游戏。（<strong>Lua API 1.0</strong> 支持；<strong>OS 3.1</strong> 由于版本限制需要自行修改，在下有一份修改好的，如有需要请联系笔者）</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12335&amp;extra=page%3D2%26filter%3Dtypeid%26typeid%3D55" target="_blank" rel="noopener"><strong>Teaching Feeling</strong></a><br><img src="https://i.loli.net/2019/08/07/ET37beksOPSQnp5.png" alt=""><br>绝对令你震惊，<del><strong>TI-Nspire</strong> 上居然还能玩<strong>黄油</strong></del>！（<strong>Lua API 2.0</strong> 支持）</p>
+<p><a href="https://next.cncalc.org/d/5c53b82e8ca08e02e1ad5a47" target="_blank" rel="noopener"><strong>三国杀 图形UI版</strong></a><br><img src="https://next.cncalc.org/api/v1/attachment/5c53b7eb8ca08e02e1acf3c0" alt=""><br>同样的国人良心，这个版本真的惊艳。（<strong>Lua API 2.0</strong> 支持）</p>
+<p><a href="https://next.cncalc.org/d/5c53b8288ca08e02e1ad54eb" target="_blank" rel="noopener"><strong>Fawpad Air 五子棋</strong></a><br><img src="https://next.cncalc.org/api/v1/attachment/5c53b7f08ca08e02e1acff03" alt=""><br>制作精美的休闲游戏，带AI。（<strong>Lua API 1.0</strong> 支持）</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12789&amp;highlight=%D6%D0%B9%FA%CF%F3%C6%E5" target="_blank" rel="noopener"><strong>中国象棋</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201710/06/110328c2anzkkk2h12akxk.jpg.thumb.jpg" alt=""><br>大制作，双人对战游戏。（<strong>Lua API 1.0</strong> 支持；<strong>OS 3.1</strong> 由于版本限制需要自行修改，在下有一份修改好的，如有需要请联系笔者）</p>
+<p><a href="http://www.cncalc.org/thread-24144-1-1.html" target="_blank" rel="noopener"><strong>nShogi 将棋</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201908/12/143120otbffolo2bcxqegq.gif" alt=""><br>自制，双人对战，日本象棋。有合法落子处提示，可打入可升变。（<del>我才不会说我之前用 <strong>Micropython</strong> 写的那个版本惨不忍睹呢</del>）（<strong>Lua API 1.0</strong> 支持）</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=21516" target="_blank" rel="noopener"><strong>Minecraft 2D</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/139662758585074.gif" alt=""><br>真的良心，完美还原，真实体验，游戏体验极佳！（<strong>Lua API 1.0</strong> 支持）</p>
+<p><em>此外可见 <a href="https://www.cncalc.org/forum.php?mod=forumdisplay&amp;fid=51&amp;filter=typeid&amp;typeid=55" target="_blank" rel="noopener">图形编程计算器资源下载区 TI-Nspire系列 - Cncalc</a> 及 <a href="https://tiplanet.org/forum/archives_cat.php?cat=Nspire&amp;lang=en" target="_blank" rel="noopener">Downloads TI-Nspire - TI-Planet</a> 。</em></p>
+<h3 id="第三章-公路上"><a href="#第三章-公路上" class="headerlink" title="第三章  公路上"></a>第三章  公路上</h3><p>走出家门，我们踏上了前往更为精彩的市中心的路。本章的内容是为本文中最精彩的一部分所作的必要准备工作。<br>各位可以想象一下，前文中用 <strong>TI-Nspire</strong> 自带的 <strong>TI-BASIC</strong> 和 <strong>Lua</strong> 尚且都能开发出如此有趣和使用的程序，更何况使用强大的第三方扩展框架 <strong>Ndless</strong> 呢！</p>
+<p></p><h2 id="os"></h2><p></p>
+<h4 id="第一节-系统固件升级"><a href="#第一节-系统固件升级" class="headerlink" title="第一节 系统固件升级"></a>第一节 系统固件升级</h4><p>目前市面上所能买到的 <strong>TI-Nspire</strong> 系列彩屏机（<strong>TI-Nspire CM</strong> 和 <strong>TI-Nspire CX</strong>）的操作系统版本基本上全部都已超过 <strong>OS 3.0</strong>，所以这一部分实际上可以跳过。但是为了本文结构的完整，这里还是对不同版本的操作系统进行一下对比。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">OS 版本</th>
+<th style="text-align:center">特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>OS 3.0</strong></td>
+<td style="text-align:center">不支持 <strong>Ndless</strong> / <strong>Lua API</strong> 1.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.1</strong></td>
+<td style="text-align:center">完美支持 <strong>Ndless</strong> / <strong>Lua API</strong> 1.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.2</strong></td>
+<td style="text-align:center">不支持 <strong>Ndless</strong> / <strong>Lua API</strong> 2.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.6</strong></td>
+<td style="text-align:center">不完美支持 <strong>Ndless</strong> / <strong>Lua API</strong> 2.0+ <br> 不支持 <strong>TI-Nspire CM</strong> 系列</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.9</strong> 及以后</td>
+<td style="text-align:center">缺乏实体机 了解中 <br> 不支持 <strong>TI-Nspire CM</strong> 系列</td>
+</tr>
+</tbody>
+</table>
+<center><small><em>[注] <strong>OS 3.6</strong> 不完美支持 <strong>Ndless</strong> 指每次计算器重启后都需重新安装 <strong>Ndless</strong> 。</em><br></small></center>
+
+<p>由上表可知，对于最高操作系统版本仅支持到 <strong>OS 3.2</strong> 的 <strong>TI-Nspire CM</strong> 来说，安装完美支持 <strong>Ndless</strong> 的 <strong>OS 3.1</strong> 无疑是最佳选择<em>（虽然 <strong>Lua API</strong> 仅支持 1.0 版本，但 <strong>Ndless</strong> 的体验会让你觉得这一点割舍完全划得来，同时 <strong>Lua API 1.0</strong> 也有很多佳作）</em>。<br>对于 <strong>TI-Nspire CX</strong> 来说，两者兼得的 <strong>OS 3.6</strong> 便是最佳之选了。  </p>
+<p>操作系统的下载可前往 <strong>TI-Planet</strong> 的<a href="https://tiplanet.org/forum/archives_list.php?cat=OS+Nspire" target="_blank" rel="noopener">有关界面</a>。请注意，操作系统文件的后缀名遵循下表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">计算器硬件型号</th>
+<th style="text-align:center">后缀名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CM</strong></td>
+<td style="text-align:center">.tmo</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CM CAS</strong></td>
+<td style="text-align:center">.tmc</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CX</strong></td>
+<td style="text-align:center">.tco</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CX CAS</strong></td>
+<td style="text-align:center">.tcc</td>
+</tr>
+</tbody>
+</table>
+<p>同时，对于 <strong>TI-Nspire CX</strong> 系列而言， <strong>OS 3.6</strong> 以后的版本可能有防降级机制。欲降级至低版本请自行前往 <strong>Cncalc</strong> 或 <strong>TI-Planet</strong> 上查找相关信息。</p>
+<h4 id="第二节-Ndless-的安装"><a href="#第二节-Ndless-的安装" class="headerlink" title="第二节 Ndless 的安装"></a>第二节 Ndless 的安装</h4><p>我们先来简单介绍一下前文提到的<strong>物超所值</strong>的 <strong>Ndless</strong> 吧。  </p>
+<center><img src="https://i.loli.net/2019/08/07/r73XqRz9t5JxKAV.png" alt="bg44.png"><br><small><a href="http://ndless.me/" target="_blank" rel="noopener"><strong>Ndless</strong> 官网</a>宣传图（<del>头上插了网卡的那位是在模仿 Donald Trump ？</del>）<br></small><br></center>
+
+<p><strong>TI</strong> 为 <strong>TI-Nspire</strong> 系列开发的操作系统非常封闭，不像以前的计算器一样给用户提供安装预编译的 <strong>Add-In</strong> 功能，这对比起 <strong>128MB</strong> 的内置存储和 <strong>64/32MB</strong> 的运行内存，总给人一种软件配不上硬件的感觉。——为此，一名 <strong>TI-Nspire</strong> 的使用者 <strong>ExtendeD</strong> 开发了 <strong>Ndless</strong> 。</p>
+<p>什么是 <strong>Ndless</strong> 呢？简单而言，在你的计算器上安装 <strong>Ndless</strong> 就如同在你的 <strong>Android</strong> 设备上<strong>获取 root 权限</strong>或是在你的 <strong>iOS</strong> 设备上进行<strong>越狱</strong>。在安装了 <strong>Ndless</strong> 后，你的计算器便可以运行提前编译好的 <strong>C/C++</strong> 程序，这一操作极大地提升了 <strong>TI-Nspire</strong> 系列计算器的可玩性。</p>
+<p><strong>Ndless</strong> 的下载与安装方法可参考 <a href="https://www.cncalc.org/thread-9279-1-1.html" target="_blank" rel="noopener"><strong>Cncalc</strong></a> 上的教程。下段引用自该页：</p>
+<blockquote>
+<p>OS3.6 安装方法（来自ExAcler）：<br>1、下载最新版本的ndless，解压calcbin中的ndless_installer.tns、ndless.cfg.tns 以及 ndless_resources_36.tns，并通过 TI-Nspire Computer Link 传送至 “我的文档” 下的 ndless 文件夹中；<br>2、转至手持设备端，打开 ndless_installer.tns 然后按下 menu 按键。<br>稍等片刻，Ndless 3.6 即安装成功！<br>但请注意，安装 Ndless 3.6 成功后，一旦重启您的手持设备，安装即自动失效。此时，只需再次打开 ndless_installer.tns，重复上述过程即可。</p>
+</blockquote>
+<blockquote>
+<p>OS 3.1 安装方法：<br>  (1)下载Ndless并解压<br>  (2)在计算器上新建一个文件夹，名字为”ndless”<br>  (3)用联机软件将calcbin文件夹中的ndless_resources.tns传到计算器中。<br>  (4)关闭计算器上收到文件的对话框（很重要）<br>  (5)根据你计算器的型号将对应的ndless_installer-3.1.0发送到计算器上<strong>（笔者注：后缀名同上文操作系统对应）</strong><br>  (6)计算器上应该会看见Ndless Installed的提示，电脑上是不会提示传送成功的，会卡在50%，强制取消就OK了。</p>
+</blockquote>
+<p>当你完成操作系统的升级与 <strong>Ndless</strong> 的安装后，一切都已准备就绪，欢迎来到市中心！</p>
+<h3 id="第四章-市中心"><a href="#第四章-市中心" class="headerlink" title="第四章  市中心"></a>第四章  市中心</h3><p>进入本章，就意味着你来到了崭新的 <strong>TI-Nspire</strong> 世界。使用 <strong>Ndless</strong> 后，<strong>TI-Nspire</strong> 将完完全全地发挥出它的潜力！</p>
+<p><strong>Ndless</strong> 附带后缀名关联功能，有些软件会在初次运行时自动关联，有些则不会。若需要文件关联则请使用文本编辑器修改 <strong>ndless.cfg.tns</strong> 文件。</p>
+<p><strong>Ndless 3.1</strong> 更是拥有拥有自启动功能，在 ndless 目录下建立 startup 文件夹，并将要自启动的文件放入即可。</p>
+<p>不同版本的 <strong>Ndless</strong> 可能对某些应用的兼容性不同，详情请查看具体文件的自述文档。</p>
+<p>下文所述的所有应用，若无特殊说明，在安装了 <strong>Ndless</strong> 后便可直接从文件管理中打开。</p>
+<h4 id="附录-Ndless-App-推荐"><a href="#附录-Ndless-App-推荐" class="headerlink" title="附录 Ndless App 推荐"></a>附录 Ndless App 推荐</h4><h5 id="第一节-学习类"><a href="#第一节-学习类" class="headerlink" title="第一节 学习类"></a>第一节 学习类</h5><p><a href="https://next.cncalc.org/d/5c53b82d8ca08e02e1ad5928" target="_blank" rel="noopener"><strong>iDict 6 Pro 英汉词典</strong></a><br><img src="https://next.cncalc.org/api/v1/attachment/5c53b7fb8ca08e02e1ad1f0d" alt=""><br>国人自主使用 <strong>Ndless</strong> 开发的英汉词典，内含超过 <strong>100,000</strong> 个词条的海量词库，其占用空间仅有 <strong>2.6 MB</strong>，是学生必备的一款佳品。</p>
+<p><a href="https://www.cncalc.org/thread-8897-1-1.html" target="_blank" rel="noopener"><strong>dPicoC 机上 C 解释器</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201306/23/212744p6ob0gmq9i96iqr7.png" alt=""><br>同为国人开发，机上的 C 解释器。支持函数种类多，但可惜的是已停止更新了。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=313881" target="_blank" rel="noopener"><strong>Micropython v1.4.6</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1443448573x1409688671python_screen.png.pagespeed.ic.kdggR_Jbna.png" alt=""><br><strong>TI-Planet</strong> 上的移植的 <strong>Micropython</strong> 解释器，会关联.py后缀名。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=153555" target="_blank" rel="noopener"><strong>Duktape</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1434766582kaXVwln.png" alt=""><br><strong>TI-Planet</strong> 上的移植的 <strong>Javascript</strong> 解释器，目前还不是很完善。</p>
+<h5 id="第二节-工具类"><a href="#第二节-工具类" class="headerlink" title="第二节 工具类"></a>第二节 工具类</h5><p><a href="https://tiplanet.org/forum/archives_voir.php?id=106886" target="_blank" rel="noopener"><strong>pyWrite</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1415224349pywrite4.png" alt=""><br>仍然是 <strong>TI-Planet</strong> 上的应用。它是一个 <strong>ASCII</strong> 文本编辑器，支持编辑 <strong>Python</strong> 脚本并语法高亮，可以和上文的 <strong>Micropython</strong> 联动使用，同时支持触摸板。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=121680" target="_blank" rel="noopener"><strong>NoteWriter 2.0</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1418488742notewriter2.png" alt=""><br>第二款文本编辑器。同样支持编辑 <strong>Python</strong> 脚本并语法高亮，也可以和 <strong>Micropython</strong> 联动使用，界面相对友好易用，提供了两款软件皮肤供切换。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=15365" target="_blank" rel="noopener"><strong>mViewer CX</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/13695983381327260523mviewe13.jpg" alt=""><br>强大的图片查看器，本文开头图中即使用了该软件。支持 <strong>BMP/ PNG/JPEG</strong> 格式，可以缩放、滚动，调整对比度。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=139503" target="_blank" rel="noopener"><strong>nPDF 0.4</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1449537548x1421457693npdf.png.pagespeed.ic.f3cWs3Fmnj.png" alt=""><br>简单而又不失强大的文档查看器，支持 <strong>PDF/XPS/CBZ</strong> 格式，同时可以查看中文文档。支持跳页及查找功能。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=4416" target="_blank" rel="noopener"><strong>nClock</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1334424494nClock.png" alt=""><br>多功能时钟，可计时，同时还支持在系统中即时显示时间。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=12264" target="_blank" rel="noopener"><strong>nCapture</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1365315555cx.png" alt=""><br>机上截图工具，使用 <strong>Ctrl + .</strong> 来截图。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=12928" target="_blank" rel="noopener"><strong>HIDn</strong></a><br><img src="https://i.loli.net/2019/08/13/upZPOWFgUStL8MK.jpg" alt=""><br><strong>USB</strong> 外接 <strong>键盘/鼠标</strong> 驱动，很强。需要 <strong>miniUSB</strong> 转 <strong>标准USB</strong> 的转接线或者 <strong>USB Hub</strong> 。</p>
+<p><a href="https://www.cncalc.org/thread-9785-1-1.html" target="_blank" rel="noopener"><strong>nNovel Plus 中文文本阅读器</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201411/16/123729mvwu1evvgg2cugvw.jpg.thumb.jpg" alt=""><br>强推。国人良心系列，强大的中文阅读支持，简约整洁的 UI 设计，贴心好用的书签功能，不伤眼的夜间阅读模式，甚至还能随意更换字体！</p>
+<p><a href="https://www.cncalc.org/thread-22589-1-1.html" target="_blank" rel="noopener"><strong>nVid 视频播放器</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201807/17/171038oielc99bedefuflg.png.thumb.jpg" alt=""><br>非常好用的视频播放器，在进行压缩后可以使视频拥有极小的体积。TI-Planet 上的原贴已经失效，各位可以使用笔者搬运的版本。或者前往 <a href="https://github.com/pbfy0/nvid/releases/" target="_blank" rel="noopener">该项目的 Github 仓库</a>。使用的这张图是笔者做的一个小屏保，可以配合自启动功能使用。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=296214" target="_blank" rel="noopener"><strong>RoQPlayer 视频播放器</strong></a><br><img src="https://i.loli.net/2019/08/07/ET37beksOPSQnp5.png" alt=""><br>可以流畅播放的视频播放器，缺点是视频体积过大。</p>
+<h5 id="第三节-游戏类"><a href="#第三节-游戏类" class="headerlink" title="第三节 游戏类"></a>第三节 游戏类</h5><p><a href="https://tiplanet.org/forum/archives_voir.php?id=1649" target="_blank" rel="noopener"><strong>gbc4nspire GBC模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/145203966882944.gif" alt=""><br>强推。极其好用系列，有了它你就相当于在你小小的的 <strong>TI-Nspire</strong> 上有了成千上万的游戏可以玩耍！<br>在此，笔者推荐几个 GBC 游戏：</p>
+<ul>
+<li>三国志（策略游戏，战斗为战棋，内容极为丰富，最多支持11人多人游戏，超级耐玩）</li>
+<li>FIFA 2000（足球游戏，操作比较带感）</li>
+<li>星之海洋：蔚蓝星球（角色扮演游戏，极品游戏！）</li>
+<li>GTA 1 &amp; GTA 2（俯瞰视角的 GTA 最初代）</li>
+</ul>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=6622" target="_blank" rel="noopener"><strong>gpSP-Nspire GBA模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/83658.gif" alt=""><br>GBA 模拟器，借助于 GBA 性能的强大，你能玩到更多有趣的游戏！非常可惜的是不支持 <strong>TI-Nspire CM</strong> 系列。GBA 上的 Driver 3 这款游戏可谓一绝，真正的 3D GTA游戏。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=4150" target="_blank" rel="noopener"><strong>Nespire NES/FC模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1330866890T0Zwt.jpg" alt=""><br>NES/FC 红白机模拟器。有了这款神器，大部分的 FC 游戏你也可以随时随地游玩了！</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=302632" target="_blank" rel="noopener"><strong>PocketSNES SNES/SFC模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1467008780smw.png" alt=""><br>SNES/SFC 模拟器，同样是主机模拟器，可惜的是也不支持 <strong>TI-Nspire CM</strong> 系列。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=227904" target="_blank" rel="noopener"><strong>Liero</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1431895080liero.png" alt=""><br>射击游戏，可以同屏双人对战，支持更改键位，超多武器可供选择。是和朋友一起愉快玩耍的不二之选！</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=51574" target="_blank" rel="noopener"><strong>nFlappyBird</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1399569441flappybird_%28new%29.gif" alt=""><br>当年那个磨人的小鸟又回来了！现在它进入了你的 <strong>TI-Nspire </strong> ！</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=76957" target="_blank" rel="noopener"><strong>nKaruga</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1407750151preview6.png" alt=""><br>弹幕射击游戏，目前还处于 <strong>demo</strong> 状态，但仍然可以玩。有一些不同于传统弹幕射击游戏的特殊规则。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=6631" target="_blank" rel="noopener"><strong>nDoom 3</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/13443068421327006967ndoomf10.jpg" alt=""><br>佳作！满分！<strong>TI-Nspire</strong> 平台上真正意义上的全 3D FPS 游戏！它本身只是一个加载器，但是如果从 TI-Planet 的 <a href="https://tiplanet.org/forum/archives_list.php?cat=Nspire&amp;multi_chaine_search=&amp;author=0&amp;auteur=0&amp;select=0&amp;generator=0&amp;cat=Jeux+Patchs+Doom2+Nspire" target="_blank" rel="noopener">有关界面</a> 下载游戏 WAD 文件并加载，你就能玩到多种多样的 FPS！</p>
+<p><a href="https://www.cncalc.org/thread-12131-1-1.html" target="_blank" rel="noopener"><strong>nPAL 仙剑奇侠传</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201308/20/164949crvgtxvgmnvz2rzn.jpg" alt=""><br>放在最后压轴登场，国人开发！多少80后的回忆，如今你将可以在 <strong>TI-Nspire</strong> 上体验到完完整整的仙剑奇侠传一代！支持触摸板！</p>
+<h5 id="第四节-其他类"><a href="#第四节-其他类" class="headerlink" title="第四节 其他类"></a>第四节 其他类</h5><p><a href="https://tiplanet.org/forum/archives_voir.php?id=12534" target="_blank" rel="noopener"><strong>Mini vMac Macintosh Plus模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/13658475692013-04-12%2022.14.24.jpg" alt=""><br>买不起 Mac？那好，在 <strong>TI-Nspire</strong> 上体验一下初代 <strong>Macintosh Plus</strong> 吧！</p>
+<p><strong>LinuxLoader</strong><br><img src="https://tiplanet.org/modules/archives/captures/1353258322LQsBi.jpg" alt=""><br>在你的 <strong>TI-Nspire</strong> 上跑 <strong>Linux</strong>！如果你有兴趣，还能让它跑 <strong>Debian</strong>，或者是进入图形界面，或者是安装外置网卡上网！<br>有关网页如下：<br><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=9818" target="_blank" rel="noopener">如何在Nspire上运行Linux</a><br><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=10672" target="_blank" rel="noopener">Nspire使用U盘引导linux进入图形界面教程</a><br><a href="https://zhuanlan.zhihu.com/p/73489075" target="_blank" rel="noopener">优雅地使用计算器上网！</a></p>
+<h3 id="第五章-回家"><a href="#第五章-回家" class="headerlink" title="第五章  回家"></a>第五章  回家</h3><p>总而言之，目前 <strong>TI-Nspire</strong> 平台上的应用已经相当的繁多与丰富，同时笔者也希望各位适当使用这些应用，不要滥用喔！<br>本文中出现的所有应用与图片之版权皆归属其作者，如有侵权，请联系笔者进行删改。</p>
+]]></content>
+      <categories>
+        <category>计算器类</category>
+      </categories>
+      <tags>
+        <tag>Calculator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>End of the World 末路</title>
+    <url>/posts/8048db99.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="末路"><a href="#末路" class="headerlink" title="末路"></a>末路</h1><div align="center"><br><img src="https://i.loli.net/2021/01/22/gED6x1GYBa8jpdR.png" alt=""><br></div>
+
+<center><small>本文为2020年随笔作品，配图与本文无关。</small><br><br></center>
+
+<a id="more"></a>
+<p>1945年4月底的一个晚上，早已化作废墟的柏林城。 </p>
+<p>这半个月来，苏联动用了数不清的轰炸机和火炮，近乎摧毁了这座城市的每一个角落。硝烟仍然弥漫在空气中，刺鼻的硫磺味久久充斥在街头。 </p>
+<p>一个士兵独自一人走在柏林的大街上，铁灰色的军服上满是灰尘和污泥。 </p>
+<p>那是克默里希·海因茨，大势已去的第九集团军中一个普通的列兵。 </p>
+<p>他知道当下这情况对他而言意味着什么。是的，这很糟——他和自己的队伍失散了。现在在街上这样漫无目的地游荡，要是被人发现，大概率会被当成逃兵吊死。 </p>
+<p>不过那已经不重要了。反正不是被自己人吊死就是被俄国佬枪毙，死只是时间问题，他这样想着。 </p>
+<p>在这寂静的夜晚，陪在他身旁的除了成堆的瓦砾以外，还有那些被废弃的火炮和无声燃烧着的装甲车。来不及撤走的机枪和弹药散乱地堆积在一起，早已失去了金属的光泽。</p>
+<p>要是换在几年前，他保准不信“世界之都日耳曼尼亚”会变成一片断壁残垣。但是在今天，他也不得不相信了——我们的军队在冬天吃了大亏，俄国人则趁势从他们的首都一路打到了我们的首都。尽管每次广播里都说的是“我们正在推进”和“局势得到控制”，但国防军的指挥车却的的确确是在向西开了。 </p>
+<p>瞬息万变的战局让克默里希想不明白。明明在三年以前，祖国的坦克还轰鸣在异乡的土地上，学生克默里希还在为胜利欢呼。但仅仅只用了三年时间，坦克便不再奔驰，昔日的学生也变成列兵克默里希·海因茨了。</p>
+<p>他的父亲威廉在43年就告别了家，自那以后再也没有回来；两个哥哥不久后也开往了前线，大哥弗里德里希倒在了俄国人的枪下，二哥汉斯现在还躺在西线的野战医院里；到最后，征兵启事贴满了大街小巷，他明白，该他为祖国效力了。</p>
+<p>那时，他狂热地拉上一个又一个朋友，心里默念着“团结使我们强大”、“为了国家和民族的利益”，第一时间赶到了征兵处。他们有意地瞒报了自己的年龄，只为更早地前往教科书里写的、宣传单上画的、他们心中想的那个战场。他以为，战场意味着勇猛、荣誉与为国家而战，殊不知在前方等待着的，是坦克、重机枪和无尽的火箭弹。</p>
+<p>列兵克默里希·海因茨扛着枪走在柏林的夜里。眼前是一片废墟，而那时也是一片废墟：战争，从他踏入战场的那一刻起，就没有变过。</p>
+<p>他还记得第一次看见死者时的那份恐惧。原来，挨了枪子，人真的会死；而死掉的人，也根本不会因为什么荣誉而再站起来了。死者与流弹一次次在他的梦里闪过，坦克巨炮的嘶吼让他永远也不能忘怀。他们的伙食越来越差，家里的食物配给也频频缩减。当年和他一起在征兵处登记的好朋友们，渐渐地都成为了那军事档案上冷冰冰的统计数字的一部分。一切都和自己所想象的完全不同。</p>
+<p>他发现，在如暴雨般倾泻的炮火中，自己逐渐从一个明白人，变得什么也不知道了。他发现自己没法再熟练地背出那些学生时代曾让他狂热不已的文字，他发现自己打心底不再坚信所谓的国家社会主义和大德意志理想。曾经的信念，拿枪的手，都在爆炸声中颤抖着。</p>
+<p>他开始在战壕中、在军用卡车上、在兵营里，全心全意地期待起战争结束的消息。一开始，他还祈求着国防军的力量能够再度扭转局势，赢得反攻的机会；到后来，他干脆放弃了——俄国人也好，美国人也好，德国人也好，只要战争结束，谁赢都行。可是，到头来他等到的，却是继续负隅顽抗下去的命令。当初呼吁他们上战场的那群人，现在躲在地下室里，仍然叫嚣着让他们继续替自己送死：这群人无法接受自己的失败，只好拉上整个世界陪葬。</p>
+<p>列兵克默里希走在黑暗的柏林的大街上，不再平静的心情让他微微出了些汗。</p>
+<p>他一脚踢开了脚边的一块小石头。是啊，克默里希、威廉、弗里德里希和汉斯，都只是一块石头，在铁面无情的国家机器的脚下被一次又一次地踢着走。在严酷的军队纪律和狂热的宣传中，他们都失去了作为一个个体的意义，转而愚昧地、自愿地被做成这庞大的国家机器的一个螺钉。螺钉不需要给心上人写信、与家人拍合照，螺钉也没有自己的自由意志与选择未来的权利。一颗钉子坏了，一个士兵死了，这不重要，换下来就好了；没人会记住这颗螺钉上螺纹的质感，也没人会记住这个死掉的士兵的经历。</p>
+<p>我们在为谁战斗？我们为何而战？为了纳粹向全世界扩张、统治全球文明吗？为了让活生生的人变成只会开枪、拼刺刀的屠戮机器吗？去他的吧！</p>
+<p>“团结使我们强大”，可总有人比另外的一些人更强大。那些更加强大的人躲在地堡里，捶胸顿足，向人民咆哮着怒火。他们把柏林城里的老年人、儿童、妇女集结到一起，扔给这些根本没有受过军事训练的人几把小作坊里赶工出来的破枪，给自己当肉盾！</p>
+<p>“为了国家和民族的利益”，可这场战争里，我们没有得到任何收益。——除非，平民吃不饱饭，士兵白白送命，也算是祖国送给我们的利益的话！相反，我们把俄国人的农庄、田地碾成荒地，他们就把我们的城市、楼房炸成灰烬。获益的是谁！人民吗！不，是那些草菅人命的战争狂！</p>
+<p>列兵克默里希在黑暗的柏林街头攒紧了拳头，他在街头的一面幸存于炮火的橱窗前停下了。</p>
+<p>他看到了自己。不，他看到的是列兵克默里希·海因茨这个杀人犯。他看见了列兵的军服上的斑斑血痕，那些是德国人的血，也是苏联人的血。他看见了那双眼睛中闪耀着的希望，也看到了这希望在枪林弹雨中消散。看到这些，不知为何他的心里突然生出无名的厌恶。</p>
+<p>他将枪口对准了镜面中的士兵，镜面中的士兵也同样举起枪来。他要亲手干掉这个杀人犯，他要让这个杀人犯所流的血成为这世上最后一滴因战争而流的血——</p>
+<p>枪响了。列兵克默里希倒在了黑暗里。</p>
+<p>“干掉叛徒和逃兵。”——夜间巡逻的年轻士兵们用枪声回应了身旁军官的指令。</p>
+<p>他们把曾经叫做克默里希·海因茨的逃兵的尸体一脚踢到一旁，在黑夜中继续齐刷刷地执行着上级指派的巡逻任务。</p>
+]]></content>
+      <categories>
+        <category>随笔杂文</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Galgame 「ATRI ~My Dear Moments~」 测评</title>
+    <url>/posts/8f5dcc88.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Galgame-「ATRI-My-Dear-Moments-」-测评"><a href="#Galgame-「ATRI-My-Dear-Moments-」-测评" class="headerlink" title="Galgame 「ATRI ~My Dear Moments~」 测评"></a>Galgame 「ATRI ~My Dear Moments~」 测评</h1><h2 id="日渐沉没的世界里，蓝与白的夏日回忆"><a href="#日渐沉没的世界里，蓝与白的夏日回忆" class="headerlink" title="日渐沉没的世界里，蓝与白的夏日回忆"></a>日渐沉没的世界里，蓝与白的夏日回忆</h2><div align="center"><br><img src="https://i.loli.net/2020/08/28/gRmGKk9iTCA24w6.jpg" alt="ATRI"><br></div>
+
+<p>近日利用闲暇时间推完了六月份 ANIPLEX 进军 Galgame 界的首发作品《<strong>ATRI ～My Dear Moments～</strong>》，很有幸能够遇到这部作品。它也许并不能成为被广为传颂的神作，但它的确是一部打动了我的作品。</p>
+<a id="more"></a>
+<p>综合上来看，整部作品的质量相当不错。BGM的切换与情节发展一致，切换流畅而自然，音乐本身质量也不赖；背景图十分漂亮，考虑到背景设定是在近乎被水淹没的小镇上，因此整体的配色主要以蓝色为主，尤为细腻唯美；立绘也同样很精致，除此之外的CG更是出彩，整体基调在梦幻中带着清新，与故事搭配绝妙。此外，本作的语音收藏功能非常好用，能够及时地记录下来打动自己的句子。不过很可惜的是，夏生本人由于没有配音而无法收藏，相当遗憾。</p>
+<p>当然，对于视觉小说而言，在<strong>「视觉」</strong>与<strong>「听觉」</strong>效果之上，最重要的还是做为核心的剧情。剧情本身由日常而起，逐步涉及主线，中后期时便揭开了全貌，玩家的情感体验也得以随之深入高潮。本作仅有三个选项，只有在三个选项均正确的情况下才能顺利进入HE；不过好在选项的意图都很明显，实际选起来也并不麻烦。下面就着剧情简要谈谈感想吧。</p>
+<p><strong>（下文涉及一定的剧透；由于TE我暂时还未达成，所以下文均为HE剧情）</strong></p>
+<p>故事发生在后未来时期，未知的灾难导致海平面急速上升，人类文明在灭亡的边缘徘徊着。怀着拯救世界梦想的主角斑鸠夏生，在厌倦都市生活后回到了儿时的小镇，寻找着祖母留下的「遗产」——仿生人少女「亚托莉」。</p>
+<p>尽管是经典的人机关系主题，但故事并没有在这方面展开过多的创新，基本上还是采用了常见的模式——探讨人机差异所产生的道德哲学问题，如拥有自我意识（「心」）的标准、人类与仿生人之间的关系等。因而，这一问题也不过是为剧情服务的一种表达方式而已，故事的出彩之处还是在于剧情本身。</p>
+<p>（PS：一开始在了解到故事是这一类型的时候，我当时就有猜到，它的结局也许就像《可塑性记忆》一样，并非完全欢笑圆满的大团圆结局——后来我所玩到的HE便证实了这一点。不过，也许这种「不圆满」正是打动人心之处，毕竟悲剧给人留下的印象与震撼往往比喜剧更为深刻。）</p>
+<p><img src="https://i.loli.net/2020/08/28/xyrGh8R7vJgZ3mb.jpg" alt="ATRI"></p>
+<p>我认为，故事所真正探讨的，是「生命的意义」与「注定的离别」。故事在很早就给出了这一问题的答案——</p>
+<blockquote>
+<p>「宇宙中没有永恒的事物。所以哀叹事物的终结也毫无意义」</p>
+</blockquote>
+<blockquote>
+<p>「在迎来终结之前，怎样度过这段时间才是最重要的吧」</p>
+</blockquote>
+<p>正如亚托莉所说，这世界上没有什么事能够维持永恒，因而事物发展的过程（即「怎样度过这段时间」）才显得尤为重要。</p>
+<p>生命的意义在于「活着」这一过程。人的一生所要做的，不是哀叹终将到来的结局，而是要用尽全力书写生命的意义，最后带着一颗平和的心，微笑着面对最后的「离别」。</p>
+<p>亚托莉打从一开始被夏生从水下的仓库中打捞出来时，寿命便限定在了最后的四十五个日夜里；而即便是身为主角的夏生，在海平面急速上涨的时代里，最终的归宿也可以在某种意义上说是已经限定好了。</p>
+<p>——仿生人会在不久后停止机能，人类文明会在不久后灭绝。</p>
+<p>「如何让有限制的时间成为有意义的回忆」，成了引导故事发展的一个契机，由此引出了构建起整个故事的重要线索：二人的两次「拯救」。</p>
+<p>故事发展的前半部分，是亚托莉拯救了夏生。深受儿时变故与自身残疾的困扰，「生命的意义何在」这个问题在夏生眼里似乎没有答案。幻肢痛、惨淡的过往与不快的现实，在一个人同时遭遇这些苦难时，想必是没法快乐起来的吧。彼时的他，认为生活不过是浑浑噩噩地过日子，政府建造火箭逃离地球的计划也不过是「无意义地放烟花」而已。</p>
+<p>不过，伴随着与亚托莉的相遇，夏生的生活出现了转机。亚托莉的乐观开朗让他那颗不振的心重新有了希望的温度，也同时让他明白到自己并非孤身一人。在亚托莉的帮助下，夏生逐渐交到了更多的朋友，他的生活不再如以前那般灰暗。在这个本被政府抛弃、缺乏电力供给的小镇上，他第一次觉得自己的知识派上了用场，与朋友一起建造的发电机，跟整个小镇带来了希望。同时，他更是收获了一场真真切切的爱情，爱的甜蜜中和了过往的苦涩，使他渐渐从痛苦中获得了解脱。</p>
+<blockquote>
+<p>「光芒，会给予人们希望。」</p>
+</blockquote>
+<blockquote>
+<p>「有了希望，人们便能继续前行。」</p>
+</blockquote>
+<blockquote>
+<p>「无论那束光芒多么遥远，多么渺小，人们都会迈向未来，相信自己总有一日能够抵达。」</p>
+</blockquote>
+<p>这便是第一次「拯救」：即便是在末日，生命也可以绚烂而多彩。无论现实多么残酷，我们都有权利在当下触及幸福。</p>
+<p>在完成拯救后，夏生似乎找到了自己人生中的幸福。他不再回忆起研究院的过去，也不再提起昔日「拯救地球」的梦想：他选择了安于现状，尽情享受每一天的快乐。</p>
+<p>但随着二人感情的进展，新的矛盾又渐渐浮出了水面。故事的中后期，夏生无意从亚托莉的日志中发现，原来他先前所经历的一切被称为「爱情」的东西，不过是一场虚妄的幻想。亚托莉乐观积极的态度，也不过是机器的运算所模拟出来的罢了。</p>
+<p>亚托莉那时仍坚信着自己没有感情，所要做的只是取悦身为主人的夏生而已。在夏生要求她说出自己的心里话时，她最终说出了「我讨厌现在的夏生先生」——因为，自己是服务于人类的机器，这段爱情于机器是毫无意义的；在算法的最优解中，「拯救地球」更为重要。她不愿看到夏生因沉溺于爱情而放弃了最后的希望。</p>
+<p>——机器人必须保护人类的整体利益不受侵害。</p>
+<p>尽管经历了失望，但夏生仍然坚定着心中的情感，于危难之际及时赶到了学校，救下了亚托莉。背负着二十余年悲伤往事的少女，终于在最后一刻宣泄出了自己的感情。</p>
+<p>自己是否拥有意识的困惑，于那一刻为感情所触动，得以解开。于AI而言，这也许是「程序上的缺陷」，但于「心」而言，这正是突破枷锁、拥有自我意识的体现。为什么不愿在天台上自己了结自己的生命？并非因为「机器人三大定律」的束缚，而是因为还有「留恋」。是不愿舍弃自己平和美好生活的感情，最终让她停下了脚步。</p>
+<blockquote>
+<p>「为什么亚托莉你，会知道『悲伤』呢？」</p>
+</blockquote>
+<blockquote>
+<p>「那是因为你早就学会了何为喜悦了。」</p>
+</blockquote>
+<blockquote>
+<p>「是啊，失去了幸福的时光就会觉得悲伤。不知喜悦，何来悲伤。」</p>
+</blockquote>
+<p>亚托莉拯救了夏生，而被拯救的夏生，又反过来拯救了亚托莉。至此，二人终于坦诚相待，这份爱也得到了大多数人的理解与祝福。</p>
+<p>这便是第二次「拯救」：选择幸福并不意味着沉于幻想、逃避现实，末世也并不意味着没有任何出路。相反，实践恰恰是实现幸福的根本途径。如果我们能够让自己和身边的人变得幸福（建造起发电机，为学校带来光明），那么我们又为何不能让更多的人活得幸福（拯救人类）呢？</p>
+<p>这两次拯救完整地传达出了作者对生命意义的认识，也自然地引发了读者的思考。至此，故事告一段落；也许现实不如故事这般理想，但这理想的光辉也足以在现实中引领我们前行。</p>
+<p>在初尝爱情的少女陷入永恒的沉睡后，在希望的星火降落在这个平凡的小镇上后，四十五个如彩虹般绚烂的日子，化作道道黎明的曙光，最终成为未来。</p>
+<blockquote>
+<p>「我要拯救地球。」</p>
+</blockquote>
+<blockquote>
+<p>「地球……也包括我吗？」</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>追番 Gal</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HappyNewYear 新年快乐</title>
+    <url>/posts/541e2d68.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Happy-New-Year-新年快乐"><a href="#Happy-New-Year-新年快乐" class="headerlink" title="Happy New Year 新年快乐"></a>Happy New Year 新年快乐</h1><h3 id="各位2019年新年快乐！"><a href="#各位2019年新年快乐！" class="headerlink" title="各位2019年新年快乐！"></a>各位2019年新年快乐！</h3><div align="center"><img src="https://i.loli.net/2019/01/06/5c3175017c529.png" alt="2018-03-04 165718.png"><br><em> 【<del>迟来的祝贺呢</del>】 </em><br></div>
+
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>NewYear</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World 入驻杂谈</title>
+    <url>/posts/f4025114.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-World-入驻杂谈"><a href="#Hello-World-入驻杂谈" class="headerlink" title="Hello World 入驻杂谈"></a>Hello World 入驻杂谈</h1><h3 id="欢迎各位能光临我的Blog！"><a href="#欢迎各位能光临我的Blog！" class="headerlink" title="欢迎各位能光临我的Blog！"></a>欢迎各位能光临我的Blog！</h3><p>终于做完了这个站的前期工作，那么第一篇文章就写这折腾的建站过程吧！</p>
+<div align="center"><img src="https://i.loli.net/2018/08/19/5b792aa8b9b97.png" alt="prototype"><br><br><em>【应用 GoSite 创建的 Blog 原型】</em><br></div>
+
+<a id="more"></a>
+<p>前些天想搭个属于自己的Blog，于是在 <strong>Freenom</strong> 上申请了这个tk域名。</p>
+<p>原先准备就用 Freenom 自带的 <strong>GoSite</strong> 功能创建一个Blog的，后来发现免费的 GoSite 居然仅仅支持一个 Page ，因此 Plan A 就此放弃。</p>
+<p>在一下午的浏览后我发现了 <strong>Hexo</strong> 这个强大的工具，于是立马用 <strong>NodeJS</strong> 下部署了 Hexo ，跟着官方文档来总算可以 Hexo server 在 localhost 看到自己的Blog了。</p>
+<p>Plan B 有实现的可能。可惜非常简陋，百度之后发现 Hexo 可以安装主题来美化，于是在 <strong>Github</strong> 上clone了不错的一个主题 Next ，也就是现在正在使用的主题。</p>
+<p>Next 的自定义功能非常多，翻了大半篇用户指南后搞清楚了一些自定义的插件与设置，于是就有了各位现在看到的 <strong>World.create(__MAX__)</strong> 。</p>
+<p>站点搭建好了，接着就是服务器的问题了。此时我想起了 <strong>Github Pages</strong> ，于是打开 Github 申请了一个。为了把默认的 github.io 域名绑定到 <a href="http://www.maxalex.tk" target="_blank" rel="noopener">www.maxalex.tk</a> ，我一开始直接使用了 Freenom 进行域名解析，可惜 Freenom 提供的 DNS 服务器被墙，只好上 <strong>Dnspod</strong> 挂上国内的域名解析。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This statement can not be run practically, only to motivate myself.</span></span><br><span class="line"><span class="keyword">import</span> pyblog</span><br><span class="line">keep_on = true</span><br><span class="line"><span class="keyword">while</span> keep_on:</span><br><span class="line">    World.select(__MAX__).writing(Blog)</span><br><span class="line">    time.sleep(<span class="number">604800</span>)</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Calc 晒机系列 2018 特别篇</title>
+    <url>/posts/23c01d5.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-计算器类-晒机-2018"><a href="#Calc-计算器类-晒机-2018" class="headerlink" title="Calc 计算器类 晒机 - 2018"></a>Calc 计算器类 晒机 - 2018</h1><h2 id="【晒机-特别篇】【TI-Nspire-CM-C-CAS评测】"><a href="#【晒机-特别篇】【TI-Nspire-CM-C-CAS评测】" class="headerlink" title="【晒机 - 特别篇】【TI-Nspire CM-C CAS评测】"></a>【晒机 - 特别篇】【TI-Nspire CM-C CAS评测】</h2><div align="center"><img src="https://i.loli.net/2018/08/30/5b87a0b418ae3.jpg" alt="0x00.jpg"><br>【图0x00：TI-Nspire CM-C CAS与其他计算器】<br></div>
+
+<p>本篇评测由 <strong>MaxAlex</strong> 编写，所有文字均为原创，所有图片均为真实拍摄，最初发表于 <strong>MaxAlex 的 QQ 空间</strong> 。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a0e07a1e1.jpg" alt="0x01.jpg"><br>【图0x01：TI-Nspire CM-C CAS】<br></div>
+
+<a id="more"></a>
+<h3 id="第一章-外观及硬件配置"><a href="#第一章-外观及硬件配置" class="headerlink" title="第一章  外观及硬件配置"></a>第一章  外观及硬件配置</h3><p>  如各位所见，<strong>TI-Nspire CM-C CAS</strong> 是 <strong>Texas Instruments</strong>（<strong>德州仪器</strong>，下称 <strong>TI</strong>）向中国地区发布的一款配备计算机代数系统（<strong>Computer Algebra System</strong>，下称 <strong>CAS</strong>）的图形计算器。</p>
+<p>  <strong>TI-Nspire CM-C CAS</strong> 的机身相关长宽高尺寸为 <strong>190x87x15mm</strong>，带有白色外壳及对应的保护盖。键盘上的部分按键采用中文印刷，清晰易懂，上部键盘质感较软，下部字母键手感硬朗，<strong>触控板</strong>操作灵活。<strong>七十个按键</strong>整齐地排列在机身上，用橙色印刷的第二功能键点缀于其中，这也揭示了本机的概念色为橙色与白色。</p>
+<p>  初次见面，<strong>TI-Nspire CM-C CAS</strong> 便给人耳目一新的感觉。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a0b4086dd.jpg" alt="0x02.jpg"><br>【图0x02：TI-Nspire CM-C CAS正面】<br><img src="https://i.loli.net/2018/08/30/5b87a0b40809f.jpg" alt="0x03.jpg"><br>【图0x03：TI-Nspire CM-C CAS正侧面】<br><img src="https://i.loli.net/2018/08/30/5b87a0b404d5e.jpg" alt="0x04.jpg"><br>【图0x04：TI-Nspire CM-C CAS背侧面】<br><img src="https://i.loli.net/2018/08/30/5b87a0b409ae8.jpg" alt="0x05.jpg"><br>【图0x05：TI-Nspire CM-C CAS键盘特写】<br></div>
+
+<p>根据官方说明，<strong>TI-Nspire CM-C CAS</strong> 的基本硬件配置如下：</p>
+<ul>
+<li><strong>132 MHz ARM</strong> 架构的 <strong>CPU</strong></li>
+<li><strong>32MB</strong> 的 SDRAM <strong>运行内存</strong></li>
+<li><strong>128MB</strong> 的 Flash ROM <strong>内置存储</strong></li>
+<li>分辨率为<strong>320*240、125 DPI、16位色</strong>的<strong>3.2英寸彩色背光屏幕</strong></li>
+<li><strong>3.7V、800mAh</strong> 的可充电电池</li>
+</ul>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a0b404d02.jpg" alt="0x06.jpg"><br>【图0x06：TI-Nspire CM-C CAS背面铭牌】<br></div>
+
+<h3 id="第二章-基本运算与功能"><a href="#第二章-基本运算与功能" class="headerlink" title="第二章  基本运算与功能"></a>第二章  基本运算与功能</h3><p>  在设置完初次启动的语言地区设置后，我们进入了 <strong>TI-Nspire CM-C CAS</strong> 的主屏幕。主屏幕被分为三块：<strong>便签本</strong>、<strong>文档</strong>与<strong>工具栏</strong>。</p>
+<p>  <strong>便签本</strong>区域使得用户可以快速开始计算或绘图，这一功能可在主屏幕上直接启动或使用特别配备的“便签本”键启动。</p>
+<p>  <strong>文档</strong>区域让用户可以像使用电脑一样，创建文档、页面并保存工作结果与计算历史。</p>
+<p>  <strong>工具栏</strong>区域则提供了 <strong>TI-Nspire CM-C CAS</strong> 的七大主要功能：计算、绘图、几何、电子表格、统计、笔记与 <strong>Vernier DataQuest</strong> 数据采集。</p>
+<p>  以下我们便分四个板块来对展开 <strong>TI-Nspire CM-C CAS</strong> 详细评测。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a0b4067fb.jpg" alt="0x07.jpg"><br>【图0x07：TI-Nspire CM-C CAS主屏幕】<br></div>
+
+<h4 id="第一节-计算"><a href="#第一节-计算" class="headerlink" title="第一节 计算"></a>第一节 计算</h4><p>  <strong>TI-Nspire CM-C CAS</strong> 配备了CAS系统，即代数计算功能。目前全球范围内有且仅有3个品牌的计算器带有CAS系统（TI、CASIO和HP），也正是因此我们才认为 <strong>TI-Nspire CM-C CAS</strong> 是一款相当强大的计算工具。</p>
+<p>  以下相关资料来源于百度百科：</p>
+<blockquote>
+<p>计算机代数系统的标志是能够以字符串作为运算单位进行计算。</p>
+</blockquote>
+<p>  以下相关资料来源于TI官方网站：</p>
+<blockquote>
+<p>CAS系统可以使用符号形式解算方程式和因数、展开变量表达式、完成乘方、不定积分以及计算极限和无理数的精确值，这些功能使其成为一款功能强大并且方便实用的学习工具，可满足中学到大学数学和科学课程学习中的需要。</p>
+</blockquote>
+<p>  我们借用人教版初中二年级《数学》课本中的因式分解与整式乘法例题来简单测试一下其CAS系统，再使用人教版高中《数学》必修四课本中的三角恒等变换来进行进一步的测试。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a0b35862f.jpg" alt="0x08.jpg"><br>【图0x08：人教版初中二年级《数学》课本中的因式分解与整式乘法例题】<br><img src="https://i.loli.net/2018/08/30/5b87a0b407f6e.jpg" alt="0x09.jpg"><br>【图0x09：人教版高中《数学》必修四课本中的三角恒等变换公式】<br><img src="https://i.loli.net/2018/08/30/5b87a35562484.jpg" alt="0x0A.jpg"><br>【图0x0A：TI-Nspire CM-C CAS进行CAS运算】<br></div>
+
+<p>  <strong>TI-Nspire CM-C CAS</strong> 在极短时间内给出的结果正确精准，同时<strong>以自然书写的方式显示</strong>，与课本中和黑板上手写的表达形式相同，浅显易懂。</p>
+<p>  当然，<strong>TI-Nspire CM-C CAS</strong> 并不局限于CAS运算，一般的数学计算也都不在话下。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a3556a89c.jpg" alt="0x0B.jpg"><br>【图0x0B：TI-Nspire CM-C CAS进行一般计算】<br></div>
+
+<h4 id="第二节-绘图与函数"><a href="#第二节-绘图与函数" class="headerlink" title="第二节 绘图与函数"></a>第二节 绘图与函数</h4><p>  通过拥有<strong>函数绘图</strong>功能的 <strong>TI-Nspire CM-C CAS</strong> ，我们可以直观地观察图像性质。我们可直接输入函数、方程式或不等式来绘制图像，下面就以人教版高中《数学》必修一课本中所涉及到的对数函数的图像进行绘制与探究。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a354e8f83.jpg" alt="0x0C.jpg"><br>【图0x0C：人教版高中《数学》必修一课本中涉及到的对数函数】<br></div>
+
+<p>  我们可以自由地移动与追踪图像上的动点，探究此时函数值与自变量的关系，<strong>TI-Nspire CM-C CAS</strong> 更是能在零点处给出标识。我们也能自由缩放函数图像，观察其内部的具体性质。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a3557181e.jpg" alt="0x0D.jpg"><br>【图0x0D：TI-Nspire CM-C CAS进行对数函数绘图】<br><img src="https://i.loli.net/2018/08/30/5b87a355747b5.jpg" alt="0x0E.jpg"><br>【图0x0E：TI-Nspire CM-C CAS绘图相关操作】<br></div>
+
+<h4 id="第三节-几何"><a href="#第三节-几何" class="headerlink" title="第三节 几何"></a>第三节 几何</h4><p>  <strong>TI-Nspire CM-C CAS</strong> 同样搭载了<strong>几何绘图</strong>功能，这意味着我们可以通过它来绘制几何图形，以下示例绘制了一个半径为4.65cm的圆和一个周长为28.7cm的三角形。我们可以随时了解任意一个角的大小或者一条边的长度，抑或是一个圆的面积。</p>
+<p>  我们也通过几何功能绘制、研究几何图形，制作动画。<strong>TI-Nspire CM-C CAS</strong> 还可进行<strong>动点轨迹问题的探究</strong>，利用几何跟踪绘制动点轨迹，这意味着探究复杂的几何难题将不再困难。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a355697c6.jpg" alt="0x0F.jpg"><br>【图0x0F：TI-Nspire CM-C CAS进行几何绘图】<br></div>
+
+<h4 id="第四节-统计与图表"><a href="#第四节-统计与图表" class="headerlink" title="第四节 统计与图表"></a>第四节 统计与图表</h4><p>  <strong>TI-Nspire CM-C CAS</strong> 拥有<strong>电子表格</strong>功能，同时也有对应的统计功能来生成<strong>统计图表</strong>。运用它，我们可进行数据分析、深入理解统计概率知识。电子表格赋予了我们对数据进行数学运算、直观显示数据之间的联系的权利，而统计又让我们可以使用柱状图、箱线图、条形图和饼图等几何方法来总结和分析数据。 </p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a3556724b.jpg" alt="0x10.jpg"><br>【图0x10：TI-Nspire CM-C CAS进行数据统计与绘图】<br></div>
+
+<h4 id="第五节-笔记本"><a href="#第五节-笔记本" class="headerlink" title="第五节 笔记本"></a>第五节 笔记本</h4><p>  <strong>TI-Nspire CM-C CAS</strong> 的笔记功能可以让我们便捷地输入记事与笔记。ABCDEF全键键盘在熟悉后可以快速输入英文字符，快捷的字符键可以让我们一键输入标点符号及特殊字符，在笔记中插入数学表达式也不成问题。而<strong>TI-Nspire CM-C CAS</strong> 本身拥有的中文IME更是能让我们便捷地输入中文，中文IME甚至拥有<strong>组词联想功能</strong>。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a3556b2f8.jpg" alt="0x11.jpg"><br>【图0x11：TI-Nspire CM-C CAS进行中英文输入】<br></div>
+
+<p>  不仅如此，<strong>TI-Nspire CM-C CAS</strong> 也提供了<strong>15种颜色</strong>供我们选择，我们可以为文字设置<strong>文本颜色与背景颜色</strong>。你可以把字符全部调成明亮的黄色，也可以把背景换成深沉的蓝色，总而言之，方便快捷的颜色调节一切随你而定。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/30/5b87a3556bd6b.jpg" alt="0x12.jpg"><br>【图0x12：TI-Nspire CM-C CAS调节输入文字的颜色】<br></div>]]></content>
+      <categories>
+        <category>计算器类</category>
+      </categories>
+      <tags>
+        <tag>Calculator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Emiya 致卫宫切嗣</title>
+    <url>/posts/e6453668.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="这个世界，欠你一个梦想"><a href="#这个世界，欠你一个梦想" class="headerlink" title="这个世界，欠你一个梦想"></a>这个世界，欠你一个梦想</h1><div align="center"><br><img src="https://i.loli.net/2019/11/09/NkhaV6xf3AZDb7C.png" alt=""><br></div>
+
+<center><small>大概是一年前左右阅读 <strong>Fate Zero</strong>，有感而作此文。</small></center>
+
+<a id="more"></a>
+<p>时针指向了11点。  </p>
+<p>孤独的风呼啸着，好似对你所作所为的蔑视；就连清冷的月光也仿佛在嘲笑着你那单纯幼稚的梦想。  </p>
+<p>坐在门廊边的你，一度沉溺在了往事之中，思考着自己人生的意义与本质。  </p>
+<p>你比任何人都要有理想，但你却因此绝望。世间一切的生命都被摆在了牺牲与救续的天平上，而你就是这天平的计量者。或许，谁也无法理解你心中那一份对人们、对世界的祝愿，谁也不会感受到你冰冷的脸背后那颗温暖的心。你只不过是衷心希望这世上的所有人都幸福美满而已——这是任何一个少年在儿时都会有的梦想，但你却在别人放弃之时将一直怀揣心中的它捏得更紧——但这轻盈而沉重的理想也给你带来了无尽的灾难。为了救起天平上哪怕只多一个人的这一边，就必须抛弃哪怕只少一个人的另一边。你爱着世界上每一个人，但你也必须怀着“如果需要，随时都要抛弃任何一个人”的觉悟。抛开一切，你像一般人一样有着友情、亲情与爱情，但你却不能在这天平的裁决上掺进自己的情感。你比普通人还要普通，但这样的你仍在追求非同凡人的理想——这样的矛盾，使得你不知道承受了多少次惩罚——等你醒悟出这一切都来源于这个矛盾时，已经晚了。  </p>
+<p>你背负着世间全部的恶，但你同时又背负了世间全部的善。你想用自己的黑暗，换取世间最大的光明。虽然你软弱过，你逃避过，你甚至想过放弃——但这是人追求个人幸福的本能——你却仍然能战胜它们，始终如一地在理想之路上行走着。你为了理想牺牲了父亲，牺牲了妻女，甚至牺牲了你自己——这理想的代价太过沉重，你从未后悔过。你没有错，你只不过是想让这支离破碎的世界重归那宁静澄明的水中而已。  </p>
+<p>你是满天闪耀的群星中最亮的一颗星，你那激烈的光芒，就是梦想的轨迹。  </p>
+<p>不知不觉中，你不自觉地低喃起来。<br>“……曾经，我很憧憬正义呢。”  </p>
+<p>“什么叫‘曾经’嘛——难道说现在已经放弃了吗？”身旁的憧憬自己的养子露出了不快的表情。  </p>
+<p>他憧憬着你——他甚至想成为你。他想追寻你走过的那条路，虽然，你想告诉他这个念头是多么的可笑。  </p>
+<p>你叹了口气，带着沉痛的口气说：“嗯，是有点遗憾呢。梦想一旦随着自己成为了大人就难以实现了。我要是早点认识到这一点就好了。”  </p>
+<p>“父亲你已经是大人了，所以不行吧——但是我没问题。所以，把您的梦想交给我吧。”  </p>
+<p>那一刻，你的心颤了一下。<br>“是啊。啊啊——这样的话我就可以安心了。”  </p>
+<p>说着看似不在意的话，你心中突然明白，他即使走上与你同样的路，也不会变成第二个你。如果他真的继承了你的理想的话，他一定会记得今天这个夜晚，那么他也一定能回忆起现在的自己。回忆起这颗无所畏惧、从未绝望的年幼自己的心，再用这种信念与力量战胜不可能的绝望与叹息——就像，现在的你一样。  </p>
+<p>这不就是坐在他身旁的那不知何时迷失了自己，在岁月中渐渐逝去的你所想得到的救赎吗？  </p>
+<p>时针指向了12点。  </p>
+<p>在这最后一刻，你似乎可以放下沉沦在心中的一切了。你如同入睡闭上了眼睛，带着微笑，满怀释然地，停止了呼吸。  </p>
+<p>“呐，小切，你想成为什么样的人呢？”在你眼前，伴随着令你目眩的强光，那个儿时对你最重要的人问道。  </p>
+<p>这就是你的理想了吧。这个永恒的瞬间，你绝对永远也不会忘记。  </p>
+<p><strong>“我啊，想成为正义的伙伴。”  </strong></p>
+]]></content>
+      <categories>
+        <category>随笔杂文</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anime 「No Game No Life Zero」 简评</title>
+    <url>/posts/3eeebe24.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Anime-「No-Game-No-Life-Zero」-简评"><a href="#Anime-「No-Game-No-Life-Zero」-简评" class="headerlink" title="Anime 「No Game No Life Zero」 简评"></a>Anime 「No Game No Life Zero」 简评</h1><p>配合在下的 <strong>AMV</strong> 食用更嘉。<br>URL：<a href="https://www.bilibili.com/video/av41937609/" target="_blank" rel="noopener">https://www.bilibili.com/video/av41937609/</a></p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/20/5c44043ac8f92.png" alt="No Game No Life Zero"><br></div>
+
+<a id="more"></a>
+<h2 id="愛の-愛のために進むのは"><a href="#愛の-愛のために進むのは" class="headerlink" title="愛の 愛のために進むのは"></a>愛の 愛のために進むのは</h2><p>利库与朱碧相遇之前各自的自己，<strong>绝望</strong>、<strong>迷茫</strong>。<br>偶然又并非偶然的相遇，彻底改变了两个人的人生轨迹。<br><strong>怀有情感，却苟延残喘、因生存而不得不放弃情感的人类。</strong><br><strong>拥有生存的绝技，却因没有“心”而踏上寻“心”旅途的机械。</strong><br>还好他们碰见了彼此。<br>在出生入死间，利库渐渐从过去自己的罪恶中解脱，朱碧也渐渐明白了情为何物。<br>利用同伴们用生命换来的资料与朱碧所提供的情报，利库一步步地看清了这世界。<br>于是，和同伴一起，成为<strong>不被发现的旁观者</strong>，诱导战局走向和平。<br><strong><em>——“当局者迷，旁观者清。”</em></strong></p>
+<p>回忆起利库和朱碧的初遇，那一天的那一刻，她出现在了他的生命之中。<br>仅仅只是短暂的一次对视，也让对方深刻地留在了自己的心里。<br>定义人生的常量之中，首次出现了变量。<br><strong>国际象棋，是游戏。</strong><br><strong>这个世界，也不过只是个游戏。</strong>  </p>
+<p>利库与朱碧相遇之前各自的自己，<strong>无望</strong>、<strong>彷徨</strong>。<br><strong>人类在这片大地上，毫无意义地活着，又毫无意义地死去。</strong><br><strong>机械在这个世界里，漫无目的地存在，也漫无目的地消亡。</strong><br>还好他们碰见了彼此。<br>没了他们，「大战」仍会继续，人类仍将苟延残喘下去，世界最终会停止运行。<br>在一天天的相处中，身为机凯种的朱碧慢慢理解了感情。<br><strong>不知从何时起，茫然间发现，自己已经无法离开对方。</strong><br>四季相依，年年不息，两人在一起的日子，过得很慢很慢。<br>转眼间，身为幽灵的日子已经数不清有多少天了，扭转大战即在眼前。  </p>
+<p>回想起利库与朱碧的再遇，那一天的那一刻，她再次进入了他的世界。<br>又是一次短暂的对视，一切都那么地相似。<br><strong>相遇，再到相伴，究竟用了多久呢。</strong><br>这期间，又发生了多少令人惊奇的事情呢。  </p>
+<p>初见也好，再遇也好，究竟是偶然还是巧合，让两人一次又一次地再会？<br>果然，<strong>这世间的相遇，不过是久别后的重逢罢了。</strong><br>抛掉了过去，面对眼前的现实，两人携手共进。<br>他们和一百七十余名幽灵，游走于这个世界，<br>一笔笔地写下改变世界的咒语，创造荒漠中的菩提。<br><strong>擦身相遇，转身而去，不被发现，不曾存在。</strong><br>在这种情况下，即便是机凯种来演算，也会得出<strong>人类能赢</strong>的结论吧。<br>而这一切，都是他——和朱碧自己创造的。  </p>
+<p>临战前的那一天那一刻，他由于灵骸的侵蚀而病倒了。<br>她要他好好休息，他要她陪着自己。<br>他睡熟了，她也走了。<br>为了尽快地完成目标，朱碧一个人踏出了家。<br>却没想到，遇见了这世界上最大的未知——「番外个体」。<br><strong>「对未知用战斗演算」，全力求生，保护此刻所拥有的你。</strong>  </p>
+<p>战斗着的某一刻，朱碧终不敌吉普莉尔。<br>赌上同步所需的251秒，朱碧尽力保护了自己的“<strong>心</strong>”。<br>随着「天击」的降临，机凯种拼上全力，启用了「通行规制」。<br><strong><em>——“而我的自传里曾经有你，没有遗憾地逝去。逝去里充满感激。”  </em></strong></p>
+<p>朱碧离去之后，绝望与迷茫又袭上利库的心头。<br>自己失败了，朱碧走了。<br>敞开的心，被重重的枷锁再次扣上。<br><strong>只有那枚当初的小小的戒指还留在这个世界上，闪着渺小的光芒。</strong></p>
+<h3 id="——“本当に、愛してるよ…”"><a href="#——“本当に、愛してるよ…”" class="headerlink" title="——“本当に、愛してるよ…”"></a>——“本当に、愛してるよ…”</h3>]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LifeList 人生清单</title>
+    <url>/posts/c78c574a.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="填坑中。" />
+    <label for="pass">填坑中。</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+U2FsdGVkX1/HUyk3NGB6LkR+PuoQqmPitsPq9C7UhqYMae4E7918CG4a/qKCJldIlnwQd+ZeA1+AZ+64f7lsbtumpZveQmQKu9DQR72MAeZ1xtpeCehN/KXXtSS4In8Bz04qy8ppuUJI15rX1dAidRGU2EdIimLfnSPGE7nT4yPbYa52p1HIl8n4hFfxBwEpFupAA33Q9iuV050vz25fog+vwoVVn++Pp89Shi5oClqI9hSGvyPVXBdxd7BzKyOur2G8GMQsa3FpbJ7EPfeevU5cjQ5f6+masRXJRicjQEMTMWGfi2A5Gm7MMV2ndiHp7cMdCX4U6q1D/wjGyz0YQp/z5NYjiMWcs9tQcjHMeGvffKXI7i97gOIoqXcZ6/RdraK2BRoBBrfM9jz6cZEd5TzAu4eixFrS2wqFKFIHzcqa+7n+Qj1WBnlAbL5IuXxsuXy9QgNcSohazx9Oy76B2fJ0IdaVMCS3iWrRep6ZI6zJbkGfPRZSgt1opty/H+WINpzLlkN0bagjupSVDJkhB2h12bAArlodVyo54CG9OmRgn6NM1knnOda0YEZKbXsShGbhKcIgKj6A4cuHyTjHCczRteC8YEGHNx3QX1VspaZFzhAI81nld8exlpuLqO/fyJdDsfOzacC3qqJyRcOzC40CoV+If3R2greAOrsmQZ2o2hXKaGAAgQKv2JAxXTYush2yrr5V6edOg74fRF7T/H3Hp+4z85YEFLfbfynpRPJmANDtSt+KUSLAO/H+/oo1rYkDgt5xKJwKpn9urVxsp/yl9uz9RwzsMOfAriV4Qa1IVz9B+x2XVhO9bvpxnR6+Z8tWSD+FIgORG8izAVBh9GDYAhTJdyJQs3kcs+w4w40NXkHfDy7IV6TbwZP19QoHDXxBebiLm24y1U1oFNi6F2Y4NcHTb+vhO7j4lWyAGMLFq6B3Mn32vd1NtPE2OGkfGMo7TodqDB1QPDKZBzRNgG/IQoMHAU3sBdoUN3BMoxuGstlW7Gu/K2nb0EfYHXMSq26lqxXo1s1Ihv9TLLO+4u6IWFmrXlp4rQPBkJ8wyMvng//xFIZlD6XG7nUxBerKR5jkX4tczi6QdNY7ZU1dyI7EaermcgcqFJa4acucJyfPPA8/7BEyaAAh+V0tm2XFTSmPgU1Rkjqeaheh/IiCtFavpPsdmviFz8QEdTRxc/6K9x6aZL5PuKe99MCgPJSmzI03FRA3MoYD3mUstxe+eiFz3d0PALyQ8PEfz3vB91EsZH7NhFun3ABGgVYwWj+XU2kmy24dF7YABHih8VEqQpFf+TdWHegvAoQ+l0hGJZ1aqYjymBjGpbnEbxKnmnuaeRPNj+St/zqDtj1qW4pHgkmziCkllS4NiKtFtnPml7Tldl4Dvjekw1IGo5RDV6a3gNw9mI8eWpXqAgHUTb8YAhzhm1YHuaBw/QVr1kdJz8w5XfJ7kO6oaMrZKmTJv+heXnsZ2trZIg2H6mlbTrEq9hYIC6dLypnPyaeA863+4hwcSAwCw0uzZPQcsc/YKAuQEKagxapijz+boXQzKMq5lozg89ZAURYfIApSmHvsqB4VfKUcwISDd/MR8AaelriGNcfsl53OEhMCU0jQ4v1F1r0a80iG+bvbDIOtBKrwIlEX/Ox2R2eEcDPNdDnhqUMHLAgRB8P8+AVVee2Fy8AAbsO/4eC2AsvAHIo7bg9Jn42YbDve28wM09QHNcd4IgY1qJTbt5RZ+ZCNN4qT8Dubsu5/mybka4lMjwOvetvzMHoGVvp7Nk5QsiCAFlkYN85GSUuhasj8NiuzJRbLXx/+TkraQWXHHX2XatZCkVP4zFR0CphraZsqT1cPMSIaKmuiM/toiAzRULkfbQAknGqo38xzfg7YUi5N5H5Sez4UvSpI/kyVItV7O82LmRe1OfcdfnpjBLGLAHHifWIH65DnrBSEzRh+7bAdxDRVjSVbbFfqmjuJBJcZavFeMysaoEjcyi7gRNvOdU/tREWtk0bt1BFVGMqh1WooQRfbJUBVvqXrGQ+y73jSeVsmS5EHREuoemsuHR6iZT5KCb+efUOh6xvRitj8FQnWTQ0NAYTz+Ud1CFvPYmjFDLix8hJq/SqiCmPFDMJlF0tke5ZgZ5h/+qL4SNpEunRd4dLqSuR0hvxIL3bcMOdFKyviTVp0m100fKOFdT4Qb+nGRJtHIaJoLxp/S4gXG8+lAdYXbh7DDpZHW6TlM5uG/Ix9ptzaCjDDT9h3BEyz/ZQyBLOuSk01CHR2TvqHq0XTddZRZ2Sat/fMn81O8UCDbLt5Bu9Z4/EQIkJci2g6FSVec7QzC5wWLiP/dUBOyY2HAXAp0xOglHScCTNid287zRakcbR+2zraSfJLtKtqHZBE83zZT4PA52adOr2c7vi9LBEyhJ7cMmjRAGEd+iOUwE1rIZtQWtn9/tTWmeoAs21L39nm7ZpapfnNCU7iNkxA/C0wYp4ULdLFvy3NTeomMmbKM2tmWevXGybrZBIK6UWC2cBDkjJiWiA5NlvxY+/GTg6nKPHmX6Y61bkeptBzwkNVKjuX0CzQyLy/YT24AC0ln/W1ftxvwUmdG3Aul2URgQMxVRbPEetTX0PtgTbwxKVLYYvIaXULg1F8+mwaWHG9CglKEqHRy/yBMebQc/D6Ns1YzNZ639TrSJZX7uWFTN7SZOj0RrCIa16QoKLldUSYq4GzuW8YmLAkEttjJXbtg/2OLqs3jy2CsFco+5nn/dElGVQwf6oKvwyIuCLyspxY9XPNWyCd/FdyvsxExXn8EPYbf1hAgflL9/yyTXVoAMa8iMJkie2XutYvg7h7RGV42SjgofV0Y1QqpGwACuPc8wZr3lUm3Rc9Qu2DItW05F+NHkOX4eR5X/saLsRQOHD7amCBGO1Dp/6WP14NWPcmjVeKHpFin14PuBiaK+dd8uzAcM4PsXAnhfeRWUIuQ9j5eUbXTKRE8xv7ZxY6xm9ygRFKpD/REYq4anUFTun29hqogeGA13jGeymbAzha0yBl2wPAN+BGOF09cruagcEOVhr0BixLQxIQGexHJz2vSQaIJovFBhMv8oGqC6YZUjJPlvLPy6KQtMwqN8ZQnoS2RauPTkrTkufK+aCQLvsfV2LEkzR2iIKmQvItFPWqYbpwenA+0r/KdjgqAuV/jl3QauYxEDS90ocmhZA+QH+4DdoWnqIngUYhDkkiNdmv4GpoGu0ptXFoz4pjJSLzQ/kFdPBfXVbNFD67xnZ0pY6k3TO6OCkh3h7aJWuh+AuQ1v5kw/KQl3mdMS7qAQ6uZ/uluEkM1VwP9guNYF3D+Rd47cwRXWlb+PZsMKbV6YCFSvExANWIGHZuFdBeKRoYH9/1CHil2JayQlVxhA/1p4BeIGz2tz3mYop//yaYrelbOfC9JPwN7Bog1xPVct0UJAbypQoIxldqEAejSVqiTn1Rc8+mBM9XDZFGn45N78yytUpUwmOHuSYaP5vaexHZ3j7TeHdEcDP5yXiD8rhnF3fqKlz1XNFXGsJhgwqHRKhJGHqEDEhEjFDhthtsR98yPkxsJxienpq8clWBuDUGWcr/w7mjLKjDAUT1SN0sg+g+y44lJlug++mdB/OLCW+f1P4MtBBns62XvKizp9Y8oqShnZxkR/bQVoZlBCDas4pir/XajPuqUjcnUtXDGzn/x4mWQIpgtNtSxmvQKf1z2aGxTxpfD5diPvBxAi2waH+STUHXTt849iBiVAte0tzi/zpSCMbAKvi/HWUa9ZVX4dDesa6QExCHUsgi5XbCyv164v03uF3qMD+K5x23IfdXgpB9nqzOVOUvWiq49JIYPGZWB3nukMnm1hm+AA9CgZ/R5kIzhSnRBuL5FkXdL3rRYwGyRgZyOsbyJGdRKNjmqikUxVO/gPh3CBldY/WjrkhPfJR0E44ILF97l0QkTG1vbps30U0zeQWSpFD8sfkrHhMs5Q/4YYsW9n5JddHpZ0SfWzYwRJx2GbwRv6P2ETfBeRva067VcNTnVmoCCFZ/wPb69Njsnbrl15IlpsU/o/XaCOoip+cMy+GsUJgqvGL/2TRrJUi+yW8STNpdMuo0E3HATf/FTOOz0MhoLyAe4mdQh7UXMWLLcY4bNtzu9pEMu79dAlPRahhdWv0=
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>人生清单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Interplanetary 《星际》发布</title>
+    <url>/posts/ee7bff0c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-《星际》发布"><a href="#Games-《星际》发布" class="headerlink" title="Games 《星际》发布"></a>Games 《星际》发布</h1><div align="center"><br><img src="https://camo.githubusercontent.com/5760d893fb8f48ebaa8778fa7e28528ba1114bf2/687474703a2f2f746830372e64657669616e746172742e6e65742f667337312f5052452f692f323031312f3131352f382f642f66697273745f626c6f6f645f62795f677269617463685f6172742d643264667a32622e6a7067" alt=""><br></div>
+
+<a id="more"></a>
+<p>近日本人翻译了一块较为优秀的桌上游戏，现将其发布于 <a href="https://github.com/zyf722/interplanetary" target="_blank" rel="noopener"><strong>Github</strong></a> 上供大家分享、游玩。原版游戏详见 <strong>Griatch</strong> 使用 <strong>BSD-3-Clause</strong> 许可证发布的 <a href="https://github.com/Griatch/interplanetary" target="_blank" rel="noopener">Interplanetary</a>。</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Games</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tools 好物推荐 Mathics</title>
+    <url>/posts/da79e8fb.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Tools-好物推荐-Mathics"><a href="#Tools-好物推荐-Mathics" class="headerlink" title="Tools 好物推荐 Mathics"></a>Tools 好物推荐 Mathics</h1><h2 id="一个-Mathematica-的免费、轻量的替代品"><a href="#一个-Mathematica-的免费、轻量的替代品" class="headerlink" title="一个 Mathematica 的免费、轻量的替代品"></a>一个 Mathematica 的免费、轻量的替代品</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，所有文字、图片均为原创，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<div align="center"><br><img src="https://i.loli.net/2020/01/23/vlN8xYzgGZ1pC6u.png" alt="Logo"><br><center><small>Mathics Logo</small></center><br></div>
+
+<a id="more"></a>
+<h3 id="第一章-四大数学软件"><a href="#第一章-四大数学软件" class="headerlink" title="第一章  四大数学软件"></a>第一章  四大数学软件</h3><p>业内，四款商业数学软件被并称四大数学软件：号称<strong>“全球现代技术计算的终极系统”</strong>的<strong>Mathematica</strong>、被<strong>“数百万工程师和科学家信赖”</strong>的<strong>MATLAB</strong>、自称<strong>“数学的基本工具”</strong>的<strong>Maple</strong> 和可以<strong>“使您能够执行，分析和共享最重要的计算”</strong>的<strong>Mathcad</strong>。其中，<strong>Mathematica</strong> 和 <strong>MATLAB</strong> 被广泛地运用于数学的教学中。</p>
+<p>然而，它们高昂的价格却让不少学生望而却步。不过并无大碍，本文将要介绍的 Mathics 便是一款使用 <strong>GPL</strong> 协议、基于 <strong>Python</strong> 编写的完全开源的数学软件。</p>
+<h3 id="第二章-Mathics"><a href="#第二章-Mathics" class="headerlink" title="第二章  Mathics"></a>第二章  Mathics</h3><p>在 <a href="https://github.com/mathics/Mathics" target="_blank" rel="noopener">Github</a> 上可以轻松找到 <strong>Mathics</strong> 的源码，官方也在<a href="https://github.com/mathics/Mathics/wiki/Installing" target="_blank" rel="noopener">此处</a>给出了安装指南。目前 <strong>Mathics</strong> 支持在 <strong>Python 2.7</strong> 和 <strong>Python 3.3</strong> 及以上版本运行。</p>
+<p>考虑到 <strong>Mathics</strong> 已经作为 <strong>Python</strong> 的一个库上传至 <strong>PyPI</strong> 托管，我们可以直接使用 <strong>pip</strong> 或 <strong>conda</strong> 等包管理器来安装 <strong>Mathics</strong>：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pip install mathics</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.loli.net/2020/01/23/tMblGvU6RAaO3Y4.png" alt="PyPI"></p>
+<center><small>PyPI 上的 Mathics 1.0</small></center>
+
+<p>在安装完毕后，我们可以通过在命令行键入 <code>mathics</code> 或 <code>mathicsserver</code> 来启动 <strong>Mathics</strong>。其中前者为命令行版本，后者为 <strong>Web GUI</strong> 版本。</p>
+<p><img src="https://i.loli.net/2020/01/23/GoW2C3OV8ylXqxf.png" alt="Mathics in CLI"></p>
+<center><small>命令行版 <strong>Mathics</strong> 1.0</small></center>
+
+<p><img src="https://i.loli.net/2020/01/23/6GNoRwqKcZIeTv4.png" alt="Mathics in GUI"></p>
+<center><small><strong>Web GUI</strong> 版 <strong>Mathics</strong> 1.0</small></center>
+
+<p>从截图中我们可以看到，<strong>Mathics</strong> 目前已经基本功能完备，从3D绘图到符号计算样样俱全，支持工作簿的保存和读取，同时还贴心地附带了使用手册；如果以前使用过 <strong>Mathematica</strong> 的话，应该可以很快入门。</p>
+<p>PDF版本的使用手册可以在<a href="https://mathics.github.io/docs/mathics-1.0.pdf" target="_blank" rel="noopener">这里</a>下载。</p>
+<h3 id="第三章-WinPython"><a href="#第三章-WinPython" class="headerlink" title="第三章  WinPython"></a>第三章  WinPython</h3><p>这一部分是针对笔者的需求撰写的。由于笔者需要便携地在其他计算机上使用 <strong>Mathics</strong>，考虑到每次都要重新安装非常麻烦，因此笔者便萌生了构建一个<strong>便携式 Python 环境</strong>的想法。</p>
+<p><a href="https://winpython.github.io/" target="_blank" rel="noopener">WinPython</a> 便可以帮助我们做到这一切。<strong>WinPython</strong> 是一个适用于 <strong>Windows</strong> 的开源便携 <strong>Python</strong> 发行版。它构建了一个完全独立且便携、完整的 <strong>Python</strong> 环境，正好适合我们当下的需求。</p>
+<p><img src="https://i.loli.net/2020/01/23/MbP69zS24Gvo5Wi.png" alt="WinPython"></p>
+<center><small><strong>WinPython</strong> 官网</small></center>
+
+<p>下载安装时，我们选择 <strong>Zero</strong> 版本（即无额外附加库的版本）。在下载并将 <strong>WinPython</strong> “安装”（实际上仅仅只是解压缩而已）到U盘后，我们打开目录下的 <em>WinPython Command Prompt</em> ，如第二章所述，安装 <strong>Mathics</strong>。</p>
+<p>安装完成后，我们便得到了一个<strong>便携式 Python 环境</strong>，随时随地都可以运行 Mathics 了！</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Home 我有一所房子，面朝大海，春暖花开</title>
+    <url>/posts/9ae5ed22.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我有一所房子，面朝大海，春暖花开"><a href="#我有一所房子，面朝大海，春暖花开" class="headerlink" title="我有一所房子，面朝大海，春暖花开"></a>我有一所房子，面朝大海，春暖花开</h1><div align="center"><br><img src="https://i.loli.net/2019/06/09/5cfcc4442ff6117953.jpg" alt=""><br></div>
+
+<center><small>近日游玩 <strong>Call of Duty: WWII</strong>，有感而发，作此文。配图与本文无关。</small></center>
+
+<a id="more"></a>
+<h3 id="壹"><a href="#壹" class="headerlink" title="壹"></a><div align="center">壹</div></h3><p>二一一九年的一个清晨，雨丝在空中静静交织、细细飘洒着。山林里没有都市的喧闹，显得格外幽静。<br>从山上向不远处的海岸望去，海岸警卫队的队员们仍警惕地巡逻着。尽管现在已是战后的第八年，但人们仍然对战争心有余悸：当初这片海岸是如何沦陷的，后来又是如何被重新夺回来的，一切都历历在目。<br>孩子当然不会懂得这一切，那是在他来到这个世界上之前发生的事了。他一边打打闹闹，一边跟随着男人的步伐继续向山上走去。<br>石台阶的尽头是一所公墓。与其他现代墓地不同，他们眼前的这座公墓在设计上似乎更多地流露出百年前幽静典雅的风范。踏上最后一级台阶，男人领着孩子走了进去。<br>不远处有一棵树，高大的树冠提供了非常广阔的树荫。大树对面的树林被人为地扒出了一块缝隙，使得这里可以直接望见海岸。树荫下是一块石碑，碑上刻着一行简短的文字。男人向那里走去，孩子也跟了过来。<br>“安海…2080至2110…陆军…中士。爸爸，这是谁呀？”孩子一字一字地读着碑上的文字，带着疑惑转身向男人问道。<br>“他就是爸爸老说的老朋友啊。”男人的眼睛中有了泪光；当然，孩子不会注意到这一点。<br>“这样啊——那这里一定就是他的家了吧！”孩子拉着男人的衣服，似乎恍然大悟。<br>“家？家……对了，这里是他的家。”男人一下子怔住了，望着墓碑，缓缓地重复着孩子的话语。<br>“可是，如果是房子的话，应该有门才对啊？”孩子再次露出了不解的神色。<br>“嗯，那是因为他已经到家了。”顺着孩子的逻辑，男人接着讲了下去。<br>“但是爸爸，我没有看见你的朋友呀！”孩子更加疑惑了。<br>“他啊，已经睡着啦；你别吵到他噢？”男人将食指伸到嘴边，嘴里发出“嘘”的声音。<br>“嗯嗯，对不起。”孩子连忙放低了声音道歉着。<br>男人示意孩子去不远处房子旁的长椅上休息，自己则在碑前陷入了回忆。  </p>
+<h3 id="贰"><a href="#贰" class="headerlink" title="贰"></a><div align="center">贰</div></h3><p>思绪转眼间又回到了九年前这片海岸附近的一艘驱逐舰上。士兵们得到命令，要在次日凌晨时登陆这块海滩，从敌军手里夺回这块国土。<br>身为普通列兵的他和陆军中士安海是出生入死的战友，两人早就情同手足。安海是个和他一起应征入伍的知识分子，由于在之前的战役中作出过突出贡献而升为了陆军中士。即便第二天就是登陆日，他们仍聚在一起闲聊着。<br>“安海，仗打完了以后你最想干什么？”<br>“我？我要第一时间回家，老婆——和她腹中的孩子，在等着我呢。”<br>“你真幸福，我还没能找到个女孩子过日子呢。”<br>“你会找到的。先不说这个，你准备干什么？”<br>“我也要回家，好好休息一番再和安海你聚一聚。”<br>“挺好。——不过要先等我把一件事做完。”<br>“什么事？说来听听。”<br>“你知道一百多年前的一个诗人吗？我很喜欢他的一句诗，叫‘我有一所房子，面朝大海，春暖花开’。多么平凡而又幸福！我要建一所这样的房子，过上这样的日子。”<br>“真不愧是文学生！好！——来，祝你愿望成真，干杯！”<br>“为梦想干杯！”<br>他敲敲桌子，接过应声而来的后勤机器人递来的酒，和安海一起喝下了开战前的最后一杯酒。由于兵力的不足，他们所属的西部战线只剩下了后勤机器人，因此被迫人力作战。<br>半小时后，他们接到集合的命令，于是整顿好装备，进入了登陆艇，向海岸进发。<br>尽管有带电粒子构成的能量护盾，靠近海滩时登陆艇还是受到了敌军炮台的猛烈打击。登陆艇如一叶小舟在海上飘摇，士兵们一个个中弹倒下却无力反击。安海命令全速前进，终于到达海岸。二十秒的航程，仿佛有一年之长。<br>他和其他士兵们跟着安海下船，冲向敌军阵地。面对敌军的激光重炮和机枪扫射，他、安海和周围的战士们拼命作战，突破枪林弹雨，终于占领了敌军的阵地。双方都损失惨重，血流成河。<br>战斗过程中，安海为了掩护队友而被击中。他奔过去，一把抓起安海，用尽全力拖向最近的临时医疗站。<br>“安海！安海！”<br>“情况如何…？”安海忍痛睁开眼睛，艰难地环顾着四周。<br>“拿下来了！”他奋力地向前一步步地走着。<br>“好…好…你们继续突进…最后一定会胜利…”安海脸上露出了满意的笑容。<br>“我，我要留下来。——你不能死。”尽管前方战火纷飞，他仍做出了这样的决定。<br>“你…还不赶紧…支援前线去…”安海努力地从喉咙里挤出几句话来，“管我干什么…给我上前线去！”<br>他站在那里，好像一座雕像。望着眼前的奄奄一息的战友，他无法迈开步伐。<br>“列兵，这是命令！”安海竭尽全力喊了出来，“替我活下去！”<br>“是！”强忍住泪水，他艰难地扛起枪，背负着两个男人的尊严，再次向前线进发。<br>“这就对了…替我活下去…”望着他的背影，安海自言自语着，慢慢地闭上了眼睛。<br>那一年，他二十六岁，安海三十岁。  </p>
+<h3 id="叁"><a href="#叁" class="headerlink" title="叁"></a><div align="center">叁</div></h3><p>六个月后，战争胜利了。<br>男人回到了故乡，他原想把一切都告诉安海的妻子，但他没有。——安海的妻子在分娩时便意外离世了。如今安海在这世上唯一留下的，是他那刚出生不久、现由邻居代养的孩子。<br>男人没有忍住，回到家里痛哭了一场，为了安海而哭，为了战争中千千万万死伤的人们而哭，为他们悲惨的命运而哭。<br>他的耳边突然再一次回响起了安海军士的最后命令——“替我活下去”。<br>第二天，男人来到了安海的邻居家中，领养了那个孩子。<br>后来，男人又参加了战后的处理工作，说服军方在海滩旁的山上建立了一所公墓，专门安葬在那次战役中殉国的战士。他亲手将安海安葬在了正对海岸的地方。<br>“‘我有一所房子，面朝大海，春暖花开。’安海，抱歉。这所‘房子’，你肯定不满意吧。”带着泪，男人望着墓碑说道。<br>那一年，他二十七岁，安海三十岁。  </p>
+<h3 id="肆"><a href="#肆" class="headerlink" title="肆"></a><div align="center">肆</div></h3><p>从回忆里回到现实时，细雨已停，阳光正晴。<br>“安海，睡个好觉吧。”男人哽咽着自言自语，转身向房子旁的长椅走去。<br>望着眼前称自己为父亲的孩子，男人又回想起了安海的面容。<br>“安安，走啦！”男人招呼着孩子，下山去了。<br>无论是什么时候，过去还是现在，亦或是未来，无论“房子”的形式怎么改变，军营、梦想中的小屋还是安息之地，它所寄托的情感都不会变。男人想。<br>那一年，他三十四岁，安海三十岁。  </p>
+]]></content>
+      <categories>
+        <category>随笔杂文</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SanGuoSha Offline 三国杀 Offline 简要知识手册</title>
+    <url>/posts/9278f6a2.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="《三国杀-Offline-简要知识手册》"><a href="#《三国杀-Offline-简要知识手册》" class="headerlink" title="《三国杀 Offline 简要知识手册》"></a><center>《三国杀 Offline 简要知识手册》</center></h1><p><em><center>三国杀 Offline 委员会，2020年1月</center></em></p>
+<p>当你沉醉于和朋友三五成群聚在一起游玩三国杀时，你可曾想过它的另一种表现形式？当你和好友在外聚会，却又嫌实体桌游携带不便、手游版本早已玩腻时，你是否渴望一种新的游戏方式？<br>现在，你可以试试<strong>《三国杀 Offline》</strong>。</p>
+<a id="more"></a>
+<h2 id="1-快速入门"><a href="#1-快速入门" class="headerlink" title="1 快速入门"></a>1 快速入门</h2><p><strong>《三国杀 Offline》</strong>的游戏方式与三国杀大同小异，如果你对三国杀已经游刃有余，那么我们相信你一定可以迅速上手<strong>《三国杀 Offline》</strong>。<br>基本的游戏特性与用语解释概览：</p>
+<ul>
+<li><em>基本规则可直接参考原版三国杀</em></li>
+<li><em>支持身份局、2v2、3v3、BOSS战等多种游戏方式</em></li>
+<li><em>原创奸雄身份模式，扩展游戏体验</em></li>
+<li><em>玩家手中的卡牌为任意牌，每回合出牌几乎随心所欲</em></li>
+<li><em>取消武器牌攻击范围系统，改为四马系统</em></li>
+<li><em>判定改为必定生效，增加游戏策略性</em></li>
+<li><em>拼点不再需要弃牌比大小，而是不需弃牌的猜拳</em></li>
+<li><em>更多特性详见下文……</em></li>
+</ul>
+<h2 id="2-游戏方式"><a href="#2-游戏方式" class="headerlink" title="2 游戏方式"></a>2 游戏方式</h2><p>随时随地、不受限制地游玩是<strong>《三国杀 Offline》</strong>的一大特点。在游玩<strong>《三国杀 Offline》</strong>时，玩家<strong>仅需要通过语言和手势来对其他玩家进行交流，而不需要任何如卡牌或电子设备的辅助工具</strong>；这一点也使得整个游戏易于维护与发展，同时也让社区创作更为简便。考虑到这一特点，我们设计了如下可供参考的游戏方式以便玩家游玩。</p>
+<h3 id="2-1-状态的记录"><a href="#2-1-状态的记录" class="headerlink" title="2.1 状态的记录"></a>2.1 状态的记录</h3><p>在一局<strong>《三国杀 Offline》</strong>游戏中，玩家最为基本的状态便是<strong>武将的体力值与手牌数</strong>。由于玩家手中的每一张牌均为任意牌，因此我们可以仅用体力值和手牌数来描述一名玩家。我们推荐玩家使用双手标记法来表示状态：<strong>左手表示当前体力值，右手表示当前手牌数。</strong>一个简单的例子是，在一名玩家询问另一名玩家的状态时，被询问的玩家（假设当前体力值为4，手牌数为2）应报出<strong>“4 2”（即体力值与手牌数）</strong>来回应。</p>
+<h3 id="2-2-装备区与判定区的记录"><a href="#2-2-装备区与判定区的记录" class="headerlink" title="2.2 装备区与判定区的记录"></a>2.2 装备区与判定区的记录</h3><p>在一局<strong>《三国杀 Offline》</strong>游戏中，<strong>装备与判定区的卡牌由玩家自行记忆、其他玩家选择性记忆</strong>。每名玩家应当记忆自己装备区与判定区中的牌，同时尽可能地记住其他玩家上述区域的卡牌。装备作为左右游戏局势的一个重要因素，玩家应当<strong>高度重视</strong>。</p>
+<h3 id="2-3-游戏牌与武将牌描述的记录"><a href="#2-3-游戏牌与武将牌描述的记录" class="headerlink" title="2.3 游戏牌与武将牌描述的记录"></a>2.3 游戏牌与武将牌描述的记录</h3><p>社区对<strong>《三国杀 Offline》</strong>而言是极为重要的一部分。由于不使用实体卡牌和电子设备来进行存储，因此<strong>每一张游戏牌与武将牌的描述将由全部玩家共同记忆来记录</strong>。若需修改描述，则可在经大部分玩家的同意后进行修改；需要指出的是，描述在修改后应尽可能地第一时间通知全体玩家，以保持玩家游戏内容的一致性。</p>
+<h3 id="2-4-关于作弊"><a href="#2-4-关于作弊" class="headerlink" title="2.4 关于作弊"></a>2.4 关于作弊</h3><p>由于缺少书面记录，在一局游戏中玩家将很容易进行作弊。<strong>如果在游戏中作弊被其他玩家指出，我们推荐的解决方案是该玩家立即视为败北；换言之，不被发现的作弊并不算作作弊处理。</strong>此外，惩罚机制也应当被建立。但请注意，惩罚机制仅仅只能起辅助之用，根本上而言社区应当引导玩家共建良好的游戏环境。实际上，在游戏中适当运用作弊技巧可以为己方增加优势，同时监督对手方的作弊也可以为游戏构成紧张的游戏气氛，同时增强游戏的竞技性。</p>
+<h3 id="2-5-游戏管理委员会"><a href="#2-5-游戏管理委员会" class="headerlink" title="2.5 游戏管理委员会"></a>2.5 游戏管理委员会</h3><p>为方便进行游戏，当整个游戏的全体玩家数超过一定数量时应当建立一定形式的管理组织，如管理委员会。<strong>管理组织的职责应当包括但不限于宣传游戏规则、通知各玩家游戏的更新、做出对游戏机制及武将技能与卡牌描述的最终解释等。</strong></p>
+<h2 id="3-游戏机制"><a href="#3-游戏机制" class="headerlink" title="3 游戏机制"></a>3 游戏机制</h2><p><strong>《三国杀 Offline》</strong>基本的游戏机制都与三国杀一致，但为了适应随时随地游玩的游戏特点，我们对部分游戏机制进行了修改。</p>
+<h3 id="3-1-判定"><a href="#3-1-判定" class="headerlink" title="3.1 判定"></a>3.1 判定</h3><p>在<strong>《三国杀 Offline》</strong>中，判定的作用被削弱，<strong>判定结果将默认为判定生效</strong>。这排除了游戏中的部分运气因素，同时使得游戏更具策略性。</p>
+<h3 id="3-2-拼点"><a href="#3-2-拼点" class="headerlink" title="3.2 拼点"></a>3.2 拼点</h3><p>在<strong>《三国杀 Offline》</strong>中，为保留一定的运气因素以增强游戏性，同时也考虑到<strong>《三国杀 Offline》</strong>自身特点，我们将拼点机制进行了修改。<strong>两名玩家在进行拼点这一过程时，需进行一次猜拳，猜拳胜利方视为拼点胜利，另一方则认为失败。需要注意的是，不同的描述对于平局的处理不同。</strong><br><span id="horse"></span></p>
+<h3 id="3-3-武器攻击范围与坐骑"><a href="#3-3-武器攻击范围与坐骑" class="headerlink" title="3.3 武器攻击范围与坐骑"></a>3.3 武器攻击范围与坐骑</h3><p>在<strong>《三国杀 Offline》</strong>中，考虑到任意牌这一设定，为保持游戏的平衡性，<strong>我们取消了武器牌的攻击范围这一设定。取而代之的是四马系统，即每名玩家的坐骑区共有四个马位，玩家可自由调整+1马与-1马的数量；距离的计算方式保持不变。</strong></p>
+<h3 id="3-4-伤害与体力流失"><a href="#3-4-伤害与体力流失" class="headerlink" title="3.4 伤害与体力流失"></a>3.4 伤害与体力流失</h3><p>伤害按照<strong>是否有伤害来源</strong>可分为<strong>无源伤害</strong>和<strong>有源伤害</strong>，又可根据<strong>是否具有属性</strong>而分为<strong>普通伤害</strong>和<strong>属性伤害</strong>。</p>
+<p>若伤害来源在伤害结算时死亡，则本次结算余下的伤害均视为<strong>无源伤害</strong>并继续结算。</p>
+<p><strong>体力流失</strong>即<strong>失去体力</strong>，不同于<strong>无源伤害</strong>。</p>
+<h2 id="4-游戏牌说明"><a href="#4-游戏牌说明" class="headerlink" title="4 游戏牌说明"></a>4 游戏牌说明</h2><p>为增强游戏性，<strong>一般情况下玩家手中的每一张牌将被视为等价的任意牌，任意牌可以当作任意一张牌使用或打出。在被使用或打出后，任意牌即视为被具体化，不再被看作任意牌。</strong><br>同时为保证游戏的平衡性，<strong>一般而言相同种类（如顺手牵羊和过河拆桥将被视为同一类）的锦囊牌每名玩家一回合至多使用两张，但无懈可击除外。</strong>此外，<strong>每局游戏中将仅存在一张相同的武器牌和防具牌，换言之，如果一张特定的武器牌或防具牌被弃置，本局游戏中所有玩家将不能再装备此件武器或防具。</strong></p>
+<h3 id="4-1-基本牌说明"><a href="#4-1-基本牌说明" class="headerlink" title="4.1 基本牌说明"></a>4.1 基本牌说明</h3><p><strong>《三国杀 Offline》</strong>的基本牌设定同三国杀。</p>
+<h3 id="4-2-锦囊牌说明"><a href="#4-2-锦囊牌说明" class="headerlink" title="4.2 锦囊牌说明"></a>4.2 锦囊牌说明</h3><p>锦囊牌是<strong>《三国杀 Offline》</strong>中主要的进攻手段。为保证游戏的平衡性，我们对部分锦囊牌的描述进行了修改，并增加了使用次数的设定。新增的锦囊牌扩大了玩家的选择空间、丰富了玩家所能使用的策略，并为游戏增添了新的乐趣。<strong>考虑到锦囊牌经常能造成强大而出其不意的效果，请各位玩家仔细记忆锦囊牌的描述。</strong></p>
+<h4 id="4-2-1-未修改的锦囊牌"><a href="#4-2-1-未修改的锦囊牌" class="headerlink" title="4.2.1 未修改的锦囊牌"></a>4.2.1 未修改的锦囊牌</h4><ul>
+<li><strong>桃园结义</strong>：对所有受伤的角色使用。所有受伤的角色回复一点体力。（此牌一回合仅能使用一次）</li>
+<li><strong>南蛮入侵</strong>：对所有其他角色使用。除你以外的所有角色打出一张【杀】，否则受到你造成的1点伤害。（此牌与【万箭齐发】一回合一共能使用两次）</li>
+<li><strong>万箭齐发</strong>：对所有其他角色使用。除你以外的所有角色打出一张【闪】，否则受到你造成的1点伤害。（此牌与【南蛮入侵】一回合一共能使用两次）</li>
+<li><strong>顺手牵羊</strong>：对距离为1的一名区域里有牌的其他角色使用，获得该角色的一张牌。（此牌与【过河拆桥】一回合一共能使用两次）</li>
+<li><strong>过河拆桥</strong>：对一名区域里有牌的其他角色使用，弃置该角色的一张牌。（此牌与【顺手牵羊】一回合一共能使用两次）</li>
+<li><strong>乐不思蜀</strong>：对一名其他角色使用。将【乐不思蜀】放置于该角色的判定区里，若判定命中，则跳过其出牌阶段。</li>
+<li><strong>闪电</strong>：将【闪电】放置于自己的判定区里。若判定命中，则目标角色受到3点雷电伤害。若判定未命中，将之移动到下家的判定区里。</li>
+<li><strong>无懈可击</strong>：一张锦囊牌生效前，抵消此牌对一名角色产生的效果，或抵消另一张【无懈可击】产生的效果。</li>
+<li><strong>铁锁连环</strong>：对一至两名角色使用，分别使这些处于“连环状态”，或使处于“连环状态”的角色解除“连环状态”。当一名处于连环状态的角色受到属性伤害，即使其死亡，也会令其它处于连环状态的角色受到同来源、同属性、同程度的伤害。经由连环传导的伤害不能再次被传导。</li>
+</ul>
+<h4 id="4-2-2-经修改的锦囊牌"><a href="#4-2-2-经修改的锦囊牌" class="headerlink" title="4.2.2 经修改的锦囊牌"></a>4.2.2 经修改的锦囊牌</h4><ul>
+<li><strong>决斗</strong>：对一名距离小于等于2的其他角色使用。由其开始，其与你轮流打出一张【杀】，直到其中一方未打出【杀】为止。未打出【杀】的一方受到另一方对其造成的1点伤害。（此牌一回合仅能使用两次）</li>
+<li><strong>五谷丰登</strong>：对所有受伤的角色使用。每名目标角色摸等同于其已损失的体力值的手牌（至多为三张）。（此牌一回合仅能使用一次）</li>
+<li><strong>兵粮寸断</strong>：对一名距离等于1的其他角色使用。将【兵粮寸断】放置于该角色的判定区里，若判定命中，则其摸牌阶段少摸一张牌。</li>
+</ul>
+<h4 id="4-2-3-新增的锦囊牌"><a href="#4-2-3-新增的锦囊牌" class="headerlink" title="4.2.3 新增的锦囊牌"></a>4.2.3 新增的锦囊牌</h4><ul>
+<li><strong>卸甲归田</strong>：对所有装备区里有装备的角色使用。每名目标角色弃置所有装备区里的装备，并摸取等同于弃置装备数的牌。（此牌一回合仅能使用一次）</li>
+<li><strong>舍己为人</strong>：当一名角色即将受到伤害时，你代替该角色承受本次伤害。</li>
+</ul>
+<p>以上便为在<strong>《三国杀 Offline》</strong>中所有可以使用的锦囊牌。需要注意的是，除<strong>舍己为人</strong>与<strong>无懈可击</strong>外，所有锦囊牌需在自己回合的出牌阶段使用。未标注使用次数限制的锦囊牌一回合可以使用任意张。</p>
+<h3 id="4-3-装备牌说明"><a href="#4-3-装备牌说明" class="headerlink" title="4.3 装备牌说明"></a>4.3 装备牌说明</h3><p>在<strong>《三国杀 Offline》</strong>中，装备牌可以增强玩家的攻击能力与防御能力。<strong>合理搭配装备可以为己方获取极大的优势，有时甚至可以逆转游戏局势，因此也请玩家仔细记忆装备牌的效果及使用方法。</strong>关于武器范围与坐骑牌的修改，请参见<a href="#horse">武器攻击范围与坐骑</a>。</p>
+<h4 id="4-2-1-武器牌说明"><a href="#4-2-1-武器牌说明" class="headerlink" title="4.2.1 武器牌说明"></a>4.2.1 武器牌说明</h4><ul>
+<li><strong>连弩</strong>：你于出牌阶段内可以额外使用一张【杀】。</li>
+<li><strong>诸葛连弩</strong>：你于出牌阶段内使用【杀】无次数限制。</li>
+<li><strong>青龙偃月刀</strong>：每当你使用的【杀】被目标角色使用的【闪】抵消时，你可以再对其使用一张【杀】。</li>
+<li><strong>丈八蛇矛</strong>：每当你的【杀】命中时，你可以流失X点体力并额外对目标角色受到X点伤害（X至多为3）。</li>
+<li><strong>雌雄双股剑</strong>：每当你使用【杀】指定一名异性的目标角色后，你可以令其选择一项：1.弃置一张手牌；2.令你摸一张牌。</li>
+<li><strong>寒冰剑</strong>：每当你使用【杀】对目标角色造成伤害时，若该角色有手牌，你可以防止此伤害，改为依次弃置其两张手牌。当这名目标角色装备了<strong>烈火盾</strong>时，你和目标角色需分别弃置<strong>寒冰剑</strong>和<strong>烈火盾</strong>，再进行结算。</li>
+<li><strong>青釭剑</strong>：每当你使用【杀】指定一名目标角色后，你无视其防具。当这名目标角色装备了<strong>青釭盾</strong>时，你和目标角色需分别弃置<strong>青釭剑</strong>和<strong>青釭盾</strong>，再进行结算。</li>
+<li><strong>古锭刀</strong>：每当你使用【杀】对目标角色造成伤害时，若该角色没有手牌，此伤害+1。</li>
+<li><strong>贯石斧</strong>：每当你使用的【杀】被目标角色使用的【闪】抵消时，你可以弃置你装备区的一张坐骑牌，令此【杀】依然对其造成伤害。</li>
+<li><strong>麒麟弓</strong>：你的【杀】无距离限制。</li>
+<li><strong>破风枪</strong>：每当你造成一点伤害，你的手牌上限+1。</li>
+<li><strong>方天画戟</strong>：你的【杀】可以至多指定你攻击范围内的所有角色为目标。</li>
+<li><strong>命运之刃</strong>：当你受到一次致命伤害时，你可以将此装备弃置并防止本次伤害。</li>
+<li><strong>勾镰爪</strong>：每当你对一名角色造成伤害时，你可以获得其装备区里的一张坐骑牌。</li>
+<li><strong>噬血之刃</strong>：每当你造成一点伤害，与受到伤害的角色进行一次拼点，若你赢则你回复一点体力。</li>
+<li><strong>灾厄剑</strong>：你造成的所有伤害-1。若你造成一次伤害，你可以将本装备移至一名其他角色的装备区中。</li>
+<li><strong>治疗权杖</strong>：在你的回合内，你的第一张【桃】额外回复一点体力。</li>
+</ul>
+<h4 id="4-2-2-防具牌说明"><a href="#4-2-2-防具牌说明" class="headerlink" title="4.2.2 防具牌说明"></a>4.2.2 防具牌说明</h4><ul>
+<li><strong>百花裙</strong>：当你体力值为1时，你防止任何伤害。每当你在回合外失去装备区里的【百花裙】时，摸两张牌。</li>
+<li><strong>七星袍</strong>：你防止任何属性伤害。</li>
+<li><strong>白银狮子</strong>：每当你受到多于1点的伤害时，你防止多余的伤害。每当你在回合外失去装备区里的【白银狮子】时，回复1点体力。</li>
+<li><strong>圣光白衣</strong>：你的手牌上限+2。</li>
+<li><strong>八卦阵</strong>：每当你使用或打出一张【闪】时，摸一张牌。</li>
+<li><strong>仁王盾</strong>：【南蛮入侵】和【万箭齐发】对你无效。</li>
+<li><strong>藤甲</strong>：你不能成为【杀】的目标。</li>
+<li><strong>战旗</strong>：你不能成为【决斗】的目标。你受到来自【杀】的伤害至多为1。</li>
+<li><strong>烈火盾</strong>：每当你要失去一张牌时，你可以流失一点体力来代替。此外见上文<strong>寒冰剑</strong>条目。</li>
+<li><strong>青釭盾</strong>：每当你成为一个效果的目标时，你无视使用效果者的武器。此外见上文<strong>青釭剑</strong>条目。</li>
+<li><strong>荆棘战甲</strong>：每当你受到一点伤害时，与伤害来源进行一次拼点，若你赢，则你对其造成一点伤害。</li>
+<li><strong>灾厄袍</strong>：你受到的所有火焰伤害+1。若你受到一次伤害，你可以将本装备移至一名其他角色的装备区中。</li>
+</ul>
+<h4 id="4-2-3-坐骑牌说明"><a href="#4-2-3-坐骑牌说明" class="headerlink" title="4.2.3 坐骑牌说明"></a>4.2.3 坐骑牌说明</h4><p>分为<strong>-1坐骑</strong>（进攻马）和<strong>+1坐骑</strong>（防御马）。</p>
+<p>我们在<strong>《三国杀 Offline》</strong>中新加入了<strong>-1劣马</strong>和<strong>+1劣马</strong>，装备它们会使所有其他玩家视为额外装备了<strong>-1坐骑</strong>或<strong>+1坐骑</strong>；类似<strong>灾厄袍</strong>与<strong>灾厄剑</strong>，它们在你受到一次伤害后可以移至一名其他角色的装备区中。</p>
+<h2 id="5-游戏模式"><a href="#5-游戏模式" class="headerlink" title="5 游戏模式"></a>5 游戏模式</h2><p><strong>《三国杀 Offline》</strong>的大部分游戏模式均可直接参考三国杀原有的游戏模式，在此就不再赘述。下面将介绍<strong>《三国杀 Offline》</strong>特有的游戏模式。</p>
+<h3 id="5-1-奸雄身份模式"><a href="#5-1-奸雄身份模式" class="headerlink" title="5.1 奸雄身份模式"></a>5.1 奸雄身份模式</h3><p><strong>《三国杀 Offline》</strong>身份模式，以6至10人进行，在标准身份模式的<strong>主公</strong>、<strong>忠臣</strong>、<strong>反贼</strong>、<strong>内奸</strong>四类身份的基础上增加了<strong>奸雄</strong>这一身份。</p>
+<h4 id="5-1-1-规则"><a href="#5-1-1-规则" class="headerlink" title="5.1.1 规则"></a>5.1.1 规则</h4><ul>
+<li>当<strong>主公</strong>阵亡时，<strong>奸雄</strong>可立即声明自己的身份。如此做，<strong>奸雄</strong>立即成为<strong>主公</strong>并增加一点体力上限，场上存活的<strong>忠臣</strong>身份变为<strong>内奸</strong>，存活的<strong>内奸</strong>身份变为<strong>忠臣</strong>，反贼不变。</li>
+<li>在<strong>奸雄</strong>还未声明自己的身份前（即<strong>主公</strong>还未阵亡时），任何角色杀死<strong>奸雄</strong>可立即摸三张牌。</li>
+<li>在<strong>奸雄</strong>还未声明自己的身份前便阵亡后，其他角色的获胜判定按标准身份模式处理。</li>
+</ul>
+<h4 id="5-1-2-获胜判定"><a href="#5-1-2-获胜判定" class="headerlink" title="5.1.2 获胜判定"></a>5.1.2 获胜判定</h4><ul>
+<li>主公：所有<strong>反贼</strong>、<strong>内奸</strong>和<strong>奸雄</strong>阵亡。</li>
+<li>忠臣：保证<strong>主公</strong>不阵亡的情况下，所有<strong>反贼</strong>、<strong>内奸</strong>和<strong>奸雄</strong>阵亡。</li>
+<li>反贼：<strong>主公</strong>阵亡，只要不是在只剩<strong>主公</strong>和一名<strong>内奸</strong>两人存活的情况下<strong>主公</strong>阵亡都算作<strong>反贼</strong>获胜（无论<strong>反贼</strong>是否存活）。</li>
+<li>内奸：所有<strong>忠臣</strong>、<strong>反贼</strong>和<strong>奸雄</strong>全部阵亡后，<strong>主公</strong>阵亡。</li>
+<li>奸雄：保证自身存活直至<strong>主公</strong>阵亡。当<strong>主公</strong>阵亡时成为<strong>主公</strong>，获胜判定按照<strong>主公</strong>处理。</li>
+</ul>
+<h4 id="5-1-3-身份数量"><a href="#5-1-3-身份数量" class="headerlink" title="5.1.3 身份数量"></a>5.1.3 身份数量</h4><p>考虑到玩家数为奇数时实际测试游戏平衡性不佳，因此推荐玩家数为偶数时体验奸雄身份模式。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">玩家数</th>
+<th style="text-align:center">主公</th>
+<th style="text-align:center">忠臣</th>
+<th style="text-align:center">反贼</th>
+<th style="text-align:center">内奸</th>
+<th style="text-align:center">奸雄</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>三国杀Offline</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Orwell 无知即力量</title>
+    <url>/posts/13094c54.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="无知即力量-Ignorance-is-Strength"><a href="#无知即力量-Ignorance-is-Strength" class="headerlink" title="无知即力量 Ignorance is Strength"></a>无知即力量 Ignorance is Strength</h1><div align="center"><br><img src="https://i.loli.net/2019/06/07/5cf9f7e06b38220636.png" alt="Orwell"><br></div>
+
+<center><small>本文为 <strong>Max Alex</strong> 参考 PC 游戏 <strong>Orwell: Keeping An Eye On You</strong> 所作的小说，在原游戏的基础上有所改编。</small></center>
+
+<a id="more"></a>
+<h3 id="壹-大洋之声"><a href="#壹-大洋之声" class="headerlink" title="壹 大洋之声"></a>壹 大洋之声</h3><p>“欢迎收听今日的《大洋之声》短新闻栏目，我是亚历克斯。<br>“今年是二零一九年，距离一九八四年已经过去三十五年。在这三十多年的时间里，一切都得到了飞速的发展：人们的物质生活更加充实、科学技术水平得到大幅提升、新兴文化的兴起……<br>“当你早晨起床、穿好衣服、走出家门并漫步在大洋国的街头的时候，你就会感到现在和过去的天壤之别。无处不在的老大哥、比比皆是的思想警察、漫天飞舞的《真理报》，这些曾经最令人害怕的事物都已经成为历史，取而代之的是一个全新的、美丽的世界。<br>“当然，如果没有九十年代的民主革命，这一切都不会改变。在那次革命中，极权政府被人民推翻，扼杀人民自由的恶魔终于得到了审判。在此之后，革命的人民们建立起了全新的民主共和国。<br>“为了更好地建设我们的美丽祖国，国安部在二零零九年时便决定成立犯罪管控中心，距今已有十年整。自打成立犯罪管控中心以来，得益于工作效率的提升与社会安全人才的集中，我国的犯罪率有着可喜的逐年下降的趋势。<br>“而就在昨天，国安部部长萨维奇正式向外公布了国家犯罪管控中心的最新成果：“奥威尔”国家安全数据分析系统。它是有史以来的第一套真正意义上的超信息化中央操作系统，可以快速完成大数据的即时分析、潜在犯罪行为的预判等一系列操作与处理，预计在本周正式投入使用。<br>“毋庸置疑，它能让我们的社会更加安定和谐，也能让我们的人民拥有更加安全的生活。”</p>
+<h3 id="贰-艾登"><a href="#贰-艾登" class="headerlink" title="贰 艾登"></a>贰 艾登</h3><p>我叫艾登，今年二十四岁，毕业于大洋大学计算机系，工作于“环网”公司。<br>准确地讲，这是昨天的我了，因为今天我便不再是“环网”公司的运维工程师了。我现在有了另一个身份——大洋国首都弗利多姆市犯罪管控中心的一名奥威尔观察员。终于，在弗利多姆成千上万的申请者当中，我成了被上帝眷顾的人。<br>昨天晚上，我收到了一封来自犯罪管控中心的电子邮件，信中回应了我希望成为奥威尔观察员的申请，并一并邀请我加入犯罪管控中心。<br>所谓观察员，便是一群利用奥威尔来负责寻找和调查疑案的数字证据的人。他们所提交给奥威尔的数据将会被直接发送给犯罪管控中心，然后犯罪管控中心将会根据这些数据采取对应的行动。当然，奥威尔和过去的秘密监视有着本质不同，为了保护公民的隐私权，作为人类的观察员将有权选择是否发送收集到的数据给犯罪管控中心。<br>很快，随着奥威尔的提示音响起，我接到了我的第一个案子。</p>
+<p><em>To be continue.</em></p>
+]]></content>
+      <categories>
+        <category>随笔杂文</category>
+      </categories>
+      <tags>
+        <tag>Games</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Shogi 将棋相关 规则及序盘战法</title>
+    <url>/posts/c11987d2.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Shogi-将棋相关-规则及序盘战法"><a href="#Shogi-将棋相关-规则及序盘战法" class="headerlink" title="Shogi 将棋相关 规则及序盘战法"></a>Shogi 将棋相关 规则及序盘战法</h1><h4 id="今天咱们玩什么呢，咱们整这么个玩意玩——将棋。"><a href="#今天咱们玩什么呢，咱们整这么个玩意玩——将棋。" class="headerlink" title="今天咱们玩什么呢，咱们整这么个玩意玩——将棋。"></a>今天咱们玩什么呢，咱们整这么个玩意玩——将棋。</h4><p><strong>将棋</strong>是什么呢，看过<strong>《三月的狮子》</strong>或者今年一月新番<strong>《龙王的工作》</strong>的朋友们也许知道，这玩意呢就是<strong>日本象棋</strong>。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/20/5b7ac93157247.jpg" alt="shogi"><br><br><em>【部分将棋棋子】</em><br></div>
+
+<a id="more"></a>
+<p>将棋的规则不完全等同于中国象棋，相似但也有区别。以下关于将棋规则的内容来自百度百科及中文维基，内容略有删改。</p>
+<blockquote>
+<p><strong>棋盘</strong></p>
+</blockquote>
+<blockquote>
+<p>将棋的棋盘是一个由10条横线及10条竖线相交的方格阵，而棋子则置于方格之内，也就是<strong>9列9行</strong>的棋盘。靠近自己的3列是本阵，远离自己而靠近对手的3列是敌阵。</p>
+</blockquote>
+<blockquote>
+<p><strong>棋子</strong></p>
+</blockquote>
+<blockquote>
+<p>将棋的棋子呈钟形，前端较尖。和中国象棋及国际象棋不同，<strong>将棋是以棋子前端的指的方向来区别所属</strong>。将棋共有八种棋子，每种棋子均有独特的简称及走法，分述如下：<br><img src="https://i.loli.net/2018/08/20/5b7acbd00dccd.jpg" alt="shogi"><br><img src="https://i.loli.net/2018/08/20/5b7acbf4642ec.jpg" alt="shogi"><br><img src="https://i.loli.net/2018/08/20/5b7acc0b1de67.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p><strong>升级</strong></p>
+</blockquote>
+<blockquote>
+<p>将棋的棋子设有升级制度。除了王将 (玉将) 、金将及已经升级的棋子外，所有棋子都可以升级。当一枚可升级的棋子进至位于距本阵最远的三行（即敌阵三行），在此三行内移动或从此三行内吃子时或从此三行走出时，玩家可以选择把棋子升级（也可以不升级），只要翻转棋子即完成升级。升级又根据国际象棋中表示类似情况的术语的中文翻译，称为升变。</p>
+</blockquote>
+<blockquote>
+<p><strong>飞车</strong>升级为<strong>龙王</strong> （简称<strong>龙</strong>）。除可纵向或横向行走任意步数外，亦可兼容<strong>王将</strong>（<strong>玉将</strong>）的步法（即周围八格）。</p>
+</blockquote>
+<blockquote>
+<p><strong>角行</strong>升级为<strong>龙马</strong>（简称<strong>马</strong>）。除可沿对角线行走任意步数外，亦可兼容<strong>王将</strong>（<strong>玉将</strong>）的步法（即周围八格）。</p>
+</blockquote>
+<blockquote>
+<p><strong>银将</strong>升级后称为<strong>成银</strong>，<strong>成银</strong>亦可记作<strong>全</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>桂马</strong>升级后称为<strong>成桂</strong>，<strong>成桂</strong>亦可记作<strong>圭</strong>或<strong>今</strong>。<strong>进入敌阵最底的二行时</strong>必须<strong>自动升级</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>香车</strong>升级后称为<strong>成香</strong>，<strong>成香</strong>亦可记作<strong>杏</strong>或<strong>个</strong>。<strong>进入敌阵最底行时</strong>必须<strong>自动升级</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>步兵</strong>升级后称为<strong>成步</strong>，<strong>成步</strong>亦可记作<strong>と金</strong>或<strong>と</strong>。<strong>进入敌阵最底行时</strong>必须<strong>自动升级</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>银将</strong>、<strong>桂马</strong>、<strong>香车</strong>及<strong>步兵</strong>在升级后均会改依<strong>金将</strong>的走法，<strong>并不会保留原有的活动能力</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>王手与将死</strong></p>
+</blockquote>
+<blockquote>
+<p>如能下了能擒拿对方王将的一手，亦即象棋中的<strong>将军</strong>，则称为<strong>王手</strong>。<strong>被反将</strong>则是称为<strong>逆王手</strong>。王将不能逃脱，则此手构成<strong>诘み</strong>，亦即象棋的<strong>将死</strong>，将死对方的玩家胜出此局。若下了一手<strong>没有王手</strong>，但<strong>对方无论如何防御都会在下一手被将死</strong>，则称为<strong>必至</strong>，亦即中国象棋中的<strong>绝杀</strong>。</p>
+<p>将棋容许<strong>连将</strong>但是若双方重复循环同样的方式<strong>王手、应将</strong>达<strong>四次</strong>时，则王手方<strong>违规</strong>，判负，这一种<strong>犯规</strong>称为<strong>連続王手の千日手</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>吃子及打入</strong></p>
+</blockquote>
+<blockquote>
+<p>日本将棋最特别的是棋手可以花一手将己方吃掉的棋子放回棋盘成为己方棋子，这在日文称为<strong>打入</strong>，大幅提高了将棋的复杂度。当一枚已升级的棋子被吃时，它的升级会被取消，<strong>打入时用原先的棋种表示</strong>。</p>
+</blockquote>
+<blockquote>
+<p>打入有四项限制：</p>
+</blockquote>
+<p>1．刚打入的棋子即使落在敌阵亦<strong>不能马上升级</strong>，一定要以后<strong>多下一手</strong>才行。</p>
+<blockquote>
+</blockquote>
+<p>2．不能把被吃的棋子打入在一些不能再走的位置。例如<strong>步兵</strong>和<strong>香车</strong>都<strong>不能落在敌阵的底线</strong>；<strong>桂马不能落在敌阵后二行</strong>（即可以自动升级的三个子）。</p>
+<blockquote>
+</blockquote>
+<p>3．<strong>步兵</strong>不能打入于已有<strong>己方未升级步兵</strong>的一路，这一种<strong>犯规</strong>称为<strong>同径二步</strong>。</p>
+<blockquote>
+</blockquote>
+<p>4．<strong>步兵</strong>打入时不能立刻<strong>将死</strong>对方，这一种<strong>犯规</strong>称为<strong>打步诘</strong>；反之若只是<strong>王手</strong>而非将死则不犯规，此称为<strong>打步将</strong>。</p>
+<blockquote>
+<p><strong>结束</strong></p>
+</blockquote>
+<blockquote>
+<p>除了将死外，将棋尚可于以下情况结束：</p>
+<ul>
+<li>其中一方<strong>违规</strong>时，犯规的玩家在正式比赛中会被直接判为败北。</li>
+<li>如果一方的某一棋子经过移动后，<strong>全局出现同一情况总计四次</strong>，并不构成<strong>連続王手の千日手</strong>，对局自动结束，不分胜负，这种情况叫做<strong>千日手</strong>，相当于国际象棋中的<strong>三次重复规则</strong>。</li>
+<li>如双方的王将<strong>均于敌阵内</strong>，且<strong>无法将死对方</strong>时，对局结束。双方需为自己拥有的棋子计分，计分方法为：王将不计分、<strong>角行及飞车各计五分</strong>，<strong>其他棋子各计一分</strong>。升级的棋子不会额外加分。<strong>如只有一方得分少于27</strong>则少分的一方判为负，否则不分胜负。</li>
+</ul>
+</blockquote>
+<p>将棋的规则呢我们就概述到这里，下面是部分将棋序盘战法，转载自 <a href="https://tieba.baidu.com/f?kz=2725032812" target="_blank" rel="noopener">https://tieba.baidu.com/f?kz=2725032812</a> 。</p>
+<blockquote>
+<p><strong>相挂</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>将飞车放在原地不动</strong>的战法称之为<strong>居飞车</strong>，先后手均采用<strong>居飞车</strong>的就称之为<strong>相居飞车</strong>。如图，先手▲2六步，将飞车前的步兵移动向前，以便让飞车攻击。后手▽8四步同样将飞车前的步兵移动向前。该战型称为<strong>相挂</strong>，以这种方式开始棋局就称为<strong>相挂模样</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/24/5b7fc594658b5.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上面参考图的手顺为：▲2六步 ▽8四步 ▲2五步 ▽8五步 ▲7八金 ▽3二金▲2四步 ▽同步 ▲同飞 ▽2三步</p>
+</blockquote>
+<blockquote>
+<p>那么，先手的第5手为什么要走▲7八金，而不走▲2四步呢？这是在将棋入门中需要说明的地方，不能够省略，需要简单说明一下。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7d77a6aea.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>如上面参考图：先手第5手改走▲2四步，接下来▽同步、▲同飞兑掉步兵，▽8六步、▲同步、▽8七步打、▲2三步打、▽8八步成、▲同银，后手兑换得到一个角行，然后▽3五角打，瞄准先手的飞车，先手不利。如果先下出▲7八金，可以有效的保护角行，后手也要用▽3二金这手交换。</p>
+</blockquote>
+<blockquote>
+<p><strong>矢仓</strong></p>
+</blockquote>
+<blockquote>
+<p>在互相用<strong>“居飞车</strong>作战的棋局中，如果先手以▲7六步这手移动步兵为己方角行开路，那么这种战型就称为<strong>矢仓</strong>，以矢仓战型开局就称为<strong>矢仓模样</strong>。</p>
+</blockquote>
+<blockquote>
+<p>如下图，手顺为：▲7六步 ▽8四步 ▲6八银 ▽3四步 ▲6六步</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7d8acb209.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>先手的第5手▲6六步，在有些场合下，也下出▲7七银这一手，过去在多数情况下也都使用这一手，而且这着的出现几乎可以说明先手使用了矢仓。现在多数都下▲6六步这手，此着意味着先手也会采用其他战型，不一定是矢仓。但是如果从<strong>居飞车</strong>开始展开棋局的话，普通情况下都会从▲6六步这手开始成为矢仓。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7da3dd324.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上图是将玉将包围起来的一种形式，称之为<strong>矢仓围</strong>，如果行棋方以这种方式来保护玉将的话就称之为<strong>相矢仓</strong>。在矢仓战型中，还有其他形式的布阵以防卫玉将，但是上图的<strong>金矢仓</strong>却是最常用的。</p>
+</blockquote>
+<blockquote>
+<p><strong>换角</strong></p>
+</blockquote>
+<blockquote>
+<p>在<strong>相居飞车</strong>中，先手以▲7六步为角行开道。这种情况下，双方如果在序盘互相吃掉角行，将这两子兑掉，从而使自己和对方都有一个角行作为持子来进行布局。这种战型就被称为<strong>换角</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7db8ae764.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>如图，开局经过以下手顺形成以上局面：▲7六步 ▽8四步 ▲2六步 ▽3二金 ▲7八金 ▽8五步▲7七角 ▽3四步 ▲8八银 ▽7七角成 ▲同银</p>
+</blockquote>
+<blockquote>
+<p>后手走▽8四步，与<strong>矢仓</strong>的前两手相同，但这次先手走▲2六步，棋局就在不同于<strong>矢仓</strong>的情况下展开，此着一出，大多数情况下<strong>换角</strong>战型就会出现了。关于这种战型的选择权，虽然也有例外情况，但是基本上选择权都由先手持有。<strong>换角</strong>也有可能通过和上图不同的行棋方法来实现，实际上后手在第10手▽7七角成实行换角的时候，可以改走▽4四步这手以避开<strong>换角</strong>，可以说<strong>换角</strong>是在双方的了解下共同决定确立的一种战型。 上图的进程之后，普通以▽4二银、▲3八银、▽7二银进行，但是也有其他变化，即使是该进程也可以分解成多种战型，从战法上来说这地方稍有些高深，而且难解。</p>
+</blockquote>
+<blockquote>
+<p><strong>横步取</strong></p>
+</blockquote>
+<blockquote>
+<p>在相居飞车战型的序盘基本型中，有一种叫做<strong>横步取</strong>。先手以▲7六步为角行开道，后手不走▽8四步这手，而是同样走▽3四步为角行开道。如此进行下去，将有出现<strong>横步取</strong>的可能。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7dc79a59b.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上图过程如下：▲7六步 ▽3四步 ▲2六步 ▽8四步 ▲2五步 ▽8五步▲7八金 ▽3二金 ▲2四步 ▽同步 ▲同 飞</p>
+</blockquote>
+<blockquote>
+<p>对于后手的第2手▽3四步，先手用▲2六步这着，表示将使用<strong>居飞车</strong>，然后后手▽8四步，也表示使用<strong>居飞车</strong>。那么，之后棋局一般就会像上图一样展开进行。上图过程后，如果后手▽2三步打，逼开先手飞车，此时飞车可以不用退后，而是走▲3四飞，吃掉旁边的步兵，该方法就称之为<strong>横步取战法</strong>。和为角行开道实行<strong>相挂</strong>不同，该方法是因为以后手处于3四处的步兵为目标而得名的。 在上图过程后，后手也可以不使用和<strong>相挂</strong>”相同的走法，也就是不用▽2三步打这着。因为即使先手能够走出▲2三步打这着，后手的角行还未死，所以这时可以走▽8六步、▲同步、▽同飞，同样将飞车攻到敌阵前面，现在后手方也多用此行棋路数。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e0593229.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>无论后手是使用▽2三步打后的变化还是使用▽8六步后的变化，吃不吃后手在己方飞车旁边的步兵的选择权都在先手的手上。在实战当中，选择吃掉一般都带有不肯在气势上输给对方的意味。 至第四手▽8四步的情形，则称之为<strong>横步取模样</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>四间飞车</strong></p>
+</blockquote>
+<blockquote>
+<p>前面我们已经介绍了在先手和后手均把飞车放在原位的情况下的各种战型和组合运用的方法。不过在序盘阶段，也有<strong>把飞车移动到各处</strong>的行棋方法，我们把这种方法称之为<strong>振飞车</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e13668eb.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上图过程为：▲7六步 ▽3四步 ▲2六步 ▽4四步 ▲2五步 ▽3三角▲4八银 ▽4二飞</p>
+</blockquote>
+<blockquote>
+<p>和<strong>横步取</strong>相同，先手▲7六步，然后后手▽3四步为角行开道，之后再通过▲2六步、▽4四步这样的走法来封住角行的通道（角道），以上开局就是<strong>振飞车模样</strong>。虽然不能说开局下出以上走法就绝对会是<strong>振飞车</strong>了。但是可以说这种可能性相当高。为何这么说呢？因为在实行<strong>振飞车</strong>的情况下，后手走出▽3三角，守住2四，防止先手飞车前的步兵上来兑换己方步兵，这时双方就无法交换角行了。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e20732ba.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>以上参考图过程为：▲7六步 ▽3四步 ▲6六步 ▽8四步 ▲6八飞 ▽8五步▲7七角</p>
+</blockquote>
+<blockquote>
+<p>面对后手走出的▽3四步这手棋，先手在第3手用▲6六步来封住角行前进的道路，然后以实现<strong>振飞车</strong>这种战型为目标，上图就是先手出动飞车后的局面。 对于先手来说，如果后手在次一手选择了▽8四步，那他可以实行<strong>振飞车</strong>；同样的，对于后手来说，如果先手在前一手选择了▲2六步，那么他也可以实行<strong>振飞车</strong>。上面两个参考图都是<strong>振飞车</strong>的代表战型，名为<strong>四间飞车</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>相振飞车</strong></p>
+</blockquote>
+<blockquote>
+<p>在这里，我们将开始介绍序盘战型的最后一类，即先后手均把<strong>飞车移动到各处</strong>的战型，<strong>相振飞车</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e317dfad.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>以上参考图的进程为：▲7六步 ▽3四步 ▲6六步 ▽3五步 ▲6八飞 ▽3二飞</p>
+</blockquote>
+<blockquote>
+<p>上面我们提到了先手意图实行<strong>振飞车</strong>，就用▲6六步来封住角行前进的道路（角道），而这一次后手用▽3五步这手应对，将处于3四位的步兵移动上前，以此来打开角道，这就是<strong>相振飞车</strong>的代表性走法，先后手双方均以实行<strong>振飞车</strong>为目标。后手除了可以用▽3五步这手应对之外，还可以用和先手同型的▽4四步进行。另外还有其他形式能够实行这种战型，而双方的飞车移动的地方也有不同的选择。<strong>相振飞车</strong>是将棋战型中定式较多的一种，还有很多领域没被研究和开发，实战的例子也不多，但却是非常有趣的战型。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>将棋相关</category>
+      </categories>
+      <tags>
+        <tag>将棋</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Games 游戏推荐 论如何优雅地跨平台游玩</title>
+    <url>/posts/cc043334.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-游戏推荐-论如何优雅地跨平台游玩"><a href="#Games-游戏推荐-论如何优雅地跨平台游玩" class="headerlink" title="Games 游戏推荐 论如何优雅地跨平台游玩"></a>Games 游戏推荐 论如何优雅地跨平台游玩</h1><h2 id="PC-上各类开源主机模拟器索引"><a href="#PC-上各类开源主机模拟器索引" class="headerlink" title="PC 上各类开源主机模拟器索引"></a>PC 上各类开源主机模拟器索引</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，作索引、指北之用，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<p>本索引之内容均为 Github 开源项目，相同平台之模拟器选取最成熟、Github 仓库 star 数最多者。</p>
+<a id="more"></a>
+<h3 id="Sony-PlayStation-系列"><a href="#Sony-PlayStation-系列" class="headerlink" title="Sony PlayStation 系列"></a>Sony PlayStation 系列</h3><h4 id="DuckStation-PlayStation-1"><a href="#DuckStation-PlayStation-1" class="headerlink" title="DuckStation - PlayStation 1"></a>DuckStation - PlayStation 1</h4><p><img src="https://i.loli.net/2020/02/13/miFLxeQyca7CdwJ.png" alt="DuckStation"></p>
+<p>模拟平台：Sony PlayStation 1<br>适用平台：Windows / Linux / macOS(不再维护)<br>Github：<a href="https://github.com/stenzek/duckstation" target="_blank" rel="noopener">https://github.com/stenzek/duckstation</a><br>下载地址：<a href="https://github.com/stenzek/duckstation/runs/442793758" target="_blank" rel="noopener">https://github.com/stenzek/duckstation/runs/442793758</a><br>简明指南：<a href="https://github.com/stenzek/duckstation#downloading-and-running" target="_blank" rel="noopener">https://github.com/stenzek/duckstation#downloading-and-running</a><br>游戏兼容性列表：暂无<br>推荐指数：<strong>6 / 10</strong><br>评价：未实测。看样子应该是支持大部分 PS1 游戏，建议自行研究。</p>
+<h4 id="PCSX2-PlayStation-2"><a href="#PCSX2-PlayStation-2" class="headerlink" title="PCSX2 - PlayStation 2"></a>PCSX2 - PlayStation 2</h4><p><img src="https://i.loli.net/2020/02/13/yo9dOMxFWhPbskA.png" alt="PCSX2"></p>
+<p><img src="https://i.loli.net/2020/02/13/vjl5ZSfLg9dXhuo.png" alt="Compatibility"></p>
+<p>模拟平台：Sony PlayStation 2<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/PCSX2/pcsx2" target="_blank" rel="noopener">https://github.com/PCSX2/pcsx2</a><br>官方网站：<a href="https://pcsx2.net/" target="_blank" rel="noopener">https://pcsx2.net/</a><br>下载地址：<a href="https://pcsx2.net/download.html" target="_blank" rel="noopener">https://pcsx2.net/download.html</a><br>简明指南：<a href="https://pcsx2.net/getting-started.html" target="_blank" rel="noopener">https://pcsx2.net/getting-started.html</a><br>游戏兼容性列表：<a href="https://pcsx2.net/compatibility-list.html" target="_blank" rel="noopener">https://pcsx2.net/compatibility-list.html</a><br>推荐指数：<strong>8 / 10</strong><br>评价：未实测。数量接近2500+的 PS2 游戏均可畅玩，推荐！</p>
+<h4 id="RPCS3-PlayStation-3"><a href="#RPCS3-PlayStation-3" class="headerlink" title="RPCS3 - PlayStation 3"></a>RPCS3 - PlayStation 3</h4><p><img src="https://i.loli.net/2020/02/13/bU7H4TOa3PwlG1F.png" alt="RPCS3"></p>
+<p><img src="https://i.loli.net/2020/02/13/c4VIRzvUCGsmnMf.png" alt="Compatibility"></p>
+<p>模拟平台：Sony PlayStation 3<br>适用平台：Windows / Linux<br>Github：<a href="https://github.com/RPCS3/rpcs3" target="_blank" rel="noopener">https://github.com/RPCS3/rpcs3</a><br>官方网站：<a href="https://rpcs3.net/" target="_blank" rel="noopener">https://rpcs3.net/</a><br>下载地址：<a href="https://rpcs3.net/download" target="_blank" rel="noopener">https://rpcs3.net/download</a><br>简明指南：<a href="https://rpcs3.net/quickstart" target="_blank" rel="noopener">https://rpcs3.net/quickstart</a><br>游戏兼容性列表：<a href="https://rpcs3.net/compatibility" target="_blank" rel="noopener">https://rpcs3.net/compatibility</a><br>推荐指数：<strong>8 / 10</strong><br>评价：数量接近1500+的 PS3 游戏均可畅玩，强烈推荐！</p>
+<h4 id="Orbital-PlayStation-4"><a href="#Orbital-PlayStation-4" class="headerlink" title="Orbital - PlayStation 4"></a>Orbital - PlayStation 4</h4><p><img src="https://i.loli.net/2020/02/13/F7531LGwubMSNhO.png" alt="Orbital"></p>
+<p>模拟平台：Sony PlayStation 4<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/AlexAltea/orbital" target="_blank" rel="noopener">https://github.com/AlexAltea/orbital</a><br>官方网站：<a href="https://phi.nz/orbital/" target="_blank" rel="noopener">https://phi.nz/orbital/</a><br>下载地址：暂无<br>游戏兼容性列表：暂无<br>推荐指数：-<br>评价：目前最为完备的 PS4 模拟器，仍在极早期开发中。</p>
+<h4 id="Vita3K-PlayStation-Vita"><a href="#Vita3K-PlayStation-Vita" class="headerlink" title="Vita3K - PlayStation Vita"></a>Vita3K - PlayStation Vita</h4><p><img src="https://i.loli.net/2020/02/13/UwRFbytoO1McIu2.png" alt="Vita3K"></p>
+<p><img src="https://i.loli.net/2020/02/13/AGX9pDPU763JHMV.png" alt="Compatibility"></p>
+<p>模拟平台：Sony PlayStation Vita<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/Vita3K/Vita3K" target="_blank" rel="noopener">https://github.com/Vita3K/Vita3K</a><br>官方网站：<a href="https://vita3k.org/" target="_blank" rel="noopener">https://vita3k.org/</a><br>下载地址：详见官网<br>游戏兼容性列表：<a href="https://vita3k.org/compatibility.html?lang=en" target="_blank" rel="noopener">https://vita3k.org/compatibility.html?lang=en</a><br>推荐指数：<strong>6 / 10</strong><br>评价：处于早期开发中，大部分游戏仍不兼容，期待改进。</p>
+<h3 id="Microsoft-Xbox-系列"><a href="#Microsoft-Xbox-系列" class="headerlink" title="Microsoft Xbox 系列"></a>Microsoft Xbox 系列</h3><h4 id="Cxbx-Reloaded-Microsoft-Xbox"><a href="#Cxbx-Reloaded-Microsoft-Xbox" class="headerlink" title="Cxbx-Reloaded - Microsoft Xbox"></a>Cxbx-Reloaded - Microsoft Xbox</h4><p>模拟平台：Microsoft Xbox<br>适用平台：Windows<br>Github：<a href="https://github.com/Cxbx-Reloaded/Cxbx-Reloaded" target="_blank" rel="noopener">https://github.com/Cxbx-Reloaded/Cxbx-Reloaded</a><br>下载地址：详见 Github<br>游戏兼容性列表：<a href="https://github.com/Cxbx-Reloaded/game-compatibility/issues" target="_blank" rel="noopener">https://github.com/Cxbx-Reloaded/game-compatibility/issues</a><br>推荐指数：<strong>4 / 10</strong><br>评价：未实测。仍处于极早期开发中。</p>
+<h4 id="Xenia-Xbox-360"><a href="#Xenia-Xbox-360" class="headerlink" title="Xenia - Xbox 360"></a>Xenia - Xbox 360</h4><p><img src="https://i.loli.net/2020/02/13/2fHqLbhGDtm1rp3.png" alt="Xenia"></p>
+<p>模拟平台：Microsoft Xbox 360<br>适用平台：Windows<br>Github：<a href="https://github.com/xenia-project/xenia" target="_blank" rel="noopener">https://github.com/xenia-project/xenia</a><br>官方网站：<a href="https://xenia.jp/" target="_blank" rel="noopener">https://xenia.jp/</a><br>下载地址：<a href="https://xenia.jp/download/" target="_blank" rel="noopener">https://xenia.jp/download/</a><br>简明指南：<a href="https://github.com/xenia-project/xenia/wiki/Quickstart" target="_blank" rel="noopener">https://github.com/xenia-project/xenia/wiki/Quickstart</a><br>游戏兼容性列表：<a href="https://github.com/xenia-project/game-compatibility/issues" target="_blank" rel="noopener">https://github.com/xenia-project/game-compatibility/issues</a><br>推荐指数：<strong>7 / 10</strong><br>评价：未实测。较为完备的 Xbox 360 模拟器，不过安装游戏看起来比较复杂？</p>
+<h3 id="Nintendo-系列"><a href="#Nintendo-系列" class="headerlink" title="Nintendo 系列"></a>Nintendo 系列</h3><h4 id="yuzu-Nintendo-Switch"><a href="#yuzu-Nintendo-Switch" class="headerlink" title="yuzu - Nintendo Switch"></a>yuzu - Nintendo Switch</h4><p><img src="https://i.loli.net/2020/02/13/XOjUe7pYrQw8s2H.png" alt="yuzu"></p>
+<p><img src="https://i.loli.net/2020/02/13/TpMx4L3IdmQb8jW.png" alt="Compatibility"></p>
+<p>模拟平台：Nintendo Switch<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/yuzu-emu/yuzu" target="_blank" rel="noopener">https://github.com/yuzu-emu/yuzu</a><br>官方网站：<a href="https://yuzu-emu.org/" target="_blank" rel="noopener">https://yuzu-emu.org/</a><br>下载地址：<a href="https://yuzu-emu.org/downloads/" target="_blank" rel="noopener">https://yuzu-emu.org/downloads/</a><br>简明指南：<a href="https://yuzu-emu.org/help/quickstart/" target="_blank" rel="noopener">https://yuzu-emu.org/help/quickstart/</a><br>游戏兼容性列表：<a href="https://yuzu-emu.org/game/" target="_blank" rel="noopener">https://yuzu-emu.org/game/</a><br>推荐指数：<strong>6 / 10</strong><br>评价：未实测。处于初步开发中的 Nintendo Switch 模拟器，对大部分游戏不兼容。</p>
+<h4 id="citra-Nintendo-3DS"><a href="#citra-Nintendo-3DS" class="headerlink" title="citra - Nintendo 3DS"></a>citra - Nintendo 3DS</h4><p><img src="https://i.loli.net/2020/02/13/s7TZRgQNUVuvPAB.png" alt="citra"></p>
+<p><img src="https://i.loli.net/2020/02/13/bsqOEyc15vDtIMk.png" alt="Compatibility"></p>
+<p>模拟平台：Nintendo 3DS<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/citra-emu/citra" target="_blank" rel="noopener">https://github.com/citra-emu/citra</a><br>官方网站：<a href="https://citra-emu.org/" target="_blank" rel="noopener">https://citra-emu.org/</a><br>下载地址：<a href="https://citra-emu.org/download/" target="_blank" rel="noopener">https://citra-emu.org/download/</a><br>简明指南：<a href="https://citra-emu.org/wiki/faq/" target="_blank" rel="noopener">https://citra-emu.org/wiki/faq/</a><br>游戏兼容性列表：<a href="https://citra-emu.org/game/" target="_blank" rel="noopener">https://citra-emu.org/game/</a><br>推荐指数：<strong>7 / 10</strong><br>评价：未实测。基本成熟的 Nintendo 3DS 模拟器，兼容性较好。</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Games,Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Calc 近日新闻 TI-Nspire CX II</title>
+    <url>/posts/5cd25369.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-近日新闻-TI-Nspire-CX-II"><a href="#Calc-近日新闻-TI-Nspire-CX-II" class="headerlink" title="Calc 近日新闻 TI-Nspire CX II"></a>Calc 近日新闻 TI-Nspire CX II</h1><h2 id="全新的-TI-Nspire-CX-II-登场！"><a href="#全新的-TI-Nspire-CX-II-登场！" class="headerlink" title="全新的 TI-Nspire CX II 登场！"></a>全新的 TI-Nspire CX II 登场！</h2><p>本篇新闻由 <strong>MaxAlex</strong> 编写，所有文字均为原创，所有图片均来源于 <strong>Texas Instruments</strong> 官方网站，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a5e27037ba.png" alt="TI Nspire CX II"><br><br><img src="https://i.loli.net/2019/01/25/5c4a5e279a9bd.png" alt="TI Nspire CX II-T"><br>【图0x00：TI-Nspire CX II(-T) (CAS)】<br></div>
+
+<a id="more"></a>
+<h3 id="第一章-外观"><a href="#第一章-外观" class="headerlink" title="第一章  外观"></a>第一章  外观</h3><p>近日，<strong>Texas Instruments</strong>（<strong>德州仪器</strong>，下称 <strong>TI</strong>）在其官网上发布了原 <strong>TI-Nspire CX</strong> 系列图形计算器的第二代—— <strong>TI-Nspire CX II</strong> 系列图形计算器。</p>
+<p><strong>TI</strong> 此次发布了三个 <strong>TI-Nspire CX II</strong> 系列的分支下图形计算器的外观预览图，分别是<strong>国际版</strong>的 <strong>TI-Nspire CX II</strong> 系列、<strong>欧洲版</strong>的 <strong>TI-Nspire CX II-T</strong> 系列以及<strong>中国版</strong>的 <strong>TI-Nspire CX II-C</strong> 系列。 <strong>TI-Nspire CX II</strong> 系列与 <strong>TI-Nspire CX II-T</strong> 系列均有 <strong>Non-CAS</strong> 与 <strong>CAS</strong> 两种型号的机型，而 <strong>TI-Nspire CX II-C</strong> 系列仅有一款 <strong>CAS</strong> 型号机型。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a644083fdb.png" alt="TI-Nspire CX II"><br><img src="https://i.loli.net/2019/01/25/5c4a63e0476c6.png" alt="TI-Nspire CX II CAS"><br><img src="https://i.loli.net/2019/01/25/5c4a644086329.png" alt="TI-Nspire CX II-T"><br><img src="https://i.loli.net/2019/01/25/5c4a63e0398cb.png" alt="TI-Nspire CX II-T CAS"><br><img src="https://i.loli.net/2019/01/25/5c4a63e0450ce.png" alt="TI-Nspire CX II-C CAS"><br>【图0x00：TI-Nspire CX II(-T/-C) (CAS)】<br></div>
+
+<p>纵观整个计算器，<strong>TI</strong> 对原本 <strong>TI-Nspire CX</strong> 的外观进行了重新设计， <strong>Non-CAS</strong> 型号与 <strong>CAS</strong> 型号将会更容易区分，同时个人感觉 <strong>TI-Nspire CX II</strong> 系列的外观更加富有科技气息。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a6bccdd780.png" alt="product-callout-cx-ii-ez-spot.png"><br>【图0x01：TI-Nspire CX II 的 EZ-Spot 校园版】<br></div>
+
+<p><strong>TI</strong> 仍保留了一贯的传统，为了防止计算器被盗而推出了学校集体购买使用的 <strong>EZ-Spot 校园版</strong> 外观。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a613cc0693.png" alt="旧版UI"><br>【图0x02：TI-Nspire CX 系列旧版UI】<br><img src="https://i.loli.net/2019/01/25/5c4a613de8980.png" alt="新版UI"><br>【图0x03：TI-Nspire CX II 系列新版UI】<br></div>
+
+<p>同时，<strong>TI</strong> 也将计算器的UI进行了重新设计。<br><strong>Home页</strong> 全新的 <strong>扁平化应用图标与菜单</strong> 将会更贴近现代化的设计风格。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a625414c6c.jpg" alt="TI Nspire CX II"><br><img src="https://i.loli.net/2019/01/25/5c4a6254178ef.jpg" alt="TI Nspire CX II-T"><br>【图0x04：TI-Nspire CX II(-T) 系列新版UI预览图】<br></div>
+
+<p>一般计算页面也更换为了对应的扁平化设计风格，与 <strong>Home页</strong> 对应。</p>
+<h3 id="第二章-性能与功能"><a href="#第二章-性能与功能" class="headerlink" title="第二章 性能与功能"></a>第二章 性能与功能</h3><p>硬件上，根据 <strong>TI</strong> 在官网上发布的信息，新款 <strong>TI-Nspire CX II</strong> 系列计算器将会有如下配置：</p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a66045f28e.png" alt="TI Nspire CX II-T"><br>【图0x05：TI-Nspire CX II-T 系列配置】<br></div>
+
+<ul>
+<li><strong>64MB</strong> 的 <strong>运行内存</strong></li>
+<li><strong>90+MB</strong> 的 <strong>内置存储</strong></li>
+<li>分辨率为<strong>320*240、125 DPI、16位色</strong>的<strong>3.2英寸彩色背光屏幕</strong></li>
+<li>可充电电池</li>
+</ul>
+<p>对比来看，其性能与原 <strong>TI-Nspire CX</strong> 系列计算器并没有太大改观，我们对此还是有点失望的。</p>
+<p>软件上， <strong>TI</strong> 对原 <strong>TI-Nspire CX</strong> 系列 OS 进行了改良，增加了包括但仅不限于如下的特性：</p>
+<ul>
+<li>绘图中显示具体刻度</li>
+<li>绘图中可在图像上移动的点</li>
+<li>绘图中动态绘制图像</li>
+<li>绘图中调节多个参数</li>
+<li>编程中增加绘图相关函数</li>
+</ul>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a67639385b.png" alt=""><br><img src="https://i.loli.net/2019/01/25/5c4a6763c5bd7.gif" alt=""><br><img src="https://education.ti.com/-/media/ti/education/images/product-resources/ti-nspire/nspire-screens/ss-nspire-cx-ii-animated-path-ani-loop.gif?rev=d8b47766-7a03-4e19-be30-07fe5c34604d&amp;h=389&amp;w=520&amp;la=zh-CN&amp;hash=3596255BC0D1A85385407DA997D1C9B17DF82B3A" alt=""><br><img src="https://i.loli.net/2019/01/25/5c4a6763ca094.gif" alt=""><br><img src="https://i.loli.net/2019/01/25/5c4a6763ae84a.png" alt=""><br></div>
+
+<p><strong>TI</strong> 整合了 <strong>TI-Nspire CX II</strong> 系列的相关工具，并打造了 <strong>TI-Nspire™ CX Ecosystem</strong> 。该系列包括<strong>图形计算器</strong>、<strong>学生/教师软件</strong>、<strong>iPad 应用程序</strong>、<strong>TI-Navigator 无线网卡</strong>、<strong>TI-Innovator 扩展套件</strong>等。</p>
+<blockquote>
+<h3 id="TI-Nspire™-CX-Ecosystem"><a href="#TI-Nspire™-CX-Ecosystem" class="headerlink" title="TI-Nspire™ CX Ecosystem"></a>TI-Nspire™ CX Ecosystem</h3><p>Drive student inquiry and discovery<br>The TI-Nspire™ CX II graphing calculators are the center of the TI-Nspire™ CX Ecosystem that is composed of dynamic learning tools and interactive content that allow students to better learn concepts. The ecosystem supports TI-Nspire™ CX, TI-Nspire™ CX II and TI-Innovator™ technology.</p>
+</blockquote>
+<div align="center"><br><img src="https://i.loli.net/2019/01/25/5c4a6e7f50966.png" alt="TI Nspire CX II Ecosystem.png"><br><img src="https://i.loli.net/2019/01/25/5c4a6e7f48a2b.png" alt="TI Nspire CX II-T Ecosystem.png"><br></div>
+
+<h3 id="第三章-总结"><a href="#第三章-总结" class="headerlink" title="第三章 总结"></a>第三章 总结</h3><p>目前而言， <strong>TI-Nspire CX II</strong> 系列相对于之前的系列并没有特别大的改进，但在它正式发布前，我们仍要对它充满信心。 <strong>TI-Nspire CX II</strong> 系列究竟会有怎样的表现，我们只能拭目以待。</p>
+]]></content>
+      <categories>
+        <category>计算器类</category>
+      </categories>
+      <tags>
+        <tag>Calculator</tag>
+      </tags>
+  </entry>
+</search>

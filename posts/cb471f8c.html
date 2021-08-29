@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=MagdaCleanMono:300,300italic,400,400italic,700,700italic|OCR A Std:300,300italic,400,400italic,700,700italic|OCR A Std:300,300italic,400,400italic,700,700italic|Consolas:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav32.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav16.ico?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"World.find(string query);","hits_empty":" World.find(${query}) == false;     ����δ�ҵ���ؽ����","hits_stats":" World.findtime == ${time};    World.findresults == ${hits};     ��${time}���ҵ�${hits}�������"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Calc 计算器类 晒机 - 2019【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】本篇引导教程由 MaxAlex 编写，最初发表于 MaxAlex 的 Blog 。 TI-Nspire CM-C CAS 使用 Ndless 应用显示图片和原图对比">
+<meta name="keywords" content="Calculator">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calc 晒机系列 2019">
+<meta property="og:url" content="http://yoursite.com/posts/cb471f8c.html">
+<meta property="og:site_name" content="World.create(__MAX__);">
+<meta property="og:description" content="Calc 计算器类 晒机 - 2019【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】本篇引导教程由 MaxAlex 编写，最初发表于 MaxAlex 的 Blog 。 TI-Nspire CM-C CAS 使用 Ndless 应用显示图片和原图对比">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2019/08/10/n2uRSfgBydvVjJ9.jpg">
+<meta property="og:image" content="https://www.cncalc.org/assets/img/logo.png">
+<meta property="og:image" content="https://tiplanet.org/forum/styles/prosilver/theme/images/tiplanet_header_logo.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/06/U7iRBsA2rSxVHlM.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/06/7fnx2N5OevIZzED.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/06/FZiMkS78Ble4VfC.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/06/4hNqvHJjb5l6sZT.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/06/NRSQl3F4UdysPIp.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/06/raFeR98qybLmPYp.png">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201808/05/151444k6y6zef5fhc566et.png.thumb.jpg">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201901/19/151955j3zzb3ysq66qhhmb.png">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201512/27/205008uye1tyakte3toymo.png.thumb.jpg">
+<meta property="og:image" content="https://www.ticalc.org/archives/files/ss/828/82821.gif">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201610/14/125253nkdzxgmjvvxjxeem.jpg.thumb.jpg">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201806/01/162256wux1v6xyvtg6xzgz.jpg.thumb.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/07/ET37beksOPSQnp5.png">
+<meta property="og:image" content="https://next.cncalc.org/api/v1/attachment/5c53b7eb8ca08e02e1acf3c0">
+<meta property="og:image" content="https://next.cncalc.org/api/v1/attachment/5c53b7f08ca08e02e1acff03">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201710/06/110328c2anzkkk2h12akxk.jpg.thumb.jpg">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201908/12/143120otbffolo2bcxqegq.gif">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/139662758585074.gif">
+<meta property="og:image" content="https://i.loli.net/2019/08/07/r73XqRz9t5JxKAV.png">
+<meta property="og:image" content="https://next.cncalc.org/api/v1/attachment/5c53b7fb8ca08e02e1ad1f0d">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201306/23/212744p6ob0gmq9i96iqr7.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1443448573x1409688671python_screen.png.pagespeed.ic.kdggR_Jbna.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1434766582kaXVwln.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1415224349pywrite4.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1418488742notewriter2.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/13695983381327260523mviewe13.jpg">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1449537548x1421457693npdf.png.pagespeed.ic.f3cWs3Fmnj.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1334424494nClock.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1365315555cx.png">
+<meta property="og:image" content="https://i.loli.net/2019/08/13/upZPOWFgUStL8MK.jpg">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201411/16/123729mvwu1evvgg2cugvw.jpg.thumb.jpg">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201807/17/171038oielc99bedefuflg.png.thumb.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/08/07/ET37beksOPSQnp5.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/145203966882944.gif">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/83658.gif">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1330866890T0Zwt.jpg">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1467008780smw.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1431895080liero.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1399569441flappybird_%28new%29.gif">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1407750151preview6.png">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/13443068421327006967ndoomf10.jpg">
+<meta property="og:image" content="https://www.cncalc.org/data/attachment/forum/201308/20/164949crvgtxvgmnvz2rzn.jpg">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/13658475692013-04-12%2022.14.24.jpg">
+<meta property="og:image" content="https://tiplanet.org/modules/archives/captures/1353258322LQsBi.jpg">
+<meta property="og:updated_time" content="2021-08-29T08:15:23.032Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calc 晒机系列 2019">
+<meta name="twitter:description" content="Calc 计算器类 晒机 - 2019【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】本篇引导教程由 MaxAlex 编写，最初发表于 MaxAlex 的 Blog 。 TI-Nspire CM-C CAS 使用 Ndless 应用显示图片和原图对比">
+<meta name="twitter:image" content="https://i.loli.net/2019/08/10/n2uRSfgBydvVjJ9.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="World.create(__MAX__);" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/posts/cb471f8c.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Calc 晒机系列 2019 | World.create(__MAX__);</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">World.create(__MAX__);</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">//This statement implements an website that creates an empty world with no meaning or purpose.</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />时间轴</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />文章标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th-list"></i> <br />文章分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于我</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-quotes">
+    <a href="/sentence.html" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-quote-left"></i> <br />格言摘抄</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-logs">
+    <a href="/logs/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cogs"></i> <br />建站日志</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-property">
+    <a href="/property/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cubes"></i> <br />物品列表</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tools">
+    <a href="/tools/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-wrench"></i> <br />常用工具</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-friends">
+    <a href="/friends/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />友情链接</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />站内搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="world.find(string query);" spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/cb471f8c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Max Alex">
+      <meta itemprop="description" content="Human life is ephemera,which makes it precious.">
+      <meta itemprop="image" content="https://github.com/zyf722/zyf722.github.io/blob/master/images/avatar.png?raw=true">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="World.create(__MAX__);">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Calc 晒机系列 2019
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-02-18 15:40:16" itemprop="dateCreated datePublished" datetime="2020-02-18T15:40:16Z">2020-02-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-08-29 08:15:23" itemprop="dateModified" datetime="2021-08-29T08:15:23Z">2021-08-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/计算器类/" itemprop="url" rel="index"><span itemprop="name">计算器类</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/cb471f8c.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/cb471f8c.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Calc-计算器类-晒机-2019"><a href="#Calc-计算器类-晒机-2019" class="headerlink" title="Calc 计算器类 晒机 - 2019"></a>Calc 计算器类 晒机 - 2019</h1><h2 id="【晒机-进阶篇】【TI-Nspire-CM-CX-进阶玩法】"><a href="#【晒机-进阶篇】【TI-Nspire-CM-CX-进阶玩法】" class="headerlink" title="【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】"></a>【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】</h2><p>本篇引导教程由 <strong>MaxAlex</strong> 编写，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<center><img src="https://i.loli.net/2019/08/10/n2uRSfgBydvVjJ9.jpg" alt=""><br><small><strong>TI-Nspire CM-C CAS</strong> 使用 <strong>Ndless</strong> 应用显示图片和原图对比</small><br></center>
+
+<a id="more"></a>
+<h3 id="第一章-推开家门"><a href="#第一章-推开家门" class="headerlink" title="第一章  推开家门"></a>第一章  推开家门</h3><p>购得 <strong>TI-Nspire CM/CX</strong> 不久后，相信你也像我一样，渐渐开始确信自己手上的这台计算器绝非说明书上说的那么简单。毕竟，光是 <strong>128MB</strong> 之大的内置存储就足以让人觉得可疑了。  </p>
+<p>因此，这段时间里，我一直在浏览几个国内与国外的计算器论坛，也就此找到了不少关于 <strong>TI-Nspire</strong> 系列的有趣之物，现在在此将其予以记载。</p>
+<p>以下是我在<strong>去年7月</strong>一直到<strong>今年8月</strong>所主要浏览的两个计算器论坛：</p>
+<center><br><img src="https://www.cncalc.org/assets/img/logo.png" alt=""><br><a href="https://www.cncalc.org/" target="_blank" rel="noopener"><strong>Cncalc</strong> 旧站</a><br><a href="https://next.cncalc.org/" target="_blank" rel="noopener"><strong>Cncalc</strong> 新站</a><br><br><br><img src="https://tiplanet.org/forum/styles/prosilver/theme/images/tiplanet_header_logo.png" width="100"><br><a href="https://tiplanet.org/forum/portal.php" target="_blank" rel="noopener"><strong>TI-Planet</strong> 论坛</a><br><br><br></center>
+
+<p>其中 <strong>Cncalc</strong> 是全国最大最专业的函数和图形计算器论坛，也是全球最大的中文计算器论坛（<del>我便是在这里入的计算器大坑</del>）。<br>当然，更为进阶的操作需要到全球最大的 <strong>TI</strong> 计算器论坛 <strong>TI-Planet</strong> 上去查找。虽然说 <strong>TI-Planet</strong> 是英文 / 法文论坛，但配合 <strong>Chrome</strong> 的网页翻译也还凑合着看。<br>其他的主要是去 <strong>Github</strong> 上看了看一些有关项目，其中大佬 <a href="https://github.com/gameblabla" target="_blank" rel="noopener"><strong>gameblabla</strong></a> 和 <a href="https://github.com/zephray" target="_blank" rel="noopener"><strong>zephray</strong></a> 对于 <strong>TI-Nspire</strong> 系列的贡献尤为大。</p>
+<p>简略的介绍就主要到这里。<br>现在，拿上你的 <strong>TI-Nspire CM</strong> 或 <strong>TI-Nspire CX</strong> 计算器，跟我一起前往新世界吧！</p>
+<h3 id="第二章-走进庭院"><a href="#第二章-走进庭院" class="headerlink" title="第二章  走进庭院"></a>第二章  走进庭院</h3><p>就像走出家门后来到庭院一样，本章将会介绍一些 <strong>TI-Nspire</strong> 计算器入门后的进阶操作。</p>
+<h4 id="第一节-扩展库"><a href="#第一节-扩展库" class="headerlink" title="第一节 扩展库"></a>第一节 扩展库</h4><p>刚将你的 <strong>TI-Nspire</strong> 买回来的时候，不知你是否留意过文件管理器里的那个名为 <strong>MyLib</strong> 的文件夹呢？<br>当你按下你的书本键的时候，你是否注意到最后一格里标志为三本书的那一栏了呢？</p>
+<p>实际上， <strong>TI-Nspire</strong> 内置的 <strong>MyLib</strong> 文件夹便是它的扩展程序与函数库目录。<br>只要在这个文件夹里放入带有 <strong>LibPub</strong> 类型函数或程序的文档，并按下 doc 键选择刷新库后，就可以在便签本或其他文档里像使用内置函数一样调用它们。</p>
+<h5 id="附录-扩展库-App-推荐"><a href="#附录-扩展库-App-推荐" class="headerlink" title="附录 扩展库 App 推荐"></a>附录 扩展库 App 推荐</h5><p><strong>numtheory 数论扩展库</strong><br><img src="https://i.loli.net/2019/08/06/U7iRBsA2rSxVHlM.png" alt="数论.png"><br>官方出品，必属精品。<strong>TI</strong> 官方提供的扩展库，一般会<strong>自带</strong>。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>列出某数的所有因数</li>
+<li><strong>分步</strong>求最大公因数</li>
+<li><strong>分步</strong>质因数分解</li>
+<li>列出某数的所有质因数</li>
+<li>求大于等于 / 小于等于 n 的首个质数</li>
+<li>列出 a 和 b 之间的所有质数</li>
+<li><strong>列出满足给定表达式的所有数</strong></li>
+<li>…</li>
+</ul>
+<p><strong>linalgcas 线性代数扩展库</strong><br><img src="https://i.loli.net/2019/08/06/7fnx2N5OevIZzED.png" alt="线性代数.png"><br>仍然是官方出品，必属精品。和 <strong>numtheory</strong> 一样会<strong>自带</strong>。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li><strong>分步</strong>行阶梯矩阵简化</li>
+<li><strong>分步</strong>求逆矩阵</li>
+<li>求矩阵零空间</li>
+<li>…</li>
+</ul>
+<p><strong>conics 圆锥曲线扩展库</strong><br><img src="https://i.loli.net/2019/08/06/FZiMkS78Ble4VfC.png" alt="圆锥曲线.png"><br>第三个 <strong>TI</strong> 出品的数学扩展库。也一样会<strong>自带</strong>。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>绘制圆锥曲线图像</li>
+<li>分析圆锥曲线方程</li>
+<li>…</li>
+</ul>
+<p><a href="https://www.cncalc.org/thread-6481-1-1.html" target="_blank" rel="noopener"><strong>Chemistry Lib 化学扩展库</strong></a><br><img src="https://i.loli.net/2019/08/06/4hNqvHJjb5l6sZT.png" alt="化学.png"><br>功能强大的第三方化学扩展库，将极大地便利日常解题。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>配平化学方程式 / 离子方程式</li>
+<li>计算物质相对分子质量</li>
+<li>显示元素英文名称及原子序数</li>
+<li>…</li>
+</ul>
+<p><a href="https://www.cncalc.org/thread-6481-1-1.html" target="_blank" rel="noopener"><strong>SINE 3 Plus 解三角形扩展库</strong></a><br><img src="https://i.loli.net/2019/08/06/NRSQl3F4UdysPIp.png" alt="解三角形.png"><br>国人开发的解三角形的扩展库。所提供的功能包括但不限于以下内容：</p>
+<ul>
+<li>解三角形</li>
+<li>绘制三角形外接圆 / 内切圆</li>
+<li>…</li>
+</ul>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=2224" target="_blank" rel="noopener"><strong>SD 求导扩展库</strong></a><br><img src="https://i.loli.net/2019/08/06/raFeR98qybLmPYp.png" alt="求导.png"><br>强大的微分分步求解工具，所提供的功能为：</p>
+<ul>
+<li><strong>分步</strong>求导</li>
+</ul>
+<h4 id="第二节-TI-BASIC-与-Lua"><a href="#第二节-TI-BASIC-与-Lua" class="headerlink" title="第二节 TI-BASIC 与 Lua"></a>第二节 TI-BASIC 与 Lua</h4><p><strong>TI</strong> 官方给用户提供了 <strong>TI-BASIC</strong> 和 <strong>Lua</strong> 两种编程语言，根据它们可以编写出许许多多有趣的应用。<br>有关 <strong>TI-BASIC</strong> 和 <strong>Lua</strong> 编程的教程请自行在 <strong>Cncalc</strong> 上查找，本文鉴于篇幅原因不予详细叙述。</p>
+<p>以下将介绍的应用的安装与使用仅需要将其拷贝至计算器，再在文件管理中打开即可。部分 <strong>Lua</strong> 应用可能需要更高版本的操作系统（请参照 <a href="#os">第三章第一节</a>）。</p>
+<h5 id="附录-TI-BASIC-App-推荐"><a href="#附录-TI-BASIC-App-推荐" class="headerlink" title="附录 TI-BASIC App 推荐"></a>附录 TI-BASIC App 推荐</h5><p><a href="https://www.cncalc.org/thread-22599-1-1.html" target="_blank" rel="noopener"><strong>Keypad Master 键盘熟悉工具</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201808/05/151444k6y6zef5fhc566et.png.thumb.jpg" alt=""><br>自写 <strong>TI-Nspire CX/CM</strong> 的键盘熟悉工具，内附教程与输入练习。我刚买回来的时候着实不习惯 <strong>TI-Nspire</strong> 的 <strong>ABCDEF</strong> 键盘，于是做了个程序来练练手。希望可以帮到各位。</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=24105l" target="_blank" rel="noopener"><strong>Rest of Your Life 孤城余生 生存游戏</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201901/19/151955j3zzb3ysq66qhhmb.png" alt=""><br>同为自写程序，这次是一个生存类文字游戏。特性目前已经非常丰富，最近一次加入了 DLC 功能。其他的介绍可以参照我在 <strong>Cncalc</strong> 上的帖子。</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12597" target="_blank" rel="noopener"><strong>Nspire 三国杀</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201512/27/205008uye1tyakte3toymo.png.thumb.jpg" alt=""><br>超多武将，功能丰富齐全，功勋/成绩系统，支持多人对战，<strong>TI-BASIC</strong> 程序中的佳作！</p>
+<p><em>此外可见 <a href="https://www.cncalc.org/forum.php?mod=forumdisplay&amp;fid=51&amp;filter=typeid&amp;typeid=55" target="_blank" rel="noopener">图形编程计算器资源下载区 TI-Nspire系列 - Cncalc</a> 及 <a href="https://tiplanet.org/forum/archives_cat.php?cat=Nspire&amp;lang=en" target="_blank" rel="noopener">Downloads TI-Nspire - TI-Planet</a> 。</em></p>
+<h5 id="附录-Lua-App-推荐"><a href="#附录-Lua-App-推荐" class="headerlink" title="附录 Lua App 推荐"></a>附录 Lua App 推荐</h5><p><a href="https://www.ticalc.org/archives/files/fileinfo/444/44465.html" target="_blank" rel="noopener"><strong>元素周期表</strong></a><br><img src="https://www.ticalc.org/archives/files/ss/828/82821.gif" alt=""><br>外国友人开发的元素周期表，有详细信息显示。</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12417&amp;highlight=elements" target="_blank" rel="noopener"><strong>Elements 元素周期表</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201610/14/125253nkdzxgmjvvxjxeem.jpg.thumb.jpg" alt=""><br>国人制作的元素周期表，有电子层动画和电子层排布。（<strong>Lua API 1.0</strong> 支持）</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=22547&amp;extra=page%3D1%26filter%3Dtypeid%26typeid%3D55" target="_blank" rel="noopener"><strong>植物大战僵尸</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201806/01/162256wux1v6xyvtg6xzgz.jpg.thumb.jpg" alt=""><br>国人良心！Lua 开发的优秀游戏，基本上还原了原游戏。（<strong>Lua API 1.0</strong> 支持；<strong>OS 3.1</strong> 由于版本限制需要自行修改，在下有一份修改好的，如有需要请联系笔者）</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12335&amp;extra=page%3D2%26filter%3Dtypeid%26typeid%3D55" target="_blank" rel="noopener"><strong>Teaching Feeling</strong></a><br><img src="https://i.loli.net/2019/08/07/ET37beksOPSQnp5.png" alt=""><br>绝对令你震惊，<del><strong>TI-Nspire</strong> 上居然还能玩<strong>黄油</strong></del>！（<strong>Lua API 2.0</strong> 支持）</p>
+<p><a href="https://next.cncalc.org/d/5c53b82e8ca08e02e1ad5a47" target="_blank" rel="noopener"><strong>三国杀 图形UI版</strong></a><br><img src="https://next.cncalc.org/api/v1/attachment/5c53b7eb8ca08e02e1acf3c0" alt=""><br>同样的国人良心，这个版本真的惊艳。（<strong>Lua API 2.0</strong> 支持）</p>
+<p><a href="https://next.cncalc.org/d/5c53b8288ca08e02e1ad54eb" target="_blank" rel="noopener"><strong>Fawpad Air 五子棋</strong></a><br><img src="https://next.cncalc.org/api/v1/attachment/5c53b7f08ca08e02e1acff03" alt=""><br>制作精美的休闲游戏，带AI。（<strong>Lua API 1.0</strong> 支持）</p>
+<p><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=12789&amp;highlight=%D6%D0%B9%FA%CF%F3%C6%E5" target="_blank" rel="noopener"><strong>中国象棋</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201710/06/110328c2anzkkk2h12akxk.jpg.thumb.jpg" alt=""><br>大制作，双人对战游戏。（<strong>Lua API 1.0</strong> 支持；<strong>OS 3.1</strong> 由于版本限制需要自行修改，在下有一份修改好的，如有需要请联系笔者）</p>
+<p><a href="http://www.cncalc.org/thread-24144-1-1.html" target="_blank" rel="noopener"><strong>nShogi 将棋</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201908/12/143120otbffolo2bcxqegq.gif" alt=""><br>自制，双人对战，日本象棋。有合法落子处提示，可打入可升变。（<del>我才不会说我之前用 <strong>Micropython</strong> 写的那个版本惨不忍睹呢</del>）（<strong>Lua API 1.0</strong> 支持）</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=21516" target="_blank" rel="noopener"><strong>Minecraft 2D</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/139662758585074.gif" alt=""><br>真的良心，完美还原，真实体验，游戏体验极佳！（<strong>Lua API 1.0</strong> 支持）</p>
+<p><em>此外可见 <a href="https://www.cncalc.org/forum.php?mod=forumdisplay&amp;fid=51&amp;filter=typeid&amp;typeid=55" target="_blank" rel="noopener">图形编程计算器资源下载区 TI-Nspire系列 - Cncalc</a> 及 <a href="https://tiplanet.org/forum/archives_cat.php?cat=Nspire&amp;lang=en" target="_blank" rel="noopener">Downloads TI-Nspire - TI-Planet</a> 。</em></p>
+<h3 id="第三章-公路上"><a href="#第三章-公路上" class="headerlink" title="第三章  公路上"></a>第三章  公路上</h3><p>走出家门，我们踏上了前往更为精彩的市中心的路。本章的内容是为本文中最精彩的一部分所作的必要准备工作。<br>各位可以想象一下，前文中用 <strong>TI-Nspire</strong> 自带的 <strong>TI-BASIC</strong> 和 <strong>Lua</strong> 尚且都能开发出如此有趣和使用的程序，更何况使用强大的第三方扩展框架 <strong>Ndless</strong> 呢！</p>
+<p></p><h2 id="os"></h2><p></p>
+<h4 id="第一节-系统固件升级"><a href="#第一节-系统固件升级" class="headerlink" title="第一节 系统固件升级"></a>第一节 系统固件升级</h4><p>目前市面上所能买到的 <strong>TI-Nspire</strong> 系列彩屏机（<strong>TI-Nspire CM</strong> 和 <strong>TI-Nspire CX</strong>）的操作系统版本基本上全部都已超过 <strong>OS 3.0</strong>，所以这一部分实际上可以跳过。但是为了本文结构的完整，这里还是对不同版本的操作系统进行一下对比。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">OS 版本</th>
+<th style="text-align:center">特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>OS 3.0</strong></td>
+<td style="text-align:center">不支持 <strong>Ndless</strong> / <strong>Lua API</strong> 1.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.1</strong></td>
+<td style="text-align:center">完美支持 <strong>Ndless</strong> / <strong>Lua API</strong> 1.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.2</strong></td>
+<td style="text-align:center">不支持 <strong>Ndless</strong> / <strong>Lua API</strong> 2.0</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.6</strong></td>
+<td style="text-align:center">不完美支持 <strong>Ndless</strong> / <strong>Lua API</strong> 2.0+ <br> 不支持 <strong>TI-Nspire CM</strong> 系列</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>OS 3.9</strong> 及以后</td>
+<td style="text-align:center">缺乏实体机 了解中 <br> 不支持 <strong>TI-Nspire CM</strong> 系列</td>
+</tr>
+</tbody>
+</table>
+<center><small><em>[注] <strong>OS 3.6</strong> 不完美支持 <strong>Ndless</strong> 指每次计算器重启后都需重新安装 <strong>Ndless</strong> 。</em><br></small></center>
+
+<p>由上表可知，对于最高操作系统版本仅支持到 <strong>OS 3.2</strong> 的 <strong>TI-Nspire CM</strong> 来说，安装完美支持 <strong>Ndless</strong> 的 <strong>OS 3.1</strong> 无疑是最佳选择<em>（虽然 <strong>Lua API</strong> 仅支持 1.0 版本，但 <strong>Ndless</strong> 的体验会让你觉得这一点割舍完全划得来，同时 <strong>Lua API 1.0</strong> 也有很多佳作）</em>。<br>对于 <strong>TI-Nspire CX</strong> 来说，两者兼得的 <strong>OS 3.6</strong> 便是最佳之选了。  </p>
+<p>操作系统的下载可前往 <strong>TI-Planet</strong> 的<a href="https://tiplanet.org/forum/archives_list.php?cat=OS+Nspire" target="_blank" rel="noopener">有关界面</a>。请注意，操作系统文件的后缀名遵循下表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">计算器硬件型号</th>
+<th style="text-align:center">后缀名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CM</strong></td>
+<td style="text-align:center">.tmo</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CM CAS</strong></td>
+<td style="text-align:center">.tmc</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CX</strong></td>
+<td style="text-align:center">.tco</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>TI-Nspire CX CAS</strong></td>
+<td style="text-align:center">.tcc</td>
+</tr>
+</tbody>
+</table>
+<p>同时，对于 <strong>TI-Nspire CX</strong> 系列而言， <strong>OS 3.6</strong> 以后的版本可能有防降级机制。欲降级至低版本请自行前往 <strong>Cncalc</strong> 或 <strong>TI-Planet</strong> 上查找相关信息。</p>
+<h4 id="第二节-Ndless-的安装"><a href="#第二节-Ndless-的安装" class="headerlink" title="第二节 Ndless 的安装"></a>第二节 Ndless 的安装</h4><p>我们先来简单介绍一下前文提到的<strong>物超所值</strong>的 <strong>Ndless</strong> 吧。  </p>
+<center><img src="https://i.loli.net/2019/08/07/r73XqRz9t5JxKAV.png" alt="bg44.png"><br><small><a href="http://ndless.me/" target="_blank" rel="noopener"><strong>Ndless</strong> 官网</a>宣传图（<del>头上插了网卡的那位是在模仿 Donald Trump ？</del>）<br></small><br></center>
+
+<p><strong>TI</strong> 为 <strong>TI-Nspire</strong> 系列开发的操作系统非常封闭，不像以前的计算器一样给用户提供安装预编译的 <strong>Add-In</strong> 功能，这对比起 <strong>128MB</strong> 的内置存储和 <strong>64/32MB</strong> 的运行内存，总给人一种软件配不上硬件的感觉。——为此，一名 <strong>TI-Nspire</strong> 的使用者 <strong>ExtendeD</strong> 开发了 <strong>Ndless</strong> 。</p>
+<p>什么是 <strong>Ndless</strong> 呢？简单而言，在你的计算器上安装 <strong>Ndless</strong> 就如同在你的 <strong>Android</strong> 设备上<strong>获取 root 权限</strong>或是在你的 <strong>iOS</strong> 设备上进行<strong>越狱</strong>。在安装了 <strong>Ndless</strong> 后，你的计算器便可以运行提前编译好的 <strong>C/C++</strong> 程序，这一操作极大地提升了 <strong>TI-Nspire</strong> 系列计算器的可玩性。</p>
+<p><strong>Ndless</strong> 的下载与安装方法可参考 <a href="https://www.cncalc.org/thread-9279-1-1.html" target="_blank" rel="noopener"><strong>Cncalc</strong></a> 上的教程。下段引用自该页：</p>
+<blockquote>
+<p>OS3.6 安装方法（来自ExAcler）：<br>1、下载最新版本的ndless，解压calcbin中的ndless_installer.tns、ndless.cfg.tns 以及 ndless_resources_36.tns，并通过 TI-Nspire Computer Link 传送至 “我的文档” 下的 ndless 文件夹中；<br>2、转至手持设备端，打开 ndless_installer.tns 然后按下 menu 按键。<br>稍等片刻，Ndless 3.6 即安装成功！<br>但请注意，安装 Ndless 3.6 成功后，一旦重启您的手持设备，安装即自动失效。此时，只需再次打开 ndless_installer.tns，重复上述过程即可。</p>
+</blockquote>
+<blockquote>
+<p>OS 3.1 安装方法：<br>  (1)下载Ndless并解压<br>  (2)在计算器上新建一个文件夹，名字为”ndless”<br>  (3)用联机软件将calcbin文件夹中的ndless_resources.tns传到计算器中。<br>  (4)关闭计算器上收到文件的对话框（很重要）<br>  (5)根据你计算器的型号将对应的ndless_installer-3.1.0发送到计算器上<strong>（笔者注：后缀名同上文操作系统对应）</strong><br>  (6)计算器上应该会看见Ndless Installed的提示，电脑上是不会提示传送成功的，会卡在50%，强制取消就OK了。</p>
+</blockquote>
+<p>当你完成操作系统的升级与 <strong>Ndless</strong> 的安装后，一切都已准备就绪，欢迎来到市中心！</p>
+<h3 id="第四章-市中心"><a href="#第四章-市中心" class="headerlink" title="第四章  市中心"></a>第四章  市中心</h3><p>进入本章，就意味着你来到了崭新的 <strong>TI-Nspire</strong> 世界。使用 <strong>Ndless</strong> 后，<strong>TI-Nspire</strong> 将完完全全地发挥出它的潜力！</p>
+<p><strong>Ndless</strong> 附带后缀名关联功能，有些软件会在初次运行时自动关联，有些则不会。若需要文件关联则请使用文本编辑器修改 <strong>ndless.cfg.tns</strong> 文件。</p>
+<p><strong>Ndless 3.1</strong> 更是拥有拥有自启动功能，在 ndless 目录下建立 startup 文件夹，并将要自启动的文件放入即可。</p>
+<p>不同版本的 <strong>Ndless</strong> 可能对某些应用的兼容性不同，详情请查看具体文件的自述文档。</p>
+<p>下文所述的所有应用，若无特殊说明，在安装了 <strong>Ndless</strong> 后便可直接从文件管理中打开。</p>
+<h4 id="附录-Ndless-App-推荐"><a href="#附录-Ndless-App-推荐" class="headerlink" title="附录 Ndless App 推荐"></a>附录 Ndless App 推荐</h4><h5 id="第一节-学习类"><a href="#第一节-学习类" class="headerlink" title="第一节 学习类"></a>第一节 学习类</h5><p><a href="https://next.cncalc.org/d/5c53b82d8ca08e02e1ad5928" target="_blank" rel="noopener"><strong>iDict 6 Pro 英汉词典</strong></a><br><img src="https://next.cncalc.org/api/v1/attachment/5c53b7fb8ca08e02e1ad1f0d" alt=""><br>国人自主使用 <strong>Ndless</strong> 开发的英汉词典，内含超过 <strong>100,000</strong> 个词条的海量词库，其占用空间仅有 <strong>2.6 MB</strong>，是学生必备的一款佳品。</p>
+<p><a href="https://www.cncalc.org/thread-8897-1-1.html" target="_blank" rel="noopener"><strong>dPicoC 机上 C 解释器</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201306/23/212744p6ob0gmq9i96iqr7.png" alt=""><br>同为国人开发，机上的 C 解释器。支持函数种类多，但可惜的是已停止更新了。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=313881" target="_blank" rel="noopener"><strong>Micropython v1.4.6</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1443448573x1409688671python_screen.png.pagespeed.ic.kdggR_Jbna.png" alt=""><br><strong>TI-Planet</strong> 上的移植的 <strong>Micropython</strong> 解释器，会关联.py后缀名。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=153555" target="_blank" rel="noopener"><strong>Duktape</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1434766582kaXVwln.png" alt=""><br><strong>TI-Planet</strong> 上的移植的 <strong>Javascript</strong> 解释器，目前还不是很完善。</p>
+<h5 id="第二节-工具类"><a href="#第二节-工具类" class="headerlink" title="第二节 工具类"></a>第二节 工具类</h5><p><a href="https://tiplanet.org/forum/archives_voir.php?id=106886" target="_blank" rel="noopener"><strong>pyWrite</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1415224349pywrite4.png" alt=""><br>仍然是 <strong>TI-Planet</strong> 上的应用。它是一个 <strong>ASCII</strong> 文本编辑器，支持编辑 <strong>Python</strong> 脚本并语法高亮，可以和上文的 <strong>Micropython</strong> 联动使用，同时支持触摸板。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=121680" target="_blank" rel="noopener"><strong>NoteWriter 2.0</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1418488742notewriter2.png" alt=""><br>第二款文本编辑器。同样支持编辑 <strong>Python</strong> 脚本并语法高亮，也可以和 <strong>Micropython</strong> 联动使用，界面相对友好易用，提供了两款软件皮肤供切换。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=15365" target="_blank" rel="noopener"><strong>mViewer CX</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/13695983381327260523mviewe13.jpg" alt=""><br>强大的图片查看器，本文开头图中即使用了该软件。支持 <strong>BMP/ PNG/JPEG</strong> 格式，可以缩放、滚动，调整对比度。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=139503" target="_blank" rel="noopener"><strong>nPDF 0.4</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1449537548x1421457693npdf.png.pagespeed.ic.f3cWs3Fmnj.png" alt=""><br>简单而又不失强大的文档查看器，支持 <strong>PDF/XPS/CBZ</strong> 格式，同时可以查看中文文档。支持跳页及查找功能。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=4416" target="_blank" rel="noopener"><strong>nClock</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1334424494nClock.png" alt=""><br>多功能时钟，可计时，同时还支持在系统中即时显示时间。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=12264" target="_blank" rel="noopener"><strong>nCapture</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1365315555cx.png" alt=""><br>机上截图工具，使用 <strong>Ctrl + .</strong> 来截图。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=12928" target="_blank" rel="noopener"><strong>HIDn</strong></a><br><img src="https://i.loli.net/2019/08/13/upZPOWFgUStL8MK.jpg" alt=""><br><strong>USB</strong> 外接 <strong>键盘/鼠标</strong> 驱动，很强。需要 <strong>miniUSB</strong> 转 <strong>标准USB</strong> 的转接线或者 <strong>USB Hub</strong> 。</p>
+<p><a href="https://www.cncalc.org/thread-9785-1-1.html" target="_blank" rel="noopener"><strong>nNovel Plus 中文文本阅读器</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201411/16/123729mvwu1evvgg2cugvw.jpg.thumb.jpg" alt=""><br>强推。国人良心系列，强大的中文阅读支持，简约整洁的 UI 设计，贴心好用的书签功能，不伤眼的夜间阅读模式，甚至还能随意更换字体！</p>
+<p><a href="https://www.cncalc.org/thread-22589-1-1.html" target="_blank" rel="noopener"><strong>nVid 视频播放器</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201807/17/171038oielc99bedefuflg.png.thumb.jpg" alt=""><br>非常好用的视频播放器，在进行压缩后可以使视频拥有极小的体积。TI-Planet 上的原贴已经失效，各位可以使用笔者搬运的版本。或者前往 <a href="https://github.com/pbfy0/nvid/releases/" target="_blank" rel="noopener">该项目的 Github 仓库</a>。使用的这张图是笔者做的一个小屏保，可以配合自启动功能使用。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=296214" target="_blank" rel="noopener"><strong>RoQPlayer 视频播放器</strong></a><br><img src="https://i.loli.net/2019/08/07/ET37beksOPSQnp5.png" alt=""><br>可以流畅播放的视频播放器，缺点是视频体积过大。</p>
+<h5 id="第三节-游戏类"><a href="#第三节-游戏类" class="headerlink" title="第三节 游戏类"></a>第三节 游戏类</h5><p><a href="https://tiplanet.org/forum/archives_voir.php?id=1649" target="_blank" rel="noopener"><strong>gbc4nspire GBC模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/145203966882944.gif" alt=""><br>强推。极其好用系列，有了它你就相当于在你小小的的 <strong>TI-Nspire</strong> 上有了成千上万的游戏可以玩耍！<br>在此，笔者推荐几个 GBC 游戏：</p>
+<ul>
+<li>三国志（策略游戏，战斗为战棋，内容极为丰富，最多支持11人多人游戏，超级耐玩）</li>
+<li>FIFA 2000（足球游戏，操作比较带感）</li>
+<li>星之海洋：蔚蓝星球（角色扮演游戏，极品游戏！）</li>
+<li>GTA 1 &amp; GTA 2（俯瞰视角的 GTA 最初代）</li>
+</ul>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=6622" target="_blank" rel="noopener"><strong>gpSP-Nspire GBA模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/83658.gif" alt=""><br>GBA 模拟器，借助于 GBA 性能的强大，你能玩到更多有趣的游戏！非常可惜的是不支持 <strong>TI-Nspire CM</strong> 系列。GBA 上的 Driver 3 这款游戏可谓一绝，真正的 3D GTA游戏。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=4150" target="_blank" rel="noopener"><strong>Nespire NES/FC模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1330866890T0Zwt.jpg" alt=""><br>NES/FC 红白机模拟器。有了这款神器，大部分的 FC 游戏你也可以随时随地游玩了！</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=302632" target="_blank" rel="noopener"><strong>PocketSNES SNES/SFC模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1467008780smw.png" alt=""><br>SNES/SFC 模拟器，同样是主机模拟器，可惜的是也不支持 <strong>TI-Nspire CM</strong> 系列。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=227904" target="_blank" rel="noopener"><strong>Liero</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1431895080liero.png" alt=""><br>射击游戏，可以同屏双人对战，支持更改键位，超多武器可供选择。是和朋友一起愉快玩耍的不二之选！</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=51574" target="_blank" rel="noopener"><strong>nFlappyBird</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1399569441flappybird_%28new%29.gif" alt=""><br>当年那个磨人的小鸟又回来了！现在它进入了你的 <strong>TI-Nspire </strong> ！</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=76957" target="_blank" rel="noopener"><strong>nKaruga</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/1407750151preview6.png" alt=""><br>弹幕射击游戏，目前还处于 <strong>demo</strong> 状态，但仍然可以玩。有一些不同于传统弹幕射击游戏的特殊规则。</p>
+<p><a href="https://tiplanet.org/forum/archives_voir.php?id=6631" target="_blank" rel="noopener"><strong>nDoom 3</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/13443068421327006967ndoomf10.jpg" alt=""><br>佳作！满分！<strong>TI-Nspire</strong> 平台上真正意义上的全 3D FPS 游戏！它本身只是一个加载器，但是如果从 TI-Planet 的 <a href="https://tiplanet.org/forum/archives_list.php?cat=Nspire&amp;multi_chaine_search=&amp;author=0&amp;auteur=0&amp;select=0&amp;generator=0&amp;cat=Jeux+Patchs+Doom2+Nspire" target="_blank" rel="noopener">有关界面</a> 下载游戏 WAD 文件并加载，你就能玩到多种多样的 FPS！</p>
+<p><a href="https://www.cncalc.org/thread-12131-1-1.html" target="_blank" rel="noopener"><strong>nPAL 仙剑奇侠传</strong></a><br><img src="https://www.cncalc.org/data/attachment/forum/201308/20/164949crvgtxvgmnvz2rzn.jpg" alt=""><br>放在最后压轴登场，国人开发！多少80后的回忆，如今你将可以在 <strong>TI-Nspire</strong> 上体验到完完整整的仙剑奇侠传一代！支持触摸板！</p>
+<h5 id="第四节-其他类"><a href="#第四节-其他类" class="headerlink" title="第四节 其他类"></a>第四节 其他类</h5><p><a href="https://tiplanet.org/forum/archives_voir.php?id=12534" target="_blank" rel="noopener"><strong>Mini vMac Macintosh Plus模拟器</strong></a><br><img src="https://tiplanet.org/modules/archives/captures/13658475692013-04-12%2022.14.24.jpg" alt=""><br>买不起 Mac？那好，在 <strong>TI-Nspire</strong> 上体验一下初代 <strong>Macintosh Plus</strong> 吧！</p>
+<p><strong>LinuxLoader</strong><br><img src="https://tiplanet.org/modules/archives/captures/1353258322LQsBi.jpg" alt=""><br>在你的 <strong>TI-Nspire</strong> 上跑 <strong>Linux</strong>！如果你有兴趣，还能让它跑 <strong>Debian</strong>，或者是进入图形界面，或者是安装外置网卡上网！<br>有关网页如下：<br><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=9818" target="_blank" rel="noopener">如何在Nspire上运行Linux</a><br><a href="https://www.cncalc.org/forum.php?mod=viewthread&amp;tid=10672" target="_blank" rel="noopener">Nspire使用U盘引导linux进入图形界面教程</a><br><a href="https://zhuanlan.zhihu.com/p/73489075" target="_blank" rel="noopener">优雅地使用计算器上网！</a></p>
+<h3 id="第五章-回家"><a href="#第五章-回家" class="headerlink" title="第五章  回家"></a>第五章  回家</h3><p>总而言之，目前 <strong>TI-Nspire</strong> 平台上的应用已经相当的繁多与丰富，同时笔者也希望各位适当使用这些应用，不要滥用喔！<br>本文中出现的所有应用与图片之版权皆归属其作者，如有侵权，请联系笔者进行删改。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Calculator/" rel="tag"><i class="fa fa-tag"></i> Calculator</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/cc043334.html" rel="next" title="Games 游戏推荐 论如何优雅地跨平台游玩">
+                <i class="fa fa-chevron-left"></i> Games 游戏推荐 论如何优雅地跨平台游玩
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/9278f6a2.html" rel="prev" title="SanGuoSha Offline 三国杀 Offline 简要知识手册">
+                SanGuoSha Offline 三国杀 Offline 简要知识手册 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+	
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://github.com/zyf722/zyf722.github.io/blob/master/images/avatar.png?raw=true"
+                alt="Max Alex" />
+            
+              <p class="site-author-name" itemprop="name">Max Alex</p>
+              <p class="site-description motion-element" itemprop="description">Human life is ephemera,which makes it precious.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/zyf722" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:MaxMixAlex@protonmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/MaxMixAlex" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://steamcommunity.com/id/maxalex2003" target="_blank" title="Steam"><i class="fa fa-fw fa-steam"></i>Steam</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://space.bilibili.com/1887412/#/" target="_blank" title="Bilibili"><i class="fa fa-fw fa-tv"></i>Bilibili</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.cncalc.org/space-uid-121104.html" target="_blank" title="Cncalc"><i class="fa fa-fw fa-calculator"></i>Cncalc</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Calc-计算器类-晒机-2019"><span class="nav-number">1.</span> <span class="nav-text">Calc 计算器类 晒机 - 2019</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#【晒机-进阶篇】【TI-Nspire-CM-CX-进阶玩法】"><span class="nav-number">1.1.</span> <span class="nav-text">【晒机 - 进阶篇】【TI-Nspire CM/CX 进阶玩法】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一章-推开家门"><span class="nav-number">1.1.1.</span> <span class="nav-text">第一章  推开家门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二章-走进庭院"><span class="nav-number">1.1.2.</span> <span class="nav-text">第二章  走进庭院</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一节-扩展库"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">第一节 扩展库</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#附录-扩展库-App-推荐"><span class="nav-number">1.1.2.1.1.</span> <span class="nav-text">附录 扩展库 App 推荐</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二节-TI-BASIC-与-Lua"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">第二节 TI-BASIC 与 Lua</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#附录-TI-BASIC-App-推荐"><span class="nav-number">1.1.2.2.1.</span> <span class="nav-text">附录 TI-BASIC App 推荐</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#附录-Lua-App-推荐"><span class="nav-number">1.1.2.2.2.</span> <span class="nav-text">附录 Lua App 推荐</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三章-公路上"><span class="nav-number">1.1.3.</span> <span class="nav-text">第三章  公路上</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#os"><span class="nav-number">1.2.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#第一节-系统固件升级"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">第一节 系统固件升级</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#第二节-Ndless-的安装"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">第二节 Ndless 的安装</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四章-市中心"><span class="nav-number">1.2.1.</span> <span class="nav-text">第四章  市中心</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#附录-Ndless-App-推荐"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">附录 Ndless App 推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第一节-学习类"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">第一节 学习类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第二节-工具类"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">第二节 工具类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第三节-游戏类"><span class="nav-number">1.2.1.1.3.</span> <span class="nav-text">第三节 游戏类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第四节-其他类"><span class="nav-number">1.2.1.1.4.</span> <span class="nav-text">第四节 其他类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五章-回家"><span class="nav-number">1.2.2.</span> <span class="nav-text">第五章  回家</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+	
+	<br />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+	<center><div id="aplayer"></div></center>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+	<script>
+	const ap = new APlayer({
+		container: document.getElementById('aplayer'),
+		autoplay: true,
+		volume: 0.6,
+		mutex: true,
+		preload: 'auto',
+		audio: [{
+			name: 'Ring of Fortune',
+			artist: '佐々木恵梨',
+			url: 'https://raw.githubusercontent.com/zyf722/gitpic/master/Ring_of_Fortune.m4a',
+			cover: 'https://github.com/zyf722/gitpic/blob/master/Ring_of_Fortune.jpg?raw=true'
+		}]
+	});
+	</script>
+	  
+	<style type="text/css">
+	
+	body {
+		margin: 0;
+		padding: 0;
+		opacity: 1.0;
+	}
+	
+	#inputform {
+		margin: 3px;
+		height: 100px;
+		width: 220px;
+		background: url(/images/wolfram/chrome-extension.png) 0 0 no-repeat;
+	}
+	
+	#input {
+		border: none;
+		height: 18px;
+		outline: none;
+		width: 132px;
+		font-family: OCR A Std;
+		src: url('/fonts/OCRAStd.otf');
+		font-size: 10px;
+		position: relative;
+		top: 48px;
+		left: 12px;
+	}
+	
+	#submitArea {
+		width: 22px;
+		height: 22px;
+		position: relative;
+		top: 54px;
+		left: -1px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	span.keyBorder {
+		background-color: rgb(250,250,255);
+		border-color:  #fff;
+		border-radius: 5px;
+		border: 1px solid #A7CED6;
+		font: 12px arial, sans-serif;
+		padding: 0 5px;
+	}
+
+	</style>
+	<script src="/js/wolfram/jquery-1.7.2.min.js"></script>
+	<script src="/js/wolfram/popup.js"></script>
+	
+	<form id="inputform" action="" method="post" target="ajaxFrame">
+		<input id="input" name="input" type="text" />
+		<input id="submitArea" type="submit" value="" onsubmit="return false;" />
+	</form>
+	<iframe name="ajaxFrame" style="display: none;"></iframe>
+		
+		
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+	  
+	</div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-battery-full"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Max Alex</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">World.blogtype == Hexo </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">World.theme ==   NexT.Gemini
+	</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">|	World.totalwords == 32.8k</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'u58T2t8ljh9Pkxuw1GBnwiqo-MdYXbMMI',
+        appKey: 'honuWmkx8SfTMbGfnyRq62JN',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nepnep.model.json"},"display":{"position":"right","width":400,"height":600},"mobile":{"show":false},"log":false});</script></body>
+</html>

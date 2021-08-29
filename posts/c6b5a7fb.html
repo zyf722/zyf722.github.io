@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=MagdaCleanMono:300,300italic,400,400italic,700,700italic|OCR A Std:300,300italic,400,400italic,700,700italic|OCR A Std:300,300italic,400,400italic,700,700italic|Consolas:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav32.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav16.ico?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"World.find(string query);","hits_empty":" World.find(${query}) == false;     ����δ�ҵ���ؽ����","hits_stats":" World.findtime == ${time};    World.findresults == ${hits};     ��${time}���ҵ�${hits}�������"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Calc 程序简介 nBrainfuckTI-Nspire 机上 Brainfuck 解释器！本文由 MaxAlex 编写，所有文字均为原创。 图片来自 Codingame">
+<meta name="keywords" content="Calculator">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Calc 程序简介 nBrainfuck">
+<meta property="og:url" content="http://yoursite.com/posts/c6b5a7fb.html">
+<meta property="og:site_name" content="World.create(__MAX__);">
+<meta property="og:description" content="Calc 程序简介 nBrainfuckTI-Nspire 机上 Brainfuck 解释器！本文由 MaxAlex 编写，所有文字均为原创。 图片来自 Codingame">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2020/06/20/FwHXJCbRxf1etjk.png">
+<meta property="og:updated_time" content="2021-08-29T08:14:58.014Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calc 程序简介 nBrainfuck">
+<meta name="twitter:description" content="Calc 程序简介 nBrainfuckTI-Nspire 机上 Brainfuck 解释器！本文由 MaxAlex 编写，所有文字均为原创。 图片来自 Codingame">
+<meta name="twitter:image" content="https://i.loli.net/2020/06/20/FwHXJCbRxf1etjk.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="World.create(__MAX__);" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/posts/c6b5a7fb.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Calc 程序简介 nBrainfuck | World.create(__MAX__);</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">World.create(__MAX__);</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">//This statement implements an website that creates an empty world with no meaning or purpose.</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />时间轴</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />文章标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th-list"></i> <br />文章分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于我</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-quotes">
+    <a href="/sentence.html" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-quote-left"></i> <br />格言摘抄</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-logs">
+    <a href="/logs/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cogs"></i> <br />建站日志</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-property">
+    <a href="/property/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cubes"></i> <br />物品列表</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tools">
+    <a href="/tools/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-wrench"></i> <br />常用工具</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-friends">
+    <a href="/friends/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />友情链接</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />站内搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="world.find(string query);" spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/c6b5a7fb.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Max Alex">
+      <meta itemprop="description" content="Human life is ephemera,which makes it precious.">
+      <meta itemprop="image" content="https://github.com/zyf722/zyf722.github.io/blob/master/images/avatar.png?raw=true">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="World.create(__MAX__);">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Calc 程序简介 nBrainfuck
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-07-19 15:40:16" itemprop="dateCreated datePublished" datetime="2020-07-19T15:40:16Z">2020-07-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-08-29 08:14:58" itemprop="dateModified" datetime="2021-08-29T08:14:58Z">2021-08-29</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/计算器类/" itemprop="url" rel="index"><span itemprop="name">计算器类</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/c6b5a7fb.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/c6b5a7fb.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Calc-程序简介-nBrainfuck"><a href="#Calc-程序简介-nBrainfuck" class="headerlink" title="Calc 程序简介 nBrainfuck"></a>Calc 程序简介 nBrainfuck</h1><h2 id="TI-Nspire-机上-Brainfuck-解释器！"><a href="#TI-Nspire-机上-Brainfuck-解释器！" class="headerlink" title="TI-Nspire 机上 Brainfuck 解释器！"></a>TI-Nspire 机上 Brainfuck 解释器！</h2><p>本文由 <strong>MaxAlex</strong> 编写，所有文字均为原创。</p>
+<div style="text-align:center;"><br><img src="https://i.loli.net/2020/06/20/FwHXJCbRxf1etjk.png" alt="Brainfuck"><br><small>图片来自 <a href="https://www.codingame.com/playgrounds/50426/getting-started-with-brainfuck/welcome" target="_blank" rel="noopener">Codingame</a></small><br></div>
+
+<a id="more"></a>
+<h3 id="第一章-概述"><a href="#第一章-概述" class="headerlink" title="第一章  概述"></a>第一章  概述</h3><blockquote>
+<p><strong>Brainfuck</strong>，是一种由 Urban Müller 在1993年创造的极小化程序语言。该语言只包含八个简单的命令和一个指令指针。</p>
+<p>虽然它是图灵完备的，但它的目的并非是为了实际使用，而是为了给程序员们制造挑战与娱乐。只需要把要完成的命令分解成微小的步骤，你就能用这门语言来编写程序。</p>
+<p>这种语言基于一个简单的机器模型，除了指令，这个机器还包括：一个以字节为单位、被初始化为零的数组、一个指向该数组的指针（初始时指向数组的第一个字节）、以及用于输入输出的两个字节流。</p>
+<p>下面是这八种状态的描述，其中每个状态由一个字符标识：</p>
+<p>>    指针加一<br>&lt;    指针减一<br>+    指针指向的字节的值加一<br>-    指针指向的字节的值减一<br>.    输出指针指向的单元内容（ASCII码）<br>,    输入内容到指针指向的单元（ASCII码）<br>[    如果指针指向的单元值为零，向后跳转到对应的 ] 指令的次一指令处<br>]    如果指针指向的单元值不为零，向前跳转到对应的 [ 指令的次一指令处  </p>
+<div style="text-align:right;">—— <a href="https://zh.wikipedia.org/wiki/Brainfuck" target="_blank" rel="noopener">维基百科，自由的百科全书</a></div>
+</blockquote>
+<p>近日笔者了解到了一些奇奇怪怪的 <a href="https://en.wikipedia.org/wiki/Esoteric_programming_language" target="_blank" rel="noopener">Esolang</a>，其中的 Brainfuck 语言通过模拟单带图灵机来工作。考虑到这门语言简洁有趣，笔者便产生了将其移植到 TI-Nspire 计算器平台上的想法。</p>
+<h3 id="第二章-已有的轮子"><a href="#第二章-已有的轮子" class="headerlink" title="第二章  已有的轮子"></a>第二章  已有的轮子</h3><p>说干就干，笔者在 <a href="https://github.com/pablojorge/brainfuck" target="_blank" rel="noopener">Github</a> 上找到了一个 Brainfuck 的综合仓库，其中包含了一个用 Lua 语言写好的 Brianfuck 解释器。秉着“不重复造轮子”的思想（<del>说到底还是条懒狗</del>），笔者决定在这个现有的解释器的源码上进行修改，使其能够在 TI-Nspire 平台上正常运行。由于德州仪器官方向 TI-Nspire 用户直接提供了 TI-Lua，因此移植起来并不困难。</p>
+<p>下面先贴出原版解释器的源码：</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--  Copyright (c) 2016 Francois Perrad</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> f = <span class="built_in">arg</span>[<span class="number">1</span>] <span class="keyword">and</span> <span class="built_in">assert</span>(<span class="built_in">io</span>.<span class="built_in">open</span>(<span class="built_in">arg</span>[<span class="number">1</span>], <span class="string">'r'</span>)) <span class="keyword">or</span> <span class="built_in">io</span>.<span class="built_in">stdin</span></span><br><span class="line"><span class="keyword">local</span> src = <span class="built_in">string</span>.<span class="built_in">gsub</span>(f:<span class="built_in">read</span><span class="string">'*a'</span>, <span class="string">'[^&gt;&lt;+%-%.,%[%]]'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="keyword">local</span> <span class="built_in">len</span> = <span class="built_in">string</span>.<span class="built_in">len</span>(src)</span><br><span class="line">f:<span class="built_in">close</span>()</span><br><span class="line"><span class="built_in">io</span>.<span class="built_in">stdout</span>:setvbuf<span class="string">'no'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> stack = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> jump = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> code = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> pc = <span class="number">1</span>, <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = src:<span class="built_in">sub</span>(pc, pc)</span><br><span class="line">    code[pc] = opcode</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        stack[#stack+<span class="number">1</span>] = pc</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">local</span> target = stack[#stack]</span><br><span class="line">        stack[#stack] = <span class="literal">nil</span></span><br><span class="line">        jump[target] = pc</span><br><span class="line">        jump[pc] = target</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">src = <span class="literal">nil</span></span><br><span class="line">stack = <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> buffer = <span class="built_in">setmetatable</span>(&#123;&#125;, &#123;</span><br><span class="line">    <span class="built_in">__index</span> = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>    <span class="comment">-- default value</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> ptr = <span class="number">1</span></span><br><span class="line"><span class="keyword">local</span> pc = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> pc &lt;= <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = code[pc]</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'&gt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'&lt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'+'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'-'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">io</span>.<span class="built_in">stdout</span>:<span class="built_in">write</span>(<span class="built_in">string</span>.<span class="built_in">char</span>(buffer[ptr]))</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">','</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = <span class="built_in">string</span>.<span class="built_in">byte</span>(<span class="built_in">io</span>.<span class="built_in">stdin</span>:<span class="built_in">read</span>(<span class="number">1</span>) <span class="keyword">or</span> <span class="string">'\0'</span>)</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] == <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] ~= <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    pc = pc + <span class="number">1</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>我们不妨先来分析一下这段代码。TI-Lua 中并没有 Lua 的标准输入输出库（io），因此我们不对输入输出的有关行作过多说明。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> f = <span class="built_in">arg</span>[<span class="number">1</span>] <span class="keyword">and</span> <span class="built_in">assert</span>(<span class="built_in">io</span>.<span class="built_in">open</span>(<span class="built_in">arg</span>[<span class="number">1</span>], <span class="string">'r'</span>)) <span class="keyword">or</span> <span class="built_in">io</span>.<span class="built_in">stdin</span></span><br><span class="line"><span class="keyword">local</span> src = <span class="built_in">string</span>.<span class="built_in">gsub</span>(f:<span class="built_in">read</span><span class="string">'*a'</span>, <span class="string">'[^&gt;&lt;+%-%.,%[%]]'</span>, <span class="string">''</span>)</span><br><span class="line"><span class="keyword">local</span> <span class="built_in">len</span> = <span class="built_in">string</span>.<span class="built_in">len</span>(src)</span><br></pre></td></tr></table></figure>
+<p>我们先来看脚本的第一部分，这里一共声明了三个变量：<br>f 为代表 Brainfuck 源码的字符串；src 则是对 f 去除非 Brainfuck 操作符后的源码；len 代表源码长度。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> stack = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> jump = &#123;&#125;</span><br><span class="line"><span class="keyword">local</span> code = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> pc = <span class="number">1</span>, <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = src:<span class="built_in">sub</span>(pc, pc)</span><br><span class="line">    code[pc] = opcode</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        stack[#stack+<span class="number">1</span>] = pc</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">local</span> target = stack[#stack]</span><br><span class="line">        stack[#stack] = <span class="literal">nil</span></span><br><span class="line">        jump[target] = pc</span><br><span class="line">        jump[pc] = target</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">src = <span class="literal">nil</span></span><br><span class="line">stack = <span class="literal">nil</span></span><br></pre></td></tr></table></figure>
+<p>在这一部分中，解释器将会对处理后的字符串 src 进行处理，分离出单个操作符并存储到 code 数组中。此外，解释器也记录了每个配套的 [ 和 ] 的跳转位置，便于接下来执行时进行跳转。stack 是为了处理嵌套的 [ 和 ] 而设置的变量。</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">local</span> buffer = <span class="built_in">setmetatable</span>(&#123;&#125;, &#123;</span><br><span class="line">    <span class="built_in">__index</span> = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>    <span class="comment">-- default value</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">local</span> ptr = <span class="number">1</span></span><br><span class="line"><span class="keyword">local</span> pc = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> pc &lt;= <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">local</span> opcode = code[pc]</span><br><span class="line">    <span class="keyword">if</span> opcode == <span class="string">'&gt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'&lt;'</span> <span class="keyword">then</span></span><br><span class="line">        ptr = ptr - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'+'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] + <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'-'</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = buffer[ptr] - <span class="number">1</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">io</span>.<span class="built_in">stdout</span>:<span class="built_in">write</span>(<span class="built_in">string</span>.<span class="built_in">char</span>(buffer[ptr]))</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">','</span> <span class="keyword">then</span></span><br><span class="line">        buffer[ptr] = <span class="built_in">string</span>.<span class="built_in">byte</span>(<span class="built_in">io</span>.<span class="built_in">stdin</span>:<span class="built_in">read</span>(<span class="number">1</span>) <span class="keyword">or</span> <span class="string">'\0'</span>)</span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] == <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> buffer[ptr] ~= <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">            pc = jump[pc]</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    pc = pc + <span class="number">1</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>这一部分是解释器的最后一部分，也是最为核心的一部分。我们首先声明了一个名为 buffer 的表，并通过元表将其初始化为0（可以理解为把表全部填充为0），这便是图灵机中的那条无限长的纸带，而纸带上存储的就是数据；ptr 为纸带的读写头，它存储了当前读写头所处的位置；pc 则是存储 code 数组中当前所执行到的位置，便于在遇到 [ 和 ] 时进行跳转。在 while 循环中，我们逐个读取 code 数组中的各个操作符，并用 if..elseif 结构来处理它们。</p>
+<h3 id="第三章-正式实践"><a href="#第三章-正式实践" class="headerlink" title="第三章  正式实践"></a>第三章  正式实践</h3><p>上面的这段代码并不能直接复制后在 TI-Nspire 平台运行，因此我们要对其进行一定的修改。为保证最大的兼容性，笔者决定采用 TI-Lua API 1.0 来编写 nBrainfuck。</p>
+<p>我们先把原版解释器进行封装，放入 Brainfuck 函数中：</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">brainfuck</span><span class="params">(input)</span></span></span><br><span class="line">    <span class="keyword">local</span> src = <span class="built_in">string</span>.<span class="built_in">gsub</span>(<span class="built_in">input</span>, <span class="string">'[^&gt;&lt;+%-%.,%[%]]'</span>, <span class="string">''</span>)</span><br><span class="line">    <span class="keyword">local</span> <span class="built_in">len</span> = <span class="built_in">string</span>.<span class="built_in">len</span>(src)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span> == <span class="number">0</span> <span class="keyword">then</span> <span class="keyword">return</span> <span class="number">-1</span> <span class="keyword">end</span> <span class="comment">-- 没有可执行的 Brianfuck 代码</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">local</span> stack = &#123;&#125;</span><br><span class="line">    <span class="keyword">local</span> jump = &#123;&#125;</span><br><span class="line">    <span class="keyword">local</span> code = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> pc = <span class="number">1</span>, <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">        <span class="keyword">local</span> opcode = src:<span class="built_in">sub</span>(pc, pc)</span><br><span class="line">        code[pc] = opcode</span><br><span class="line">        <span class="keyword">if</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">            stack[#stack+<span class="number">1</span>] = pc</span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">local</span> target = stack[#stack]</span><br><span class="line">            stack[#stack] = <span class="literal">nil</span></span><br><span class="line">            jump[target] = pc</span><br><span class="line">            jump[pc] = target</span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    src = <span class="literal">nil</span></span><br><span class="line">    stack = <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">local</span> buffer = <span class="built_in">setmetatable</span>(&#123;&#125;, &#123;</span><br><span class="line">        <span class="built_in">__index</span> = <span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">local</span> ptr = <span class="number">1</span></span><br><span class="line">    <span class="keyword">local</span> pc = <span class="number">1</span></span><br><span class="line">    <span class="keyword">local</span> bfOutput = <span class="string">""</span></span><br><span class="line">    <span class="keyword">while</span> pc &lt;= <span class="built_in">len</span> <span class="keyword">do</span></span><br><span class="line">        <span class="keyword">local</span> opcode = code[pc]</span><br><span class="line">        <span class="keyword">if</span> opcode == <span class="string">'&gt;'</span> <span class="keyword">then</span></span><br><span class="line">            ptr = ptr + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'&lt;'</span> <span class="keyword">then</span></span><br><span class="line">            ptr = ptr - <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'+'</span> <span class="keyword">then</span></span><br><span class="line">            buffer[ptr] = buffer[ptr] + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'-'</span> <span class="keyword">then</span></span><br><span class="line">            buffer[ptr] = buffer[ptr] - <span class="number">1</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'.'</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">local</span> buf = <span class="built_in">string</span>.<span class="built_in">char</span>(buffer[ptr])</span><br><span class="line">            bfOutput = bfOutput..buf</span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">','</span> <span class="keyword">then</span></span><br><span class="line">            buffer[ptr] = coroutine.<span class="built_in">yield</span>(<span class="number">1</span>,bfOutput)</span><br><span class="line">            bfOutput = <span class="string">""</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">'['</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">if</span> buffer[ptr] == <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">                pc = jump[pc]</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">elseif</span> opcode == <span class="string">']'</span> <span class="keyword">then</span></span><br><span class="line">            <span class="keyword">if</span> buffer[ptr] ~= <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">                pc = jump[pc]</span><br><span class="line">            <span class="keyword">end</span></span><br><span class="line">        <span class="keyword">end</span></span><br><span class="line">        pc = pc + <span class="number">1</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>,bfOutput</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>在这里，我们声明了一个名为 bfOutput 的变量用于存储 Brainfuck 程序的输出（因为 TI-Lua 仅允许在 on.paint(gc) 中进行绘制）。在遇到 . 标识符时将输出的字符连接至 bfOutput，最后在程序结束后将其返回即可。, 标识符（即输入）的处理相对复杂，我们将在下文中谈到。</p>
+<p>由于 TI-Lua 是一门事件驱动语言，所以我们还要引入处理事件的函数：</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.activate</span><span class="params">()</span></span></span><br><span class="line">    <span class="comment">-- 执行剪贴板中的 Brainfuck 代码</span></span><br><span class="line">    co = coroutine.<span class="built_in">create</span>(<span class="function"><span class="keyword">function</span> <span class="params">()</span></span></span><br><span class="line">       <span class="keyword">return</span> brainfuck(clipboard.getText())</span><br><span class="line">    <span class="keyword">end</span>)</span><br><span class="line">    <span class="built_in">status</span>, res, <span class="built_in">output</span> = coroutine.<span class="built_in">resume</span>(co)</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.deactivate</span><span class="params">()</span></span></span><br><span class="line">    <span class="comment">-- reset output</span></span><br><span class="line">    <span class="built_in">status</span>, res, <span class="built_in">output</span> = <span class="literal">nil</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.paint</span><span class="params">(gc)</span></span></span><br><span class="line">   <span class="keyword">if</span> res == <span class="number">-1</span> <span class="keyword">then</span> <span class="comment">-- 打印错误信息</span></span><br><span class="line">       gc:setColorRGB(<span class="number">183</span>,<span class="number">28</span>,<span class="number">28</span>)</span><br><span class="line">       gc:setFont(<span class="string">"serif"</span>,<span class="string">"i"</span>,<span class="string">"9"</span>)</span><br><span class="line">       gc:drawString(gc,<span class="string">"BF Error: This is not a valid Brainfuck program."</span>,<span class="number">10</span>,<span class="number">25</span>)</span><br><span class="line">   <span class="keyword">elseif</span> (res == <span class="number">0</span> <span class="keyword">or</span> res == <span class="number">1</span>) <span class="keyword">and</span> <span class="built_in">output</span> ~= <span class="literal">nil</span> <span class="keyword">then</span> <span class="comment">-- 打印输出</span></span><br><span class="line">       gc:setColorRGB(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">       gc:setFont(<span class="string">"sansserif"</span>,<span class="string">"r"</span>,<span class="string">"11"</span>)</span><br><span class="line">       gc:drawString(<span class="built_in">output</span>,<span class="number">10</span>,<span class="number">25</span>)</span><br><span class="line">   <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">on.charIn</span><span class="params">(char)</span></span></span><br><span class="line">    <span class="keyword">if</span> coroutine.<span class="built_in">status</span>(co)==<span class="string">"suspended"</span> <span class="keyword">then</span> <span class="comment">-- 处理输入</span></span><br><span class="line">        <span class="keyword">local</span> st, rs, op = coroutine.<span class="built_in">resume</span>(co,<span class="built_in">string</span>.<span class="built_in">byte</span>(<span class="built_in">char</span>))</span><br><span class="line">        <span class="built_in">status</span>, res, <span class="built_in">output</span> = st, rs, <span class="built_in">output</span>..op</span><br><span class="line">        platform.window:invalidate() <span class="comment">--重绘屏幕</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>其中，我们在 on.activate 函数中运行解释器，并将用户剪贴板中的内容传入刚刚封装的 Brainfuck 函数。不过，还是由于 TI-Lua 的事件驱动特性，我们转而使用了 Lua 中的协程来处理用户的输入。协程启动后，如果遇到 , 标识符则会挂起协程并返回已有的输出。接下来等待用户按下按键，调用 on.charIn 函数，并将用户的输入传入，重启协程。</p>
+<h3 id="第四章-完成"><a href="#第四章-完成" class="headerlink" title="第四章  完成"></a>第四章  完成</h3><p>上面简要写出了笔者构建 nBrainfuck 时的思路，具体的程序可前往<a href="https://www.cncalc.org/thread-24662-1-1.html" target="_blank" rel="noopener">这里</a>下载体验。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Calculator/" rel="tag"><i class="fa fa-tag"></i> Calculator</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/f880441b.html" rel="next" title="Tools 好物推荐 ChromeWithAHK">
+                <i class="fa fa-chevron-left"></i> Tools 好物推荐 ChromeWithAHK
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/8f5dcc88.html" rel="prev" title="Galgame 「ATRI ~My Dear Moments~」 测评">
+                Galgame 「ATRI ~My Dear Moments~」 测评 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+	
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://github.com/zyf722/zyf722.github.io/blob/master/images/avatar.png?raw=true"
+                alt="Max Alex" />
+            
+              <p class="site-author-name" itemprop="name">Max Alex</p>
+              <p class="site-description motion-element" itemprop="description">Human life is ephemera,which makes it precious.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/zyf722" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:MaxMixAlex@protonmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/MaxMixAlex" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://steamcommunity.com/id/maxalex2003" target="_blank" title="Steam"><i class="fa fa-fw fa-steam"></i>Steam</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://space.bilibili.com/1887412/#/" target="_blank" title="Bilibili"><i class="fa fa-fw fa-tv"></i>Bilibili</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.cncalc.org/space-uid-121104.html" target="_blank" title="Cncalc"><i class="fa fa-fw fa-calculator"></i>Cncalc</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Calc-程序简介-nBrainfuck"><span class="nav-number">1.</span> <span class="nav-text">Calc 程序简介 nBrainfuck</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#TI-Nspire-机上-Brainfuck-解释器！"><span class="nav-number">1.1.</span> <span class="nav-text">TI-Nspire 机上 Brainfuck 解释器！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一章-概述"><span class="nav-number">1.1.1.</span> <span class="nav-text">第一章  概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二章-已有的轮子"><span class="nav-number">1.1.2.</span> <span class="nav-text">第二章  已有的轮子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三章-正式实践"><span class="nav-number">1.1.3.</span> <span class="nav-text">第三章  正式实践</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四章-完成"><span class="nav-number">1.1.4.</span> <span class="nav-text">第四章  完成</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+	
+	<br />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+	<center><div id="aplayer"></div></center>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+	<script>
+	const ap = new APlayer({
+		container: document.getElementById('aplayer'),
+		autoplay: true,
+		volume: 0.6,
+		mutex: true,
+		preload: 'auto',
+		audio: [{
+			name: 'Ring of Fortune',
+			artist: '佐々木恵梨',
+			url: 'https://raw.githubusercontent.com/zyf722/gitpic/master/Ring_of_Fortune.m4a',
+			cover: 'https://github.com/zyf722/gitpic/blob/master/Ring_of_Fortune.jpg?raw=true'
+		}]
+	});
+	</script>
+	  
+	<style type="text/css">
+	
+	body {
+		margin: 0;
+		padding: 0;
+		opacity: 1.0;
+	}
+	
+	#inputform {
+		margin: 3px;
+		height: 100px;
+		width: 220px;
+		background: url(/images/wolfram/chrome-extension.png) 0 0 no-repeat;
+	}
+	
+	#input {
+		border: none;
+		height: 18px;
+		outline: none;
+		width: 132px;
+		font-family: OCR A Std;
+		src: url('/fonts/OCRAStd.otf');
+		font-size: 10px;
+		position: relative;
+		top: 48px;
+		left: 12px;
+	}
+	
+	#submitArea {
+		width: 22px;
+		height: 22px;
+		position: relative;
+		top: 54px;
+		left: -1px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	span.keyBorder {
+		background-color: rgb(250,250,255);
+		border-color:  #fff;
+		border-radius: 5px;
+		border: 1px solid #A7CED6;
+		font: 12px arial, sans-serif;
+		padding: 0 5px;
+	}
+
+	</style>
+	<script src="/js/wolfram/jquery-1.7.2.min.js"></script>
+	<script src="/js/wolfram/popup.js"></script>
+	
+	<form id="inputform" action="" method="post" target="ajaxFrame">
+		<input id="input" name="input" type="text" />
+		<input id="submitArea" type="submit" value="" onsubmit="return false;" />
+	</form>
+	<iframe name="ajaxFrame" style="display: none;"></iframe>
+		
+		
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+	  
+	</div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-battery-full"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Max Alex</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">World.blogtype == Hexo </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">World.theme ==   NexT.Gemini
+	</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">|	World.totalwords == 32.8k</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'u58T2t8ljh9Pkxuw1GBnwiqo-MdYXbMMI',
+        appKey: 'honuWmkx8SfTMbGfnyRq62JN',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nepnep.model.json"},"display":{"position":"right","width":400,"height":600},"mobile":{"show":false},"log":false});</script></body>
+</html>

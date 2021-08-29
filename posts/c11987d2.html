@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=MagdaCleanMono:300,300italic,400,400italic,700,700italic|OCR A Std:300,300italic,400,400italic,700,700italic|OCR A Std:300,300italic,400,400italic,700,700italic|Consolas:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.4.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav32.ico?v=6.4.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fav16.ico?v=6.4.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.4.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"World.find(string query);","hits_empty":" World.find(${query}) == false;     ����δ�ҵ���ؽ����","hits_stats":" World.findtime == ${time};    World.findresults == ${hits};     ��${time}���ҵ�${hits}�������"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Shogi 将棋相关 规则及序盘战法今天咱们玩什么呢，咱们整这么个玩意玩——将棋。将棋是什么呢，看过《三月的狮子》或者今年一月新番《龙王的工作》的朋友们也许知道，这玩意呢就是日本象棋。 【部分将棋棋子】">
+<meta name="keywords" content="将棋">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Shogi 将棋相关 规则及序盘战法">
+<meta property="og:url" content="http://yoursite.com/posts/c11987d2.html">
+<meta property="og:site_name" content="World.create(__MAX__);">
+<meta property="og:description" content="Shogi 将棋相关 规则及序盘战法今天咱们玩什么呢，咱们整这么个玩意玩——将棋。将棋是什么呢，看过《三月的狮子》或者今年一月新番《龙王的工作》的朋友们也许知道，这玩意呢就是日本象棋。 【部分将棋棋子】">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2018/08/20/5b7ac93157247.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/20/5b7acbd00dccd.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/20/5b7acbf4642ec.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/20/5b7acc0b1de67.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/24/5b7fc594658b5.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7d77a6aea.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7d8acb209.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7da3dd324.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7db8ae764.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7dc79a59b.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7e0593229.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7e13668eb.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7e20732ba.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/08/23/5b7e7e317dfad.jpg">
+<meta property="og:updated_time" content="2019-12-28T11:08:52.929Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Shogi 将棋相关 规则及序盘战法">
+<meta name="twitter:description" content="Shogi 将棋相关 规则及序盘战法今天咱们玩什么呢，咱们整这么个玩意玩——将棋。将棋是什么呢，看过《三月的狮子》或者今年一月新番《龙王的工作》的朋友们也许知道，这玩意呢就是日本象棋。 【部分将棋棋子】">
+<meta name="twitter:image" content="https://i.loli.net/2018/08/20/5b7ac93157247.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="World.create(__MAX__);" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/posts/c11987d2.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Shogi 将棋相关 规则及序盘战法 | World.create(__MAX__);</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">World.create(__MAX__);</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">//This statement implements an website that creates an empty world with no meaning or purpose.</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />时间轴</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />文章标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th-list"></i> <br />文章分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于我</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-quotes">
+    <a href="/sentence.html" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-quote-left"></i> <br />格言摘抄</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-logs">
+    <a href="/logs/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cogs"></i> <br />建站日志</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-property">
+    <a href="/property/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-cubes"></i> <br />物品列表</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tools">
+    <a href="/tools/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-wrench"></i> <br />常用工具</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-friends">
+    <a href="/friends/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heart"></i> <br />友情链接</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />站内搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="world.find(string query);" spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/c11987d2.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Max Alex">
+      <meta itemprop="description" content="Human life is ephemera,which makes it precious.">
+      <meta itemprop="image" content="https://github.com/zyf722/zyf722.github.io/blob/master/images/avatar.png?raw=true">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="World.create(__MAX__);">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Shogi 将棋相关 规则及序盘战法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-20 21:44:43" itemprop="dateCreated datePublished" datetime="2018-08-20T21:44:43Z">2018-08-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-12-28 11:08:52" itemprop="dateModified" datetime="2019-12-28T11:08:52Z">2019-12-28</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/将棋相关/" itemprop="url" rel="index"><span itemprop="name">将棋相关</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/c11987d2.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/posts/c11987d2.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Shogi-将棋相关-规则及序盘战法"><a href="#Shogi-将棋相关-规则及序盘战法" class="headerlink" title="Shogi 将棋相关 规则及序盘战法"></a>Shogi 将棋相关 规则及序盘战法</h1><h4 id="今天咱们玩什么呢，咱们整这么个玩意玩——将棋。"><a href="#今天咱们玩什么呢，咱们整这么个玩意玩——将棋。" class="headerlink" title="今天咱们玩什么呢，咱们整这么个玩意玩——将棋。"></a>今天咱们玩什么呢，咱们整这么个玩意玩——将棋。</h4><p><strong>将棋</strong>是什么呢，看过<strong>《三月的狮子》</strong>或者今年一月新番<strong>《龙王的工作》</strong>的朋友们也许知道，这玩意呢就是<strong>日本象棋</strong>。</p>
+<div align="center"><img src="https://i.loli.net/2018/08/20/5b7ac93157247.jpg" alt="shogi"><br><br><em>【部分将棋棋子】</em><br></div>
+
+<a id="more"></a>
+<p>将棋的规则不完全等同于中国象棋，相似但也有区别。以下关于将棋规则的内容来自百度百科及中文维基，内容略有删改。</p>
+<blockquote>
+<p><strong>棋盘</strong></p>
+</blockquote>
+<blockquote>
+<p>将棋的棋盘是一个由10条横线及10条竖线相交的方格阵，而棋子则置于方格之内，也就是<strong>9列9行</strong>的棋盘。靠近自己的3列是本阵，远离自己而靠近对手的3列是敌阵。</p>
+</blockquote>
+<blockquote>
+<p><strong>棋子</strong></p>
+</blockquote>
+<blockquote>
+<p>将棋的棋子呈钟形，前端较尖。和中国象棋及国际象棋不同，<strong>将棋是以棋子前端的指的方向来区别所属</strong>。将棋共有八种棋子，每种棋子均有独特的简称及走法，分述如下：<br><img src="https://i.loli.net/2018/08/20/5b7acbd00dccd.jpg" alt="shogi"><br><img src="https://i.loli.net/2018/08/20/5b7acbf4642ec.jpg" alt="shogi"><br><img src="https://i.loli.net/2018/08/20/5b7acc0b1de67.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p><strong>升级</strong></p>
+</blockquote>
+<blockquote>
+<p>将棋的棋子设有升级制度。除了王将 (玉将) 、金将及已经升级的棋子外，所有棋子都可以升级。当一枚可升级的棋子进至位于距本阵最远的三行（即敌阵三行），在此三行内移动或从此三行内吃子时或从此三行走出时，玩家可以选择把棋子升级（也可以不升级），只要翻转棋子即完成升级。升级又根据国际象棋中表示类似情况的术语的中文翻译，称为升变。</p>
+</blockquote>
+<blockquote>
+<p><strong>飞车</strong>升级为<strong>龙王</strong> （简称<strong>龙</strong>）。除可纵向或横向行走任意步数外，亦可兼容<strong>王将</strong>（<strong>玉将</strong>）的步法（即周围八格）。</p>
+</blockquote>
+<blockquote>
+<p><strong>角行</strong>升级为<strong>龙马</strong>（简称<strong>马</strong>）。除可沿对角线行走任意步数外，亦可兼容<strong>王将</strong>（<strong>玉将</strong>）的步法（即周围八格）。</p>
+</blockquote>
+<blockquote>
+<p><strong>银将</strong>升级后称为<strong>成银</strong>，<strong>成银</strong>亦可记作<strong>全</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>桂马</strong>升级后称为<strong>成桂</strong>，<strong>成桂</strong>亦可记作<strong>圭</strong>或<strong>今</strong>。<strong>进入敌阵最底的二行时</strong>必须<strong>自动升级</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>香车</strong>升级后称为<strong>成香</strong>，<strong>成香</strong>亦可记作<strong>杏</strong>或<strong>个</strong>。<strong>进入敌阵最底行时</strong>必须<strong>自动升级</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>步兵</strong>升级后称为<strong>成步</strong>，<strong>成步</strong>亦可记作<strong>と金</strong>或<strong>と</strong>。<strong>进入敌阵最底行时</strong>必须<strong>自动升级</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>银将</strong>、<strong>桂马</strong>、<strong>香车</strong>及<strong>步兵</strong>在升级后均会改依<strong>金将</strong>的走法，<strong>并不会保留原有的活动能力</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>王手与将死</strong></p>
+</blockquote>
+<blockquote>
+<p>如能下了能擒拿对方王将的一手，亦即象棋中的<strong>将军</strong>，则称为<strong>王手</strong>。<strong>被反将</strong>则是称为<strong>逆王手</strong>。王将不能逃脱，则此手构成<strong>诘み</strong>，亦即象棋的<strong>将死</strong>，将死对方的玩家胜出此局。若下了一手<strong>没有王手</strong>，但<strong>对方无论如何防御都会在下一手被将死</strong>，则称为<strong>必至</strong>，亦即中国象棋中的<strong>绝杀</strong>。</p>
+<p>将棋容许<strong>连将</strong>但是若双方重复循环同样的方式<strong>王手、应将</strong>达<strong>四次</strong>时，则王手方<strong>违规</strong>，判负，这一种<strong>犯规</strong>称为<strong>連続王手の千日手</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>吃子及打入</strong></p>
+</blockquote>
+<blockquote>
+<p>日本将棋最特别的是棋手可以花一手将己方吃掉的棋子放回棋盘成为己方棋子，这在日文称为<strong>打入</strong>，大幅提高了将棋的复杂度。当一枚已升级的棋子被吃时，它的升级会被取消，<strong>打入时用原先的棋种表示</strong>。</p>
+</blockquote>
+<blockquote>
+<p>打入有四项限制：</p>
+</blockquote>
+<p>1．刚打入的棋子即使落在敌阵亦<strong>不能马上升级</strong>，一定要以后<strong>多下一手</strong>才行。</p>
+<blockquote>
+</blockquote>
+<p>2．不能把被吃的棋子打入在一些不能再走的位置。例如<strong>步兵</strong>和<strong>香车</strong>都<strong>不能落在敌阵的底线</strong>；<strong>桂马不能落在敌阵后二行</strong>（即可以自动升级的三个子）。</p>
+<blockquote>
+</blockquote>
+<p>3．<strong>步兵</strong>不能打入于已有<strong>己方未升级步兵</strong>的一路，这一种<strong>犯规</strong>称为<strong>同径二步</strong>。</p>
+<blockquote>
+</blockquote>
+<p>4．<strong>步兵</strong>打入时不能立刻<strong>将死</strong>对方，这一种<strong>犯规</strong>称为<strong>打步诘</strong>；反之若只是<strong>王手</strong>而非将死则不犯规，此称为<strong>打步将</strong>。</p>
+<blockquote>
+<p><strong>结束</strong></p>
+</blockquote>
+<blockquote>
+<p>除了将死外，将棋尚可于以下情况结束：</p>
+<ul>
+<li>其中一方<strong>违规</strong>时，犯规的玩家在正式比赛中会被直接判为败北。</li>
+<li>如果一方的某一棋子经过移动后，<strong>全局出现同一情况总计四次</strong>，并不构成<strong>連続王手の千日手</strong>，对局自动结束，不分胜负，这种情况叫做<strong>千日手</strong>，相当于国际象棋中的<strong>三次重复规则</strong>。</li>
+<li>如双方的王将<strong>均于敌阵内</strong>，且<strong>无法将死对方</strong>时，对局结束。双方需为自己拥有的棋子计分，计分方法为：王将不计分、<strong>角行及飞车各计五分</strong>，<strong>其他棋子各计一分</strong>。升级的棋子不会额外加分。<strong>如只有一方得分少于27</strong>则少分的一方判为负，否则不分胜负。</li>
+</ul>
+</blockquote>
+<p>将棋的规则呢我们就概述到这里，下面是部分将棋序盘战法，转载自 <a href="https://tieba.baidu.com/f?kz=2725032812" target="_blank" rel="noopener">https://tieba.baidu.com/f?kz=2725032812</a> 。</p>
+<blockquote>
+<p><strong>相挂</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>将飞车放在原地不动</strong>的战法称之为<strong>居飞车</strong>，先后手均采用<strong>居飞车</strong>的就称之为<strong>相居飞车</strong>。如图，先手▲2六步，将飞车前的步兵移动向前，以便让飞车攻击。后手▽8四步同样将飞车前的步兵移动向前。该战型称为<strong>相挂</strong>，以这种方式开始棋局就称为<strong>相挂模样</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/24/5b7fc594658b5.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上面参考图的手顺为：▲2六步 ▽8四步 ▲2五步 ▽8五步 ▲7八金 ▽3二金▲2四步 ▽同步 ▲同飞 ▽2三步</p>
+</blockquote>
+<blockquote>
+<p>那么，先手的第5手为什么要走▲7八金，而不走▲2四步呢？这是在将棋入门中需要说明的地方，不能够省略，需要简单说明一下。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7d77a6aea.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>如上面参考图：先手第5手改走▲2四步，接下来▽同步、▲同飞兑掉步兵，▽8六步、▲同步、▽8七步打、▲2三步打、▽8八步成、▲同银，后手兑换得到一个角行，然后▽3五角打，瞄准先手的飞车，先手不利。如果先下出▲7八金，可以有效的保护角行，后手也要用▽3二金这手交换。</p>
+</blockquote>
+<blockquote>
+<p><strong>矢仓</strong></p>
+</blockquote>
+<blockquote>
+<p>在互相用<strong>“居飞车</strong>作战的棋局中，如果先手以▲7六步这手移动步兵为己方角行开路，那么这种战型就称为<strong>矢仓</strong>，以矢仓战型开局就称为<strong>矢仓模样</strong>。</p>
+</blockquote>
+<blockquote>
+<p>如下图，手顺为：▲7六步 ▽8四步 ▲6八银 ▽3四步 ▲6六步</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7d8acb209.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>先手的第5手▲6六步，在有些场合下，也下出▲7七银这一手，过去在多数情况下也都使用这一手，而且这着的出现几乎可以说明先手使用了矢仓。现在多数都下▲6六步这手，此着意味着先手也会采用其他战型，不一定是矢仓。但是如果从<strong>居飞车</strong>开始展开棋局的话，普通情况下都会从▲6六步这手开始成为矢仓。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7da3dd324.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上图是将玉将包围起来的一种形式，称之为<strong>矢仓围</strong>，如果行棋方以这种方式来保护玉将的话就称之为<strong>相矢仓</strong>。在矢仓战型中，还有其他形式的布阵以防卫玉将，但是上图的<strong>金矢仓</strong>却是最常用的。</p>
+</blockquote>
+<blockquote>
+<p><strong>换角</strong></p>
+</blockquote>
+<blockquote>
+<p>在<strong>相居飞车</strong>中，先手以▲7六步为角行开道。这种情况下，双方如果在序盘互相吃掉角行，将这两子兑掉，从而使自己和对方都有一个角行作为持子来进行布局。这种战型就被称为<strong>换角</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7db8ae764.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>如图，开局经过以下手顺形成以上局面：▲7六步 ▽8四步 ▲2六步 ▽3二金 ▲7八金 ▽8五步▲7七角 ▽3四步 ▲8八银 ▽7七角成 ▲同银</p>
+</blockquote>
+<blockquote>
+<p>后手走▽8四步，与<strong>矢仓</strong>的前两手相同，但这次先手走▲2六步，棋局就在不同于<strong>矢仓</strong>的情况下展开，此着一出，大多数情况下<strong>换角</strong>战型就会出现了。关于这种战型的选择权，虽然也有例外情况，但是基本上选择权都由先手持有。<strong>换角</strong>也有可能通过和上图不同的行棋方法来实现，实际上后手在第10手▽7七角成实行换角的时候，可以改走▽4四步这手以避开<strong>换角</strong>，可以说<strong>换角</strong>是在双方的了解下共同决定确立的一种战型。 上图的进程之后，普通以▽4二银、▲3八银、▽7二银进行，但是也有其他变化，即使是该进程也可以分解成多种战型，从战法上来说这地方稍有些高深，而且难解。</p>
+</blockquote>
+<blockquote>
+<p><strong>横步取</strong></p>
+</blockquote>
+<blockquote>
+<p>在相居飞车战型的序盘基本型中，有一种叫做<strong>横步取</strong>。先手以▲7六步为角行开道，后手不走▽8四步这手，而是同样走▽3四步为角行开道。如此进行下去，将有出现<strong>横步取</strong>的可能。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7dc79a59b.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上图过程如下：▲7六步 ▽3四步 ▲2六步 ▽8四步 ▲2五步 ▽8五步▲7八金 ▽3二金 ▲2四步 ▽同步 ▲同 飞</p>
+</blockquote>
+<blockquote>
+<p>对于后手的第2手▽3四步，先手用▲2六步这着，表示将使用<strong>居飞车</strong>，然后后手▽8四步，也表示使用<strong>居飞车</strong>。那么，之后棋局一般就会像上图一样展开进行。上图过程后，如果后手▽2三步打，逼开先手飞车，此时飞车可以不用退后，而是走▲3四飞，吃掉旁边的步兵，该方法就称之为<strong>横步取战法</strong>。和为角行开道实行<strong>相挂</strong>不同，该方法是因为以后手处于3四处的步兵为目标而得名的。 在上图过程后，后手也可以不使用和<strong>相挂</strong>”相同的走法，也就是不用▽2三步打这着。因为即使先手能够走出▲2三步打这着，后手的角行还未死，所以这时可以走▽8六步、▲同步、▽同飞，同样将飞车攻到敌阵前面，现在后手方也多用此行棋路数。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e0593229.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>无论后手是使用▽2三步打后的变化还是使用▽8六步后的变化，吃不吃后手在己方飞车旁边的步兵的选择权都在先手的手上。在实战当中，选择吃掉一般都带有不肯在气势上输给对方的意味。 至第四手▽8四步的情形，则称之为<strong>横步取模样</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>四间飞车</strong></p>
+</blockquote>
+<blockquote>
+<p>前面我们已经介绍了在先手和后手均把飞车放在原位的情况下的各种战型和组合运用的方法。不过在序盘阶段，也有<strong>把飞车移动到各处</strong>的行棋方法，我们把这种方法称之为<strong>振飞车</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e13668eb.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>上图过程为：▲7六步 ▽3四步 ▲2六步 ▽4四步 ▲2五步 ▽3三角▲4八银 ▽4二飞</p>
+</blockquote>
+<blockquote>
+<p>和<strong>横步取</strong>相同，先手▲7六步，然后后手▽3四步为角行开道，之后再通过▲2六步、▽4四步这样的走法来封住角行的通道（角道），以上开局就是<strong>振飞车模样</strong>。虽然不能说开局下出以上走法就绝对会是<strong>振飞车</strong>了。但是可以说这种可能性相当高。为何这么说呢？因为在实行<strong>振飞车</strong>的情况下，后手走出▽3三角，守住2四，防止先手飞车前的步兵上来兑换己方步兵，这时双方就无法交换角行了。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e20732ba.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>以上参考图过程为：▲7六步 ▽3四步 ▲6六步 ▽8四步 ▲6八飞 ▽8五步▲7七角</p>
+</blockquote>
+<blockquote>
+<p>面对后手走出的▽3四步这手棋，先手在第3手用▲6六步来封住角行前进的道路，然后以实现<strong>振飞车</strong>这种战型为目标，上图就是先手出动飞车后的局面。 对于先手来说，如果后手在次一手选择了▽8四步，那他可以实行<strong>振飞车</strong>；同样的，对于后手来说，如果先手在前一手选择了▲2六步，那么他也可以实行<strong>振飞车</strong>。上面两个参考图都是<strong>振飞车</strong>的代表战型，名为<strong>四间飞车</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>相振飞车</strong></p>
+</blockquote>
+<blockquote>
+<p>在这里，我们将开始介绍序盘战型的最后一类，即先后手均把<strong>飞车移动到各处</strong>的战型，<strong>相振飞车</strong>。</p>
+</blockquote>
+<blockquote>
+<p><img src="https://i.loli.net/2018/08/23/5b7e7e317dfad.jpg" alt="shogi"></p>
+</blockquote>
+<blockquote>
+<p>以上参考图的进程为：▲7六步 ▽3四步 ▲6六步 ▽3五步 ▲6八飞 ▽3二飞</p>
+</blockquote>
+<blockquote>
+<p>上面我们提到了先手意图实行<strong>振飞车</strong>，就用▲6六步来封住角行前进的道路（角道），而这一次后手用▽3五步这手应对，将处于3四位的步兵移动上前，以此来打开角道，这就是<strong>相振飞车</strong>的代表性走法，先后手双方均以实行<strong>振飞车</strong>为目标。后手除了可以用▽3五步这手应对之外，还可以用和先手同型的▽4四步进行。另外还有其他形式能够实行这种战型，而双方的飞车移动的地方也有不同的选择。<strong>相振飞车</strong>是将棋战型中定式较多的一种，还有很多领域没被研究和开发，实战的例子也不多，但却是非常有趣的战型。</p>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/将棋/" rel="tag"><i class="fa fa-tag"></i> 将棋</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/f4025114.html" rel="next" title="Hello World 入驻杂谈">
+                <i class="fa fa-chevron-left"></i> Hello World 入驻杂谈
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/23c01d5.html" rel="prev" title="Calc 晒机系列 2018 特别篇">
+                Calc 晒机系列 2018 特别篇 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+	
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://github.com/zyf722/zyf722.github.io/blob/master/images/avatar.png?raw=true"
+                alt="Max Alex" />
+            
+              <p class="site-author-name" itemprop="name">Max Alex</p>
+              <p class="site-description motion-element" itemprop="description">Human life is ephemera,which makes it precious.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/zyf722" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:MaxMixAlex@protonmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/MaxMixAlex" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://steamcommunity.com/id/maxalex2003" target="_blank" title="Steam"><i class="fa fa-fw fa-steam"></i>Steam</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://space.bilibili.com/1887412/#/" target="_blank" title="Bilibili"><i class="fa fa-fw fa-tv"></i>Bilibili</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.cncalc.org/space-uid-121104.html" target="_blank" title="Cncalc"><i class="fa fa-fw fa-calculator"></i>Cncalc</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Shogi-将棋相关-规则及序盘战法"><span class="nav-number">1.</span> <span class="nav-text">Shogi 将棋相关 规则及序盘战法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#今天咱们玩什么呢，咱们整这么个玩意玩——将棋。"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">今天咱们玩什么呢，咱们整这么个玩意玩——将棋。</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+	
+	<br />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
+	<center><div id="aplayer"></div></center>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+	<script>
+	const ap = new APlayer({
+		container: document.getElementById('aplayer'),
+		autoplay: true,
+		volume: 0.6,
+		mutex: true,
+		preload: 'auto',
+		audio: [{
+			name: 'Ring of Fortune',
+			artist: '佐々木恵梨',
+			url: 'https://raw.githubusercontent.com/zyf722/gitpic/master/Ring_of_Fortune.m4a',
+			cover: 'https://github.com/zyf722/gitpic/blob/master/Ring_of_Fortune.jpg?raw=true'
+		}]
+	});
+	</script>
+	  
+	<style type="text/css">
+	
+	body {
+		margin: 0;
+		padding: 0;
+		opacity: 1.0;
+	}
+	
+	#inputform {
+		margin: 3px;
+		height: 100px;
+		width: 220px;
+		background: url(/images/wolfram/chrome-extension.png) 0 0 no-repeat;
+	}
+	
+	#input {
+		border: none;
+		height: 18px;
+		outline: none;
+		width: 132px;
+		font-family: OCR A Std;
+		src: url('/fonts/OCRAStd.otf');
+		font-size: 10px;
+		position: relative;
+		top: 48px;
+		left: 12px;
+	}
+	
+	#submitArea {
+		width: 22px;
+		height: 22px;
+		position: relative;
+		top: 54px;
+		left: -1px;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	span.keyBorder {
+		background-color: rgb(250,250,255);
+		border-color:  #fff;
+		border-radius: 5px;
+		border: 1px solid #A7CED6;
+		font: 12px arial, sans-serif;
+		padding: 0 5px;
+	}
+
+	</style>
+	<script src="/js/wolfram/jquery-1.7.2.min.js"></script>
+	<script src="/js/wolfram/popup.js"></script>
+	
+	<form id="inputform" action="" method="post" target="ajaxFrame">
+		<input id="input" name="input" type="text" />
+		<input id="submitArea" type="submit" value="" onsubmit="return false;" />
+	</form>
+	<iframe name="ajaxFrame" style="display: none;"></iframe>
+		
+		
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+	  
+	</div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2021</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-battery-full"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Max Alex</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">World.blogtype == Hexo </div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">World.theme ==   NexT.Gemini
+	</div>
+
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">|	World.totalwords == 32.8k</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.4.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.4.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.4.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="\js\Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'u58T2t8ljh9Pkxuw1GBnwiqo-MdYXbMMI',
+        appKey: 'honuWmkx8SfTMbGfnyRq62JN',
+        placeholder: 'World.speak(string comment);',
+        avatar:'retro',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nepnep.model.json"},"display":{"position":"right","width":400,"height":600},"mobile":{"show":false},"log":false});</script></body>
+</html>
