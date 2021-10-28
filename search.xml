@@ -1,74 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Games 游戏推荐 AIDungeon 2</title>
-    <url>/posts/a41bb8a1.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-游戏推荐-AIDungeon-2"><a href="#Games-游戏推荐-AIDungeon-2" class="headerlink" title="Games 游戏推荐 AIDungeon 2"></a>Games 游戏推荐 AIDungeon 2</h1><h2 id="真正意义上的极高自由度游戏！"><a href="#真正意义上的极高自由度游戏！" class="headerlink" title="真正意义上的极高自由度游戏！"></a>真正意义上的极高自由度游戏！</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，所有文字均为原创，部分图片引用自 <strong>Wikipedia</strong>，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
-<div align="center"><br><img src="https://i.loli.net/2019/12/28/h3fEMNW25OL8DUS.png" alt="Logo"><br><center><small>AIDungeon 2 Logo</small></center><br></div>
-
-<a id="more"></a>
-<h3 id="第一章-文字冒险游戏"><a href="#第一章-文字冒险游戏" class="headerlink" title="第一章  文字冒险游戏"></a>第一章  文字冒险游戏</h3><p>谈起 <strong>文字冒险游戏</strong>，你一般会想到什么？</p>
-<p>是日式 AVG 互动视觉小说？还是 Telltale Games 旗下的那些章节互动游戏？</p>
-<p>实际上，在上世纪七八十年代， <strong>文字冒险游戏</strong> 可是实打实的 <strong>只有文字</strong> 的冒险游戏。由于计算机的机能限制，彼时的文字冒险游戏只能通过文字的输入输出来构建游戏的各种情节，这也让玩家的想象成为了 <strong>文字冒险游戏</strong> 中必不可少的一环。</p>
-<p><img src="https://i.loli.net/2019/12/28/y6pWmgBj8k5lHLC.png" alt="Zork"></p>
-<center><small>Zork - 史上最早的文字冒险游戏之一</small></center>
-
-<p>紧张刺激的情节、黑底白字或黑底绿字的屏幕、作为玩家输入指令的简单英文句子，这便是当时的 <strong>文字冒险游戏</strong> 所拥有的全部要素了。  </p>
-<p>后来，人们在这类游戏的基础上创造出了 <strong>MUD</strong> （<strong>Multi-User Dungeon</strong>，多用户地牢）。<strong>MUD</strong> 很好地传承了 <strong>文字冒险游戏</strong> 的精髓并将之发扬光大，加入了 <strong>多人游戏</strong>。时至今日，作为游戏界的活化石、网游的开山鼻祖的 <strong>MUD</strong>，依然繁荣着。<strong>1990 年</strong> 开服的 <strong>Batmud</strong> 如今仍在运营，庞大的玩家群体中不仅有许多玩了数十年的死忠玩家，更是每隔一段时间就有不断加入的新鲜血液。</p>
-<p><img src="https://i.loli.net/2019/12/28/Ob4isLWdR1UAIGJ.png" alt="Batmud"></p>
-<center><small>Batmud</small></center>
-
-<p>我们可以看到 <strong>文字冒险游戏</strong> 如今魅力丝毫不减，依然葆有当年的激情与活力。技术更迭日新月异，我想 <strong>文字冒险游戏</strong> 也许会在当下获得新生。</p>
-<h3 id="第二章-AI-Dungeon-2"><a href="#第二章-AI-Dungeon-2" class="headerlink" title="第二章  AI Dungeon 2"></a>第二章  AI Dungeon 2</h3><h4 id="第一节-简介"><a href="#第一节-简介" class="headerlink" title="第一节 简介"></a>第一节 简介</h4><p>近日，这款名为 <strong>AIDungeon 2</strong> 的游戏，让 <strong>文字冒险游戏</strong> 这个词再度回到了人们的视野中。</p>
-<p>据其官方文档描述，它是世界上第一款真正意义上 <strong>纯 AI</strong> 生成的文字冒险游戏。<strong>AIDungeon 2</strong> 使用了 <strong>GPT-2</strong> （训练参数多达 <strong>15亿</strong>）这款文本生成模型作为游戏的核心；而得益于 <strong>GPT-2</strong> 模型的强悍，<strong>AIDungeon 2</strong> 将拥有近乎无限的创造力。</p>
-<p>也就是说，通过这款 <strong>AIDungeon 2</strong> ，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 <em>Everything is in my hands</em> 。</p>
-<p>目前 <strong>AIDungeon 2</strong> 已作为一个开源项目在 <a href="https://github.com/AIDungeon/AIDungeon" target="_blank" rel="noopener">Github</a> 上发布，其开发团队同时也开通了 <a href="https://www.patreon.com/AIDungeon" target="_blank" rel="noopener">Patreon</a> 账号以获取捐助。</p>
-<p>本文接下来的内容将详细介绍如何游玩这款真正意义上的 <strong>全自由文字冒险游戏</strong>。</p>
-<h4 id="第二节-Google-Colaboratory-的配置"><a href="#第二节-Google-Colaboratory-的配置" class="headerlink" title="第二节 Google Colaboratory 的配置"></a>第二节 Google Colaboratory 的配置</h4><p>考虑到游玩 <strong>AIDungeon 2</strong> 的高负载（官方建议使用具有 <strong>12GB+显存</strong> 的 NVIDIA 显卡来进行硬件加速，否则每回合都会需要数分钟的时间来计算），因此我们另寻别路——云计算。</p>
-<p><img src="https://i.loli.net/2019/12/28/5B1nMzEdGr2XCAy.png" alt="Colaboratory"></p>
-<center><small>Google Colaboratory</small></center>
-
-<p><a href="https://colab.research.google.com/" target="_blank" rel="noopener"><strong>Google Colaboratory</strong></a> 是一个 <strong>完全免费</strong> 的 <strong>Jupyter 笔记本</strong> 环境，不需要进行任何设置就可以使用，并且完全在云端运行。每个 <strong>Colab</strong> 笔记本都可以免费配置 <strong>Google TPU</strong> 或 <strong>NVIDIA Tesla T4 GPU</strong> 来进行硬件加速，同时配备了最多可达 <strong>25GB RAM</strong> 和 <strong>68GB</strong> 磁盘存储免费供用户使用。</p>
-<p><img src="https://i.loli.net/2019/12/28/LPXWKlfsGg2zn1R.png" alt="Compute Engine"></p>
-<center><small>Colab 强大的计算资源</small></center>
-
-<p>Google 提供的这项强劲的云计算服务刚好可以满足我们游玩 <strong>AIDungeon 2</strong> 的需要，因此我们首先从配置 <strong>Colab</strong> 笔记本做起。</p>
-<p>使用 <strong>Google Colaboratory</strong> 首先需要有一个 Google 账户，并启用 <strong>Google Drive</strong>。在准备完毕后，打开上文中的链接即可连接到 <strong>Google Colaboratory</strong>。单击 <strong>新建 PYTHON 3 记事本</strong> 一项即可创建一个新的 <strong>Colab</strong> 笔记本。</p>
-<p><img src="https://i.loli.net/2019/12/28/uzLjEIrONGqsPmn.png" alt="New"></p>
-<center><small>创建新的 Colab 笔记本</small></center>
-
-<p>在创建了一个 <strong>Colab</strong> 笔记本后，我们需要启用笔记本的 GPU 硬件加速。为此，单击 <strong>修改</strong> - <strong>笔记本设置</strong>，将硬件加速器切换为 GPU 并保存。</p>
-<p><img src="https://i.loli.net/2019/12/28/Eqk8KPg6NFsTLuB.png" alt="GPU"></p>
-<center><small>切换至 GPU 硬件加速器</small></center>
-
-<p>按下 Ctrl+S 保存笔记本至 Google 账户所关联的 <strong>Google Drive</strong>，<strong>Colab</strong> 笔记本的配置至此完成。</p>
-<h4 id="第三节-AI-Dungeon-2-安装"><a href="#第三节-AI-Dungeon-2-安装" class="headerlink" title="第三节 AI Dungeon 2 安装"></a>第三节 AI Dungeon 2 安装</h4><p>打开 <strong>AI Dungeon 2</strong> 官方提供的<a href="https://colab.research.google.com/github/nickwalton/AIDungeon/blob/master/AIDungeon_2.ipynb" target="_blank" rel="noopener">运行说明</a>，将 Main Game 部分的三个代码块及 Utilities 的最后一个代码块拷贝至刚刚新建的 <strong>Colab</strong> 笔记本。</p>
-<p><img src="https://i.loli.net/2019/12/28/dZ53A2GxJ4pODia.png" alt="Code Blocks"></p>
-<center><small>AI Dungeon 2 配置代码块</small></center>
-
-<p>运行 <strong>Install</strong> 代码块，<strong>Colab</strong> 会自动连接到后端计算引擎并开始 <strong>AI Dungeon 2</strong> 的安装。在显示 <em>Installation Complete</em> 后，下一步运行 <strong>Download model from torrent</strong> 代码块，等待 <strong>GPT-2</strong> 的预训练模型下载完毕。</p>
-<p><img src="https://i.loli.net/2019/12/28/7RhSDQoKlWciM3J.png" alt="Installation Complete"></p>
-<center><small>本体及预训练模型下载完毕</small></center>
-
-<p>随后运行 <strong>OOM Fix</strong> 代码块，等待内存溢出错误提示。提示弹出后，选择提升可用 RAM。</p>
-<p><img src="https://i.loli.net/2019/12/29/WPIUqb8eFh7QC4D.png" alt="image.png"></p>
-<p>在一切配置完成后即可运行 <strong>Play</strong> 代码块开始运行游戏。</p>
-<p><img src="https://i.loli.net/2019/12/28/ZeHJAVc3RSznId9.png" alt="Play"></p>
-<center><small>游戏启动时的说明文字</small></center>
-
-<h3 id="第三章-游玩-AI-Dungeon-2"><a href="#第三章-游玩-AI-Dungeon-2" class="headerlink" title="第三章  游玩 AI Dungeon 2"></a>第三章  游玩 AI Dungeon 2</h3><p>选择新游戏后，我们可以选择是否使用一个随机故事作为开头，当然也可以自定义故事背景。<strong>AI Dungeon 2</strong> 一共提供了4种预设故事背景（幻想（魔法/中世纪）、悬疑、后启示录、僵尸），同时还支持玩家自己输入故事开头来生成故事。</p>
-<p>以下是我的一场游戏的摘录：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">You are Max, a soldier  trying to survive in a world filled with infected zombies</span><br><span class="line"> everywhere. You have a automatic rifle and a grenade. Your unit lost a lot of</span><br><span class="line"> men when the infection broke, but you&apos;ve managed to keep the small town you&apos;re</span><br><span class="line"> stationed near safe for now. You look over the town and think about your next</span><br><span class="line"> move.</span><br><span class="line"></span><br><span class="line">The town is full of people. There&apos;s even a school nearby</span><br><span class="line">&gt; get some food and water</span><br><span class="line"></span><br><span class="line">You quickly run out of the house and head towards the nearest building that has</span><br><span class="line"> power. You find a generator and plug it into the wall. It lights up and soon</span><br><span class="line"> you see a truck pulling up outside. A man gets out and walks over to you. He</span><br><span class="line"> looks like he&apos;s been through ****</span><br><span class="line">&gt; ask who he is</span><br><span class="line"></span><br><span class="line">&quot;Hey! I&apos;m John!&quot; The man says. &quot;I was sent here by my commanding officer to help</span><br><span class="line"> you&quot;.</span><br><span class="line">&gt; &quot;what you can do?&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;Well, I can give you some supplies and let you stay for free, but if you want</span><br><span class="line"> to live, you&apos;re going to need to join us&quot;.</span><br><span class="line"></span><br><span class="line">&gt; &quot;So what should I do?&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;Well, we don&apos;t really know yet. We&apos;ve got a lot of people coming in from all</span><br><span class="line"> over the country. Some of them will be armed, some won&apos;t. If you want to stay</span><br><span class="line"> alive, you&apos;ll probably have to join us&quot;.</span><br><span class="line"></span><br><span class="line">&gt; &quot;OK&quot;</span><br><span class="line"></span><br><span class="line"> and walk back inside the house. You hear more trucks pull up outside. You wait</span><br><span class="line"> until they&apos;re gone then go back out.</span><br><span class="line">Now there are about five other buildings around you. They look like they&apos;re all</span><br><span class="line"> abandoned now</span><br><span class="line">&gt; check buildings</span><br><span class="line"></span><br><span class="line">You head down one of the hallways and find a door at the end. You open it and</span><br><span class="line"> find a storage room with several shelves full of canned goods and bottled water.</span><br><span class="line"> There&apos;s also a fridge on the right side of the room. You grab everything you</span><br><span class="line"> can carry and head back out</span><br><span class="line">&gt; find John</span><br><span class="line"></span><br><span class="line">You enter the storage room and find John sitting at a table looking at his phone.</span><br><span class="line"> He doesn&apos;t seem surprised to see you.</span><br><span class="line">&gt; &quot;I want to join you&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Yeah? Well how much stuff do you have?&quot;</span><br><span class="line">&gt; &quot;A lot of canned goods and bottled water&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Oh yeah, those things are good too. How much money do you have?&quot;</span><br><span class="line">&gt; &quot;about 1000$&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Great, well I guess I&apos;ll meet you in a few hours&quot;.He turns off his</span><br><span class="line"> phone and leaves. You close the door and sit down at your desk to think about</span><br><span class="line"> what to do next.</span><br></pre></td></tr></table></figure></p>
-<p>文中 &gt; 号后的内容均为我给出的输入，生成的故事也基本上流利自然。</p>
-<h3 id="第四章-尾言"><a href="#第四章-尾言" class="headerlink" title="第四章  尾言"></a>第四章  尾言</h3><p>作为一款 <strong>文字冒险游戏</strong>，<strong>AI Dungeon 2</strong> 划时代意义地开启了 <strong>AI 游戏</strong> 的大门。——毫无疑问，我们已经步入了一个崭新的游戏时代。游戏的未来，也许就是在 <strong>AI</strong> 上。</p>
-]]></content>
-      <categories>
-        <category>入驻杂谈</category>
-      </categories>
-      <tags>
-        <tag>Games</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Galgame 「ATRI ~My Dear Moments~」 测评</title>
     <url>/posts/8f5dcc88.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Galgame-「ATRI-My-Dear-Moments-」-测评"><a href="#Galgame-「ATRI-My-Dear-Moments-」-测评" class="headerlink" title="Galgame 「ATRI ~My Dear Moments~」 测评"></a>Galgame 「ATRI ~My Dear Moments~」 测评</h1><h2 id="日渐沉没的世界里，蓝与白的夏日回忆"><a href="#日渐沉没的世界里，蓝与白的夏日回忆" class="headerlink" title="日渐沉没的世界里，蓝与白的夏日回忆"></a>日渐沉没的世界里，蓝与白的夏日回忆</h2><div align="center"><br><img src="https://i.loli.net/2020/08/28/gRmGKk9iTCA24w6.jpg" alt="ATRI"><br></div>
@@ -146,6 +78,8 @@
 <a id="more"></a>
 <p>以下为<strong>2018年7月开始</strong>的追番记录。</p>
 <ul>
+<li style="list-style: none"><input type="checkbox"> 86 -不存在的战区- 第二季</li>
+<li style="list-style: none"><input type="checkbox"> 关于前辈很烦人的事</li>
 <li style="list-style: none"><input type="checkbox"> Lovelive! Superstar!!</li>
 <li style="list-style: none"><input type="checkbox"> 白沙的水族馆</li>
 <li style="list-style: none"><input type="checkbox"> 我们的重制人生</li>
@@ -213,34 +147,6 @@
       </categories>
       <tags>
         <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Calc 晒机系列 2018 番外篇</title>
-    <url>/posts/6f2e6786.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-计算器类-晒机-2018"><a href="#Calc-计算器类-晒机-2018" class="headerlink" title="Calc 计算器类 晒机 - 2018"></a>Calc 计算器类 晒机 - 2018</h1><h2 id="【晒机-番外篇】【TI-Nspire-CX-CAS-对比-TI-Nspire-CM-C-CAS】"><a href="#【晒机-番外篇】【TI-Nspire-CX-CAS-对比-TI-Nspire-CM-C-CAS】" class="headerlink" title="【晒机 - 番外篇】【TI-Nspire CX CAS 对比 TI-Nspire CM-C CAS】"></a>【晒机 - 番外篇】【TI-Nspire CX CAS 对比 TI-Nspire CM-C CAS】</h2><p>本篇评测由 <strong>MaxAlex</strong> 编写，所有文字均为原创，所有图片均为真实拍摄，最初发表于 <strong>MaxAlex 的 QQ 空间</strong> 。</p>
-<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6bb57f.jpg" alt="0x01.jpg"><br>【图0x01】<br></div>
-
-<a id="more"></a>
-<h3 id="第一章-外观及硬件配置"><a href="#第一章-外观及硬件配置" class="headerlink" title="第一章  外观及硬件配置"></a>第一章  外观及硬件配置</h3><p>  从外观上看，<strong>TI-Nspire CX CAS</strong> 与 <strong>TI-Nspire CM-C CAS</strong> 还是有一定区别的。<strong>TI-Nspire CX CAS</strong> 机身比 <strong>TI-Nspire CM-C CAS</strong> 略大，底部 <strong>Texas Instruments</strong> 的印刷更为显眼。相比之下，个人认为 <strong>TI-Nspire CX CAS</strong> 的蓝黑配色比起 <strong>TI-Nspire CM-C CAS</strong> 的橙白配色还是略逊一筹。</p>
-<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6bd9bc.jpg" alt="0x02.jpg"><br>【图0x02】<br></div>
-
-<p>  虽然键盘布局相同，但细微之处仍有差别。如 <strong>TI-Nspire CX CAS</strong> 的键盘有明确有力的反馈感，而 <strong>TI-Nspire CM-C CAS</strong> 只有下方的字母键有这种感觉。另外，<strong>TI-Nspire CM-C CAS</strong> 的键盘还专门为中国地区做了本土化改动，部分键已采用中文印刷，但中文字体却没有 <strong>TI-Nspire CX CAS</strong> 的英文字体观感舒适。</p>
-<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6c0b81.jpg" alt="0x06.jpg"><br>【图0x03】<br></div>
-
-<p>  <strong>TI-Nspire CX CAS</strong> 比起 <strong>TI-Nspire CM-C CAS</strong> 有着许多优势，这也是 <strong>TI-Nspire CX CAS</strong> 在价格上要贵一倍多的原因。</p>
-<p>  外壳上，<strong>TI-Nspire CX CAS</strong> 拥有人性化设计的滑动式保护壳，而 <strong>TI-Nspire CM-C CAS</strong> 拥有的卡扣式保护壳却不那么容易打开。</p>
-<p>  性能与硬件方面而言，<strong>TI-Nspire CX CAS</strong> 拥有 <strong>1080mAh大容量锂电池</strong> ，而 <strong>TI-Nspire CM-C CAS</strong> 锂电池只有800mAh；<strong>TI-Nspire CX CAS</strong> 相比 <strong>TI-Nspire CM-C CAS</strong> 拥有 <strong>额外的32MB运行内存</strong>，即<strong>64MB</strong>；<strong>TI-Nspire CX CAS</strong> 也拥有特殊的 <strong>TI-Nspire网卡接口</strong> 以便现代化课堂使用，虽然个人认为在中国无法广泛使用；<strong>TI-Nspire CX CAS</strong> 还拥有 <strong>单独的25个GPIO引脚</strong> 可以使用，这极大地提升了其扩展性。</p>
-<p>  此外，在系统支持方面 <strong>TI-Nspire CX CAS</strong> 要优于 <strong>TI-Nspire CM-C CAS</strong> 许多，TI官网上会第一时间发布 <strong>TI-Nspire CX CAS</strong> 的最新操作系统，而 <strong>TI-Nspire CM-C CAS</strong> 已经被停止支持。</p>
-<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac751f65.jpg" alt="0x07.jpg"><br>【图0x04】<br></div>
-
-<p>  综上所述，若是考虑经济问题则可以购置一台 <strong>TI-Nspire CM-C CAS</strong> 以便日常计算使用，当然也可以进行研究等；若是有足够的经费的话，在下还是推荐购买 <strong>TI-Nspire CX CAS</strong> ，其功能强大性能卓越，用于研究及计算是相当不错的选择。</p>
-]]></content>
-      <categories>
-        <category>计算器类</category>
-      </categories>
-      <tags>
-        <tag>Calculator</tag>
       </tags>
   </entry>
   <entry>
@@ -358,52 +264,71 @@
       </tags>
   </entry>
   <entry>
-    <title>HappyNewYear 新年快乐</title>
-    <url>/posts/541e2d68.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Happy-New-Year-新年快乐"><a href="#Happy-New-Year-新年快乐" class="headerlink" title="Happy New Year 新年快乐"></a>Happy New Year 新年快乐</h1><h3 id="各位2019年新年快乐！"><a href="#各位2019年新年快乐！" class="headerlink" title="各位2019年新年快乐！"></a>各位2019年新年快乐！</h3><div align="center"><img src="https://i.loli.net/2019/01/06/5c3175017c529.png" alt="2018-03-04 165718.png"><br><em> 【<del>迟来的祝贺呢</del>】 </em><br></div>
+    <title>Games 游戏推荐 AIDungeon 2</title>
+    <url>/posts/a41bb8a1.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-游戏推荐-AIDungeon-2"><a href="#Games-游戏推荐-AIDungeon-2" class="headerlink" title="Games 游戏推荐 AIDungeon 2"></a>Games 游戏推荐 AIDungeon 2</h1><h2 id="真正意义上的极高自由度游戏！"><a href="#真正意义上的极高自由度游戏！" class="headerlink" title="真正意义上的极高自由度游戏！"></a>真正意义上的极高自由度游戏！</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，所有文字均为原创，部分图片引用自 <strong>Wikipedia</strong>，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<div align="center"><br><img src="https://i.loli.net/2019/12/28/h3fEMNW25OL8DUS.png" alt="Logo"><br><center><small>AIDungeon 2 Logo</small></center><br></div>
 
+<a id="more"></a>
+<h3 id="第一章-文字冒险游戏"><a href="#第一章-文字冒险游戏" class="headerlink" title="第一章  文字冒险游戏"></a>第一章  文字冒险游戏</h3><p>谈起 <strong>文字冒险游戏</strong>，你一般会想到什么？</p>
+<p>是日式 AVG 互动视觉小说？还是 Telltale Games 旗下的那些章节互动游戏？</p>
+<p>实际上，在上世纪七八十年代， <strong>文字冒险游戏</strong> 可是实打实的 <strong>只有文字</strong> 的冒险游戏。由于计算机的机能限制，彼时的文字冒险游戏只能通过文字的输入输出来构建游戏的各种情节，这也让玩家的想象成为了 <strong>文字冒险游戏</strong> 中必不可少的一环。</p>
+<p><img src="https://i.loli.net/2019/12/28/y6pWmgBj8k5lHLC.png" alt="Zork"></p>
+<center><small>Zork - 史上最早的文字冒险游戏之一</small></center>
+
+<p>紧张刺激的情节、黑底白字或黑底绿字的屏幕、作为玩家输入指令的简单英文句子，这便是当时的 <strong>文字冒险游戏</strong> 所拥有的全部要素了。  </p>
+<p>后来，人们在这类游戏的基础上创造出了 <strong>MUD</strong> （<strong>Multi-User Dungeon</strong>，多用户地牢）。<strong>MUD</strong> 很好地传承了 <strong>文字冒险游戏</strong> 的精髓并将之发扬光大，加入了 <strong>多人游戏</strong>。时至今日，作为游戏界的活化石、网游的开山鼻祖的 <strong>MUD</strong>，依然繁荣着。<strong>1990 年</strong> 开服的 <strong>Batmud</strong> 如今仍在运营，庞大的玩家群体中不仅有许多玩了数十年的死忠玩家，更是每隔一段时间就有不断加入的新鲜血液。</p>
+<p><img src="https://i.loli.net/2019/12/28/Ob4isLWdR1UAIGJ.png" alt="Batmud"></p>
+<center><small>Batmud</small></center>
+
+<p>我们可以看到 <strong>文字冒险游戏</strong> 如今魅力丝毫不减，依然葆有当年的激情与活力。技术更迭日新月异，我想 <strong>文字冒险游戏</strong> 也许会在当下获得新生。</p>
+<h3 id="第二章-AI-Dungeon-2"><a href="#第二章-AI-Dungeon-2" class="headerlink" title="第二章  AI Dungeon 2"></a>第二章  AI Dungeon 2</h3><h4 id="第一节-简介"><a href="#第一节-简介" class="headerlink" title="第一节 简介"></a>第一节 简介</h4><p>近日，这款名为 <strong>AIDungeon 2</strong> 的游戏，让 <strong>文字冒险游戏</strong> 这个词再度回到了人们的视野中。</p>
+<p>据其官方文档描述，它是世界上第一款真正意义上 <strong>纯 AI</strong> 生成的文字冒险游戏。<strong>AIDungeon 2</strong> 使用了 <strong>GPT-2</strong> （训练参数多达 <strong>15亿</strong>）这款文本生成模型作为游戏的核心；而得益于 <strong>GPT-2</strong> 模型的强悍，<strong>AIDungeon 2</strong> 将拥有近乎无限的创造力。</p>
+<p>也就是说，通过这款 <strong>AIDungeon 2</strong> ，玩家将接触到一个完全自由的虚拟世界。整个游戏世界，都将围绕着玩家的输入展开与续写，可谓真正的 <em>Everything is in my hands</em> 。</p>
+<p>目前 <strong>AIDungeon 2</strong> 已作为一个开源项目在 <a href="https://github.com/AIDungeon/AIDungeon" target="_blank" rel="noopener">Github</a> 上发布，其开发团队同时也开通了 <a href="https://www.patreon.com/AIDungeon" target="_blank" rel="noopener">Patreon</a> 账号以获取捐助。</p>
+<p>本文接下来的内容将详细介绍如何游玩这款真正意义上的 <strong>全自由文字冒险游戏</strong>。</p>
+<h4 id="第二节-Google-Colaboratory-的配置"><a href="#第二节-Google-Colaboratory-的配置" class="headerlink" title="第二节 Google Colaboratory 的配置"></a>第二节 Google Colaboratory 的配置</h4><p>考虑到游玩 <strong>AIDungeon 2</strong> 的高负载（官方建议使用具有 <strong>12GB+显存</strong> 的 NVIDIA 显卡来进行硬件加速，否则每回合都会需要数分钟的时间来计算），因此我们另寻别路——云计算。</p>
+<p><img src="https://i.loli.net/2019/12/28/5B1nMzEdGr2XCAy.png" alt="Colaboratory"></p>
+<center><small>Google Colaboratory</small></center>
+
+<p><a href="https://colab.research.google.com/" target="_blank" rel="noopener"><strong>Google Colaboratory</strong></a> 是一个 <strong>完全免费</strong> 的 <strong>Jupyter 笔记本</strong> 环境，不需要进行任何设置就可以使用，并且完全在云端运行。每个 <strong>Colab</strong> 笔记本都可以免费配置 <strong>Google TPU</strong> 或 <strong>NVIDIA Tesla T4 GPU</strong> 来进行硬件加速，同时配备了最多可达 <strong>25GB RAM</strong> 和 <strong>68GB</strong> 磁盘存储免费供用户使用。</p>
+<p><img src="https://i.loli.net/2019/12/28/LPXWKlfsGg2zn1R.png" alt="Compute Engine"></p>
+<center><small>Colab 强大的计算资源</small></center>
+
+<p>Google 提供的这项强劲的云计算服务刚好可以满足我们游玩 <strong>AIDungeon 2</strong> 的需要，因此我们首先从配置 <strong>Colab</strong> 笔记本做起。</p>
+<p>使用 <strong>Google Colaboratory</strong> 首先需要有一个 Google 账户，并启用 <strong>Google Drive</strong>。在准备完毕后，打开上文中的链接即可连接到 <strong>Google Colaboratory</strong>。单击 <strong>新建 PYTHON 3 记事本</strong> 一项即可创建一个新的 <strong>Colab</strong> 笔记本。</p>
+<p><img src="https://i.loli.net/2019/12/28/uzLjEIrONGqsPmn.png" alt="New"></p>
+<center><small>创建新的 Colab 笔记本</small></center>
+
+<p>在创建了一个 <strong>Colab</strong> 笔记本后，我们需要启用笔记本的 GPU 硬件加速。为此，单击 <strong>修改</strong> - <strong>笔记本设置</strong>，将硬件加速器切换为 GPU 并保存。</p>
+<p><img src="https://i.loli.net/2019/12/28/Eqk8KPg6NFsTLuB.png" alt="GPU"></p>
+<center><small>切换至 GPU 硬件加速器</small></center>
+
+<p>按下 Ctrl+S 保存笔记本至 Google 账户所关联的 <strong>Google Drive</strong>，<strong>Colab</strong> 笔记本的配置至此完成。</p>
+<h4 id="第三节-AI-Dungeon-2-安装"><a href="#第三节-AI-Dungeon-2-安装" class="headerlink" title="第三节 AI Dungeon 2 安装"></a>第三节 AI Dungeon 2 安装</h4><p>打开 <strong>AI Dungeon 2</strong> 官方提供的<a href="https://colab.research.google.com/github/nickwalton/AIDungeon/blob/master/AIDungeon_2.ipynb" target="_blank" rel="noopener">运行说明</a>，将 Main Game 部分的三个代码块及 Utilities 的最后一个代码块拷贝至刚刚新建的 <strong>Colab</strong> 笔记本。</p>
+<p><img src="https://i.loli.net/2019/12/28/dZ53A2GxJ4pODia.png" alt="Code Blocks"></p>
+<center><small>AI Dungeon 2 配置代码块</small></center>
+
+<p>运行 <strong>Install</strong> 代码块，<strong>Colab</strong> 会自动连接到后端计算引擎并开始 <strong>AI Dungeon 2</strong> 的安装。在显示 <em>Installation Complete</em> 后，下一步运行 <strong>Download model from torrent</strong> 代码块，等待 <strong>GPT-2</strong> 的预训练模型下载完毕。</p>
+<p><img src="https://i.loli.net/2019/12/28/7RhSDQoKlWciM3J.png" alt="Installation Complete"></p>
+<center><small>本体及预训练模型下载完毕</small></center>
+
+<p>随后运行 <strong>OOM Fix</strong> 代码块，等待内存溢出错误提示。提示弹出后，选择提升可用 RAM。</p>
+<p><img src="https://i.loli.net/2019/12/29/WPIUqb8eFh7QC4D.png" alt="image.png"></p>
+<p>在一切配置完成后即可运行 <strong>Play</strong> 代码块开始运行游戏。</p>
+<p><img src="https://i.loli.net/2019/12/28/ZeHJAVc3RSznId9.png" alt="Play"></p>
+<center><small>游戏启动时的说明文字</small></center>
+
+<h3 id="第三章-游玩-AI-Dungeon-2"><a href="#第三章-游玩-AI-Dungeon-2" class="headerlink" title="第三章  游玩 AI Dungeon 2"></a>第三章  游玩 AI Dungeon 2</h3><p>选择新游戏后，我们可以选择是否使用一个随机故事作为开头，当然也可以自定义故事背景。<strong>AI Dungeon 2</strong> 一共提供了4种预设故事背景（幻想（魔法/中世纪）、悬疑、后启示录、僵尸），同时还支持玩家自己输入故事开头来生成故事。</p>
+<p>以下是我的一场游戏的摘录：<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">You are Max, a soldier  trying to survive in a world filled with infected zombies</span><br><span class="line"> everywhere. You have a automatic rifle and a grenade. Your unit lost a lot of</span><br><span class="line"> men when the infection broke, but you&apos;ve managed to keep the small town you&apos;re</span><br><span class="line"> stationed near safe for now. You look over the town and think about your next</span><br><span class="line"> move.</span><br><span class="line"></span><br><span class="line">The town is full of people. There&apos;s even a school nearby</span><br><span class="line">&gt; get some food and water</span><br><span class="line"></span><br><span class="line">You quickly run out of the house and head towards the nearest building that has</span><br><span class="line"> power. You find a generator and plug it into the wall. It lights up and soon</span><br><span class="line"> you see a truck pulling up outside. A man gets out and walks over to you. He</span><br><span class="line"> looks like he&apos;s been through ****</span><br><span class="line">&gt; ask who he is</span><br><span class="line"></span><br><span class="line">&quot;Hey! I&apos;m John!&quot; The man says. &quot;I was sent here by my commanding officer to help</span><br><span class="line"> you&quot;.</span><br><span class="line">&gt; &quot;what you can do?&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;Well, I can give you some supplies and let you stay for free, but if you want</span><br><span class="line"> to live, you&apos;re going to need to join us&quot;.</span><br><span class="line"></span><br><span class="line">&gt; &quot;So what should I do?&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&quot;Well, we don&apos;t really know yet. We&apos;ve got a lot of people coming in from all</span><br><span class="line"> over the country. Some of them will be armed, some won&apos;t. If you want to stay</span><br><span class="line"> alive, you&apos;ll probably have to join us&quot;.</span><br><span class="line"></span><br><span class="line">&gt; &quot;OK&quot;</span><br><span class="line"></span><br><span class="line"> and walk back inside the house. You hear more trucks pull up outside. You wait</span><br><span class="line"> until they&apos;re gone then go back out.</span><br><span class="line">Now there are about five other buildings around you. They look like they&apos;re all</span><br><span class="line"> abandoned now</span><br><span class="line">&gt; check buildings</span><br><span class="line"></span><br><span class="line">You head down one of the hallways and find a door at the end. You open it and</span><br><span class="line"> find a storage room with several shelves full of canned goods and bottled water.</span><br><span class="line"> There&apos;s also a fridge on the right side of the room. You grab everything you</span><br><span class="line"> can carry and head back out</span><br><span class="line">&gt; find John</span><br><span class="line"></span><br><span class="line">You enter the storage room and find John sitting at a table looking at his phone.</span><br><span class="line"> He doesn&apos;t seem surprised to see you.</span><br><span class="line">&gt; &quot;I want to join you&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Yeah? Well how much stuff do you have?&quot;</span><br><span class="line">&gt; &quot;A lot of canned goods and bottled water&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Oh yeah, those things are good too. How much money do you have?&quot;</span><br><span class="line">&gt; &quot;about 1000$&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">John says &quot;Great, well I guess I&apos;ll meet you in a few hours&quot;.He turns off his</span><br><span class="line"> phone and leaves. You close the door and sit down at your desk to think about</span><br><span class="line"> what to do next.</span><br></pre></td></tr></table></figure></p>
+<p>文中 &gt; 号后的内容均为我给出的输入，生成的故事也基本上流利自然。</p>
+<h3 id="第四章-尾言"><a href="#第四章-尾言" class="headerlink" title="第四章  尾言"></a>第四章  尾言</h3><p>作为一款 <strong>文字冒险游戏</strong>，<strong>AI Dungeon 2</strong> 划时代意义地开启了 <strong>AI 游戏</strong> 的大门。——毫无疑问，我们已经步入了一个崭新的游戏时代。游戏的未来，也许就是在 <strong>AI</strong> 上。</p>
 ]]></content>
       <categories>
         <category>入驻杂谈</category>
       </categories>
       <tags>
-        <tag>NewYear</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Emiya 致卫宫切嗣</title>
-    <url>/posts/e6453668.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="这个世界，欠你一个梦想"><a href="#这个世界，欠你一个梦想" class="headerlink" title="这个世界，欠你一个梦想"></a>这个世界，欠你一个梦想</h1><div align="center"><br><img src="https://i.loli.net/2019/11/09/NkhaV6xf3AZDb7C.png" alt=""><br></div>
-
-<center><small>大概是一年前左右阅读 <strong>Fate Zero</strong>，有感而作此文。</small></center>
-
-<a id="more"></a>
-<p>时针指向了11点。  </p>
-<p>孤独的风呼啸着，好似对你所作所为的蔑视；就连清冷的月光也仿佛在嘲笑着你那单纯幼稚的梦想。  </p>
-<p>坐在门廊边的你，一度沉溺在了往事之中，思考着自己人生的意义与本质。  </p>
-<p>你比任何人都要有理想，但你却因此绝望。世间一切的生命都被摆在了牺牲与救续的天平上，而你就是这天平的计量者。或许，谁也无法理解你心中那一份对人们、对世界的祝愿，谁也不会感受到你冰冷的脸背后那颗温暖的心。你只不过是衷心希望这世上的所有人都幸福美满而已——这是任何一个少年在儿时都会有的梦想，但你却在别人放弃之时将一直怀揣心中的它捏得更紧——但这轻盈而沉重的理想也给你带来了无尽的灾难。为了救起天平上哪怕只多一个人的这一边，就必须抛弃哪怕只少一个人的另一边。你爱着世界上每一个人，但你也必须怀着“如果需要，随时都要抛弃任何一个人”的觉悟。抛开一切，你像一般人一样有着友情、亲情与爱情，但你却不能在这天平的裁决上掺进自己的情感。你比普通人还要普通，但这样的你仍在追求非同凡人的理想——这样的矛盾，使得你不知道承受了多少次惩罚——等你醒悟出这一切都来源于这个矛盾时，已经晚了。  </p>
-<p>你背负着世间全部的恶，但你同时又背负了世间全部的善。你想用自己的黑暗，换取世间最大的光明。虽然你软弱过，你逃避过，你甚至想过放弃——但这是人追求个人幸福的本能——你却仍然能战胜它们，始终如一地在理想之路上行走着。你为了理想牺牲了父亲，牺牲了妻女，甚至牺牲了你自己——这理想的代价太过沉重，你从未后悔过。你没有错，你只不过是想让这支离破碎的世界重归那宁静澄明的水中而已。  </p>
-<p>你是满天闪耀的群星中最亮的一颗星，你那激烈的光芒，就是梦想的轨迹。  </p>
-<p>不知不觉中，你不自觉地低喃起来。<br>“……曾经，我很憧憬正义呢。”  </p>
-<p>“什么叫‘曾经’嘛——难道说现在已经放弃了吗？”身旁的憧憬自己的养子露出了不快的表情。  </p>
-<p>他憧憬着你——他甚至想成为你。他想追寻你走过的那条路，虽然，你想告诉他这个念头是多么的可笑。  </p>
-<p>你叹了口气，带着沉痛的口气说：“嗯，是有点遗憾呢。梦想一旦随着自己成为了大人就难以实现了。我要是早点认识到这一点就好了。”  </p>
-<p>“父亲你已经是大人了，所以不行吧——但是我没问题。所以，把您的梦想交给我吧。”  </p>
-<p>那一刻，你的心颤了一下。<br>“是啊。啊啊——这样的话我就可以安心了。”  </p>
-<p>说着看似不在意的话，你心中突然明白，他即使走上与你同样的路，也不会变成第二个你。如果他真的继承了你的理想的话，他一定会记得今天这个夜晚，那么他也一定能回忆起现在的自己。回忆起这颗无所畏惧、从未绝望的年幼自己的心，再用这种信念与力量战胜不可能的绝望与叹息——就像，现在的你一样。  </p>
-<p>这不就是坐在他身旁的那不知何时迷失了自己，在岁月中渐渐逝去的你所想得到的救赎吗？  </p>
-<p>时针指向了12点。  </p>
-<p>在这最后一刻，你似乎可以放下沉沦在心中的一切了。你如同入睡闭上了眼睛，带着微笑，满怀释然地，停止了呼吸。  </p>
-<p>“呐，小切，你想成为什么样的人呢？”在你眼前，伴随着令你目眩的强光，那个儿时对你最重要的人问道。  </p>
-<p>这就是你的理想了吧。这个永恒的瞬间，你绝对永远也不会忘记。  </p>
-<p><strong>“我啊，想成为正义的伙伴。”  </strong></p>
-]]></content>
-      <categories>
-        <category>随笔杂文</category>
-      </categories>
-      <tags>
-        <tag>追番</tag>
-        <tag>随笔</tag>
+        <tag>Games</tag>
       </tags>
   </entry>
   <entry>
@@ -603,6 +528,91 @@
       </tags>
   </entry>
   <entry>
+    <title>Calc 晒机系列 2018 番外篇</title>
+    <url>/posts/6f2e6786.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Calc-计算器类-晒机-2018"><a href="#Calc-计算器类-晒机-2018" class="headerlink" title="Calc 计算器类 晒机 - 2018"></a>Calc 计算器类 晒机 - 2018</h1><h2 id="【晒机-番外篇】【TI-Nspire-CX-CAS-对比-TI-Nspire-CM-C-CAS】"><a href="#【晒机-番外篇】【TI-Nspire-CX-CAS-对比-TI-Nspire-CM-C-CAS】" class="headerlink" title="【晒机 - 番外篇】【TI-Nspire CX CAS 对比 TI-Nspire CM-C CAS】"></a>【晒机 - 番外篇】【TI-Nspire CX CAS 对比 TI-Nspire CM-C CAS】</h2><p>本篇评测由 <strong>MaxAlex</strong> 编写，所有文字均为原创，所有图片均为真实拍摄，最初发表于 <strong>MaxAlex 的 QQ 空间</strong> 。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6bb57f.jpg" alt="0x01.jpg"><br>【图0x01】<br></div>
+
+<a id="more"></a>
+<h3 id="第一章-外观及硬件配置"><a href="#第一章-外观及硬件配置" class="headerlink" title="第一章  外观及硬件配置"></a>第一章  外观及硬件配置</h3><p>  从外观上看，<strong>TI-Nspire CX CAS</strong> 与 <strong>TI-Nspire CM-C CAS</strong> 还是有一定区别的。<strong>TI-Nspire CX CAS</strong> 机身比 <strong>TI-Nspire CM-C CAS</strong> 略大，底部 <strong>Texas Instruments</strong> 的印刷更为显眼。相比之下，个人认为 <strong>TI-Nspire CX CAS</strong> 的蓝黑配色比起 <strong>TI-Nspire CM-C CAS</strong> 的橙白配色还是略逊一筹。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6bd9bc.jpg" alt="0x02.jpg"><br>【图0x02】<br></div>
+
+<p>  虽然键盘布局相同，但细微之处仍有差别。如 <strong>TI-Nspire CX CAS</strong> 的键盘有明确有力的反馈感，而 <strong>TI-Nspire CM-C CAS</strong> 只有下方的字母键有这种感觉。另外，<strong>TI-Nspire CM-C CAS</strong> 的键盘还专门为中国地区做了本土化改动，部分键已采用中文印刷，但中文字体却没有 <strong>TI-Nspire CX CAS</strong> 的英文字体观感舒适。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac6c0b81.jpg" alt="0x06.jpg"><br>【图0x03】<br></div>
+
+<p>  <strong>TI-Nspire CX CAS</strong> 比起 <strong>TI-Nspire CM-C CAS</strong> 有着许多优势，这也是 <strong>TI-Nspire CX CAS</strong> 在价格上要贵一倍多的原因。</p>
+<p>  外壳上，<strong>TI-Nspire CX CAS</strong> 拥有人性化设计的滑动式保护壳，而 <strong>TI-Nspire CM-C CAS</strong> 拥有的卡扣式保护壳却不那么容易打开。</p>
+<p>  性能与硬件方面而言，<strong>TI-Nspire CX CAS</strong> 拥有 <strong>1080mAh大容量锂电池</strong> ，而 <strong>TI-Nspire CM-C CAS</strong> 锂电池只有800mAh；<strong>TI-Nspire CX CAS</strong> 相比 <strong>TI-Nspire CM-C CAS</strong> 拥有 <strong>额外的32MB运行内存</strong>，即<strong>64MB</strong>；<strong>TI-Nspire CX CAS</strong> 也拥有特殊的 <strong>TI-Nspire网卡接口</strong> 以便现代化课堂使用，虽然个人认为在中国无法广泛使用；<strong>TI-Nspire CX CAS</strong> 还拥有 <strong>单独的25个GPIO引脚</strong> 可以使用，这极大地提升了其扩展性。</p>
+<p>  此外，在系统支持方面 <strong>TI-Nspire CX CAS</strong> 要优于 <strong>TI-Nspire CM-C CAS</strong> 许多，TI官网上会第一时间发布 <strong>TI-Nspire CX CAS</strong> 的最新操作系统，而 <strong>TI-Nspire CM-C CAS</strong> 已经被停止支持。</p>
+<div align="center"><img src="https://i.loli.net/2018/09/22/5ba62ac751f65.jpg" alt="0x07.jpg"><br>【图0x04】<br></div>
+
+<p>  综上所述，若是考虑经济问题则可以购置一台 <strong>TI-Nspire CM-C CAS</strong> 以便日常计算使用，当然也可以进行研究等；若是有足够的经费的话，在下还是推荐购买 <strong>TI-Nspire CX CAS</strong> ，其功能强大性能卓越，用于研究及计算是相当不错的选择。</p>
+]]></content>
+      <categories>
+        <category>计算器类</category>
+      </categories>
+      <tags>
+        <tag>Calculator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Tools 好物推荐 ChromeWithAHK</title>
+    <url>/posts/f880441b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Tools-好物推荐-ChromeWithAHK"><a href="#Tools-好物推荐-ChromeWithAHK" class="headerlink" title="Tools 好物推荐 ChromeWithAHK"></a>Tools 好物推荐 ChromeWithAHK</h1><h2 id="Chrome-81-双击关闭标签页终极解决方案"><a href="#Chrome-81-双击关闭标签页终极解决方案" class="headerlink" title="Chrome 81 双击关闭标签页终极解决方案"></a>Chrome 81 双击关闭标签页终极解决方案</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<div align="center"><br><img src="https://i.loli.net/2020/05/05/K9gCUyFwlGIihYr.png" alt=""><br><center><small>Google Chrome</small></center><br></div>
+
+<a id="more"></a>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>近日更新最新版本的 Google Chrome，之前一直在使用的 Chrome++ 第三方 DLL 扩展正式失效。由于一直习惯了双击关闭标签页 + 滚轮切换标签页，因此更新后无法使用极度不适，最后通过百度 + 自己修改解决。</p>
+<h3 id="AutoHotkey"><a href="#AutoHotkey" class="headerlink" title="AutoHotkey"></a>AutoHotkey</h3><p>前往 <a href="https://www.autohotkey.com/" target="_blank" rel="noopener">AutoHotkey</a> 的官方网站下载最新版本的 AutoHotkey 并安装。</p>
+<h3 id="AHK-脚本文件"><a href="#AHK-脚本文件" class="headerlink" title="AHK 脚本文件"></a>AHK 脚本文件</h3><p>原脚本来自<a href="https://www.zhihu.com/question/31257378/answer/222351470" target="_blank" rel="noopener">知乎</a>，现做了一些修改。</p>
+<figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line">#NoEnv</span><br><span class="line">#SingleInstance force</span><br><span class="line"></span><br><span class="line"><span class="built_in">IniRead,</span> doubleclick, settings.ini, option, doubleclick,Check</span><br><span class="line"><span class="built_in">IniRead,</span> scrolltab, settings.ini, option, scrolltab,Check</span><br><span class="line"><span class="built_in">IniRead,</span> rightclick, settings.ini, option, rightclick,Check</span><br><span class="line"></span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="built_in">menu,</span> tray, NoStandard</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用双击关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用滚轮切换标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用右键关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %doubleclick%, 启用双击关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %scrolltab%, 启用滚轮切换标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %rightclick%, 启用右键关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add <span class="comment">;分割线</span></span><br><span class="line"><span class="built_in">menu,</span> tray, add, 退出</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol">退出:</span></span><br><span class="line"><span class="keyword">ExitApp</span></span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"><span class="symbol">启用双击关闭标签页:</span></span><br><span class="line">if doubleclick&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用双击关闭标签页</span><br><span class="line">doubleclick=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用双击关闭标签页</span><br><span class="line">doubleclick=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %doubleclick%, settings.ini, option, doubleclick</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">启用滚轮切换标签页:</span></span><br><span class="line">if scrolltab&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用滚轮切换标签页</span><br><span class="line">scrolltab=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用滚轮切换标签页</span><br><span class="line">scrolltab=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %scrolltab%, settings.ini, option, scrolltab</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">启用右键关闭标签页:</span></span><br><span class="line">if rightclick&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用右键关闭标签页</span><br><span class="line">rightclick=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用右键关闭标签页</span><br><span class="line">rightclick=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %rightclick%, settings.ini, option, rightclick</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">#IfWinActive <span class="keyword">ahk_class</span> Chrome_WidgetWin_1</span><br><span class="line"><span class="symbol"> ~$WheelDown::</span></span><br><span class="line"><span class="symbol"> ~$WheelUp::</span></span><br><span class="line">   if scrolltab=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    MouseGetPos,</span>, ypos</span><br><span class="line">    If (ypos&gt;<span class="number">40</span>) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line"><span class="built_in">    IfEqual,</span><span class="built_in">A_ThisHotkey</span>,~$WheelDown, Send ^&#123;PgDn&#125;</span><br><span class="line">    Else Send ^&#123;PgUp&#125;</span><br><span class="line">EmptyMem()</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol">  ~LButton::</span></span><br><span class="line">  if doubleclick=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    WinGetPos,</span>,, w, h, <span class="literal">A</span></span><br><span class="line"><span class="built_in">    MouseGetPos,</span>xpos, ypos</span><br><span class="line"><span class="built_in">    WinGet,</span>Mom,MinMax</span><br><span class="line">    If ((ypos&gt;<span class="number">45</span>)<span class="literal">And</span>(Mom&lt;<span class="number">1</span>))<span class="literal">Or</span>((ypos&gt;<span class="number">28</span>)<span class="literal">And</span>(Mom&gt;<span class="number">0</span>)) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line">    If (<span class="built_in">A_PriorHotkey</span>=<span class="string">"~LButton"</span>) <span class="literal">and</span> (<span class="built_in">A_TimeSincePriorHotkey</span>&lt;<span class="number">200</span>)</span><br><span class="line">    <span class="comment">; 此处和知乎版本不同 ↓</span></span><br><span class="line">    send ^w</span><br><span class="line">    <span class="comment">; 此处和知乎版本不同 ↑</span></span><br><span class="line">EmptyMem()</span><br><span class="line">      &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol"> ~RButton Up::</span></span><br><span class="line"><span class="symbol">  ~RButton::</span></span><br><span class="line">     if rightclick=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    MouseGetPos,</span>xpos, ypos</span><br><span class="line"><span class="built_in">    WinGet,</span>Mom,MinMax</span><br><span class="line">    If ((ypos&gt;<span class="number">45</span>)<span class="literal">And</span>(Mom&lt;<span class="number">1</span>))<span class="literal">Or</span>((ypos&gt;<span class="number">28</span>)<span class="literal">And</span>(Mom&gt;<span class="number">0</span>)) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line">    if  GetKeyState(<span class="string">"1"</span>)</span><br><span class="line">        <span class="keyword">Return</span></span><br><span class="line"><span class="built_in">    IfEqual,</span><span class="built_in">A_ThisHotkey</span>,~RButton, Send &#123;Click Middle&#125;</span><br><span class="line">                                 Else Send &#123;Click middle&#125;</span><br><span class="line">EmptyMem()</span><br><span class="line">                                  &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line">#IfWinActive</span><br><span class="line"></span><br><span class="line">EmptyMem(PID=<span class="string">"AHK Rocks"</span>)&#123;</span><br><span class="line">    pid:=(pid=<span class="string">"AHK Rocks"</span>) ? DllCall(<span class="string">"GetCurrentProcessId"</span>) : pid</span><br><span class="line">    h:=DllCall(<span class="string">"OpenProcess"</span>, <span class="string">"UInt"</span>, <span class="number">0</span>x001F0FFF, <span class="string">"Int"</span>, <span class="number">0</span>, <span class="string">"Int"</span>, pid)</span><br><span class="line">    DllCall(<span class="string">"SetProcessWorkingSetSize"</span>, <span class="string">"UInt"</span>, h, <span class="string">"Int"</span>, -<span class="number">1</span>, <span class="string">"Int"</span>, -<span class="number">1</span>)</span><br><span class="line">    DllCall(<span class="string">"CloseHandle"</span>, <span class="string">"Int"</span>, h)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>若需托盘不显示图标，则在第一行前新建一行插入 <code>#NoTrayIcon</code> 即可，实测支持最新 Chrome 81。</p>
+<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><p>已知双击 Chrome 标题栏空处切换最大化/窗口化时也有概率触发脚本导致标签页关闭，目前解决方法是降低此时双击的频率。</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Emiya 致卫宫切嗣</title>
+    <url>/posts/e6453668.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="这个世界，欠你一个梦想"><a href="#这个世界，欠你一个梦想" class="headerlink" title="这个世界，欠你一个梦想"></a>这个世界，欠你一个梦想</h1><div align="center"><br><img src="https://i.loli.net/2019/11/09/NkhaV6xf3AZDb7C.png" alt=""><br></div>
+
+<center><small>大概是一年前左右阅读 <strong>Fate Zero</strong>，有感而作此文。</small></center>
+
+<a id="more"></a>
+<p>时针指向了11点。  </p>
+<p>孤独的风呼啸着，好似对你所作所为的蔑视；就连清冷的月光也仿佛在嘲笑着你那单纯幼稚的梦想。  </p>
+<p>坐在门廊边的你，一度沉溺在了往事之中，思考着自己人生的意义与本质。  </p>
+<p>你比任何人都要有理想，但你却因此绝望。世间一切的生命都被摆在了牺牲与救续的天平上，而你就是这天平的计量者。或许，谁也无法理解你心中那一份对人们、对世界的祝愿，谁也不会感受到你冰冷的脸背后那颗温暖的心。你只不过是衷心希望这世上的所有人都幸福美满而已——这是任何一个少年在儿时都会有的梦想，但你却在别人放弃之时将一直怀揣心中的它捏得更紧——但这轻盈而沉重的理想也给你带来了无尽的灾难。为了救起天平上哪怕只多一个人的这一边，就必须抛弃哪怕只少一个人的另一边。你爱着世界上每一个人，但你也必须怀着“如果需要，随时都要抛弃任何一个人”的觉悟。抛开一切，你像一般人一样有着友情、亲情与爱情，但你却不能在这天平的裁决上掺进自己的情感。你比普通人还要普通，但这样的你仍在追求非同凡人的理想——这样的矛盾，使得你不知道承受了多少次惩罚——等你醒悟出这一切都来源于这个矛盾时，已经晚了。  </p>
+<p>你背负着世间全部的恶，但你同时又背负了世间全部的善。你想用自己的黑暗，换取世间最大的光明。虽然你软弱过，你逃避过，你甚至想过放弃——但这是人追求个人幸福的本能——你却仍然能战胜它们，始终如一地在理想之路上行走着。你为了理想牺牲了父亲，牺牲了妻女，甚至牺牲了你自己——这理想的代价太过沉重，你从未后悔过。你没有错，你只不过是想让这支离破碎的世界重归那宁静澄明的水中而已。  </p>
+<p>你是满天闪耀的群星中最亮的一颗星，你那激烈的光芒，就是梦想的轨迹。  </p>
+<p>不知不觉中，你不自觉地低喃起来。<br>“……曾经，我很憧憬正义呢。”  </p>
+<p>“什么叫‘曾经’嘛——难道说现在已经放弃了吗？”身旁的憧憬自己的养子露出了不快的表情。  </p>
+<p>他憧憬着你——他甚至想成为你。他想追寻你走过的那条路，虽然，你想告诉他这个念头是多么的可笑。  </p>
+<p>你叹了口气，带着沉痛的口气说：“嗯，是有点遗憾呢。梦想一旦随着自己成为了大人就难以实现了。我要是早点认识到这一点就好了。”  </p>
+<p>“父亲你已经是大人了，所以不行吧——但是我没问题。所以，把您的梦想交给我吧。”  </p>
+<p>那一刻，你的心颤了一下。<br>“是啊。啊啊——这样的话我就可以安心了。”  </p>
+<p>说着看似不在意的话，你心中突然明白，他即使走上与你同样的路，也不会变成第二个你。如果他真的继承了你的理想的话，他一定会记得今天这个夜晚，那么他也一定能回忆起现在的自己。回忆起这颗无所畏惧、从未绝望的年幼自己的心，再用这种信念与力量战胜不可能的绝望与叹息——就像，现在的你一样。  </p>
+<p>这不就是坐在他身旁的那不知何时迷失了自己，在岁月中渐渐逝去的你所想得到的救赎吗？  </p>
+<p>时针指向了12点。  </p>
+<p>在这最后一刻，你似乎可以放下沉沦在心中的一切了。你如同入睡闭上了眼睛，带着微笑，满怀释然地，停止了呼吸。  </p>
+<p>“呐，小切，你想成为什么样的人呢？”在你眼前，伴随着令你目眩的强光，那个儿时对你最重要的人问道。  </p>
+<p>这就是你的理想了吧。这个永恒的瞬间，你绝对永远也不会忘记。  </p>
+<p><strong>“我啊，想成为正义的伙伴。”  </strong></p>
+]]></content>
+      <categories>
+        <category>随笔杂文</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>End of the World 末路</title>
     <url>/posts/8048db99.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="末路"><a href="#末路" class="headerlink" title="末路"></a>末路</h1><div align="center"><br><img src="https://i.loli.net/2021/01/22/gED6x1GYBa8jpdR.png" alt=""><br></div>
@@ -645,6 +655,19 @@
       </tags>
   </entry>
   <entry>
+    <title>HappyNewYear 新年快乐</title>
+    <url>/posts/541e2d68.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Happy-New-Year-新年快乐"><a href="#Happy-New-Year-新年快乐" class="headerlink" title="Happy New Year 新年快乐"></a>Happy New Year 新年快乐</h1><h3 id="各位2019年新年快乐！"><a href="#各位2019年新年快乐！" class="headerlink" title="各位2019年新年快乐！"></a>各位2019年新年快乐！</h3><div align="center"><img src="https://i.loli.net/2019/01/06/5c3175017c529.png" alt="2018-03-04 165718.png"><br><em> 【<del>迟来的祝贺呢</del>】 </em><br></div>
+
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>NewYear</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World 入驻杂谈</title>
     <url>/posts/f4025114.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Hello-World-入驻杂谈"><a href="#Hello-World-入驻杂谈" class="headerlink" title="Hello World 入驻杂谈"></a>Hello World 入驻杂谈</h1><h3 id="欢迎各位能光临我的Blog！"><a href="#欢迎各位能光临我的Blog！" class="headerlink" title="欢迎各位能光临我的Blog！"></a>欢迎各位能光临我的Blog！</h3><p>终于做完了这个站的前期工作，那么第一篇文章就写这折腾的建站过程吧！</p>
@@ -666,29 +689,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LifeList 人生清单</title>
-    <url>/posts/c78c574a.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="hbe-security">
-  <div class="hbe-input-container">
-  <input type="password" class="hbe-form-control" id="pass" placeholder="填坑中。" />
-    <label for="pass">填坑中。</label>
-    <div class="bottom-line"></div>
-  </div>
-</div>
-<div id="decryptionError" style="display: none;">Incorrect Password!</div>
-<div id="noContentError" style="display: none;">No content to display!</div>
-<div id="encrypt-blog" style="display:none">
-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
-</div>
-<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>入驻杂谈</category>
-      </categories>
-      <tags>
-        <tag>人生清单</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Interplanetary 《星际》发布</title>
     <url>/posts/ee7bff0c.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-《星际》发布"><a href="#Games-《星际》发布" class="headerlink" title="Games 《星际》发布"></a>Games 《星际》发布</h1><div align="center"><br><img src="https://camo.githubusercontent.com/5760d893fb8f48ebaa8778fa7e28528ba1114bf2/687474703a2f2f746830372e64657669616e746172742e6e65742f667337312f5052452f692f323031312f3131352f382f642f66697273745f626c6f6f645f62795f677269617463685f6172742d643264667a32622e6a7067" alt=""><br></div>
@@ -701,6 +701,72 @@ U2FsdGVkX1+wocaIndqYGjsunJnDdmIaC3uAsWSn4a89LMjWxlQGiLPLFpvuelzEgWQRWM9fyiz9vpEb
       </categories>
       <tags>
         <tag>Games</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Anime 「No Game No Life Zero」 简评</title>
+    <url>/posts/3eeebe24.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Anime-「No-Game-No-Life-Zero」-简评"><a href="#Anime-「No-Game-No-Life-Zero」-简评" class="headerlink" title="Anime 「No Game No Life Zero」 简评"></a>Anime 「No Game No Life Zero」 简评</h1><p>配合在下的 <strong>AMV</strong> 食用更嘉。<br>URL：<a href="https://www.bilibili.com/video/av41937609/" target="_blank" rel="noopener">https://www.bilibili.com/video/av41937609/</a></p>
+<div align="center"><br><img src="https://i.loli.net/2019/01/20/5c44043ac8f92.png" alt="No Game No Life Zero"><br></div>
+
+<a id="more"></a>
+<h2 id="愛の-愛のために進むのは"><a href="#愛の-愛のために進むのは" class="headerlink" title="愛の 愛のために進むのは"></a>愛の 愛のために進むのは</h2><p>利库与朱碧相遇之前各自的自己，<strong>绝望</strong>、<strong>迷茫</strong>。<br>偶然又并非偶然的相遇，彻底改变了两个人的人生轨迹。<br><strong>怀有情感，却苟延残喘、因生存而不得不放弃情感的人类。</strong><br><strong>拥有生存的绝技，却因没有“心”而踏上寻“心”旅途的机械。</strong><br>还好他们碰见了彼此。<br>在出生入死间，利库渐渐从过去自己的罪恶中解脱，朱碧也渐渐明白了情为何物。<br>利用同伴们用生命换来的资料与朱碧所提供的情报，利库一步步地看清了这世界。<br>于是，和同伴一起，成为<strong>不被发现的旁观者</strong>，诱导战局走向和平。<br><strong><em>——“当局者迷，旁观者清。”</em></strong></p>
+<p>回忆起利库和朱碧的初遇，那一天的那一刻，她出现在了他的生命之中。<br>仅仅只是短暂的一次对视，也让对方深刻地留在了自己的心里。<br>定义人生的常量之中，首次出现了变量。<br><strong>国际象棋，是游戏。</strong><br><strong>这个世界，也不过只是个游戏。</strong>  </p>
+<p>利库与朱碧相遇之前各自的自己，<strong>无望</strong>、<strong>彷徨</strong>。<br><strong>人类在这片大地上，毫无意义地活着，又毫无意义地死去。</strong><br><strong>机械在这个世界里，漫无目的地存在，也漫无目的地消亡。</strong><br>还好他们碰见了彼此。<br>没了他们，「大战」仍会继续，人类仍将苟延残喘下去，世界最终会停止运行。<br>在一天天的相处中，身为机凯种的朱碧慢慢理解了感情。<br><strong>不知从何时起，茫然间发现，自己已经无法离开对方。</strong><br>四季相依，年年不息，两人在一起的日子，过得很慢很慢。<br>转眼间，身为幽灵的日子已经数不清有多少天了，扭转大战即在眼前。  </p>
+<p>回想起利库与朱碧的再遇，那一天的那一刻，她再次进入了他的世界。<br>又是一次短暂的对视，一切都那么地相似。<br><strong>相遇，再到相伴，究竟用了多久呢。</strong><br>这期间，又发生了多少令人惊奇的事情呢。  </p>
+<p>初见也好，再遇也好，究竟是偶然还是巧合，让两人一次又一次地再会？<br>果然，<strong>这世间的相遇，不过是久别后的重逢罢了。</strong><br>抛掉了过去，面对眼前的现实，两人携手共进。<br>他们和一百七十余名幽灵，游走于这个世界，<br>一笔笔地写下改变世界的咒语，创造荒漠中的菩提。<br><strong>擦身相遇，转身而去，不被发现，不曾存在。</strong><br>在这种情况下，即便是机凯种来演算，也会得出<strong>人类能赢</strong>的结论吧。<br>而这一切，都是他——和朱碧自己创造的。  </p>
+<p>临战前的那一天那一刻，他由于灵骸的侵蚀而病倒了。<br>她要他好好休息，他要她陪着自己。<br>他睡熟了，她也走了。<br>为了尽快地完成目标，朱碧一个人踏出了家。<br>却没想到，遇见了这世界上最大的未知——「番外个体」。<br><strong>「对未知用战斗演算」，全力求生，保护此刻所拥有的你。</strong>  </p>
+<p>战斗着的某一刻，朱碧终不敌吉普莉尔。<br>赌上同步所需的251秒，朱碧尽力保护了自己的“<strong>心</strong>”。<br>随着「天击」的降临，机凯种拼上全力，启用了「通行规制」。<br><strong><em>——“而我的自传里曾经有你，没有遗憾地逝去。逝去里充满感激。”  </em></strong></p>
+<p>朱碧离去之后，绝望与迷茫又袭上利库的心头。<br>自己失败了，朱碧走了。<br>敞开的心，被重重的枷锁再次扣上。<br><strong>只有那枚当初的小小的戒指还留在这个世界上，闪着渺小的光芒。</strong></p>
+<h3 id="——“本当に、愛してるよ…”"><a href="#——“本当に、愛してるよ…”" class="headerlink" title="——“本当に、愛してるよ…”"></a>——“本当に、愛してるよ…”</h3>]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>追番</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LifeList 人生清单</title>
+    <url>/posts/c78c574a.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="填坑中。" />
+    <label for="pass">填坑中。</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>人生清单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Home 我有一所房子，面朝大海，春暖花开</title>
+    <url>/posts/9ae5ed22.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我有一所房子，面朝大海，春暖花开"><a href="#我有一所房子，面朝大海，春暖花开" class="headerlink" title="我有一所房子，面朝大海，春暖花开"></a>我有一所房子，面朝大海，春暖花开</h1><div align="center"><br><img src="https://i.loli.net/2019/06/09/5cfcc4442ff6117953.jpg" alt=""><br></div>
+
+<center><small>近日游玩 <strong>Call of Duty: WWII</strong>，有感而发，作此文。配图与本文无关。</small></center>
+
+<a id="more"></a>
+<h3 id="壹"><a href="#壹" class="headerlink" title="壹"></a><div align="center">壹</div></h3><p>二一一九年的一个清晨，雨丝在空中静静交织、细细飘洒着。山林里没有都市的喧闹，显得格外幽静。<br>从山上向不远处的海岸望去，海岸警卫队的队员们仍警惕地巡逻着。尽管现在已是战后的第八年，但人们仍然对战争心有余悸：当初这片海岸是如何沦陷的，后来又是如何被重新夺回来的，一切都历历在目。<br>孩子当然不会懂得这一切，那是在他来到这个世界上之前发生的事了。他一边打打闹闹，一边跟随着男人的步伐继续向山上走去。<br>石台阶的尽头是一所公墓。与其他现代墓地不同，他们眼前的这座公墓在设计上似乎更多地流露出百年前幽静典雅的风范。踏上最后一级台阶，男人领着孩子走了进去。<br>不远处有一棵树，高大的树冠提供了非常广阔的树荫。大树对面的树林被人为地扒出了一块缝隙，使得这里可以直接望见海岸。树荫下是一块石碑，碑上刻着一行简短的文字。男人向那里走去，孩子也跟了过来。<br>“安海…2080至2110…陆军…中士。爸爸，这是谁呀？”孩子一字一字地读着碑上的文字，带着疑惑转身向男人问道。<br>“他就是爸爸老说的老朋友啊。”男人的眼睛中有了泪光；当然，孩子不会注意到这一点。<br>“这样啊——那这里一定就是他的家了吧！”孩子拉着男人的衣服，似乎恍然大悟。<br>“家？家……对了，这里是他的家。”男人一下子怔住了，望着墓碑，缓缓地重复着孩子的话语。<br>“可是，如果是房子的话，应该有门才对啊？”孩子再次露出了不解的神色。<br>“嗯，那是因为他已经到家了。”顺着孩子的逻辑，男人接着讲了下去。<br>“但是爸爸，我没有看见你的朋友呀！”孩子更加疑惑了。<br>“他啊，已经睡着啦；你别吵到他噢？”男人将食指伸到嘴边，嘴里发出“嘘”的声音。<br>“嗯嗯，对不起。”孩子连忙放低了声音道歉着。<br>男人示意孩子去不远处房子旁的长椅上休息，自己则在碑前陷入了回忆。  </p>
+<h3 id="贰"><a href="#贰" class="headerlink" title="贰"></a><div align="center">贰</div></h3><p>思绪转眼间又回到了九年前这片海岸附近的一艘驱逐舰上。士兵们得到命令，要在次日凌晨时登陆这块海滩，从敌军手里夺回这块国土。<br>身为普通列兵的他和陆军中士安海是出生入死的战友，两人早就情同手足。安海是个和他一起应征入伍的知识分子，由于在之前的战役中作出过突出贡献而升为了陆军中士。即便第二天就是登陆日，他们仍聚在一起闲聊着。<br>“安海，仗打完了以后你最想干什么？”<br>“我？我要第一时间回家，老婆——和她腹中的孩子，在等着我呢。”<br>“你真幸福，我还没能找到个女孩子过日子呢。”<br>“你会找到的。先不说这个，你准备干什么？”<br>“我也要回家，好好休息一番再和安海你聚一聚。”<br>“挺好。——不过要先等我把一件事做完。”<br>“什么事？说来听听。”<br>“你知道一百多年前的一个诗人吗？我很喜欢他的一句诗，叫‘我有一所房子，面朝大海，春暖花开’。多么平凡而又幸福！我要建一所这样的房子，过上这样的日子。”<br>“真不愧是文学生！好！——来，祝你愿望成真，干杯！”<br>“为梦想干杯！”<br>他敲敲桌子，接过应声而来的后勤机器人递来的酒，和安海一起喝下了开战前的最后一杯酒。由于兵力的不足，他们所属的西部战线只剩下了后勤机器人，因此被迫人力作战。<br>半小时后，他们接到集合的命令，于是整顿好装备，进入了登陆艇，向海岸进发。<br>尽管有带电粒子构成的能量护盾，靠近海滩时登陆艇还是受到了敌军炮台的猛烈打击。登陆艇如一叶小舟在海上飘摇，士兵们一个个中弹倒下却无力反击。安海命令全速前进，终于到达海岸。二十秒的航程，仿佛有一年之长。<br>他和其他士兵们跟着安海下船，冲向敌军阵地。面对敌军的激光重炮和机枪扫射，他、安海和周围的战士们拼命作战，突破枪林弹雨，终于占领了敌军的阵地。双方都损失惨重，血流成河。<br>战斗过程中，安海为了掩护队友而被击中。他奔过去，一把抓起安海，用尽全力拖向最近的临时医疗站。<br>“安海！安海！”<br>“情况如何…？”安海忍痛睁开眼睛，艰难地环顾着四周。<br>“拿下来了！”他奋力地向前一步步地走着。<br>“好…好…你们继续突进…最后一定会胜利…”安海脸上露出了满意的笑容。<br>“我，我要留下来。——你不能死。”尽管前方战火纷飞，他仍做出了这样的决定。<br>“你…还不赶紧…支援前线去…”安海努力地从喉咙里挤出几句话来，“管我干什么…给我上前线去！”<br>他站在那里，好像一座雕像。望着眼前的奄奄一息的战友，他无法迈开步伐。<br>“列兵，这是命令！”安海竭尽全力喊了出来，“替我活下去！”<br>“是！”强忍住泪水，他艰难地扛起枪，背负着两个男人的尊严，再次向前线进发。<br>“这就对了…替我活下去…”望着他的背影，安海自言自语着，慢慢地闭上了眼睛。<br>那一年，他二十六岁，安海三十岁。  </p>
+<h3 id="叁"><a href="#叁" class="headerlink" title="叁"></a><div align="center">叁</div></h3><p>六个月后，战争胜利了。<br>男人回到了故乡，他原想把一切都告诉安海的妻子，但他没有。——安海的妻子在分娩时便意外离世了。如今安海在这世上唯一留下的，是他那刚出生不久、现由邻居代养的孩子。<br>男人没有忍住，回到家里痛哭了一场，为了安海而哭，为了战争中千千万万死伤的人们而哭，为他们悲惨的命运而哭。<br>他的耳边突然再一次回响起了安海军士的最后命令——“替我活下去”。<br>第二天，男人来到了安海的邻居家中，领养了那个孩子。<br>后来，男人又参加了战后的处理工作，说服军方在海滩旁的山上建立了一所公墓，专门安葬在那次战役中殉国的战士。他亲手将安海安葬在了正对海岸的地方。<br>“‘我有一所房子，面朝大海，春暖花开。’安海，抱歉。这所‘房子’，你肯定不满意吧。”带着泪，男人望着墓碑说道。<br>那一年，他二十七岁，安海三十岁。  </p>
+<h3 id="肆"><a href="#肆" class="headerlink" title="肆"></a><div align="center">肆</div></h3><p>从回忆里回到现实时，细雨已停，阳光正晴。<br>“安海，睡个好觉吧。”男人哽咽着自言自语，转身向房子旁的长椅走去。<br>望着眼前称自己为父亲的孩子，男人又回想起了安海的面容。<br>“安安，走啦！”男人招呼着孩子，下山去了。<br>无论是什么时候，过去还是现在，亦或是未来，无论“房子”的形式怎么改变，军营、梦想中的小屋还是安息之地，它所寄托的情感都不会变。男人想。<br>那一年，他三十四岁，安海三十岁。  </p>
+]]></content>
+      <categories>
+        <category>随笔杂文</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -739,70 +805,6 @@ U2FsdGVkX1+wocaIndqYGjsunJnDdmIaC3uAsWSn4a89LMjWxlQGiLPLFpvuelzEgWQRWM9fyiz9vpEb
       </categories>
       <tags>
         <tag>Tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Tools 好物推荐 ChromeWithAHK</title>
-    <url>/posts/f880441b.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Tools-好物推荐-ChromeWithAHK"><a href="#Tools-好物推荐-ChromeWithAHK" class="headerlink" title="Tools 好物推荐 ChromeWithAHK"></a>Tools 好物推荐 ChromeWithAHK</h1><h2 id="Chrome-81-双击关闭标签页终极解决方案"><a href="#Chrome-81-双击关闭标签页终极解决方案" class="headerlink" title="Chrome 81 双击关闭标签页终极解决方案"></a>Chrome 81 双击关闭标签页终极解决方案</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
-<div align="center"><br><img src="https://i.loli.net/2020/05/05/K9gCUyFwlGIihYr.png" alt=""><br><center><small>Google Chrome</small></center><br></div>
-
-<a id="more"></a>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>近日更新最新版本的 Google Chrome，之前一直在使用的 Chrome++ 第三方 DLL 扩展正式失效。由于一直习惯了双击关闭标签页 + 滚轮切换标签页，因此更新后无法使用极度不适，最后通过百度 + 自己修改解决。</p>
-<h3 id="AutoHotkey"><a href="#AutoHotkey" class="headerlink" title="AutoHotkey"></a>AutoHotkey</h3><p>前往 <a href="https://www.autohotkey.com/" target="_blank" rel="noopener">AutoHotkey</a> 的官方网站下载最新版本的 AutoHotkey 并安装。</p>
-<h3 id="AHK-脚本文件"><a href="#AHK-脚本文件" class="headerlink" title="AHK 脚本文件"></a>AHK 脚本文件</h3><p>原脚本来自<a href="https://www.zhihu.com/question/31257378/answer/222351470" target="_blank" rel="noopener">知乎</a>，现做了一些修改。</p>
-<figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line">#NoEnv</span><br><span class="line">#SingleInstance force</span><br><span class="line"></span><br><span class="line"><span class="built_in">IniRead,</span> doubleclick, settings.ini, option, doubleclick,Check</span><br><span class="line"><span class="built_in">IniRead,</span> scrolltab, settings.ini, option, scrolltab,Check</span><br><span class="line"><span class="built_in">IniRead,</span> rightclick, settings.ini, option, rightclick,Check</span><br><span class="line"></span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="built_in">menu,</span> tray, NoStandard</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用双击关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用滚轮切换标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add, 启用右键关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %doubleclick%, 启用双击关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %scrolltab%, 启用滚轮切换标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, %rightclick%, 启用右键关闭标签页</span><br><span class="line"><span class="built_in">menu,</span> tray, add <span class="comment">;分割线</span></span><br><span class="line"><span class="built_in">menu,</span> tray, add, 退出</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol">退出:</span></span><br><span class="line"><span class="keyword">ExitApp</span></span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"><span class="symbol">启用双击关闭标签页:</span></span><br><span class="line">if doubleclick&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用双击关闭标签页</span><br><span class="line">doubleclick=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用双击关闭标签页</span><br><span class="line">doubleclick=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %doubleclick%, settings.ini, option, doubleclick</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">启用滚轮切换标签页:</span></span><br><span class="line">if scrolltab&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用滚轮切换标签页</span><br><span class="line">scrolltab=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用滚轮切换标签页</span><br><span class="line">scrolltab=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %scrolltab%, settings.ini, option, scrolltab</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="symbol">启用右键关闭标签页:</span></span><br><span class="line">if rightclick&lt;&gt;Check</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, Check, 启用右键关闭标签页</span><br><span class="line">rightclick=Check</span><br><span class="line">&#125;</span><br><span class="line">Else</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">menu,</span> tray, unCheck, 启用右键关闭标签页</span><br><span class="line">rightclick=unCheck</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">IniWrite,</span> %rightclick%, settings.ini, option, rightclick</span><br><span class="line">EmptyMem()</span><br><span class="line"><span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">#IfWinActive <span class="keyword">ahk_class</span> Chrome_WidgetWin_1</span><br><span class="line"><span class="symbol"> ~$WheelDown::</span></span><br><span class="line"><span class="symbol"> ~$WheelUp::</span></span><br><span class="line">   if scrolltab=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    MouseGetPos,</span>, ypos</span><br><span class="line">    If (ypos&gt;<span class="number">40</span>) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line"><span class="built_in">    IfEqual,</span><span class="built_in">A_ThisHotkey</span>,~$WheelDown, Send ^&#123;PgDn&#125;</span><br><span class="line">    Else Send ^&#123;PgUp&#125;</span><br><span class="line">EmptyMem()</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol">  ~LButton::</span></span><br><span class="line">  if doubleclick=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    WinGetPos,</span>,, w, h, <span class="literal">A</span></span><br><span class="line"><span class="built_in">    MouseGetPos,</span>xpos, ypos</span><br><span class="line"><span class="built_in">    WinGet,</span>Mom,MinMax</span><br><span class="line">    If ((ypos&gt;<span class="number">45</span>)<span class="literal">And</span>(Mom&lt;<span class="number">1</span>))<span class="literal">Or</span>((ypos&gt;<span class="number">28</span>)<span class="literal">And</span>(Mom&gt;<span class="number">0</span>)) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line">    If (<span class="built_in">A_PriorHotkey</span>=<span class="string">"~LButton"</span>) <span class="literal">and</span> (<span class="built_in">A_TimeSincePriorHotkey</span>&lt;<span class="number">200</span>)</span><br><span class="line">    <span class="comment">; 此处和知乎版本不同 ↓</span></span><br><span class="line">    send ^w</span><br><span class="line">    <span class="comment">; 此处和知乎版本不同 ↑</span></span><br><span class="line">EmptyMem()</span><br><span class="line">      &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line"><span class="comment">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</span></span><br><span class="line"><span class="symbol"> ~RButton Up::</span></span><br><span class="line"><span class="symbol">  ~RButton::</span></span><br><span class="line">     if rightclick=Check</span><br><span class="line">  &#123;</span><br><span class="line"><span class="built_in">    MouseGetPos,</span>xpos, ypos</span><br><span class="line"><span class="built_in">    WinGet,</span>Mom,MinMax</span><br><span class="line">    If ((ypos&gt;<span class="number">45</span>)<span class="literal">And</span>(Mom&lt;<span class="number">1</span>))<span class="literal">Or</span>((ypos&gt;<span class="number">28</span>)<span class="literal">And</span>(Mom&gt;<span class="number">0</span>)) <span class="literal">Or</span> (ypos&lt;<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">Return</span></span><br><span class="line">    if  GetKeyState(<span class="string">"1"</span>)</span><br><span class="line">        <span class="keyword">Return</span></span><br><span class="line"><span class="built_in">    IfEqual,</span><span class="built_in">A_ThisHotkey</span>,~RButton, Send &#123;Click Middle&#125;</span><br><span class="line">                                 Else Send &#123;Click middle&#125;</span><br><span class="line">EmptyMem()</span><br><span class="line">                                  &#125;</span><br><span class="line"> <span class="keyword">Return</span></span><br><span class="line">#IfWinActive</span><br><span class="line"></span><br><span class="line">EmptyMem(PID=<span class="string">"AHK Rocks"</span>)&#123;</span><br><span class="line">    pid:=(pid=<span class="string">"AHK Rocks"</span>) ? DllCall(<span class="string">"GetCurrentProcessId"</span>) : pid</span><br><span class="line">    h:=DllCall(<span class="string">"OpenProcess"</span>, <span class="string">"UInt"</span>, <span class="number">0</span>x001F0FFF, <span class="string">"Int"</span>, <span class="number">0</span>, <span class="string">"Int"</span>, pid)</span><br><span class="line">    DllCall(<span class="string">"SetProcessWorkingSetSize"</span>, <span class="string">"UInt"</span>, h, <span class="string">"Int"</span>, -<span class="number">1</span>, <span class="string">"Int"</span>, -<span class="number">1</span>)</span><br><span class="line">    DllCall(<span class="string">"CloseHandle"</span>, <span class="string">"Int"</span>, h)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>若需托盘不显示图标，则在第一行前新建一行插入 <code>#NoTrayIcon</code> 即可，实测支持最新 Chrome 81。</p>
-<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><p>已知双击 Chrome 标题栏空处切换最大化/窗口化时也有概率触发脚本导致标签页关闭，目前解决方法是降低此时双击的频率。</p>
-]]></content>
-      <categories>
-        <category>入驻杂谈</category>
-      </categories>
-      <tags>
-        <tag>Tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Anime 「No Game No Life Zero」 简评</title>
-    <url>/posts/3eeebe24.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Anime-「No-Game-No-Life-Zero」-简评"><a href="#Anime-「No-Game-No-Life-Zero」-简评" class="headerlink" title="Anime 「No Game No Life Zero」 简评"></a>Anime 「No Game No Life Zero」 简评</h1><p>配合在下的 <strong>AMV</strong> 食用更嘉。<br>URL：<a href="https://www.bilibili.com/video/av41937609/" target="_blank" rel="noopener">https://www.bilibili.com/video/av41937609/</a></p>
-<div align="center"><br><img src="https://i.loli.net/2019/01/20/5c44043ac8f92.png" alt="No Game No Life Zero"><br></div>
-
-<a id="more"></a>
-<h2 id="愛の-愛のために進むのは"><a href="#愛の-愛のために進むのは" class="headerlink" title="愛の 愛のために進むのは"></a>愛の 愛のために進むのは</h2><p>利库与朱碧相遇之前各自的自己，<strong>绝望</strong>、<strong>迷茫</strong>。<br>偶然又并非偶然的相遇，彻底改变了两个人的人生轨迹。<br><strong>怀有情感，却苟延残喘、因生存而不得不放弃情感的人类。</strong><br><strong>拥有生存的绝技，却因没有“心”而踏上寻“心”旅途的机械。</strong><br>还好他们碰见了彼此。<br>在出生入死间，利库渐渐从过去自己的罪恶中解脱，朱碧也渐渐明白了情为何物。<br>利用同伴们用生命换来的资料与朱碧所提供的情报，利库一步步地看清了这世界。<br>于是，和同伴一起，成为<strong>不被发现的旁观者</strong>，诱导战局走向和平。<br><strong><em>——“当局者迷，旁观者清。”</em></strong></p>
-<p>回忆起利库和朱碧的初遇，那一天的那一刻，她出现在了他的生命之中。<br>仅仅只是短暂的一次对视，也让对方深刻地留在了自己的心里。<br>定义人生的常量之中，首次出现了变量。<br><strong>国际象棋，是游戏。</strong><br><strong>这个世界，也不过只是个游戏。</strong>  </p>
-<p>利库与朱碧相遇之前各自的自己，<strong>无望</strong>、<strong>彷徨</strong>。<br><strong>人类在这片大地上，毫无意义地活着，又毫无意义地死去。</strong><br><strong>机械在这个世界里，漫无目的地存在，也漫无目的地消亡。</strong><br>还好他们碰见了彼此。<br>没了他们，「大战」仍会继续，人类仍将苟延残喘下去，世界最终会停止运行。<br>在一天天的相处中，身为机凯种的朱碧慢慢理解了感情。<br><strong>不知从何时起，茫然间发现，自己已经无法离开对方。</strong><br>四季相依，年年不息，两人在一起的日子，过得很慢很慢。<br>转眼间，身为幽灵的日子已经数不清有多少天了，扭转大战即在眼前。  </p>
-<p>回想起利库与朱碧的再遇，那一天的那一刻，她再次进入了他的世界。<br>又是一次短暂的对视，一切都那么地相似。<br><strong>相遇，再到相伴，究竟用了多久呢。</strong><br>这期间，又发生了多少令人惊奇的事情呢。  </p>
-<p>初见也好，再遇也好，究竟是偶然还是巧合，让两人一次又一次地再会？<br>果然，<strong>这世间的相遇，不过是久别后的重逢罢了。</strong><br>抛掉了过去，面对眼前的现实，两人携手共进。<br>他们和一百七十余名幽灵，游走于这个世界，<br>一笔笔地写下改变世界的咒语，创造荒漠中的菩提。<br><strong>擦身相遇，转身而去，不被发现，不曾存在。</strong><br>在这种情况下，即便是机凯种来演算，也会得出<strong>人类能赢</strong>的结论吧。<br>而这一切，都是他——和朱碧自己创造的。  </p>
-<p>临战前的那一天那一刻，他由于灵骸的侵蚀而病倒了。<br>她要他好好休息，他要她陪着自己。<br>他睡熟了，她也走了。<br>为了尽快地完成目标，朱碧一个人踏出了家。<br>却没想到，遇见了这世界上最大的未知——「番外个体」。<br><strong>「对未知用战斗演算」，全力求生，保护此刻所拥有的你。</strong>  </p>
-<p>战斗着的某一刻，朱碧终不敌吉普莉尔。<br>赌上同步所需的251秒，朱碧尽力保护了自己的“<strong>心</strong>”。<br>随着「天击」的降临，机凯种拼上全力，启用了「通行规制」。<br><strong><em>——“而我的自传里曾经有你，没有遗憾地逝去。逝去里充满感激。”  </em></strong></p>
-<p>朱碧离去之后，绝望与迷茫又袭上利库的心头。<br>自己失败了，朱碧走了。<br>敞开的心，被重重的枷锁再次扣上。<br><strong>只有那枚当初的小小的戒指还留在这个世界上，闪着渺小的光芒。</strong></p>
-<h3 id="——“本当に、愛してるよ…”"><a href="#——“本当に、愛してるよ…”" class="headerlink" title="——“本当に、愛してるよ…”"></a>——“本当に、愛してるよ…”</h3>]]></content>
-      <categories>
-        <category>入驻杂谈</category>
-      </categories>
-      <tags>
-        <tag>追番</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Home 我有一所房子，面朝大海，春暖花开</title>
-    <url>/posts/9ae5ed22.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="我有一所房子，面朝大海，春暖花开"><a href="#我有一所房子，面朝大海，春暖花开" class="headerlink" title="我有一所房子，面朝大海，春暖花开"></a>我有一所房子，面朝大海，春暖花开</h1><div align="center"><br><img src="https://i.loli.net/2019/06/09/5cfcc4442ff6117953.jpg" alt=""><br></div>
-
-<center><small>近日游玩 <strong>Call of Duty: WWII</strong>，有感而发，作此文。配图与本文无关。</small></center>
-
-<a id="more"></a>
-<h3 id="壹"><a href="#壹" class="headerlink" title="壹"></a><div align="center">壹</div></h3><p>二一一九年的一个清晨，雨丝在空中静静交织、细细飘洒着。山林里没有都市的喧闹，显得格外幽静。<br>从山上向不远处的海岸望去，海岸警卫队的队员们仍警惕地巡逻着。尽管现在已是战后的第八年，但人们仍然对战争心有余悸：当初这片海岸是如何沦陷的，后来又是如何被重新夺回来的，一切都历历在目。<br>孩子当然不会懂得这一切，那是在他来到这个世界上之前发生的事了。他一边打打闹闹，一边跟随着男人的步伐继续向山上走去。<br>石台阶的尽头是一所公墓。与其他现代墓地不同，他们眼前的这座公墓在设计上似乎更多地流露出百年前幽静典雅的风范。踏上最后一级台阶，男人领着孩子走了进去。<br>不远处有一棵树，高大的树冠提供了非常广阔的树荫。大树对面的树林被人为地扒出了一块缝隙，使得这里可以直接望见海岸。树荫下是一块石碑，碑上刻着一行简短的文字。男人向那里走去，孩子也跟了过来。<br>“安海…2080至2110…陆军…中士。爸爸，这是谁呀？”孩子一字一字地读着碑上的文字，带着疑惑转身向男人问道。<br>“他就是爸爸老说的老朋友啊。”男人的眼睛中有了泪光；当然，孩子不会注意到这一点。<br>“这样啊——那这里一定就是他的家了吧！”孩子拉着男人的衣服，似乎恍然大悟。<br>“家？家……对了，这里是他的家。”男人一下子怔住了，望着墓碑，缓缓地重复着孩子的话语。<br>“可是，如果是房子的话，应该有门才对啊？”孩子再次露出了不解的神色。<br>“嗯，那是因为他已经到家了。”顺着孩子的逻辑，男人接着讲了下去。<br>“但是爸爸，我没有看见你的朋友呀！”孩子更加疑惑了。<br>“他啊，已经睡着啦；你别吵到他噢？”男人将食指伸到嘴边，嘴里发出“嘘”的声音。<br>“嗯嗯，对不起。”孩子连忙放低了声音道歉着。<br>男人示意孩子去不远处房子旁的长椅上休息，自己则在碑前陷入了回忆。  </p>
-<h3 id="贰"><a href="#贰" class="headerlink" title="贰"></a><div align="center">贰</div></h3><p>思绪转眼间又回到了九年前这片海岸附近的一艘驱逐舰上。士兵们得到命令，要在次日凌晨时登陆这块海滩，从敌军手里夺回这块国土。<br>身为普通列兵的他和陆军中士安海是出生入死的战友，两人早就情同手足。安海是个和他一起应征入伍的知识分子，由于在之前的战役中作出过突出贡献而升为了陆军中士。即便第二天就是登陆日，他们仍聚在一起闲聊着。<br>“安海，仗打完了以后你最想干什么？”<br>“我？我要第一时间回家，老婆——和她腹中的孩子，在等着我呢。”<br>“你真幸福，我还没能找到个女孩子过日子呢。”<br>“你会找到的。先不说这个，你准备干什么？”<br>“我也要回家，好好休息一番再和安海你聚一聚。”<br>“挺好。——不过要先等我把一件事做完。”<br>“什么事？说来听听。”<br>“你知道一百多年前的一个诗人吗？我很喜欢他的一句诗，叫‘我有一所房子，面朝大海，春暖花开’。多么平凡而又幸福！我要建一所这样的房子，过上这样的日子。”<br>“真不愧是文学生！好！——来，祝你愿望成真，干杯！”<br>“为梦想干杯！”<br>他敲敲桌子，接过应声而来的后勤机器人递来的酒，和安海一起喝下了开战前的最后一杯酒。由于兵力的不足，他们所属的西部战线只剩下了后勤机器人，因此被迫人力作战。<br>半小时后，他们接到集合的命令，于是整顿好装备，进入了登陆艇，向海岸进发。<br>尽管有带电粒子构成的能量护盾，靠近海滩时登陆艇还是受到了敌军炮台的猛烈打击。登陆艇如一叶小舟在海上飘摇，士兵们一个个中弹倒下却无力反击。安海命令全速前进，终于到达海岸。二十秒的航程，仿佛有一年之长。<br>他和其他士兵们跟着安海下船，冲向敌军阵地。面对敌军的激光重炮和机枪扫射，他、安海和周围的战士们拼命作战，突破枪林弹雨，终于占领了敌军的阵地。双方都损失惨重，血流成河。<br>战斗过程中，安海为了掩护队友而被击中。他奔过去，一把抓起安海，用尽全力拖向最近的临时医疗站。<br>“安海！安海！”<br>“情况如何…？”安海忍痛睁开眼睛，艰难地环顾着四周。<br>“拿下来了！”他奋力地向前一步步地走着。<br>“好…好…你们继续突进…最后一定会胜利…”安海脸上露出了满意的笑容。<br>“我，我要留下来。——你不能死。”尽管前方战火纷飞，他仍做出了这样的决定。<br>“你…还不赶紧…支援前线去…”安海努力地从喉咙里挤出几句话来，“管我干什么…给我上前线去！”<br>他站在那里，好像一座雕像。望着眼前的奄奄一息的战友，他无法迈开步伐。<br>“列兵，这是命令！”安海竭尽全力喊了出来，“替我活下去！”<br>“是！”强忍住泪水，他艰难地扛起枪，背负着两个男人的尊严，再次向前线进发。<br>“这就对了…替我活下去…”望着他的背影，安海自言自语着，慢慢地闭上了眼睛。<br>那一年，他二十六岁，安海三十岁。  </p>
-<h3 id="叁"><a href="#叁" class="headerlink" title="叁"></a><div align="center">叁</div></h3><p>六个月后，战争胜利了。<br>男人回到了故乡，他原想把一切都告诉安海的妻子，但他没有。——安海的妻子在分娩时便意外离世了。如今安海在这世上唯一留下的，是他那刚出生不久、现由邻居代养的孩子。<br>男人没有忍住，回到家里痛哭了一场，为了安海而哭，为了战争中千千万万死伤的人们而哭，为他们悲惨的命运而哭。<br>他的耳边突然再一次回响起了安海军士的最后命令——“替我活下去”。<br>第二天，男人来到了安海的邻居家中，领养了那个孩子。<br>后来，男人又参加了战后的处理工作，说服军方在海滩旁的山上建立了一所公墓，专门安葬在那次战役中殉国的战士。他亲手将安海安葬在了正对海岸的地方。<br>“‘我有一所房子，面朝大海，春暖花开。’安海，抱歉。这所‘房子’，你肯定不满意吧。”带着泪，男人望着墓碑说道。<br>那一年，他二十七岁，安海三十岁。  </p>
-<h3 id="肆"><a href="#肆" class="headerlink" title="肆"></a><div align="center">肆</div></h3><p>从回忆里回到现实时，细雨已停，阳光正晴。<br>“安海，睡个好觉吧。”男人哽咽着自言自语，转身向房子旁的长椅走去。<br>望着眼前称自己为父亲的孩子，男人又回想起了安海的面容。<br>“安安，走啦！”男人招呼着孩子，下山去了。<br>无论是什么时候，过去还是现在，亦或是未来，无论“房子”的形式怎么改变，军营、梦想中的小屋还是安息之地，它所寄托的情感都不会变。男人想。<br>那一年，他三十四岁，安海三十岁。  </p>
-]]></content>
-      <categories>
-        <category>随笔杂文</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -1036,6 +1038,42 @@ U2FsdGVkX1+wocaIndqYGjsunJnDdmIaC3uAsWSn4a89LMjWxlQGiLPLFpvuelzEgWQRWM9fyiz9vpEb
       </tags>
   </entry>
   <entry>
+    <title>Games 游戏推荐 论如何优雅地跨平台游玩</title>
+    <url>/posts/cc043334.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-游戏推荐-论如何优雅地跨平台游玩"><a href="#Games-游戏推荐-论如何优雅地跨平台游玩" class="headerlink" title="Games 游戏推荐 论如何优雅地跨平台游玩"></a>Games 游戏推荐 论如何优雅地跨平台游玩</h1><h2 id="PC-上各类开源主机模拟器索引"><a href="#PC-上各类开源主机模拟器索引" class="headerlink" title="PC 上各类开源主机模拟器索引"></a>PC 上各类开源主机模拟器索引</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，作索引、指北之用，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
+<p>本索引之内容均为 Github 开源项目，相同平台之模拟器选取最成熟、Github 仓库 star 数最多者。</p>
+<a id="more"></a>
+<h3 id="Sony-PlayStation-系列"><a href="#Sony-PlayStation-系列" class="headerlink" title="Sony PlayStation 系列"></a>Sony PlayStation 系列</h3><h4 id="DuckStation-PlayStation-1"><a href="#DuckStation-PlayStation-1" class="headerlink" title="DuckStation - PlayStation 1"></a>DuckStation - PlayStation 1</h4><p><img src="https://i.loli.net/2020/02/13/miFLxeQyca7CdwJ.png" alt="DuckStation"></p>
+<p>模拟平台：Sony PlayStation 1<br>适用平台：Windows / Linux / macOS(不再维护)<br>Github：<a href="https://github.com/stenzek/duckstation" target="_blank" rel="noopener">https://github.com/stenzek/duckstation</a><br>下载地址：<a href="https://github.com/stenzek/duckstation/runs/442793758" target="_blank" rel="noopener">https://github.com/stenzek/duckstation/runs/442793758</a><br>简明指南：<a href="https://github.com/stenzek/duckstation#downloading-and-running" target="_blank" rel="noopener">https://github.com/stenzek/duckstation#downloading-and-running</a><br>游戏兼容性列表：暂无<br>推荐指数：<strong>6 / 10</strong><br>评价：未实测。看样子应该是支持大部分 PS1 游戏，建议自行研究。</p>
+<h4 id="PCSX2-PlayStation-2"><a href="#PCSX2-PlayStation-2" class="headerlink" title="PCSX2 - PlayStation 2"></a>PCSX2 - PlayStation 2</h4><p><img src="https://i.loli.net/2020/02/13/yo9dOMxFWhPbskA.png" alt="PCSX2"></p>
+<p><img src="https://i.loli.net/2020/02/13/vjl5ZSfLg9dXhuo.png" alt="Compatibility"></p>
+<p>模拟平台：Sony PlayStation 2<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/PCSX2/pcsx2" target="_blank" rel="noopener">https://github.com/PCSX2/pcsx2</a><br>官方网站：<a href="https://pcsx2.net/" target="_blank" rel="noopener">https://pcsx2.net/</a><br>下载地址：<a href="https://pcsx2.net/download.html" target="_blank" rel="noopener">https://pcsx2.net/download.html</a><br>简明指南：<a href="https://pcsx2.net/getting-started.html" target="_blank" rel="noopener">https://pcsx2.net/getting-started.html</a><br>游戏兼容性列表：<a href="https://pcsx2.net/compatibility-list.html" target="_blank" rel="noopener">https://pcsx2.net/compatibility-list.html</a><br>推荐指数：<strong>8 / 10</strong><br>评价：未实测。数量接近2500+的 PS2 游戏均可畅玩，推荐！</p>
+<h4 id="RPCS3-PlayStation-3"><a href="#RPCS3-PlayStation-3" class="headerlink" title="RPCS3 - PlayStation 3"></a>RPCS3 - PlayStation 3</h4><p><img src="https://i.loli.net/2020/02/13/bU7H4TOa3PwlG1F.png" alt="RPCS3"></p>
+<p><img src="https://i.loli.net/2020/02/13/c4VIRzvUCGsmnMf.png" alt="Compatibility"></p>
+<p>模拟平台：Sony PlayStation 3<br>适用平台：Windows / Linux<br>Github：<a href="https://github.com/RPCS3/rpcs3" target="_blank" rel="noopener">https://github.com/RPCS3/rpcs3</a><br>官方网站：<a href="https://rpcs3.net/" target="_blank" rel="noopener">https://rpcs3.net/</a><br>下载地址：<a href="https://rpcs3.net/download" target="_blank" rel="noopener">https://rpcs3.net/download</a><br>简明指南：<a href="https://rpcs3.net/quickstart" target="_blank" rel="noopener">https://rpcs3.net/quickstart</a><br>游戏兼容性列表：<a href="https://rpcs3.net/compatibility" target="_blank" rel="noopener">https://rpcs3.net/compatibility</a><br>推荐指数：<strong>8 / 10</strong><br>评价：数量接近1500+的 PS3 游戏均可畅玩，强烈推荐！</p>
+<h4 id="Orbital-PlayStation-4"><a href="#Orbital-PlayStation-4" class="headerlink" title="Orbital - PlayStation 4"></a>Orbital - PlayStation 4</h4><p><img src="https://i.loli.net/2020/02/13/F7531LGwubMSNhO.png" alt="Orbital"></p>
+<p>模拟平台：Sony PlayStation 4<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/AlexAltea/orbital" target="_blank" rel="noopener">https://github.com/AlexAltea/orbital</a><br>官方网站：<a href="https://phi.nz/orbital/" target="_blank" rel="noopener">https://phi.nz/orbital/</a><br>下载地址：暂无<br>游戏兼容性列表：暂无<br>推荐指数：-<br>评价：目前最为完备的 PS4 模拟器，仍在极早期开发中。</p>
+<h4 id="Vita3K-PlayStation-Vita"><a href="#Vita3K-PlayStation-Vita" class="headerlink" title="Vita3K - PlayStation Vita"></a>Vita3K - PlayStation Vita</h4><p><img src="https://i.loli.net/2020/02/13/UwRFbytoO1McIu2.png" alt="Vita3K"></p>
+<p><img src="https://i.loli.net/2020/02/13/AGX9pDPU763JHMV.png" alt="Compatibility"></p>
+<p>模拟平台：Sony PlayStation Vita<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/Vita3K/Vita3K" target="_blank" rel="noopener">https://github.com/Vita3K/Vita3K</a><br>官方网站：<a href="https://vita3k.org/" target="_blank" rel="noopener">https://vita3k.org/</a><br>下载地址：详见官网<br>游戏兼容性列表：<a href="https://vita3k.org/compatibility.html?lang=en" target="_blank" rel="noopener">https://vita3k.org/compatibility.html?lang=en</a><br>推荐指数：<strong>6 / 10</strong><br>评价：处于早期开发中，大部分游戏仍不兼容，期待改进。</p>
+<h3 id="Microsoft-Xbox-系列"><a href="#Microsoft-Xbox-系列" class="headerlink" title="Microsoft Xbox 系列"></a>Microsoft Xbox 系列</h3><h4 id="Cxbx-Reloaded-Microsoft-Xbox"><a href="#Cxbx-Reloaded-Microsoft-Xbox" class="headerlink" title="Cxbx-Reloaded - Microsoft Xbox"></a>Cxbx-Reloaded - Microsoft Xbox</h4><p>模拟平台：Microsoft Xbox<br>适用平台：Windows<br>Github：<a href="https://github.com/Cxbx-Reloaded/Cxbx-Reloaded" target="_blank" rel="noopener">https://github.com/Cxbx-Reloaded/Cxbx-Reloaded</a><br>下载地址：详见 Github<br>游戏兼容性列表：<a href="https://github.com/Cxbx-Reloaded/game-compatibility/issues" target="_blank" rel="noopener">https://github.com/Cxbx-Reloaded/game-compatibility/issues</a><br>推荐指数：<strong>4 / 10</strong><br>评价：未实测。仍处于极早期开发中。</p>
+<h4 id="Xenia-Xbox-360"><a href="#Xenia-Xbox-360" class="headerlink" title="Xenia - Xbox 360"></a>Xenia - Xbox 360</h4><p><img src="https://i.loli.net/2020/02/13/2fHqLbhGDtm1rp3.png" alt="Xenia"></p>
+<p>模拟平台：Microsoft Xbox 360<br>适用平台：Windows<br>Github：<a href="https://github.com/xenia-project/xenia" target="_blank" rel="noopener">https://github.com/xenia-project/xenia</a><br>官方网站：<a href="https://xenia.jp/" target="_blank" rel="noopener">https://xenia.jp/</a><br>下载地址：<a href="https://xenia.jp/download/" target="_blank" rel="noopener">https://xenia.jp/download/</a><br>简明指南：<a href="https://github.com/xenia-project/xenia/wiki/Quickstart" target="_blank" rel="noopener">https://github.com/xenia-project/xenia/wiki/Quickstart</a><br>游戏兼容性列表：<a href="https://github.com/xenia-project/game-compatibility/issues" target="_blank" rel="noopener">https://github.com/xenia-project/game-compatibility/issues</a><br>推荐指数：<strong>7 / 10</strong><br>评价：未实测。较为完备的 Xbox 360 模拟器，不过安装游戏看起来比较复杂？</p>
+<h3 id="Nintendo-系列"><a href="#Nintendo-系列" class="headerlink" title="Nintendo 系列"></a>Nintendo 系列</h3><h4 id="yuzu-Nintendo-Switch"><a href="#yuzu-Nintendo-Switch" class="headerlink" title="yuzu - Nintendo Switch"></a>yuzu - Nintendo Switch</h4><p><img src="https://i.loli.net/2020/02/13/XOjUe7pYrQw8s2H.png" alt="yuzu"></p>
+<p><img src="https://i.loli.net/2020/02/13/TpMx4L3IdmQb8jW.png" alt="Compatibility"></p>
+<p>模拟平台：Nintendo Switch<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/yuzu-emu/yuzu" target="_blank" rel="noopener">https://github.com/yuzu-emu/yuzu</a><br>官方网站：<a href="https://yuzu-emu.org/" target="_blank" rel="noopener">https://yuzu-emu.org/</a><br>下载地址：<a href="https://yuzu-emu.org/downloads/" target="_blank" rel="noopener">https://yuzu-emu.org/downloads/</a><br>简明指南：<a href="https://yuzu-emu.org/help/quickstart/" target="_blank" rel="noopener">https://yuzu-emu.org/help/quickstart/</a><br>游戏兼容性列表：<a href="https://yuzu-emu.org/game/" target="_blank" rel="noopener">https://yuzu-emu.org/game/</a><br>推荐指数：<strong>6 / 10</strong><br>评价：未实测。处于初步开发中的 Nintendo Switch 模拟器，对大部分游戏不兼容。</p>
+<h4 id="citra-Nintendo-3DS"><a href="#citra-Nintendo-3DS" class="headerlink" title="citra - Nintendo 3DS"></a>citra - Nintendo 3DS</h4><p><img src="https://i.loli.net/2020/02/13/s7TZRgQNUVuvPAB.png" alt="citra"></p>
+<p><img src="https://i.loli.net/2020/02/13/bsqOEyc15vDtIMk.png" alt="Compatibility"></p>
+<p>模拟平台：Nintendo 3DS<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/citra-emu/citra" target="_blank" rel="noopener">https://github.com/citra-emu/citra</a><br>官方网站：<a href="https://citra-emu.org/" target="_blank" rel="noopener">https://citra-emu.org/</a><br>下载地址：<a href="https://citra-emu.org/download/" target="_blank" rel="noopener">https://citra-emu.org/download/</a><br>简明指南：<a href="https://citra-emu.org/wiki/faq/" target="_blank" rel="noopener">https://citra-emu.org/wiki/faq/</a><br>游戏兼容性列表：<a href="https://citra-emu.org/game/" target="_blank" rel="noopener">https://citra-emu.org/game/</a><br>推荐指数：<strong>7 / 10</strong><br>评价：未实测。基本成熟的 Nintendo 3DS 模拟器，兼容性较好。</p>
+]]></content>
+      <categories>
+        <category>入驻杂谈</category>
+      </categories>
+      <tags>
+        <tag>Games,Tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SanGuoSha Offline 三国杀 Offline 简要知识手册</title>
     <url>/posts/9278f6a2.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="《三国杀-Offline-简要知识手册》"><a href="#《三国杀-Offline-简要知识手册》" class="headerlink" title="《三国杀 Offline 简要知识手册》"></a><center>《三国杀 Offline 简要知识手册》</center></h1><p><em><center>三国杀 Offline 委员会，2020年1月</center></em></p>
@@ -1184,42 +1222,6 @@ U2FsdGVkX1+wocaIndqYGjsunJnDdmIaC3uAsWSn4a89LMjWxlQGiLPLFpvuelzEgWQRWM9fyiz9vpEb
       </categories>
       <tags>
         <tag>三国杀Offline</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Games 游戏推荐 论如何优雅地跨平台游玩</title>
-    <url>/posts/cc043334.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Games-游戏推荐-论如何优雅地跨平台游玩"><a href="#Games-游戏推荐-论如何优雅地跨平台游玩" class="headerlink" title="Games 游戏推荐 论如何优雅地跨平台游玩"></a>Games 游戏推荐 论如何优雅地跨平台游玩</h1><h2 id="PC-上各类开源主机模拟器索引"><a href="#PC-上各类开源主机模拟器索引" class="headerlink" title="PC 上各类开源主机模拟器索引"></a>PC 上各类开源主机模拟器索引</h2><p>本篇博客由 <strong>MaxAlex</strong> 编写，作索引、指北之用，最初发表于 <strong>MaxAlex 的 Blog</strong> 。</p>
-<p>本索引之内容均为 Github 开源项目，相同平台之模拟器选取最成熟、Github 仓库 star 数最多者。</p>
-<a id="more"></a>
-<h3 id="Sony-PlayStation-系列"><a href="#Sony-PlayStation-系列" class="headerlink" title="Sony PlayStation 系列"></a>Sony PlayStation 系列</h3><h4 id="DuckStation-PlayStation-1"><a href="#DuckStation-PlayStation-1" class="headerlink" title="DuckStation - PlayStation 1"></a>DuckStation - PlayStation 1</h4><p><img src="https://i.loli.net/2020/02/13/miFLxeQyca7CdwJ.png" alt="DuckStation"></p>
-<p>模拟平台：Sony PlayStation 1<br>适用平台：Windows / Linux / macOS(不再维护)<br>Github：<a href="https://github.com/stenzek/duckstation" target="_blank" rel="noopener">https://github.com/stenzek/duckstation</a><br>下载地址：<a href="https://github.com/stenzek/duckstation/runs/442793758" target="_blank" rel="noopener">https://github.com/stenzek/duckstation/runs/442793758</a><br>简明指南：<a href="https://github.com/stenzek/duckstation#downloading-and-running" target="_blank" rel="noopener">https://github.com/stenzek/duckstation#downloading-and-running</a><br>游戏兼容性列表：暂无<br>推荐指数：<strong>6 / 10</strong><br>评价：未实测。看样子应该是支持大部分 PS1 游戏，建议自行研究。</p>
-<h4 id="PCSX2-PlayStation-2"><a href="#PCSX2-PlayStation-2" class="headerlink" title="PCSX2 - PlayStation 2"></a>PCSX2 - PlayStation 2</h4><p><img src="https://i.loli.net/2020/02/13/yo9dOMxFWhPbskA.png" alt="PCSX2"></p>
-<p><img src="https://i.loli.net/2020/02/13/vjl5ZSfLg9dXhuo.png" alt="Compatibility"></p>
-<p>模拟平台：Sony PlayStation 2<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/PCSX2/pcsx2" target="_blank" rel="noopener">https://github.com/PCSX2/pcsx2</a><br>官方网站：<a href="https://pcsx2.net/" target="_blank" rel="noopener">https://pcsx2.net/</a><br>下载地址：<a href="https://pcsx2.net/download.html" target="_blank" rel="noopener">https://pcsx2.net/download.html</a><br>简明指南：<a href="https://pcsx2.net/getting-started.html" target="_blank" rel="noopener">https://pcsx2.net/getting-started.html</a><br>游戏兼容性列表：<a href="https://pcsx2.net/compatibility-list.html" target="_blank" rel="noopener">https://pcsx2.net/compatibility-list.html</a><br>推荐指数：<strong>8 / 10</strong><br>评价：未实测。数量接近2500+的 PS2 游戏均可畅玩，推荐！</p>
-<h4 id="RPCS3-PlayStation-3"><a href="#RPCS3-PlayStation-3" class="headerlink" title="RPCS3 - PlayStation 3"></a>RPCS3 - PlayStation 3</h4><p><img src="https://i.loli.net/2020/02/13/bU7H4TOa3PwlG1F.png" alt="RPCS3"></p>
-<p><img src="https://i.loli.net/2020/02/13/c4VIRzvUCGsmnMf.png" alt="Compatibility"></p>
-<p>模拟平台：Sony PlayStation 3<br>适用平台：Windows / Linux<br>Github：<a href="https://github.com/RPCS3/rpcs3" target="_blank" rel="noopener">https://github.com/RPCS3/rpcs3</a><br>官方网站：<a href="https://rpcs3.net/" target="_blank" rel="noopener">https://rpcs3.net/</a><br>下载地址：<a href="https://rpcs3.net/download" target="_blank" rel="noopener">https://rpcs3.net/download</a><br>简明指南：<a href="https://rpcs3.net/quickstart" target="_blank" rel="noopener">https://rpcs3.net/quickstart</a><br>游戏兼容性列表：<a href="https://rpcs3.net/compatibility" target="_blank" rel="noopener">https://rpcs3.net/compatibility</a><br>推荐指数：<strong>8 / 10</strong><br>评价：数量接近1500+的 PS3 游戏均可畅玩，强烈推荐！</p>
-<h4 id="Orbital-PlayStation-4"><a href="#Orbital-PlayStation-4" class="headerlink" title="Orbital - PlayStation 4"></a>Orbital - PlayStation 4</h4><p><img src="https://i.loli.net/2020/02/13/F7531LGwubMSNhO.png" alt="Orbital"></p>
-<p>模拟平台：Sony PlayStation 4<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/AlexAltea/orbital" target="_blank" rel="noopener">https://github.com/AlexAltea/orbital</a><br>官方网站：<a href="https://phi.nz/orbital/" target="_blank" rel="noopener">https://phi.nz/orbital/</a><br>下载地址：暂无<br>游戏兼容性列表：暂无<br>推荐指数：-<br>评价：目前最为完备的 PS4 模拟器，仍在极早期开发中。</p>
-<h4 id="Vita3K-PlayStation-Vita"><a href="#Vita3K-PlayStation-Vita" class="headerlink" title="Vita3K - PlayStation Vita"></a>Vita3K - PlayStation Vita</h4><p><img src="https://i.loli.net/2020/02/13/UwRFbytoO1McIu2.png" alt="Vita3K"></p>
-<p><img src="https://i.loli.net/2020/02/13/AGX9pDPU763JHMV.png" alt="Compatibility"></p>
-<p>模拟平台：Sony PlayStation Vita<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/Vita3K/Vita3K" target="_blank" rel="noopener">https://github.com/Vita3K/Vita3K</a><br>官方网站：<a href="https://vita3k.org/" target="_blank" rel="noopener">https://vita3k.org/</a><br>下载地址：详见官网<br>游戏兼容性列表：<a href="https://vita3k.org/compatibility.html?lang=en" target="_blank" rel="noopener">https://vita3k.org/compatibility.html?lang=en</a><br>推荐指数：<strong>6 / 10</strong><br>评价：处于早期开发中，大部分游戏仍不兼容，期待改进。</p>
-<h3 id="Microsoft-Xbox-系列"><a href="#Microsoft-Xbox-系列" class="headerlink" title="Microsoft Xbox 系列"></a>Microsoft Xbox 系列</h3><h4 id="Cxbx-Reloaded-Microsoft-Xbox"><a href="#Cxbx-Reloaded-Microsoft-Xbox" class="headerlink" title="Cxbx-Reloaded - Microsoft Xbox"></a>Cxbx-Reloaded - Microsoft Xbox</h4><p>模拟平台：Microsoft Xbox<br>适用平台：Windows<br>Github：<a href="https://github.com/Cxbx-Reloaded/Cxbx-Reloaded" target="_blank" rel="noopener">https://github.com/Cxbx-Reloaded/Cxbx-Reloaded</a><br>下载地址：详见 Github<br>游戏兼容性列表：<a href="https://github.com/Cxbx-Reloaded/game-compatibility/issues" target="_blank" rel="noopener">https://github.com/Cxbx-Reloaded/game-compatibility/issues</a><br>推荐指数：<strong>4 / 10</strong><br>评价：未实测。仍处于极早期开发中。</p>
-<h4 id="Xenia-Xbox-360"><a href="#Xenia-Xbox-360" class="headerlink" title="Xenia - Xbox 360"></a>Xenia - Xbox 360</h4><p><img src="https://i.loli.net/2020/02/13/2fHqLbhGDtm1rp3.png" alt="Xenia"></p>
-<p>模拟平台：Microsoft Xbox 360<br>适用平台：Windows<br>Github：<a href="https://github.com/xenia-project/xenia" target="_blank" rel="noopener">https://github.com/xenia-project/xenia</a><br>官方网站：<a href="https://xenia.jp/" target="_blank" rel="noopener">https://xenia.jp/</a><br>下载地址：<a href="https://xenia.jp/download/" target="_blank" rel="noopener">https://xenia.jp/download/</a><br>简明指南：<a href="https://github.com/xenia-project/xenia/wiki/Quickstart" target="_blank" rel="noopener">https://github.com/xenia-project/xenia/wiki/Quickstart</a><br>游戏兼容性列表：<a href="https://github.com/xenia-project/game-compatibility/issues" target="_blank" rel="noopener">https://github.com/xenia-project/game-compatibility/issues</a><br>推荐指数：<strong>7 / 10</strong><br>评价：未实测。较为完备的 Xbox 360 模拟器，不过安装游戏看起来比较复杂？</p>
-<h3 id="Nintendo-系列"><a href="#Nintendo-系列" class="headerlink" title="Nintendo 系列"></a>Nintendo 系列</h3><h4 id="yuzu-Nintendo-Switch"><a href="#yuzu-Nintendo-Switch" class="headerlink" title="yuzu - Nintendo Switch"></a>yuzu - Nintendo Switch</h4><p><img src="https://i.loli.net/2020/02/13/XOjUe7pYrQw8s2H.png" alt="yuzu"></p>
-<p><img src="https://i.loli.net/2020/02/13/TpMx4L3IdmQb8jW.png" alt="Compatibility"></p>
-<p>模拟平台：Nintendo Switch<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/yuzu-emu/yuzu" target="_blank" rel="noopener">https://github.com/yuzu-emu/yuzu</a><br>官方网站：<a href="https://yuzu-emu.org/" target="_blank" rel="noopener">https://yuzu-emu.org/</a><br>下载地址：<a href="https://yuzu-emu.org/downloads/" target="_blank" rel="noopener">https://yuzu-emu.org/downloads/</a><br>简明指南：<a href="https://yuzu-emu.org/help/quickstart/" target="_blank" rel="noopener">https://yuzu-emu.org/help/quickstart/</a><br>游戏兼容性列表：<a href="https://yuzu-emu.org/game/" target="_blank" rel="noopener">https://yuzu-emu.org/game/</a><br>推荐指数：<strong>6 / 10</strong><br>评价：未实测。处于初步开发中的 Nintendo Switch 模拟器，对大部分游戏不兼容。</p>
-<h4 id="citra-Nintendo-3DS"><a href="#citra-Nintendo-3DS" class="headerlink" title="citra - Nintendo 3DS"></a>citra - Nintendo 3DS</h4><p><img src="https://i.loli.net/2020/02/13/s7TZRgQNUVuvPAB.png" alt="citra"></p>
-<p><img src="https://i.loli.net/2020/02/13/bsqOEyc15vDtIMk.png" alt="Compatibility"></p>
-<p>模拟平台：Nintendo 3DS<br>适用平台：Windows / Linux / macOS<br>Github：<a href="https://github.com/citra-emu/citra" target="_blank" rel="noopener">https://github.com/citra-emu/citra</a><br>官方网站：<a href="https://citra-emu.org/" target="_blank" rel="noopener">https://citra-emu.org/</a><br>下载地址：<a href="https://citra-emu.org/download/" target="_blank" rel="noopener">https://citra-emu.org/download/</a><br>简明指南：<a href="https://citra-emu.org/wiki/faq/" target="_blank" rel="noopener">https://citra-emu.org/wiki/faq/</a><br>游戏兼容性列表：<a href="https://citra-emu.org/game/" target="_blank" rel="noopener">https://citra-emu.org/game/</a><br>推荐指数：<strong>7 / 10</strong><br>评价：未实测。基本成熟的 Nintendo 3DS 模拟器，兼容性较好。</p>
-]]></content>
-      <categories>
-        <category>入驻杂谈</category>
-      </categories>
-      <tags>
-        <tag>Games,Tools</tag>
       </tags>
   </entry>
   <entry>
